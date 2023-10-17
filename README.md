@@ -27,6 +27,8 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 
 
 ### Objectives
+
+![img](https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/03e478db-6f6c-4a36-ae84-a2b0daa7e229)
  
 
 ### Experimental setup
