@@ -62,7 +62,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
   
 
 # 3. Get started
-
+ 
 
 ## Installation
 :computer: _**How to get started ?**_
