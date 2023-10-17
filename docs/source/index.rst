@@ -43,6 +43,21 @@ The WOC project
 
 The WOC project developed synergetic products optimizing the capacy offered by Earth Observations as well as in-situ and numerical models by focusing on four domains of applications, Sea-state current interactions for Safe Navigation, 3D currents and vertical motion for Sustainable Fisheries, Surface Lagrangian drift for a Clean Ocean, High Resolution wave and current model assessment for a Productive Ocean and ocean processes and sea state interactions.
 
+
+.. raw:: html
+
+    <embed> 
+        <center>
+        Check out the WOC products  <br> <br> <a href="https://www.worldoceancirculation.org/Products#/search?from=1&to=30"><img src="figures/ww3_stokes.png"></a> 
+        </center>
+        
+    </embed>
+    
+    
+:raw-html:`<br />`
+
+:raw-html:`<br />`
+
 WOC Data Challenges
 -------------------
   
