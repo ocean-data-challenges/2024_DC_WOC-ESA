@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 .. image:: figures/dc_2024_WOC-ESA_logo-rtd2.png
-    :width: 900
+    :width: 1200
     
     
 =================================================
@@ -24,31 +24,29 @@ World Ocean Circulation - ESA - Data challenges
 
 :raw-html:`<br />`
 
-.. raw:: html
-
-    <embed>  
-        So far, the github page visits amount to: <br> <br> <a href="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Focean-data-challenges%2F2024_DC_WOC-ESA&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=PAGE+VIEWS&edge_flat=false"/></a> 
-    <br />
     
-    <br />
-        
-    </embed>
-    
-    
-
-
+     
 
 The WOC project 
 ---------------
 
-The WOC project developed synergetic products optimizing the capacy offered by Earth Observations as well as in-situ and numerical models by focusing on four domains of applications, Sea-state current interactions for Safe Navigation, 3D currents and vertical motion for Sustainable Fisheries, Surface Lagrangian drift for a Clean Ocean, High Resolution wave and current model assessment for a Productive Ocean and ocean processes and sea state interactions.
+:raw-html:`<br />`
 
+The WOC project developed synergetic products optimizing the capacy offered by Earth Observations as well as in-situ and numerical models by focusing on four domains of applications: 
+
+* Sea-state current interactions for Safe Navigation, 
+* 3D currents and vertical motion for Sustainable Fisheries, 
+* Surface Lagrangian drift for a Clean Ocean, 
+* High Resolution wave and current model assessment for a Productive Ocean and ocean processes and sea state interactions.
+
+:raw-html:`<br />`
+ 
 
 .. raw:: html
 
     <embed> 
         <center>
-        Check out the WOC products  <br> <br> <a href="https://www.worldoceancirculation.org/Products#/search?from=1&to=30"><img src="figures/ww3_stokes.png"></a> 
+        <a href="https://www.worldoceancirculation.org/Products#/search?from=1&to=30"> <b>Check out the WOC products</b> </a>  <br> <br> <a href="https://www.worldoceancirculation.org/Products#/search?from=1&to=30"><img src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/8434082f-ad1d-494a-9325-e6668fc85e1a" width="200"></a> 
         </center>
         
     </embed>
@@ -60,6 +58,8 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 
 WOC Data Challenges
 -------------------
+
+:raw-html:`<br />` 
   
     
 .. raw:: html
@@ -70,13 +70,24 @@ WOC Data Challenges
 
     </embed>
 
+:raw-html:`<br />` 
 
+:raw-html:`<br />` 
+
+.. raw:: html
+
+    <embed>    
+        So far, the github page visits amount to: <br> <br> <a href="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Focean-data-challenges%2F2024_DC_WOC-ESA&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=PAGE+VIEWS&edge_flat=false"/></a> 
+        
+    </embed>
+    
 ----------------- 
 
 :raw-html:`<br />`
  
     
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: Get started 
 
@@ -85,39 +96,53 @@ WOC Data Challenges
    1_getstarted/getstarted_eval.md
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: DC - Mediterranean Sea
 
    2_dc_medsea/dc_medsea_details.md
    2_dc_medsea/dc_medsea_overalleval.md
-   2_dc_medsea/dc_medsea_methods.md 
+   2_dc_medsea/dc_medsea_sshsstproduct.md 
+   2_dc_medsea/dc_medsea_drifterproduct.md 
+   2_dc_medsea/dc_medsea_bfnqgproduct.md 
+   2_dc_medsea/dc_medsea_dopplerproduct.md 
+   2_dc_medsea/dc_medsea_otherproducts.md 
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: DC - Gulf Stream
  
    3_dc_gulfstream/dc_gulfstream_details.md
    3_dc_gulfstream/dc_gulfstream_overalleval.md
-   3_dc_gulfstream/dc_gulfstream_methods.md 
+   3_dc_gulfstream/dc_gulfstream_wocproducts.md 
+   3_dc_gulfstream/dc_gulfstream_otherproducts.md 
  
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: DC - North Sea
  
    4_dc_northsea/dc_northsea_details.md
    4_dc_northsea/dc_northsea_overalleval.md
-   4_dc_northsea/dc_northsea_methods.md 
+   4_dc_northsea/dc_northsea_wocproducts.md
+   4_dc_northsea/dc_northsea_otherproducts.md
    
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: Metrics details
 
-   5_metrics_det/metrics_alongtrack.md
-   5_metrics_det/metrics_alongdrifter.md
-   5_metrics_det/metrics_driftertraj.md
+   5_metrics_det/metrics_1-standard-insitu.md
+   5_metrics_det/metrics_2-effective-resolution.md
+   5_metrics_det/metrics_3-position-structures.md
+   5_metrics_det/metrics_4-dynamic-characterization.md
+   5_metrics_det/metrics_5-lagrangian-diagnostics.md
+    
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: Scripts
 
