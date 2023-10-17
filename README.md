@@ -23,7 +23,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 # 2. WOC Data Challenges
  
 
-# 3. DC: Mediterranean Sea
+## DC - Mediterranean Sea
 
 
 ### Observations
@@ -35,7 +35,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 ### Evaluation
 
 
-# 4. DC: Gulf Stream
+## DC - Gulf Stream
 
 
 ### Observations
@@ -47,7 +47,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 ### Evaluation
 
 
-# 5. DC: North Sea
+## DC - North Sea
 
 
 ### Observations
@@ -61,7 +61,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 
   
 
-# 6. Get started
+# 3. Get started
 
 
 ## Installation
