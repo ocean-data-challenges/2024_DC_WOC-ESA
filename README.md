@@ -2,7 +2,7 @@
   # Check out the data challenge [website](https://2023a-ssh-mapping-ose.readthedocs.io) for more infos !
 
 <p align="center">
-  <img src="figures/dc_2023_ose_global_banner.jpg" alt="Alt Text" width="900"/>
+  <img src="figures/dc_2024a_WOC-ESA_banner.jpg" alt="Alt Text" width="900"/>
 </p>
 
 # WOC ESA Data Challenges
@@ -12,14 +12,18 @@ Note that this data challenge is part of the extended effort to improve oceanogr
 
 So far, the github page visits amount to: 
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Focean-data-challenges%2F2024_DC_WOC-ESA&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=PAGE+VIEWS&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Focean-data-challenges%2F2024_DC_WOC-ESA&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=PAGE+VIEWS&edge_flat=false)](https://github.com/ocean-data-challenges/2024_DC_WOC-ESA)
 
 
 
-# 1. Context & Motivation
+# 1. The WOC project 
+
+The WOC project developed synergetic products optimizing the capacy offered by Earth Observations as well as in-situ and numerical models by focusing on four domains of applications, Sea-state current interactions for Safe Navigation, 3D currents and vertical motion for Sustainable Fisheries, Surface Lagrangian drift for a Clean Ocean, High Resolution wave and current model assessment for a Productive Ocean and ocean processes and sea state interactions.
+
+# 2. WOC Data Challenges
  
 
-# 2. DC: Mediterranean Sea
+# 3. DC: Mediterranean Sea
 
 
 ### Observations
@@ -31,7 +35,7 @@ So far, the github page visits amount to:
 ### Evaluation
 
 
-# 3. DC: Gulf Stream
+# 4. DC: Gulf Stream
 
 
 ### Observations
@@ -43,7 +47,7 @@ So far, the github page visits amount to:
 ### Evaluation
 
 
-# 4. DC: North Sea
+# 5. DC: North Sea
 
 
 ### Observations
@@ -57,7 +61,7 @@ So far, the github page visits amount to:
 
   
 
-# 5. Get started
+# 6. Get started
 
 
 ## Installation

@@ -22,7 +22,7 @@ autodoc_mock_imports = ['numpy','xarray','matplotlib','pyinterp','netCDF4','scip
 
 # -- Project information -----------------------------------------------------
 
-project = 'ODC - global OSE mapping'
+project = 'WOC-ESA Data challenges'
 copyright = '2023, Datlas'
 author = 'Sammy Metref'
 
@@ -78,7 +78,7 @@ html_theme = 'sphinx_rtd_theme'
 #html_theme = 'nature'
 #html_theme = 'pyramid'
 
-html_logo = "figures/dc_2023_ose_global_logo-rtd.png"
+html_logo = "figures/dc_2024_WOC-ESA_logo-rtd.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
