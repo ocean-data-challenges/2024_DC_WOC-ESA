@@ -26,7 +26,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 ## DC - Mediterranean Sea
 
 
-### Observations
+### Objectives
  
 
 ### Experimental setup
@@ -38,7 +38,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 ## DC - Gulf Stream
 
 
-### Observations
+### Objectives
  
 
 ### Experimental setup
@@ -50,7 +50,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 ## DC - North Sea
 
 
-### Observations
+### Objectives
  
 
 ### Experimental setup
@@ -101,21 +101,21 @@ The data are hosted and can be accessed on the MEOM server opendap [here](https:
 
 
 
-### 2. DC: Mediterranean Sea
+### DC - Mediterranean Sea
 
 #### Data structure
 
 #### Example notebook
 
   
-### 3. DC: Gulf Stream
+### DC - Gulf Stream
  
 #### Data structure
 
 #### Example notebook
 
 
-###  DC: North Sea
+###  DC - North Sea
 
 #### Data structure
 
