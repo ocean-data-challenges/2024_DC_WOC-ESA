@@ -56,21 +56,23 @@
 <li class="toctree-l1"><a class="reference internal" href="getstarted_data.html">Download the data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getstarted_eval.html">Evaluate your own maps</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Generic evaluation</span></p>
+<p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_generic_global.html">Global scale evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_generic_NA.html">North Atlantic evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_generic_WM.html">Western Mediterranean evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_generic_GS.html">Gulf Stream evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_details.html">Setup details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_overalleval.html">Overall evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_methods.html">Specific methods</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Specific focus</span></p>
+<p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../3_spec_focus/eval_nio_rotaryspec.html">Near inertial oscillation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Setup details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_methods.html">Specific methods</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Notebooks</span></p>
+<p class="caption" role="heading"><span class="caption-text">DC - North Sea</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../4_notebooks/notebooks_evaluation.html">Notebooks evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_notebooks/notebooks_download_data.html">Notebooks download the data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_northsea/dc_northsea_details.html">Setup details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_northsea/dc_northsea_overalleval.html">Overall evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_northsea/dc_northsea_methods.html">Specific methods</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
 <ul>
@@ -125,26 +127,26 @@
 <section id="how-to-get-started">
 <h2><em><strong>How to get started ?</strong></em><a class="headerlink" href="#how-to-get-started" title="Permalink to this headline"></a></h2>
 <p>Clone the data challenge repo:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ocean</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">challenges</span><span class="o">/</span><span class="mi">2023</span><span class="n">a_SSH_mapping_OSE</span><span class="o">.</span><span class="n">git</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ocean</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">challenges</span><span class="o">/</span><span class="mi">2024</span><span class="n">_DC_WOC</span><span class="o">-</span><span class="n">ESA</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
 <p>or using SSH:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">ocean</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">challenges</span><span class="o">/</span><span class="mi">2023</span><span class="n">a_SSH_mapping_OSE</span><span class="o">.</span><span class="n">git</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">ocean</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">challenges</span><span class="o">/</span><span class="mi">2024</span><span class="n">_DC_WOC</span><span class="o">-</span><span class="n">ESA</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
-<p>create the data challenge conda environment, named env-dc-global-ose, by running the following command:</p>
+<p>create the data challenge conda environment, named env-dc-swot-filtering, by running the following command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">--</span><span class="n">file</span><span class="o">=</span><span class="n">dc_environment</span><span class="o">.</span><span class="n">yml</span> 
 </pre></div>
 </div>
 <p>and activate it with:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">env</span><span class="o">-</span><span class="n">dc</span><span class="o">-</span><span class="k">global</span><span class="o">-</span><span class="n">ose</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">env</span><span class="o">-</span><span class="n">dc</span><span class="o">-</span><span class="n">woc</span><span class="o">-</span><span class="n">esa</span>
 </pre></div>
 </div>
 <p>then add it to the available kernels for jupyter to see:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipython</span> <span class="n">kernel</span> <span class="n">install</span> <span class="o">--</span><span class="n">name</span> <span class="s2">&quot;env-dc-global-ose&quot;</span> <span class="o">--</span><span class="n">user</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipython</span> <span class="n">kernel</span> <span class="n">install</span> <span class="o">--</span><span class="n">name</span> <span class="s2">&quot;env-dc-woc-esa&quot;</span> <span class="o">--</span><span class="n">user</span>
 </pre></div>
 </div>
-<p>finally, select the “env-dc-global-ose” kernel in your notebook with Kernel &gt; Change Kernel.</p>
+<p>finally, select the “env-dc-woc-esa” kernel in your notebook with Kernel &gt; Change Kernel.</p>
 </section>
 <section id="you-re-now-good-to-go">
 <h2>You’re now good to go !<a class="headerlink" href="#you-re-now-good-to-go" title="Permalink to this headline"></a></h2>

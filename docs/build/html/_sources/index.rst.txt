@@ -51,7 +51,7 @@ WOC Data Challenges
 
     <embed> 
         <center>
-        <div id="image_map"> <map name="map_example"> <area href="https://2023a-ssh-mapping-ose.readthedocs.io/en/latest/2_eval_generic/eval_generic_GS.html" target="_blank" alt="DC-GulfStream" shape=poly coords="310,155, 310,135, 340,135, 340,155"> <area href="https://2023a-ssh-mapping-ose.readthedocs.io/en/latest/2_eval_generic/eval_generic_WM.html" target="_blank" alt="DC-Western Mediterranean" shape=poly coords="490,150, 490,115, 530,115, 530,150"> <area href="https://2023a-ssh-mapping-ose.readthedocs.io/en/latest/2_eval_generic/eval_generic_NA.html" target="_blank" alt="DC-North Atlantic" shape=poly coords="225,220, 225,45, 475,45, 475,220"> <area href="https://2023a-ssh-mapping-ose.readthedocs.io/en/latest/2_eval_generic/eval_generic_global.html" target="_blank" alt="DC-Global" shape=poly coords="0,1000, 0,0, 1000,0, 1000,1000"> <img src="(https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/03e478db-6f6c-4a36-ae84-a2b0daa7e229" title="Gulf Stream" alt="image map example" width=600 height=350 usemap="#map_example"></map> </div> </center>
+        <div id="image_map"> <map name="map_example"> <area href="https://2023a-ssh-mapping-ose.readthedocs.io/en/latest/2_eval_generic/eval_generic_GS.html" target="_blank" alt="DC-GulfStream" shape=poly coords="310,155, 310,135, 340,135, 340,155"> <area href="https://2023a-ssh-mapping-ose.readthedocs.io/en/latest/2_eval_generic/eval_generic_WM.html" target="_blank" alt="DC-Western Mediterranean" shape=poly coords="490,150, 490,115, 530,115, 530,150"> <area href="https://2023a-ssh-mapping-ose.readthedocs.io/en/latest/2_eval_generic/eval_generic_NA.html" target="_blank" alt="DC-North Atlantic" shape=poly coords="225,220, 225,45, 475,45, 475,220"> <area href="https://2023a-ssh-mapping-ose.readthedocs.io/en/latest/2_eval_generic/eval_generic_global.html" target="_blank" alt="DC-Global" shape=poly coords="0,1000, 0,0, 1000,0, 1000,1000"> <img src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/03e478db-6f6c-4a36-ae84-a2b0daa7e229" title="Gulf Stream" alt="image map example" width=600 height=350 usemap="#map_example"></map> </div> </center>
 
     </embed>
 
@@ -63,7 +63,7 @@ WOC Data Challenges
     
 .. toctree::
    :maxdepth: 2
-   :caption: Get started
+   :caption: Get started 
 
    1_getstarted/getstarted_install.md
    1_getstarted/getstarted_data.md 
@@ -71,26 +71,28 @@ WOC Data Challenges
 
 .. toctree::
    :maxdepth: 1
-   :caption: Generic evaluation
+   :caption: DC - Mediterranean Sea
 
-   2_eval_generic/eval_generic_global.md
-   2_eval_generic/eval_generic_NA.md
-   2_eval_generic/eval_generic_WM.md
-   2_eval_generic/eval_generic_GS.md
+   2_dc_medsea/dc_medsea_details.md
+   2_dc_medsea/dc_medsea_overalleval.md
+   2_dc_medsea/dc_medsea_methods.md 
 
 .. toctree::
    :maxdepth: 1
-   :caption: Specific focus
-
-   3_spec_focus/eval_nio_rotaryspec.md
+   :caption: DC - Gulf Stream
+ 
+   3_dc_gulfstream/dc_gulfstream_details.md
+   3_dc_gulfstream/dc_gulfstream_overalleval.md
+   3_dc_gulfstream/dc_gulfstream_methods.md 
  
 
 .. toctree::
    :maxdepth: 1
-   :caption: Notebooks
-
-   4_notebooks/notebooks_evaluation.md
-   4_notebooks/notebooks_download_data.md
+   :caption: DC - North Sea
+ 
+   4_dc_northsea/dc_northsea_details.md
+   4_dc_northsea/dc_northsea_overalleval.md
+   4_dc_northsea/dc_northsea_methods.md 
    
 .. toctree::
    :maxdepth: 1
@@ -100,8 +102,3 @@ WOC Data Challenges
    5_metrics_det/metrics_alongdrifter.md
    5_metrics_det/metrics_driftertraj.md
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Scripts
-
-   6_scripts/modules.rst
