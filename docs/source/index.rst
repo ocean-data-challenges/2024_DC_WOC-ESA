@@ -102,3 +102,8 @@ WOC Data Challenges
    5_metrics_det/metrics_alongdrifter.md
    5_metrics_det/metrics_driftertraj.md
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Scripts
+
+   6_scripts/modules.rst
