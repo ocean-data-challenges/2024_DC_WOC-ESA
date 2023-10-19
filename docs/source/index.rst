@@ -60,7 +60,27 @@ WOC Data Challenges
 -------------------
 
 :raw-html:`<br />` 
+
+The WOC data challenges are comparison platforms that allow a sound and fair assessment of the WOC products between them and to other products. These platforms offer an input dataset (altimetric data, drifters, doppler data ...) for anyone to create a current products as well as a reference dataset (independant from the input dataset) in order to evaluate the products. These data challenges are contained in a `github repository <https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/tree/main>`_ and their documentation and results are presented on this readthedocs website. 
+
+The WOC data challenges cover three geographical regions, with different dynamical characteristics, and multiple WOC products that are available in these regions. 
+
+* `Mediterranean Sea <https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_details.html>`_
+    * Area: [5°W, 25°E, 35°N, 47°N]
+    * Dynamical specificities: A quasi-closed basin with strong ageostrophic dynamics and vertical shear. 
+    * WOC products: Merged SSH/SST currents, Drifter data-driven currents, BFN-QG geostrophic currents 
+
+* `Gulf Stream <https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html>`_ 
+    * Area: [75°W, 45°W, 20°N, 50°N]
+    * Dynamical specificities: High variability region with mixed geostrophic and ageostrophic dynamics. 
+    * WOC products: Merged SSH/SST currents, Drifter data-driven currents, BFN-QG geostrophic currents, Doppler currents
+    
+* `Agulhas Current <https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_details.html>`_ 
+    * Area: [14°E, 35°E, 45°S, 30°S]
+    * Dynamical specificities: Strongly geostrophic region. 
+    * WOC products: Drifter data-driven currents, BFN-QG geostrophic currents, Doppler currents
   
+:raw-html:`<br />` 
     
 .. raw:: html
 
