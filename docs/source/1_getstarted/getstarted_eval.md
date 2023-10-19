@@ -18,10 +18,7 @@ The input netcdf files must contain:
 - for currents evaluation, a meridional and a zonal currents variable `ugos` and `vgos`.
 
 Note that some formatting can be done using xarray within the jupyter notebooks. For instance, you can change a variable's name simply with `ds = ds.rename_var({'my_sla':'sla'})`. 
-
-### Sea Level Anomaly maps format
-
-![SLA Format](../figures/Maps_format_SLA.png)  
+  
 
 ### Currents maps format
 

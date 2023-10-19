@@ -114,20 +114,25 @@ WOC Data Challenges
    :caption: DC - Gulf Stream
  
    3_dc_gulfstream/dc_gulfstream_details.md
-   3_dc_gulfstream/dc_gulfstream_overalleval.md
-   3_dc_gulfstream/dc_gulfstream_wocproducts.md 
+   3_dc_gulfstream/dc_gulfstream_overalleval.md 
+   3_dc_gulfstream/dc_gulfstream_sshsstproduct.md 
+   3_dc_gulfstream/dc_gulfstream_drifterproduct.md 
+   3_dc_gulfstream/dc_gulfstream_bfnqgproduct.md 
+   3_dc_gulfstream/dc_gulfstream_dopplerproduct.md 
    3_dc_gulfstream/dc_gulfstream_otherproducts.md 
  
 
 .. toctree::
    :hidden:
    :maxdepth: 1
-   :caption: DC - North Sea
+   :caption: DC - Agulhas Current
  
-   4_dc_northsea/dc_northsea_details.md
-   4_dc_northsea/dc_northsea_overalleval.md
-   4_dc_northsea/dc_northsea_wocproducts.md
-   4_dc_northsea/dc_northsea_otherproducts.md
+   4_dc_agulhas/dc_agulhas_details.md
+   4_dc_agulhas/dc_agulhas_overalleval.md
+   4_dc_agulhas/dc_agulhas_drifterproduct.md
+   4_dc_agulhas/dc_agulhas_bfnqgproduct.md
+   4_dc_agulhas/dc_agulhas_dopplerproduct.md
+   4_dc_agulhas/dc_agulhas_otherproducts.md
    
 .. toctree::
    :hidden:
