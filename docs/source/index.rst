@@ -28,9 +28,9 @@ World Ocean Circulation - ESA - Data challenges
      
 
 The WOC project 
----------------
+--------------- 
 
-:raw-html:`<br />`
+The World Ocean Circulation (WOC) consortium is composed partners from France, Norway, Italy, Spain, Netherlands. It gathers experts in the Earth Observation  and ocean processes and sea state interactions.
 
 The WOC project developed synergetic products optimizing the capacy offered by Earth Observations as well as in-situ and numerical models by focusing on four domains of applications: 
 
@@ -58,8 +58,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 
 WOC Data Challenges
 -------------------
-
-:raw-html:`<br />` 
+ 
 
 The WOC data challenges are comparison platforms that allow a sound and fair assessment of the WOC products between them and to other products. These platforms offer an input dataset (altimetric data, drifters, doppler data ...) for anyone to create a current products as well as a reference dataset (independant from the input dataset) in order to evaluate the products. These data challenges are contained in a `github repository <https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/tree/main>`_ and their documentation and results are presented on this readthedocs website. 
 
