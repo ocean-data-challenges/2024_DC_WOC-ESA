@@ -1,5 +1,5 @@
 
-  # Check out the data challenge [website](https://2023a-ssh-mapping-ose.readthedocs.io) for more infos !
+  # Check out the data challenge [website](https://2024-dc-woc-esa.readthedocs.io) for more infos !
 
 <p align="center">
   <img src="figures/dc_2024a_WOC-ESA_banner.jpg" alt="Alt Text" width="900"/>
