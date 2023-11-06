@@ -18,7 +18,7 @@ World Ocean Circulation - ESA - Data challenges
 
 .. image:: ../../figures/dc_2024a_WOC-ESA_banner.jpg
     :width: 600 
-    :align: center
+    :align: center 
 
 :raw-html:`<br />`
 
