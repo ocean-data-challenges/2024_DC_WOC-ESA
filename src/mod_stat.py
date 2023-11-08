@@ -208,7 +208,7 @@ def compute_stat_scores(ds_interp, lambda_min, lambda_max, output_file, method_n
     
     print('Total RMSE=',np.sqrt(np.mean(ds_interp['mapping_err'].values**2)),'m')
     
-    print('Total RMSE score=',1-np.sqrt(np.mean(ds_interp['mapping_err'].values**2))/np.sqrt(np.mean((ds_interp['sla_unfiltered'] - ds_interp['lwe']).values**2)),'m')
+    print('Total RMSE score=',1-np.sqrt(np.mean(ds_interp['mapping_err'].values**2))/np.sqrt(np.mean((ds_interp['sla_unfiltered'] - ds_interp['lwe']).values**2)))
     
     logging.info("Compute mapping error for scales between %s and %s km", str(lambda_min), str(lambda_max))
     # Apply bandpass filter
@@ -922,4 +922,9 @@ def compute_stat_scores_uv(ds_interp, output_file,method_name=''):
     logging.info("Compute statistics by oceanic regime")
     compute_stat_scores_uv_by_regimes(ds_interp, output_file)
  
+    print('Total RMSE(u)=',np.sqrt(np.mean(ds_interp['mapping_err_u'].values**2)),'m/s')
+    print('Total RMSE(v)=',np.sqrt(np.mean(ds_interp['mapping_err_v'].values**2)),'m/s')
+    
+    print('Total RMSE(u) score=',1-np.sqrt(np.mean(ds_interp['mapping_err_u'].values**2))/np.sqrt(np.mean((ds_interp['EWCT']).values**2)))
+    print('Total RMSE(v) score=',1-np.sqrt(np.mean(ds_interp['mapping_err_v'].values**2))/np.sqrt(np.mean((ds_interp['NSCT']).values**2)))
     

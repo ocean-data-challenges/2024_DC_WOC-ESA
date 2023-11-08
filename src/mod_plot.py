@@ -577,6 +577,8 @@ def plot_psd_scores_currents(filename):
     fig4 = ds_psd.coherence.hvplot.quadmesh(x='wavenumber', y='lat', cmap='RdYlGn', clim=(0, 1), width=400, height=600, title='Coherence', ylim=(-60, 60))
     fig5 = (1. - ds_psd.psd_diff/ds_psd.psd_ref).hvplot.quadmesh(x='wavenumber', y='lat', cmap='RdYlGn', clim=(0, 1), width=400, height=600, title='PSDerr/PSDref', ylim=(-60, 60))
     
+    print('Averaged NSR:',np.nanmean(1. - ds_psd.psd_diff/ds_psd.psd_ref))
+    
     return (fig1+fig2+fig3+fig4+fig5).cols(3) 
 
 
@@ -927,6 +929,9 @@ def plot_psd_scores_currents_png(filename,region='glob'):
                     wspace=0.02, hspace=0.3)
     
     fig.delaxes(axs[-1])
+    
+     
+    print('Averaged NSR:',np.nanmean(1. - ds_psd.psd_diff/ds_psd.psd_ref))
     
     
     plt.savefig("../figures/Maps_"+str(method_name)+"_effres_"+region+"_uv.png", bbox_inches='tight')

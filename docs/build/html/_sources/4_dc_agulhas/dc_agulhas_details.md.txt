@@ -15,9 +15,15 @@
 </p> 
 
 
-## Dynamical specificities: Strongly geostrophic region. 
+## Dynamical specificities: 
+
+**Strongly geostrophic region.**
     
-## WOC products: Drifter data-driven currents, BFN-QG geostrophic currents, Doppler currents
+## WOC products: 
+
+- Drifter data-driven currents, 
+- BFN-QG geostrophic currents, 
+- Doppler currents
 
 <br>
  
