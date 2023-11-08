@@ -11,7 +11,7 @@
 - Latitude maximum: 30°S
 
 <p align="center">
-  <img src="../gallery/illustration_agulhas_currents.jpg" alt="Alt Text" width="300"/>
+  <img src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/1346fa86-0dd5-4a2a-9993-1c73b59ac865" alt="Alt Text" width="300"/>
 </p> 
 
 
