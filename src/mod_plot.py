@@ -700,15 +700,11 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
     # draw parallels/meridiens and write labels
     gl = p0.axes.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
                           linewidth=0.1, color='black', alpha=0.5, linestyle='--')
-    # adjust labels to taste
-    gl.xlabels_top = False
-    gl.ylabels_right = False
-    gl.xlabels_bottom = False
-    gl.ylocator = mticker.FixedLocator([-90, -60, -30, 0, 30, 60, 90])
-    gl.xformatter = LONGITUDE_FORMATTER
-    gl.yformatter = LATITUDE_FORMATTER
-    gl.xlabel_style = {'size': 10, 'color': 'black'}
-    gl.ylabel_style = {'size': 10, 'color': 'black'}
+    # adjust labels to taste 
+    gl.top_labels = False
+    gl.right_labels = False
+    gl.bottom_labels = False
+     
     
     p1 = axs[1].pcolormesh(ds_binning_allscale.lon, ds_binning_allscale.lat, ds_binning_allscale.variance_mapping_err_v, vmin=vmin, vmax=vmax, cmap='Reds')
     axs[1].set_title('Meridional current [All scale]')
@@ -718,16 +714,11 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
     # draw parallels/meridiens and write labels
     gl = p1.axes.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
                           linewidth=0.1, color='black', alpha=0.5, linestyle='--')
-    # adjust labels to taste
-    gl.xlabels_top = False
-    gl.ylabels_right = False
-    gl.ylabels_left = False
-    gl.xlabels_bottom = False
-    gl.ylocator = mticker.FixedLocator([-90, -60, -30, 0, 30, 60, 90])
-    gl.xformatter = LONGITUDE_FORMATTER
-    gl.yformatter = LATITUDE_FORMATTER
-    gl.xlabel_style = {'size': 10, 'color': 'black'}
-    gl.ylabel_style = {'size': 10, 'color': 'black'}
+    # adjust labels to taste 
+    gl.top_labels = False
+    gl.right_labels = False
+    gl.bottom_labels = False
+    gl.left_labels = False
     
     cax = fig.add_axes([0.92, 0.42, 0.02, 0.25])
     cbar = fig.colorbar(p1, cax=cax, orientation='vertical')
@@ -747,7 +738,7 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
     vmin = 0.
     vmax= 1
     p2 = axs[0].pcolormesh(ds_binning_allscale.lon, ds_binning_allscale.lat, (1 - ds_binning_allscale['variance_mapping_err_u']/ds_binning_allscale['variance_drifter_u']), vmin=vmin, vmax=vmax, cmap='RdYlGn')
-    axs[0].set_title('Zonal current [All scale]')
+
     axs[0].coastlines(resolution='10m', lw=0.5)
     # optional add grid lines
     p2.axes.gridlines(color='black', alpha=0., linestyle='--')
@@ -755,17 +746,11 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
     gl = p2.axes.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
                           linewidth=0.1, color='black', alpha=0.5, linestyle='--')
     # adjust labels to taste
-    gl.xlabels_top = False
-    gl.ylabels_right = False
-    gl.ylocator = mticker.FixedLocator([-90, -60, -30, 0, 30, 60, 90])
-    gl.xformatter = LONGITUDE_FORMATTER
-    gl.yformatter = LATITUDE_FORMATTER
-    gl.xlabel_style = {'size': 10, 'color': 'black'}
-    gl.ylabel_style = {'size': 10, 'color': 'black'}
+    gl.top_labels = False
+    gl.right_labels = False 
     
     
     p3 = axs[1].pcolormesh(ds_binning_allscale.lon, ds_binning_allscale.lat, (1 - ds_binning_allscale['variance_mapping_err_v']/ds_binning_allscale['variance_drifter_v']), vmin=vmin, vmax=vmax, cmap='RdYlGn')
-    axs[1].set_title('Meridional current [All scale]')
     axs[1].coastlines(resolution='10m', lw=0.5)
     # optional add grid lines
     p3.axes.gridlines(color='black', alpha=0., linestyle='--')
@@ -773,14 +758,9 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
     gl = p3.axes.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
                           linewidth=0.1, color='black', alpha=0.5, linestyle='--')
     # adjust labels to taste
-    gl.xlabels_top = False
-    gl.ylabels_left = False
-    gl.ylabels_right = False
-    gl.ylocator = mticker.FixedLocator([-90, -60, -30, 0, 30, 60, 90])
-    gl.xformatter = LONGITUDE_FORMATTER
-    gl.yformatter = LATITUDE_FORMATTER
-    gl.xlabel_style = {'size': 10, 'color': 'black'}
-    gl.ylabel_style = {'size': 10, 'color': 'black'}
+    gl.top_labels = False
+    gl.right_labels = False 
+    gl.left_labels = False
     
     cax = fig.add_axes([0.92, 0.42, 0.02, 0.25])
     fig.colorbar(p3, cax=cax, orientation='vertical')
@@ -1486,7 +1466,8 @@ def compare_stat_score_map_png(study_filename, ref_filename):
                     wspace=0.02, hspace=0.01)
     
     
-def compare_stat_score_map_uv_png(study_filename, ref_filename):
+    
+def compare_stat_score_map_uv_png(study_filename, ref_filename,box_lonlat, methods = None, region='global'):
     """
     Generate PNG plots comparing statistical score maps for zonal and meridional currents between study and reference datasets.
 
@@ -1530,15 +1511,25 @@ def compare_stat_score_map_uv_png(study_filename, ref_filename):
     explained_variance_v_study_all_scale = 1 - ds_study_binning_allscale['variance_mapping_err_v']/ds_study_binning_allscale['variance_drifter_v']
     
     
-    fig, axs = plt.subplots(nrows=4,ncols=2,
+    fig, axs = plt.subplots(nrows=2,ncols=2,
                         subplot_kw={'projection': ccrs.PlateCarree()},
                         figsize=(11,15))
+    
+    if methods is not None: 
+        plt.suptitle(methods[0]+' vs. '+methods[1],fontsize=18)
 
     axs=axs.flatten()
     
-    vmin = 0.
-    vmax= 0.1
-    p0 = axs[0].pcolormesh(ds_ref_binning_allscale.lon, ds_ref_binning_allscale.lat, ds_ref_binning_allscale.variance_mapping_err_u, vmin=vmin, vmax=vmax, cmap='Reds')
+    vmin = -50.
+    vmax= 50
+    p0 = axs[0].pcolormesh(ds_ref_binning_allscale.lon, 
+                           ds_ref_binning_allscale.lat, 
+                           100*( ds_ref_binning_allscale.variance_mapping_err_u -ds_study_binning_allscale.variance_mapping_err_u)/ds_ref_binning_allscale.variance_mapping_err_u, 
+                           vmin=vmin, 
+                           vmax=vmax, 
+                           cmap='RdBu_r')   
+    axs[0].set_xlim([box_lonlat['lon_min'],box_lonlat['lon_max']])
+    axs[0].set_ylim([box_lonlat['lat_min'],box_lonlat['lat_max']])
     axs[0].set_title('Zonal current [All scale]')
     axs[0].coastlines(resolution='10m', lw=0.5)
     # optional add grid lines
@@ -1546,17 +1537,20 @@ def compare_stat_score_map_uv_png(study_filename, ref_filename):
     # draw parallels/meridiens and write labels
     gl = p0.axes.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
                           linewidth=0.1, color='black', alpha=0.5, linestyle='--')
-    # adjust labels to taste
-    gl.xlabels_top = False
-    gl.ylabels_right = False
-    gl.xlabels_bottom = False
-    gl.ylocator = mticker.FixedLocator([-90, -60, -30, 0, 30, 60, 90])
-    gl.xformatter = LONGITUDE_FORMATTER
-    gl.yformatter = LATITUDE_FORMATTER
-    gl.xlabel_style = {'size': 10, 'color': 'black'}
-    gl.ylabel_style = {'size': 10, 'color': 'black'}
+    # adjust labels to taste 
+    gl.top_labels = False
+    gl.right_labels = False
+    gl.bottom_labels = False
     
-    p1 = axs[1].pcolormesh(ds_ref_binning_allscale.lon, ds_ref_binning_allscale.lat, ds_ref_binning_allscale.variance_mapping_err_v, vmin=vmin, vmax=vmax, cmap='Reds')
+    
+    p1 = axs[1].pcolormesh(ds_ref_binning_allscale.lon, 
+                           ds_ref_binning_allscale.lat, 
+                           100*(ds_ref_binning_allscale.variance_mapping_err_v -ds_study_binning_allscale.variance_mapping_err_v)/ds_ref_binning_allscale.variance_mapping_err_v, 
+                           vmin=vmin, 
+                           vmax=vmax, 
+                           cmap='RdBu_r')
+    axs[1].set_xlim([box_lonlat['lon_min'],box_lonlat['lon_max']])
+    axs[1].set_ylim([box_lonlat['lat_min'],box_lonlat['lat_max']])
     axs[1].set_title('Meridional current [All scale]')
     axs[1].coastlines(resolution='10m', lw=0.5)
     # optional add grid lines
@@ -1564,177 +1558,73 @@ def compare_stat_score_map_uv_png(study_filename, ref_filename):
     # draw parallels/meridiens and write labels
     gl = p1.axes.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
                           linewidth=0.1, color='black', alpha=0.5, linestyle='--')
-    # adjust labels to taste
-    gl.xlabels_top = False
-    gl.ylabels_right = False
-    gl.ylabels_left = False
-    gl.xlabels_bottom = False
-    gl.ylocator = mticker.FixedLocator([-90, -60, -30, 0, 30, 60, 90])
-    gl.xformatter = LONGITUDE_FORMATTER
-    gl.yformatter = LATITUDE_FORMATTER
-    gl.xlabel_style = {'size': 10, 'color': 'black'}
-    gl.ylabel_style = {'size': 10, 'color': 'black'}
+    # adjust labels to taste  
+    gl.top_labels = False
+    gl.right_labels = False
+    gl.left_labels = False 
+    gl.bottom_labels = False
     
-    vmin = -20.
-    vmax= 20
-    p2 = axs[2].pcolormesh(ds_ref_binning_allscale.lon, 
+      
+     
+    vmin = -50
+    vmax= 50
+    p3 = axs[2].pcolormesh(ds_ref_binning_allscale.lon, 
                            ds_ref_binning_allscale.lat, 
-                           100*(ds_study_binning_allscale.variance_mapping_err_u - ds_ref_binning_allscale.variance_mapping_err_u)/ds_ref_binning_allscale.variance_mapping_err_u, 
+                           100*(explained_variance_u_study_all_scale-explained_variance_u_ref_all_scale), 
                            vmin=vmin, 
                            vmax=vmax, 
-                           cmap='coolwarm')
-    axs[2].set_title('Zonal current [All scale]')
+                           cmap='RdBu_r')
+    #axs[2].set_title('Zonal current [All scale]')
+    axs[2].set_xlim([box_lonlat['lon_min'],box_lonlat['lon_max']])
+    axs[2].set_ylim([box_lonlat['lat_min'],box_lonlat['lat_max']]) 
     axs[2].coastlines(resolution='10m', lw=0.5)
-    # optional add grid lines
-    p2.axes.gridlines(color='black', alpha=0., linestyle='--')
-    # draw parallels/meridiens and write labels
-    gl = p2.axes.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
-                          linewidth=0.1, color='black', alpha=0.5, linestyle='--')
-    # adjust labels to taste
-    gl.xlabels_top = False
-    gl.ylabels_right = False
-    gl.ylocator = mticker.FixedLocator([-90, -60, -30, 0, 30, 60, 90])
-    gl.xformatter = LONGITUDE_FORMATTER
-    gl.yformatter = LATITUDE_FORMATTER
-    gl.xlabel_style = {'size': 10, 'color': 'black'}
-    gl.ylabel_style = {'size': 10, 'color': 'black'}
-    
-    
-    p3 = axs[3].pcolormesh(ds_ref_binning_allscale.lon, 
-                           ds_ref_binning_allscale.lat, 
-                           100*(ds_study_binning_allscale.variance_mapping_err_v - ds_ref_binning_allscale.variance_mapping_err_v)/ds_ref_binning_allscale.variance_mapping_err_v, 
-                           vmin=vmin, 
-                           vmax=vmax, 
-                           cmap='coolwarm')
-    axs[3].set_title('Meridional current [All scale]')
-    axs[3].coastlines(resolution='10m', lw=0.5)
     # optional add grid lines
     p3.axes.gridlines(color='black', alpha=0., linestyle='--')
     # draw parallels/meridiens and write labels
     gl = p3.axes.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
                           linewidth=0.1, color='black', alpha=0.5, linestyle='--')
-    # adjust labels to taste
-    gl.xlabels_top = False
-    gl.ylabels_left = False
-    gl.ylabels_right = False
-    gl.ylocator = mticker.FixedLocator([-90, -60, -30, 0, 30, 60, 90])
-    gl.xformatter = LONGITUDE_FORMATTER
-    gl.yformatter = LATITUDE_FORMATTER
-    gl.xlabel_style = {'size': 10, 'color': 'black'}
-    gl.ylabel_style = {'size': 10, 'color': 'black'}
+    # adjust labels to taste  
+    gl.top_labels = False
+    gl.right_labels = False
     
     
-    
-    vmin = 0.
-    vmax= 1
-    p4 = axs[4].pcolormesh(ds_ref_binning_allscale.lon, ds_ref_binning_allscale.lat, explained_variance_u_ref_all_scale, vmin=vmin, vmax=vmax, cmap='RdYlGn')
-    axs[4].set_title('Zonal current [All scale]')
-    axs[4].coastlines(resolution='10m', lw=0.5)
+    p4 = axs[3].pcolormesh(ds_ref_binning_allscale.lon, 
+                           ds_ref_binning_allscale.lat, 
+                           100*(explained_variance_v_study_all_scale-explained_variance_v_ref_all_scale), 
+                           vmin=vmin, 
+                           vmax=vmax, 
+                           cmap='RdBu_r')    
+    #axs[3].set_title('Meridional current [All scale]')
+    axs[3].set_xlim([box_lonlat['lon_min'],box_lonlat['lon_max']])
+    axs[3].set_ylim([box_lonlat['lat_min'],box_lonlat['lat_max']]) 
+    axs[3].coastlines(resolution='10m', lw=0.5)
     # optional add grid lines
     p4.axes.gridlines(color='black', alpha=0., linestyle='--')
     # draw parallels/meridiens and write labels
     gl = p4.axes.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
                           linewidth=0.1, color='black', alpha=0.5, linestyle='--')
-    # adjust labels to taste
-    gl.xlabels_top = False
-    gl.ylabels_right = False
-    gl.xlabels_bottom = False
-    gl.ylocator = mticker.FixedLocator([-90, -60, -30, 0, 30, 60, 90])
-    gl.xformatter = LONGITUDE_FORMATTER
-    gl.yformatter = LATITUDE_FORMATTER
-    gl.xlabel_style = {'size': 10, 'color': 'black'}
-    gl.ylabel_style = {'size': 10, 'color': 'black'}
-    
-    p5 = axs[5].pcolormesh(ds_ref_binning_allscale.lon, ds_ref_binning_allscale.lat, explained_variance_v_ref_all_scale, vmin=vmin, vmax=vmax, cmap='RdYlGn')
-    axs[5].set_title('Meridional current [All scale]')
-    axs[5].coastlines(resolution='10m', lw=0.5)
-    # optional add grid lines
-    p5.axes.gridlines(color='black', alpha=0., linestyle='--')
-    # draw parallels/meridiens and write labels
-    gl = p5.axes.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
-                          linewidth=0.1, color='black', alpha=0.5, linestyle='--')
-    # adjust labels to taste
-    gl.xlabels_top = False
-    gl.ylabels_right = False
-    gl.ylabels_left = False
-    gl.xlabels_bottom = False
-    gl.ylocator = mticker.FixedLocator([-90, -60, -30, 0, 30, 60, 90])
-    gl.xformatter = LONGITUDE_FORMATTER
-    gl.yformatter = LATITUDE_FORMATTER
-    gl.xlabel_style = {'size': 10, 'color': 'black'}
-    gl.ylabel_style = {'size': 10, 'color': 'black'}
-    
-    vmin = -0.2
-    vmax= 0.2
-    p6 = axs[6].pcolormesh(ds_ref_binning_allscale.lon, 
-                           ds_ref_binning_allscale.lat, 
-                           (explained_variance_u_study_all_scale - explained_variance_u_ref_all_scale), 
-                           vmin=vmin, 
-                           vmax=vmax, 
-                           cmap='coolwarm_r')
-    axs[6].set_title('Zonal current [All scale]')
-    axs[6].coastlines(resolution='10m', lw=0.5)
-    # optional add grid lines
-    p6.axes.gridlines(color='black', alpha=0., linestyle='--')
-    # draw parallels/meridiens and write labels
-    gl = p6.axes.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
-                          linewidth=0.1, color='black', alpha=0.5, linestyle='--')
-    # adjust labels to taste
-    gl.xlabels_top = False
-    gl.ylabels_right = False
-    gl.ylocator = mticker.FixedLocator([-90, -60, -30, 0, 30, 60, 90])
-    gl.xformatter = LONGITUDE_FORMATTER
-    gl.yformatter = LATITUDE_FORMATTER
-    gl.xlabel_style = {'size': 10, 'color': 'black'}
-    gl.ylabel_style = {'size': 10, 'color': 'black'}
-    
-    
-    p7 = axs[7].pcolormesh(ds_ref_binning_allscale.lon, 
-                           ds_ref_binning_allscale.lat, 
-                           (explained_variance_v_study_all_scale - explained_variance_v_ref_all_scale), 
-                           vmin=vmin, 
-                           vmax=vmax, 
-                           cmap='coolwarm_r')
-    axs[7].set_title('Meridional current [All scale]')
-    axs[7].coastlines(resolution='10m', lw=0.5)
-    # optional add grid lines
-    p7.axes.gridlines(color='black', alpha=0., linestyle='--')
-    # draw parallels/meridiens and write labels
-    gl = p7.axes.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
-                          linewidth=0.1, color='black', alpha=0.5, linestyle='--')
-    # adjust labels to taste
-    gl.xlabels_top = False
-    gl.ylabels_left = False
-    gl.ylabels_right = False
-    gl.ylocator = mticker.FixedLocator([-90, -60, -30, 0, 30, 60, 90])
-    gl.xformatter = LONGITUDE_FORMATTER
-    gl.yformatter = LATITUDE_FORMATTER
-    gl.xlabel_style = {'size': 10, 'color': 'black'}
-    gl.ylabel_style = {'size': 10, 'color': 'black'}
+    # adjust labels to taste  
+    gl.top_labels = False
+    gl.right_labels = False
+    gl.left_labels = False 
     
     
     
     
     
-    cax = fig.add_axes([0.92, 0.57, 0.02, 0.13])
-    fig.colorbar(p3, cax=cax, orientation='vertical')
+    cax = fig.add_axes([0.92, 0.73, 0.02, 0.13])
+    fig.colorbar(p1, cax=cax, orientation='vertical')
     cax.set_ylabel('Loss(-)/Gain(+)\n Error variance [%]', fontweight='bold')
-    
-    cax = fig.add_axes([0.92, 0.75, 0.02, 0.13])
-    cbar = fig.colorbar(p1, cax=cax, orientation='vertical')
-    cax.set_ylabel('Error variance [m$^2$]', fontweight='bold')
-    
-    cax = fig.add_axes([0.92, 0.22, 0.02, 0.13])
-    fig.colorbar(p7, cax=cax, orientation='vertical')
+     
+    cax = fig.add_axes([0.92, 0.43, 0.02, 0.13])
+    fig.colorbar(p4, cax=cax, orientation='vertical')
     cax.set_ylabel('Loss(-)/Gain(+)\n Explained variance [%]', fontweight='bold')
-    
-    cax = fig.add_axes([0.92, 0.4, 0.02, 0.13])
-    cbar = fig.colorbar(p5, cax=cax, orientation='vertical')
-    cax.set_ylabel('Explained variance', fontweight='bold')
-    
-    fig.subplots_adjust(bottom=0.2, top=0.9, left=0.1, right=0.9,
-                    wspace=0.02, hspace=0.01)
+     
+    fig.subplots_adjust(bottom=0.35, top=0.95, left=0.1, right=0.9,
+                    wspace=0.02, hspace=0.0001)
 
+    method_name = methods[0]+'vs'+methods[1]
+    plt.savefig("../figures/Maps_"+str(method_name)+"_errexplvarcomp_"+region+"_uv.png", bbox_inches='tight')
 
 
 def compare_psd_score(study_filename, ref_filename):
@@ -1940,7 +1830,7 @@ def movie(ds, name_var, method='DUACS', region='Global', dir_output='../results/
         if name_var == 'uv':
             ds = ds.assign(uv=1/2*np.sqrt(ds["ugos"]**2+ds["vgos"]**2))
             ds.uv.attrs = ds.vgos.attrs
-            ds.uv.attrs['long_name'] = 'Absolute geostrophic velocity magnitud'
+            ds.uv.attrs['long_name'] = 'Absolute velocity magnitud'
             ds.uv.attrs['standard_name'] = 'surface_geostrophic_sea_water_velocity_magnitud'
 
         if clim is None:
@@ -2006,3 +1896,80 @@ def movie(ds, name_var, method='DUACS', region='Global', dir_output='../results/
     # Display movie
     if Display: 
         return Video(os.path.join(dir_output, moviename),embed=True)
+
+    
+import os
+import subprocess
+from IPython.display import Video
+
+
+def movie_intercomp(ds_maps_list, methods=['DUACS'], name_var='uv', dir_output='../results/',
+                    region='Agulhas', framerate=24):
+
+    for tt in range(ds_maps_list[0]['time'].size): 
+
+            nmet = np.size(methods)
+
+            method = 'intercomp'
+            ncol = 2
+            colsize = 14
+            gridspec_kw={'width_ratios': [1, 1.25]}
+
+            if nmet == 1: 
+                ncol=1
+                colsize = 7
+                gridspec_kw=None
+                method = methods[0]
+
+            fig, axs = plt.subplots(int(np.ceil(nmet/2)),ncol,figsize=(colsize,int(np.ceil(nmet/2))*4+1), gridspec_kw=gridspec_kw)
+
+            date = str(ds_maps_list[0]['time'][tt].values)[:13]
+            plt.suptitle(date)
+
+            for i_met in range(nmet):
+
+                if nmet==1:
+                    ax0 = axs
+                elif nmet>2: 
+                    ax0 = axs[int(i_met/2),i_met%2]
+                else:  
+                    ax0 = axs[i_met]
+
+                ids = ds_maps_list[i_met].isel(time=tt) 
+                if i_met%2 == 0 and nmet!=1: 
+                    ids[name_var].plot(ax=ax0,cmap='YlGnBu_r',vmin=0,vmax=1.2,add_colorbar=False)
+                else: 
+                    ids[name_var].plot(ax=ax0,cmap='YlGnBu_r',vmin=0,vmax=1.2,add_colorbar=True, extend='max')
+                ax0.set_title(methods[i_met])  
+
+            if nmet%2 !=0 and nmet!=1:
+                i_met += 1
+                axs[int(i_met/2),i_met%2].axis('off')
+
+            fig.savefig(f'{dir_output}/frame_{method}_{region}_{name_var}_{str(tt).zfill(5)}.png',dpi=100)
+
+            plt.close(fig) 
+            
+    moviename = f'movie_{method}_{region}_{name_var}.mp4'
+
+
+    # Create movie
+    sourcefolder = dir_output
+    frame_pattern = f'frame_{method}_{region}_{name_var}_*.png'
+    ffmpeg_options="-c:v libx264 -preset veryslow -crf 15 -pix_fmt yuv420p -loglevel quiet"
+
+    command = 'ffmpeg -f image2 -r %i -pattern_type glob -i %s -y %s -r %i %s' % (
+            framerate,
+            os.path.join(sourcefolder, frame_pattern),
+            ffmpeg_options,
+            framerate,
+            os.path.join(dir_output, moviename),
+        )
+    #print(command)
+
+    _ = subprocess.run(command.split(' '),stdout=subprocess.DEVNULL)
+
+
+    os.system(f'rm {os.path.join(sourcefolder, frame_pattern)}')
+
+    return Video(os.path.join(dir_output, moviename),embed=True)

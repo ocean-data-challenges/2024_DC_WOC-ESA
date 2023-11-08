@@ -148,6 +148,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
  
    4_dc_agulhas/dc_agulhas_details.md
    4_dc_agulhas/dc_agulhas_overalleval.md
+   4_dc_agulhas/dc_agulhas_duacs.md
    4_dc_agulhas/dc_agulhas_drifterproduct.md
    4_dc_agulhas/dc_agulhas_bfnqgproduct.md
    4_dc_agulhas/dc_agulhas_dopplerproduct.md
