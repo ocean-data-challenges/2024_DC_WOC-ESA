@@ -17,13 +17,18 @@
 
 ## Dynamical specificities: 
 
-**Strongly geostrophic region.**
+Strongly geostrophic region. 
     
 ## WOC products: 
 
 - Drifter data-driven currents, 
 - BFN-QG geostrophic currents, 
 - Doppler currents
+
+
+## Other products: 
+
+- DUACS
 
 <br>
  

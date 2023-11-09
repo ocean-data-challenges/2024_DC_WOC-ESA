@@ -1810,7 +1810,7 @@ def compare_psd_score_png(study_filename, ref_filename):
     
 
 def movie(ds, name_var, method='DUACS', region='Global', dir_output='../results/',dim_name=['time','latitude','longitude'],
-          framerate=24,Display=True,clim=None,cmap='Spectral', newmovie=False):
+          framerate=24,Display=True,clim=None,cmap='Spectral', newmovie=False, figsize=(8,6)):
 
     # For memory leak when saving multiple png files...
     import matplotlib
@@ -1847,7 +1847,7 @@ def movie(ds, name_var, method='DUACS', region='Global', dir_output='../results/
             if tt==0:
                 return
 
-            fig = plt.figure(figsize=(8,6))
+            fig = plt.figure(figsize=figsize)
             gs = gridspec.GridSpec(1,1,width_ratios=(1,))
 
             date = str(ds[dim_name[0]][tt].values)[:13]
@@ -1909,20 +1909,18 @@ from IPython.display import Video
 
 
 def movie_intercomp(ds_maps_list, methods=['DUACS'], name_var='uv', dir_output='../results/',
-                    region='Agulhas', framerate=24):
+                    region='Agulhas', framerate=24, colsize = 14):
 
     for tt in range(ds_maps_list[0]['time'].size): 
 
             nmet = np.size(methods)
 
             method = 'intercomp'
-            ncol = 2
-            colsize = 14
+            ncol = 2 
             gridspec_kw={'width_ratios': [1, 1.25]}
 
             if nmet == 1: 
-                ncol=1
-                colsize = 7
+                ncol=1 
                 gridspec_kw=None
                 method = methods[0]
 

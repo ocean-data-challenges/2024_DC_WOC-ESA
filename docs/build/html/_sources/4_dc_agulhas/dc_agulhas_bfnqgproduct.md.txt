@@ -7,19 +7,14 @@
 <br>  
 
 ## Current magnitud movie 
-
+ 
 <center>
 <video controls width="600">
-  <source src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/1303fb3f-8d34-4d4a-93bb-27dd91919cfb" type="video/mp4" /> 
-  
+  <source src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/1b609f81-bf4a-4641-a146-556cce3c332b" type="video/mp4" />   
 </video>
-</center>
+</center> 
 
-<!---
-<video controls width="400">
-  <source src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/5c124187-ecac-4f88-85b5-68ba0ee88a2c" type="video/mp4" /> 
-</video>
--->
+
 
 <br>
 

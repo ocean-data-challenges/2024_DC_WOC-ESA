@@ -96,7 +96,8 @@
 <p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_duacs.html">DUACS geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_dopplerproduct.html">WOC - Doppler currents</a></li>
@@ -164,7 +165,7 @@
 <li><p>for sea level anomaly evaluation, a sea level anomaly variable <code class="docutils literal notranslate"><span class="pre">sla</span></code>.</p></li>
 <li><p>for currents evaluation, a meridional and a zonal currents variable <code class="docutils literal notranslate"><span class="pre">ugos</span></code> and <code class="docutils literal notranslate"><span class="pre">vgos</span></code>.</p></li>
 </ul>
-<p>Note that some formatting can be done using xarray within the jupyter notebooks. For instance, you can change a variable’s name simply with <code class="docutils literal notranslate"><span class="pre">ds</span> <span class="pre">=</span> <span class="pre">ds.rename_var({'my_sla':'sla'})</span></code>.</p>
+<p>Note that some formatting can be done using xarray within the jupyter notebooks. For instance, you can change a variable’s name simply with <code class="docutils literal notranslate"><span class="pre">ds</span> <span class="pre">=</span> <span class="pre">ds.rename_var({'u':'ugos','v':'vgos'})</span></code>.</p>
 <section id="currents-maps-format">
 <h3>Currents maps format<a class="headerlink" href="#currents-maps-format" title="Permalink to this headline"></a></h3>
 <p><img alt="Currents_Format" src="../_images/Maps_format_Currents.png" /></p>

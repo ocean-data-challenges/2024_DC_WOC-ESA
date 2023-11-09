@@ -70,7 +70,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
     * WOC products: Merged SSH/SST currents, Drifter data-driven currents, BFN-QG geostrophic currents 
 
 * `Gulf Stream <https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html>`_ 
-    * Area: [75°W, 45°W, 20°N, 50°N]
+    * Area: [80°W, 10°W, 25°N, 50°N]
     * Dynamical specificities: High variability region with mixed geostrophic and ageostrophic dynamics. 
     * WOC products: Merged SSH/SST currents, Drifter data-driven currents, BFN-QG geostrophic currents, Doppler currents
     
@@ -134,6 +134,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
  
    3_dc_gulfstream/dc_gulfstream_details.md
    3_dc_gulfstream/dc_gulfstream_overalleval.md 
+   3_dc_gulfstream/dc_gulfstream_duacs.md 
    3_dc_gulfstream/dc_gulfstream_sshsstproduct.md 
    3_dc_gulfstream/dc_gulfstream_drifterproduct.md 
    3_dc_gulfstream/dc_gulfstream_bfnqgproduct.md 
