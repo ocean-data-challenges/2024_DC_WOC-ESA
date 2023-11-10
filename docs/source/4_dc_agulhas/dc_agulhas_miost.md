@@ -21,7 +21,7 @@
 
 <center>
     <div id="Maps_DUACS_errvar_Agulhas_uv">
-        <img src="../_static/Maps_DUACS_errvar_Agulhas_uv.png" width="800">
+        <img src="../gallery/Maps_DUACS_errvar_Agulhas_uv.png" width="800">
     </div>
 </center>
 
