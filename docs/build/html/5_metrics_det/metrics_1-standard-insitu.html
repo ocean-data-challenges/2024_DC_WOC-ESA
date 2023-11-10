@@ -17,6 +17,8 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -66,6 +68,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_sshsstproduct.html">WOC - Merged SSH/SST currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
@@ -75,7 +78,8 @@
 <p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_duacs.html">DUACS geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_dopplerproduct.html">WOC - Doppler currents</a></li>
@@ -140,14 +144,31 @@
 <br>
 <section id="eulerian-rms">
 <h2>Eulerian RMS<a class="headerlink" href="#eulerian-rms" title="Permalink to this headline"></a></h2>
+<p>The Eulerian RMS (Root Mean Square) is a metric used to assess the difference between observed and reconstructed currents. It calculates the root of the sum of squared differences between the eastward and northward velocities of the drifter trajectory and the interpolated current at the same position.</p>
+<p>Let’s call <span class="math notranslate nohighlight">\((u_d(p), v_d(p))\)</span> the eastward and northward velocity derived from the drifter trajectory at the position p. The current to be compared is interpolated in time and space at position p and is called <span class="math notranslate nohighlight">\((u(p), v(p))\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[RMS_u = \sqrt{\sum_p{(u(p) -u_d(p))^2}}\]</div>
+<div class="math notranslate nohighlight">
+\[RMS_v = \sqrt{\sum_p{(v(p) -v_d(p))^2}}\]</div>
+<p>A lower RMS value indicates better agreement between the observed and model currents.</p>
 <br>
 </section>
 <section id="lagrangian-cumulative-distance">
 <h2>Lagrangian Cumulative Distance<a class="headerlink" href="#lagrangian-cumulative-distance" title="Permalink to this headline"></a></h2>
+<p>The Lagrangian Cumulative Distance measures the cumulative separation between real drifters and synthetic drifters over time. For each drifter and each day, an ensemble of particles around the drifter position is released and advected with the velocity field to be validated.</p>
+<p>For each drifter, for each day, an ensemble of particles around the drifter position are seeded (1 particle every km in a 12.5km radius). These particles are then advected with the velocity field to be validated and compared with the real drifter trajectory.</p>
+<p>For each particle <span class="math notranslate nohighlight">\(p\)</span>, we compute the normalized cumulative separation distance between the real drifter and the synthetic drifter from each product <span class="math notranslate nohighlight">\(s_p\)</span> as defined in Liu and Weisberg (2011):</p>
+<div class="math notranslate nohighlight">
+\[s_p[T] = \frac{\sum_{i=t0}^{T} d_p [t]}{\sum_{i=t0}^{T} length[t]} \]</div>
+<p>with <span class="math notranslate nohighlight">\(d_p[t]\)</span> the Euclidian distance between the virtual particle <span class="math notranslate nohighlight">\(p\)</span> and the in situ drifter positions and <span class="math notranslate nohighlight">\(length\)</span> the length of the drifter trajectory after a time t of advection from the drifter initial position at time <span class="math notranslate nohighlight">\(t0\)</span>. <span class="math notranslate nohighlight">\(s_p\)</span> are the scores computed for every day T within the period of advection.</p>
+<p>This metric quantifies how well the reconstructed currents can reproduce the drifter’s trajectory over time, providing insights into long-term accuracy.</p>
 <br>
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Liu, Y., &amp; Weisberg, R. H. (2011). Evaluation of trajectory modeling in different dynamic regions using normalized cumulative Lagrangian separation. Journal of Geophysical Research: Oceans, 116(C9).</p></li>
+</ul>
 </section>
 </section>
 

@@ -3,6 +3,10 @@
 <br>
 
  
+## Period 
+
+- **Year 2019** 
+ 
 ## Area  
 
 - Longitude minimum: 80°W
@@ -29,6 +33,7 @@ High variability region with mixed geostrophic and ageostrophic dynamics.
 ## Other products: 
 
 - DUACS
+- MIOST
 - 4DVarQG (Le Guillou et al., 2021)
 
 <br>

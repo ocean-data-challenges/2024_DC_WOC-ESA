@@ -66,6 +66,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_sshsstproduct.html">WOC - Merged SSH/SST currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
@@ -75,7 +76,8 @@
 <p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_duacs.html">DUACS geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_dopplerproduct.html">WOC - Doppler currents</a></li>
@@ -140,6 +142,12 @@
 <br>
 <section id="current-direction-using-fronts">
 <h2>Current direction using Fronts<a class="headerlink" href="#current-direction-using-fronts" title="Permalink to this headline"></a></h2>
+<p>The first step of the algorithm is to compute the flow across the fronts for each velocity product to be validated.
+The fronts used in this analysis are the one computed within the WOC project from the Microwave and SEVIRI SST observation. The fronts are smoothed using a spline filter before the analyses.</p>
+<p>Let’s call , the zonal and meridional component of the velocity product k, and lon, lat the coordinates that correspond to the front position.
+For each point P that belongs to a front, for each velocity product k, we compute the flow across the velocity:</p>
+<p>with</p>
+<p>The smaller the flow, the more accurate is the velocity as we assum e here that the velocity is transporting the tracer.</p>
 </section>
 <section id="eddy-position-and-radius-using-eddies-detected-using-sst">
 <h2>Eddy position and radius using Eddies detected using SST<a class="headerlink" href="#eddy-position-and-radius-using-eddies-detected-using-sst" title="Permalink to this headline"></a></h2>
