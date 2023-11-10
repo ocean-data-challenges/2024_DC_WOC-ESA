@@ -21,7 +21,7 @@
 
 <center>
     <div id="Maps_DUACS_errvar_Agulhas_uv">
-        <img src="../gallery/Maps_DUACS_errvar_Agulhas_uv.png" width="800">
+        <img src="/Users/sammymetref/Documents/DataChallenges/2024_DC_WOC-ESA/docs/build/html/gallery/Maps_DUACS_errvar_Agulhas_uv.png" width="800">
     </div>
 </center>
 
