@@ -32,16 +32,12 @@
 
 | ![DUACS LDC h1](../figures/deviation_maps_DUACS_h1.png) | ![DUACS LDC h2](../figures/deviation_maps_DUACS_h2.png) | ![DUACS LDC h3](../figures/deviation_maps_DUACS_h3.png) | ![DUACS LDC h4](../figures/deviation_maps_DUACS_h4.png) | ![DUACS LDC h5](../figures/deviation_maps_DUACS_h5.png) |
 |--|--|--|--|--|
+| ![MIOST LDC h1](../figures/deviation_maps_MIOST_Agulhas_h1.png) | ![MIOST LDC h2](../figures/deviation_maps_MIOST_Agulhas_h2.png) | ![MIOST LDC h3](../figures/deviation_maps_MIOST_Agulhas_h3.png) | ![MIOST LDC h4](../figures/deviation_maps_MIOST_Agulhas_h4.png) | ![MIOST LDC h5](../figures/deviation_maps_MIOST_Agulhas_h5.png) |
 | ![BFN-QG LDC h1](../figures/deviation_maps_BFN-QG_h1.png) | ![BFN-QG LDC h2](../figures/deviation_maps_BFN-QG_h2.png) | ![BFN-QG LDC h3](../figures/deviation_maps_BFN-QG_h3.png) | ![BFN-QG LDC h4](../figures/deviation_maps_BFN-QG_h4.png) | ![BFN-QG LDC h5](../figures/deviation_maps_BFN-QG_h5.png) |
-|--|--|--|--|--|
+
  
 
-
-<center>
-    <div id="deviation_horizon_allbasins">
-        <img src="../gallery/deviation_horizon_allbasins.png" width="500">
-    </div>
-</center>
-
+![deviation_horizon_Agulhas](../figures/deviation_horizon_Agulhas.png)  
+ 
 <br>  
   

@@ -695,7 +695,7 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
     vmin = 0.
     vmax= 0.1
     p0 = axs[0].pcolormesh(ds_binning_allscale.lon, ds_binning_allscale.lat, ds_binning_allscale.variance_mapping_err_u, vmin=vmin, vmax=vmax, cmap='Reds')
-    axs[0].set_title('Zonal current [All scale]')
+    axs[0].set_title(method_name+': Zonal current [All scale]')
     axs[0].coastlines(resolution='10m', lw=0.5)
     # optional add grid lines
     p0.axes.gridlines(color='black', alpha=0., linestyle='--')
@@ -704,12 +704,11 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
                           linewidth=0.1, color='black', alpha=0.5, linestyle='--')
     # adjust labels to taste 
     gl.top_labels = False
-    gl.right_labels = False
-    gl.bottom_labels = False
+    gl.right_labels = False 
      
     
     p1 = axs[1].pcolormesh(ds_binning_allscale.lon, ds_binning_allscale.lat, ds_binning_allscale.variance_mapping_err_v, vmin=vmin, vmax=vmax, cmap='Reds')
-    axs[1].set_title('Meridional current [All scale]')
+    axs[1].set_title(method_name+': Meridional current [All scale]')
     axs[1].coastlines(resolution='10m', lw=0.5)
     # optional add grid lines
     p1.axes.gridlines(color='black', alpha=0., linestyle='--')
@@ -718,18 +717,17 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
                           linewidth=0.1, color='black', alpha=0.5, linestyle='--')
     # adjust labels to taste 
     gl.top_labels = False
-    gl.right_labels = False
-    gl.bottom_labels = False
+    gl.right_labels = False 
     gl.left_labels = False
     
     cax = fig.add_axes([0.92, 0.42, 0.02, 0.25])
     cbar = fig.colorbar(p1, cax=cax, orientation='vertical')
     cax.set_ylabel('Error variance [m$^2$.s$^{-2}$]', fontweight='bold')
     
-    plt.savefig("../figures/Maps_"+str(method_name)+"_errvar_"+region+"_uv.png", bbox_inches='tight')
-    
     fig.subplots_adjust(bottom=0.2, top=0.9, left=0.1, right=0.9,
                     wspace=0.02, hspace=0.01) 
+    plt.savefig("../figures/Maps_"+str(method_name)+"_errvar_"+region+"_uv.png", bbox_inches='tight')
+    
     
     fig, axs = plt.subplots(nrows=1,ncols=2,
                         subplot_kw={'projection': ccrs.PlateCarree()},
@@ -741,6 +739,7 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
     vmax= 1
     p2 = axs[0].pcolormesh(ds_binning_allscale.lon, ds_binning_allscale.lat, (1 - ds_binning_allscale['variance_mapping_err_u']/ds_binning_allscale['variance_drifter_u']), vmin=vmin, vmax=vmax, cmap='RdYlGn')
 
+    axs[0].set_title(method_name+': Zonal current [All scale]')
     axs[0].coastlines(resolution='10m', lw=0.5)
     # optional add grid lines
     p2.axes.gridlines(color='black', alpha=0., linestyle='--')
@@ -754,6 +753,7 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
     
     p3 = axs[1].pcolormesh(ds_binning_allscale.lon, ds_binning_allscale.lat, (1 - ds_binning_allscale['variance_mapping_err_v']/ds_binning_allscale['variance_drifter_v']), vmin=vmin, vmax=vmax, cmap='RdYlGn')
     axs[1].coastlines(resolution='10m', lw=0.5)
+    axs[1].set_title(method_name+': Meridional current [All scale]')
     # optional add grid lines
     p3.axes.gridlines(color='black', alpha=0., linestyle='--')
     # draw parallels/meridiens and write labels

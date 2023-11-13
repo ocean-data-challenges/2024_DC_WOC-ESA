@@ -2,6 +2,10 @@
 
 <br>
 
+Multi-scale interpolation (MIOST) combines ocean altimetry data along the track into continuous grids in time and space. Like the DUACS mapping system, it is based on a linear optimal interpolation scheme, with a different level of definition of the covariance functions. For this experimental product, only covariance functions representative of mesoscale geostrophic variability have been taken into account.
+
+<br>
+
 ## Current magnitud movie 
    
  
@@ -16,31 +20,19 @@
 
 <br>
 
-## Zonal and Meridional current error variance
+## Zonal and Meridional current error and explained variance
  
 
-![Maps_DUACS_errvar_Agulhas_uv](../figures/Maps_DUACS_errvar_Agulhas_uv.png) 
+|![Maps_DUACS_errvar_Agulhas_uv](../figures/Maps_MIOST_errvar_Agulhas_uv.png) | ![Maps_DUACS_explvar_Agulhas_uv](../figures/Maps_MIOST_explvar_Agulhas_uv.png)  |
+|----|----|
 
-<br>
-
-<br>
-
-## Zonal and Meridional current explained variance
- 
-
-<center>
-    <div id="Maps_DUACS_explvar_Agulhas_uv">
-        <img src="../gallery/Maps_DUACS_explvar_Agulhas_uv.png" width="800">
-    </div>
-</center>
-
-<br>
+<br> 
 
 <br>
 
 ## Lagrangian cumulative distance 
 
-| ![DUACS LDC h1](../figures/deviation_maps_DUACS_h1.png) | ![DUACS LDC h2](../figures/deviation_maps_DUACS_h2.png) | ![DUACS LDC h3](../figures/deviation_maps_DUACS_h3.png) | ![DUACS LDC h4](../figures/deviation_maps_DUACS_h4.png) | ![DUACS LDC h5](../figures/deviation_maps_DUACS_h5.png) |
+| ![MIOST LDC h1](../figures/deviation_maps_MIOST_Agulhas_h1.png) | ![MIOST LDC h2](../figures/deviation_maps_MIOST_Agulhas_h2.png) | ![MIOST LDC h3](../figures/deviation_maps_MIOST_Agulhas_h3.png) | ![MIOST LDC h4](../figures/deviation_maps_MIOST_Agulhas_h4.png) | ![MIOST LDC h5](../figures/deviation_maps_MIOST_Agulhas_h5.png) |
 |--|--|--|--|--|
 
 <br>  

@@ -23,25 +23,10 @@ For over 25 years, satellite altimetry has provided invaluable information about
 ## Zonal and Meridional current error variance
  
 
-<center>
-    <div id="Maps_BFNQG_errvar_Agulhas_uv">
-        <img src="../gallery/Maps_BFNQG_errvar_Agulhas_uv.png" width="800">
-    </div>
-</center>
+|![Maps_BFNQG_errvar_Agulhas_uv](../figures/Maps_BFNQG_errvar_Agulhas_uv.png)  | ![Maps_BFNQG_explvar_Agulhas_uv](../figures/Maps_BFNQG_explvar_Agulhas_uv.png) |
+|----|----|
 
-<br>
-
-<br>
-
-## Zonal and Meridional current explained variance 
-
-<center>
-    <div id="Maps_BFNQG_explvar_Agulhas_uv">
-        <img src="../gallery/Maps_BFNQG_explvar_Agulhas_uv.png" width="800">
-    </div>
-</center>
-
-<br>
+<br> 
 
 <br>
 

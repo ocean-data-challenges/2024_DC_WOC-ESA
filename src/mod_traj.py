@@ -463,7 +463,8 @@ def compute_deviation(dict1, Nt, dt_hr, horizon_days,lon_out=np.arange(0, 360, 1
 
 
 
-def plot_traj_deviation_maps(lon_g, lat_g, rmse_norm, dt_hr=24, horizon_days=[1,2,3],vmax_h = [40,80,120], method_name='DUACS'):
+def plot_traj_deviation_maps(lon_g, lat_g, rmse_norm, dt_hr=24, horizon_days=[1,2,3],
+                             vmax_h = [40,80,120], method_name='DUACS', region='global'):
     """
     Plot deviation maps of drifter trajectories and save the maps.
 
@@ -531,7 +532,7 @@ def plot_traj_deviation_maps(lon_g, lat_g, rmse_norm, dt_hr=24, horizon_days=[1,
         cbar.ax.tick_params(labelsize=15)  
 
         
-        plt.savefig("../figures/deviation_maps_"+str(method_name)+"_h"+str(int(h))+".png", bbox_inches='tight')
+        plt.savefig("../figures/deviation_maps_"+str(method_name)+"_"+region+"_h"+str(int(h))+".png", bbox_inches='tight')
         
         plt.show()
         
