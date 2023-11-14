@@ -7,8 +7,40 @@ This dataset provides a level 4 (L4) gap free reconstruction of 2D ocean surface
 **More information on the SSH-SST current products [here](https://www.worldoceancirculation.org/Products#/metadata/e84fe404-1ed3-4e6f-9b72-f75cd8eb7f7d) !**
  
 
+<br>
+ 
+## Current magnitud movie 
+   
+ 
+<center>
+<video controls width="600">
+  <source src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/528392fb-f7ef-4c27-a0ce-1d0268431999" type="video/mp4" />  
+</video>
+</center>
+ 
+
+<br>
+ 
+
+<br>
+
+## Zonal and Meridional current error and explained variance
+ 
+
+|![Maps_SSHSSTprod_errvar_Gulfstream_uv](../figures/Maps_SSHSSTprod_errvar_Gulfstream_uv.png)  | 
+|![Maps_SSHSSTprod_explvar_Gulfstream_uv](../figures/Maps_SSHSSTprod_explvar_Gulfstream_uv.png)   |
+|----|
+
+<br>
+ 
+
+
+<br>
+
+## Lagrangian cumulative distance 
+
+| ![SSHSSTprod LDC Gulfstream h1](../figures/deviation_maps_SSHSSTprod_Gulfstream_h1.png) | ![SSHSSTprod LDC Gulfstream h2](../figures/deviation_maps_SSHSSTprod_Gulfstream_h2.png) | ![SSHSSTprod LDC Gulfstream h3](../figures/deviation_maps_SSHSSTprod_Gulfstream_h3.png) | ![SSHSSTprod LDC Gulfstream h4](../figures/deviation_maps_SSHSSTprod_Gulfstream_h4.png) | ![SSHSSTprod LDC Gulfstream h5](../figures/deviation_maps_SSHSSTprod_Gulfstream_h5.png) |
+|--|--|--|--|--|
+
 <br>  
- 
- 
- 
  

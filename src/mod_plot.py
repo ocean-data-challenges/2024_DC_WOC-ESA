@@ -676,7 +676,7 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
         lon_max = box_lonlat['lon_max']
         lat_min = box_lonlat['lat_min']
         lat_max = box_lonlat['lat_max'] 
-        ds_binning_allscale = regional_zoom(ds_binning_allscale, [lon_min,lon_max], [lat_min,lat_max], namelon='lon', namelat='lat', change_lon=True)
+        ds_binning_allscale = regional_zoom(ds_binning_allscale, [lon_min,lon_max], [lat_min,lat_max], namelon='lon', namelat='lat', change_lon=False)
     
     
     
@@ -1472,7 +1472,7 @@ def compare_stat_score_map_png(study_filename, ref_filename):
     
     
     
-def compare_stat_score_map_uv_png(study_filename, ref_filename,box_lonlat, methods = None, region='global'):
+def compare_stat_score_map_uv_png(study_filename, ref_filename,box_lonlat, methods = None, region='global',figsize=(11,15)):
     """
     Generate PNG plots comparing statistical score maps for zonal and meridional currents between study and reference datasets.
 
@@ -1518,7 +1518,7 @@ def compare_stat_score_map_uv_png(study_filename, ref_filename,box_lonlat, metho
     
     fig, axs = plt.subplots(nrows=2,ncols=2,
                         subplot_kw={'projection': ccrs.PlateCarree()},
-                        figsize=(11,15))
+                        figsize=figsize)
     
     if methods is not None: 
         plt.suptitle(methods[0]+' vs. '+methods[1],fontsize=18)
@@ -1924,7 +1924,7 @@ def movie_intercomp(ds_maps_list, methods=['DUACS'], name_var='uv', dir_output='
                 gridspec_kw=None
                 method = methods[0]
 
-            fig, axs = plt.subplots(int(np.ceil(nmet/2)),ncol,figsize=(colsize,int(np.ceil(nmet/2))*4+1), gridspec_kw=gridspec_kw)
+            fig, axs = plt.subplots(int(np.ceil(nmet/2)),ncol,figsize=(colsize,int(np.ceil(nmet/2))*4+2), gridspec_kw=gridspec_kw)
 
             date = str(ds_maps_list[0]['time'][tt].values)[:13]
             plt.suptitle(date)

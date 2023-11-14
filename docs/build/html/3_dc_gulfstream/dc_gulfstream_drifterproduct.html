@@ -65,10 +65,15 @@
 <p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_details.html">Gulf Stream setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_overalleval.html">Overall evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_overalleval.html">Overall comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_duacs.html">DUACS geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_sshsstproduct.html">WOC - Merged SSH/SST currents</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">WOC - Drifter data-driven currents</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">WOC - Drifter data-driven currents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#current-magnitud-movie">Current magnitud movie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zonal-and-meridional-current-error-and-explained-variance">Zonal and Meridional current error and explained variance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lagrangian-cumulative-distance">Lagrangian cumulative distance</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_dopplerproduct.html">WOC - Doppler currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_otherproducts.html">Other products</a></li>
@@ -78,6 +83,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_duacs.html">DUACS geostrophic currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_miost.html">MIOST geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_dopplerproduct.html">WOC - Doppler currents</a></li>
@@ -136,7 +142,43 @@
 <br>
 <p>This dataset provides Level 4 total current including geostrophy and a data-driven approach for Ekman and near-inertial current, based on a convolution between drifter observation and wind history, to fit empirically a complex and time-lag dependant transfert function between ERA5 wind stress and current.</p>
 <p><strong>More information on the Drifter data-driven products <a class="reference external" href="https://www.worldoceancirculation.org/Products#/metadata/cfa65be8-b200-4243-aba0-843c363001d9">here</a> !</strong></p>
+<br>
+<section id="current-magnitud-movie">
+<h2>Current magnitud movie<a class="headerlink" href="#current-magnitud-movie" title="Permalink to this headline"></a></h2>
+<center>
+<video controls width="600">
+  <source src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/7c0adafa-76a2-4cf8-8219-504a6f4211ec" type="video/mp4" />  
+</video>
+</center>
+<br>
+<br>
+</section>
+<section id="zonal-and-meridional-current-error-and-explained-variance">
+<h2>Zonal and Meridional current error and explained variance<a class="headerlink" href="#zonal-and-meridional-current-error-and-explained-variance" title="Permalink to this headline"></a></h2>
+<p>|<img alt="Maps_SSHSSTprod_errvar_Gulfstream_uv" src="../_images/Maps_DDDcurr_errvar_Gulfstream_uv.png" />  |</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><img alt="Maps_SSHSSTprod_explvar_Gulfstream_uv" src="../_images/Maps_DDDcurr_explvar_Gulfstream_uv.png" /></p></th>
+</tr>
+</thead>
+</table>
+<br>
+<br>
+</section>
+<section id="lagrangian-cumulative-distance">
+<h2>Lagrangian cumulative distance<a class="headerlink" href="#lagrangian-cumulative-distance" title="Permalink to this headline"></a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><img alt="DDDcurr LDC Gulfstream h1" src="../_images/deviation_maps_DDDcurr_Gulfstream_h1.png" /></p></th>
+<th class="head"><p><img alt="DDDcurr LDC Gulfstream h2" src="../_images/deviation_maps_DDDcurr_Gulfstream_h2.png" /></p></th>
+<th class="head"><p><img alt="DDDcurr LDC Gulfstream h3" src="../_images/deviation_maps_DDDcurr_Gulfstream_h3.png" /></p></th>
+<th class="head"><p><img alt="DDDcurr LDC Gulfstream h4" src="../_images/deviation_maps_DDDcurr_Gulfstream_h4.png" /></p></th>
+<th class="head"><p><img alt="DDDcurr LDC Gulfstream h5" src="../_images/deviation_maps_DDDcurr_Gulfstream_h5.png" /></p></th>
+</tr>
+</thead>
+</table>
 <br>  
+</section>
 </section>
 
 

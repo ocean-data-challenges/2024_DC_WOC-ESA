@@ -17,4 +17,27 @@ Altimeter satellite gridded Sea Level Anomalies (SLA) computed with respect to a
  
 
 <br>
+ 
 
+<br>
+
+## Zonal and Meridional current error and explained variance
+ 
+
+|![Maps_DUACS_errvar_Agulhas_uv](../figures/Maps_DUACS_errvar_Gulfstream_uv.png)  | 
+|![Maps_DUACS_explvar_Agulhas_uv](../figures/Maps_DUACS_explvar_Gulfstream_uv.png)   |
+|----|
+
+<br>
+ 
+
+
+<br>
+
+## Lagrangian cumulative distance 
+
+| ![DUACS LDC Gulfstream h1](../figures/deviation_maps_DUACS_Gulfstream_h1.png) | ![DUACS LDC Gulfstream h2](../figures/deviation_maps_DUACS_Gulfstream_h2.png) | ![DUACS LDC Gulfstream h3](../figures/deviation_maps_DUACS_Gulfstream_h3.png) | ![DUACS LDC Gulfstream h4](../figures/deviation_maps_DUACS_Gulfstream_h4.png) | ![DUACS LDC Gulfstream h5](../figures/deviation_maps_DUACS_Gulfstream_h5.png) |
+|--|--|--|--|--|
+
+<br>  
+  

@@ -123,8 +123,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
    2_dc_medsea/dc_medsea_overalleval.md
    2_dc_medsea/dc_medsea_sshsstproduct.md 
    2_dc_medsea/dc_medsea_drifterproduct.md 
-   2_dc_medsea/dc_medsea_bfnqgproduct.md 
-   2_dc_medsea/dc_medsea_dopplerproduct.md 
+   2_dc_medsea/dc_medsea_bfnqgproduct.md  
    2_dc_medsea/dc_medsea_otherproducts.md 
 
 .. toctree::
@@ -137,8 +136,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
    3_dc_gulfstream/dc_gulfstream_duacs.md 
    3_dc_gulfstream/dc_gulfstream_sshsstproduct.md 
    3_dc_gulfstream/dc_gulfstream_drifterproduct.md 
-   3_dc_gulfstream/dc_gulfstream_bfnqgproduct.md 
-   3_dc_gulfstream/dc_gulfstream_dopplerproduct.md 
+   3_dc_gulfstream/dc_gulfstream_bfnqgproduct.md  
    3_dc_gulfstream/dc_gulfstream_otherproducts.md 
  
 
@@ -152,8 +150,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
    4_dc_agulhas/dc_agulhas_duacs.md
    4_dc_agulhas/dc_agulhas_miost.md
    4_dc_agulhas/dc_agulhas_drifterproduct.md
-   4_dc_agulhas/dc_agulhas_bfnqgproduct.md
-   4_dc_agulhas/dc_agulhas_dopplerproduct.md
+   4_dc_agulhas/dc_agulhas_bfnqgproduct.md 
    4_dc_agulhas/dc_agulhas_otherproducts.md
    
 .. toctree::
