@@ -21,15 +21,14 @@
 
 <center>
     <div id="Maps_DUACSvsBFNQG_errexplvarcomp_Agulhas_uv">
-        <img src="Maps_DUACSvsSSHSSTprod_errexplvarcomp_Gulfstream_uv.png" width="400">
-        <img src="Maps_DUACSvsDDDcurr_errexplvarcomp_Gulfstream_uv.png" width="400">
+        <img src="../_static/Maps_DUACSvsSSHSSTprod_errexplvarcomp_Gulfstream_uv.png" width="400">
+        <img src="../_static/Maps_DUACSvsDDDcurr_errexplvarcomp_Gulfstream_uv.png" width="400">
     </div> 
 </center>
 
 <center> 
     <div id="Maps_DUACSvsBFNQG_errexplvarcomp_Agulhas_uv">
-        <img src="../_static/Maps_DDDcurrvsSSHSSTprod_errexplvarcomp_Gulfstream_uv.png" width="400"> 
-        <img src="../_static/Maps_DDDcurrvsSSHSSTprod_errexplvarcomp_Gulfstream_uv.png" width="400"> 
+        <img src="../_static/Maps_DDDcurrvsSSHSSTprod_errexplvarcomp_Gulfstream_uv.png" width="400">  
     </div>
 </center>
 

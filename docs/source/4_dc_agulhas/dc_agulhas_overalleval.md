@@ -21,7 +21,7 @@
 
 <center>
     <div id="Maps_DUACSvsBFNQG_errexplvarcomp_Agulhas_uv">
-        <img src="../gallery/Maps_DUACSvsBFNQG_errexplvarcomp_Agulhas_uv.png" width="800">
+        <img src="../_static/Maps_DUACSvsBFNQG_errexplvarcomp_Agulhas_uv.png" width="800">
     </div>
 </center>
 
