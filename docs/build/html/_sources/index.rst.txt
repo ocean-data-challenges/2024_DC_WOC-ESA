@@ -85,7 +85,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
 
     <embed> 
         <center>
-        <div id="image_map"> <map name="map_example"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_details.html" target="_blank" alt="North Sea" shape=poly coords="335,295, 335,270, 370,270, 370,295"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html" target="_blank" alt="Gulf Stream" shape=poly coords="160,150, 160,110, 210,110, 210,150"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_details.html" target="_blank" alt="Mediterranean Sea" shape=poly coords="300,155, 300,115, 345,115, 345,155">  <img src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/4be7d3ae-ea45-4b5c-b049-06ef985024c0" title="Gulf Stream" alt="image map example" width=600 height=350 usemap="#map_example"></map> </div> </center>
+        <div id="image_map"> <map name="map_example"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_details.html" target="_blank" alt="North Sea" shape=poly coords="335,295, 335,270, 370,270, 370,295"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html" target="_blank" alt="Gulf Stream" shape=poly coords="160,175, 160,110, 290,110, 290,175"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_details.html" target="_blank" alt="Mediterranean Sea" shape=poly coords="300,155, 300,115, 345,115, 345,155">  <img src="_static/dc_2024_WOC-ESA_map2_regions.png" title="Gulf Stream" alt="image map example" width=600 height=350 usemap="#map_example"></map> </div> </center>
 
     </embed>
 
@@ -123,8 +123,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
    2_dc_medsea/dc_medsea_overalleval.md
    2_dc_medsea/dc_medsea_sshsstproduct.md 
    2_dc_medsea/dc_medsea_drifterproduct.md 
-   2_dc_medsea/dc_medsea_bfnqgproduct.md  
-   2_dc_medsea/dc_medsea_otherproducts.md 
+   2_dc_medsea/dc_medsea_bfnqgproduct.md   
 
 .. toctree::
    :hidden:
@@ -134,10 +133,10 @@ The WOC data challenges cover three geographical regions, with different dynamic
    3_dc_gulfstream/dc_gulfstream_details.md
    3_dc_gulfstream/dc_gulfstream_overalleval.md 
    3_dc_gulfstream/dc_gulfstream_duacs.md 
+   3_dc_gulfstream/dc_gulfstream_miost.md 
    3_dc_gulfstream/dc_gulfstream_sshsstproduct.md 
    3_dc_gulfstream/dc_gulfstream_drifterproduct.md 
-   3_dc_gulfstream/dc_gulfstream_bfnqgproduct.md  
-   3_dc_gulfstream/dc_gulfstream_otherproducts.md 
+   3_dc_gulfstream/dc_gulfstream_bfnqgproduct.md   
  
 
 .. toctree::
@@ -150,8 +149,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
    4_dc_agulhas/dc_agulhas_duacs.md
    4_dc_agulhas/dc_agulhas_miost.md
    4_dc_agulhas/dc_agulhas_drifterproduct.md
-   4_dc_agulhas/dc_agulhas_bfnqgproduct.md 
-   4_dc_agulhas/dc_agulhas_otherproducts.md
+   4_dc_agulhas/dc_agulhas_bfnqgproduct.md  
    
 .. toctree::
    :hidden:
