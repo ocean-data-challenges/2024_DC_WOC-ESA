@@ -21,7 +21,14 @@
 
 <center>
     <div id="Maps_DUACSvsBFNQG_errexplvarcomp_Agulhas_uv">
-        <img src="../_static/Maps_DUACSvsBFNQG_errexplvarcomp_Agulhas_uv.png" width="800">
+        <img src="../_static/Maps_DUACSvsBFNQG_errexplvarcomp_Agulhas_uv.png" width="400">
+        <img src="../_static/Maps_DUACSvsMIOST_errexplvarcomp_Agulhas_uv.png" width="400">
+    </div>
+</center>
+
+<center>
+    <div id="Maps_DUACSvsBFNQG_errexplvarcomp_Agulhas_uv">
+        <img src="../_static/Maps_MIOSTvsBFNQG_errexplvarcomp_Agulhas_uv.png" width="400"> 
     </div>
 </center>
 
