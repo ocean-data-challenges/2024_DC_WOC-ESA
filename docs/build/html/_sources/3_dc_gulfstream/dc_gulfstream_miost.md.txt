@@ -12,7 +12,7 @@ Multi-scale interpolation (MIOST) combines ocean altimetry data along the track 
  
 <center>
 <video controls width="600">
-  <source src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/b6f7afa5-8e8c-495b-a522-9064c9ecd47f" type="video/mp4" />  
+  <source src="../_static/movie_MIOST_Gulfstream_uv.mp4" type="video/mp4" />  
 </video>
 </center>
  
