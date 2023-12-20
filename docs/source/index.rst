@@ -26,22 +26,6 @@ World Ocean Circulation - ESA - Data challenges
 
     
    
-.. raw:: html
-
-    <embed> 
-        <html lang="en">
-        <head>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Hello, World!</title>
-          <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-          <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-        </head>
-        <body>
-          <py-script>print("Hello, World!")</py-script>
-        </body>
-        </html>
-    </embed>
      
 
 The WOC project 
