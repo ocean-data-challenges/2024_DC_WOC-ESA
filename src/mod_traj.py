@@ -532,7 +532,7 @@ def plot_traj_deviation_maps(lon_g, lat_g, rmse_norm, dt_hr=24, horizon_days=[1,
         cbar.ax.tick_params(labelsize=15)  
 
         
-        plt.savefig("../figures/deviation_maps_"+str(method_name)+"_"+region+"_h"+str(int(h))+".png", bbox_inches='tight')
+        plt.savefig("../figures/"+str(method_name)+"/deviation_maps_"+str(method_name)+"_"+region+"_h"+str(int(h))+".png", bbox_inches='tight')
         
         plt.show()
         
@@ -580,9 +580,9 @@ def plot_meantraj_deviation(dir_out='../results/',just_basin=None,prefix_='devia
     plt.grid()
     
     if just_basin is not None:
-        plt.savefig("../figures/deviation_horizon_"+just_basin+".png", bbox_inches='tight')
+        plt.savefig("../figures/intercomp/deviation_horizon_"+just_basin+".png", bbox_inches='tight')
     else: 
-        plt.savefig("../figures/deviation_horizon_allbasins.png", bbox_inches='tight')
+        plt.savefig("../figures/intercomp/deviation_horizon_allbasins.png", bbox_inches='tight')
         
     plt.show()
     

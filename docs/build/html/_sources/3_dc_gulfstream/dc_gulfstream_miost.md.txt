@@ -25,8 +25,8 @@ Multi-scale interpolation (MIOST) combines ocean altimetry data along the track 
 ## Zonal and Meridional current error and explained variance
  
 
-|![Maps_DUACS_errvar_Agulhas_uv](../figures/Maps_DUACS_errvar_Gulfstream_uv.png)  | 
-|![Maps_DUACS_explvar_Agulhas_uv](../figures/Maps_DUACS_explvar_Gulfstream_uv.png)   |
+|![Maps_MIOST_errvar_Agulhas_uv](../_static/Maps_MIOST_errvar_Gulfstream_uv.png)  | 
+|![Maps_MIOST_explvar_Agulhas_uv](../_static/Maps_MIOST_explvar_Gulfstream_uv.png)   |
 |----|
 
 <br>
@@ -37,7 +37,7 @@ Multi-scale interpolation (MIOST) combines ocean altimetry data along the track 
 
 ## Lagrangian cumulative distance 
 
-| ![DUACS LDC Gulfstream h1](../figures/deviation_maps_DUACS_Gulfstream_h1.png) | ![DUACS LDC Gulfstream h2](../figures/deviation_maps_DUACS_Gulfstream_h2.png) | ![DUACS LDC Gulfstream h3](../figures/deviation_maps_DUACS_Gulfstream_h3.png) | ![DUACS LDC Gulfstream h4](../figures/deviation_maps_DUACS_Gulfstream_h4.png) | ![DUACS LDC Gulfstream h5](../figures/deviation_maps_DUACS_Gulfstream_h5.png) |
+| ![MIOST LDC Gulfstream h1](../_static/deviation_maps_MIOST_Gulfstream_h1.png) | ![MIOST LDC Gulfstream h2](../_static/deviation_maps_MIOST_Gulfstream_h2.png) | ![MIOST LDC Gulfstream h3](../_static/deviation_maps_MIOST_Gulfstream_h3.png) | ![MIOST LDC Gulfstream h4](../_static/deviation_maps_MIOST_Gulfstream_h4.png) | ![MIOST LDC Gulfstream h5](../_static/deviation_maps_MIOST_Gulfstream_h5.png) |
 |--|--|--|--|--|
 
 <br>  
