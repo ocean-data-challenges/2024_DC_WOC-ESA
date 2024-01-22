@@ -23,41 +23,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 # 2. WOC Data Challenges
  
 
-## DC - Mediterranean Sea
-
-
-### Objectives
- 
-
-### Experimental setup
-
-
-### Evaluation
-
-
-## DC - Gulf Stream
-
-
-### Objectives
- 
-
-### Experimental setup
-
-
-### Evaluation
-
-
-## DC - North Sea
-
-
-### Objectives
- 
-
-### Experimental setup
-
-
-### Evaluation
- 
+**For more info on the objectives, the experimental setup and the results of the WOC data challenges: [Check out the WOC data challenges website !](https://2024-dc-woc-esa.readthedocs.io)**
 
   
 
@@ -67,16 +33,12 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 ## Installation
 :computer: _**How to get started ?**_
 
-Clone the data challenge repo: 
-```
-git clone https://github.com/ocean-data-challenges/2024_DC_WOC-ESA.git
-```
-or using SSH: 
+Clone the data challenge repo:  
 ```
 git clone git@github.com:ocean-data-challenges/2024_DC_WOC-ESA.git
 ```
 
-create the data challenge conda environment, named env-dc-swot-filtering, by running the following command:
+create the data challenge conda environment, named ```env-dc-woc-esa```, by running the following command:
 ```
 conda env create --file=dc_environment.yml 
 ```
@@ -96,9 +58,8 @@ You're now good to go !
 
 ## Download the data
 
-The data are hosted and can be accessed on the MEOM server opendap [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2023a_SSH_mapping_OSE/catalog.html). The disk space needed to locally download the full dataset (for the reconstruction experiment, the independant evaluation and the comparison) is approximately 33Go. The comparison data is by far the heaviest with approximately 26Go. 
-
-
+The data are hosted and can be accessed on the MEOM server opendap [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2024_DC_WOC-ESA/catalog.html). 
+ 
 
 
 ### DC - Mediterranean Sea
