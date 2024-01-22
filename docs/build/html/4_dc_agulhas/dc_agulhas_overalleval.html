@@ -74,8 +74,9 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="dc_agulhas_details.html">Agulhas current setup</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Overall comparison</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#metric-boards">Metric boards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#current-magnitud-movie">Current magnitud movie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#zonal-and-meridional-current-error-and-explained-variance-comparison">Zonal and Meridional current error and explained variance comparison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#current-error-comparison">Current error comparison</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lagrangian-cumulative-distance-comparison">Lagrangian cumulative distance comparison</a></li>
 </ul>
 </li>
@@ -135,17 +136,178 @@
   <section class="tex2jax_ignore mathjax_ignore" id="overall-comparison">
 <h1>Overall comparison<a class="headerlink" href="#overall-comparison" title="Permalink to this headline"></a></h1>
 <br>
+<section id="metric-boards">
+<h2>Metric boards<a class="headerlink" href="#metric-boards" title="Permalink to this headline"></a></h2>
+<details>
+<summary>Variance error [m²/s²] ⤵️  </summary>
+<br> 
+<table>
+  <tr>
+    <td>One</td>
+    <td>Two</td>
+  </tr>
+  <tr>
+    <td colspan="2">Three</td>
+  </tr>
+</table>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Region</p></th>
+<th class="head"><p>Method</p></th>
+<th class="head"><p>Variance error u [m²/s²]</p></th>
+<th class="head"><p>Variance error v [m²/s²]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>coastal</strong></p></td>
+<td><p><strong>DUACS</strong></p></td>
+<td><p>0.051408</p></td>
+<td><p>0.055813</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><strong>MIOST</strong></p></td>
+<td><p><span style="color:blue">0.049734</span></p></td>
+<td><p>0.058365</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><strong>BFN-QG</strong></p></td>
+<td><p>0.051588</p></td>
+<td><p><span style="color:blue">0.051550</span></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>offshore_highvar</strong></p></td>
+<td><p><strong>DUACS</strong></p></td>
+<td><p>0.048399</p></td>
+<td><p>0.051483</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><strong>MIOST</strong></p></td>
+<td><p>0.048318</p></td>
+<td><p>0.052196</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><strong>BFN-QG</strong></p></td>
+<td><p><span style="color:blue">0.043017</span></p></td>
+<td><p><span style="color:blue">0.044031</span></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>offshore_lowvar</strong></p></td>
+<td><p><strong>DUACS</strong></p></td>
+<td><p>0.023910</p></td>
+<td><p>0.021734</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><strong>MIOST</strong></p></td>
+<td><p><span style="color:blue">0.023864</span></p></td>
+<td><p>0.021658</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><strong>BFN-QG</strong></p></td>
+<td><p>0.024237</p></td>
+<td><p><span style="color:blue">0.021606</span></p></td>
+</tr>
+</tbody>
+</table>
+</details>
+<br>
+<details>
+<summary>Error scores ⤵️  </summary>
+<br> 
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Region</p></th>
+<th class="head"><p>Method</p></th>
+<th class="head"><p>Error score u</p></th>
+<th class="head"><p>Error score v</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>coastal</strong></p></td>
+<td><p><strong>DUACS</strong></p></td>
+<td><p>72.3 %</p></td>
+<td><p>67.1 %</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><strong>MIOST</strong></p></td>
+<td><p><span style="color:blue">72.8 %</span></p></td>
+<td><p>64.3 %</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><strong>BFN-QG</strong></p></td>
+<td><p>72.0 %</p></td>
+<td><p><span style="color:blue">68.5 %</span></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>offshore_highvar</strong></p></td>
+<td><p><strong>DUACS</strong></p></td>
+<td><p>73.3 %</p></td>
+<td><p>68.4 %</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><strong>MIOST</strong></p></td>
+<td><p>73.3 %</p></td>
+<td><p>68.0 %</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><strong>BFN-QG</strong></p></td>
+<td><p><span style="color:blue">76.3 %</span></p></td>
+<td><p><span style="color:blue">73.0 %</span></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>offshore_lowvar</strong></p></td>
+<td><p><strong>DUACS</strong></p></td>
+<td><p>54.5 %</p></td>
+<td><p>53.7 %</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><strong>MIOST</strong></p></td>
+<td><p><span style="color:blue">54.6 %</span></p></td>
+<td><p>53.9 %</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><strong>BFN-QG</strong></p></td>
+<td><p>53.9 %</p></td>
+<td><p><span style="color:blue">54.0 %</span></p></td>
+</tr>
+</tbody>
+</table>
+</details>
+<br>
+</section>
 <section id="current-magnitud-movie">
 <h2>Current magnitud movie<a class="headerlink" href="#current-magnitud-movie" title="Permalink to this headline"></a></h2>
+<details>
+<summary>Current movies ⤵️  </summary>
+<br> 
 <center>
 <video controls width="1000">
   <source src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/fd1da4bc-8b6f-447f-b04d-e9ea523e1162" type="video/mp4" />  
 </video>
 </center>
+</details>
 <br>
 </section>
-<section id="zonal-and-meridional-current-error-and-explained-variance-comparison">
-<h2>Zonal and Meridional current error and explained variance comparison<a class="headerlink" href="#zonal-and-meridional-current-error-and-explained-variance-comparison" title="Permalink to this headline"></a></h2>
+<section id="current-error-comparison">
+<h2>Current error comparison<a class="headerlink" href="#current-error-comparison" title="Permalink to this headline"></a></h2>
+<details>
+<summary>Zonal and Meridional current error and explained variance comparison ⤵️  </summary>
+<br> 
 <center>
     <div id="Maps_DUACSvsBFNQG_errexplvarcomp_Agulhas_uv">
         <img src="../_static/Maps_DUACSvsBFNQG_errexplvarcomp_Agulhas_uv.png" width="400">
@@ -157,10 +319,14 @@
         <img src="../_static/Maps_MIOSTvsBFNQG_errexplvarcomp_Agulhas_uv.png" width="400"> 
     </div>
 </center>
+</details>
 <br>
 </section>
 <section id="lagrangian-cumulative-distance-comparison">
 <h2>Lagrangian cumulative distance comparison<a class="headerlink" href="#lagrangian-cumulative-distance-comparison" title="Permalink to this headline"></a></h2>
+<details>
+<summary>LCD maps ⤵️  </summary>
+<br> 
 <table class="colwidths-auto docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p><img alt="DUACS LDC h1" src="../_images/deviation_maps_DUACS_h1.png" /></p></th>
@@ -185,7 +351,13 @@
 </tr>
 </tbody>
 </table>
+</details>
+<br> 
+<details>
+<summary>LCD temporal horizon series ⤵️  </summary>
+<br> 
 <p><img alt="deviation_horizon_Agulhas" src="../_images/deviation_horizon_Agulhas.png" /></p>
+</details>
 <br>  
 </section>
 </section>
