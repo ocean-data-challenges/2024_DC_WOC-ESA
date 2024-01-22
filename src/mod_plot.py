@@ -290,7 +290,7 @@ def plot_effective_resolution_png(filename,region='glob',box_lonlat=None, change
     fig.subplots_adjust(bottom=0.2, top=0.9, left=0.1, right=0.9,
                     wspace=0.02, hspace=0.01)
     
-    plt.savefig("../figures/Maps_"+str(method_name)+"_effres_"+region+".png", bbox_inches='tight')
+    plt.savefig("../figures/"+str(method_name)+"/Maps_"+str(method_name)+"_effres_"+region+".png", bbox_inches='tight')
     
     print('Averaged effective resolution:',np.nanmean(ds.effective_resolution),'km')
 
@@ -364,7 +364,7 @@ def plot_psd_scores(filename):
     fig.subplots_adjust(bottom=0.2, top=0.9, left=0.1, right=0.9,
                     wspace=0.02, hspace=0.01)
     
-    plt.savefig("../figures/Maps_"+str(method_name)+"_effres_"+region+".png", bbox_inches='tight')
+    plt.savefig("../figures/"+str(method_name)+"/Maps_"+str(method_name)+"_effres_"+region+".png", bbox_inches='tight')
 
 
 def plot_psd_scores(filename):
@@ -726,7 +726,7 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
     
     fig.subplots_adjust(bottom=0.2, top=0.9, left=0.1, right=0.9,
                     wspace=0.02, hspace=0.01) 
-    plt.savefig("../figures/Maps_"+str(method_name)+"_errvar_"+region+"_uv.png", bbox_inches='tight')
+    plt.savefig("../figures/"+str(method_name)+"/Maps_"+str(method_name)+"_errvar_"+region+"_uv.png", bbox_inches='tight')
     
     
     fig, axs = plt.subplots(nrows=1,ncols=2,
@@ -772,7 +772,7 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
     fig.subplots_adjust(bottom=0.2, top=0.9, left=0.1, right=0.9,
                     wspace=0.02, hspace=0.01) 
     
-    plt.savefig("../figures/Maps_"+str(method_name)+"_explvar_"+region+"_uv.png", bbox_inches='tight')
+    plt.savefig("../figures/"+str(method_name)+"/Maps_"+str(method_name)+"_explvar_"+region+"_uv.png", bbox_inches='tight')
     
     
 def plot_psd_scores_currents_png(filename,region='glob'):    
@@ -934,7 +934,7 @@ def plot_psd_scores_currents_png(filename,region='glob'):
     print('Averaged NSR:',np.nanmean(1. - ds_psd.psd_diff/ds_psd.psd_ref))
     
     
-    plt.savefig("../figures/Maps_"+str(method_name)+"_effres_"+region+"_uv.png", bbox_inches='tight')
+    plt.savefig("../figures/"+str(method_name)+"/Maps_"+str(method_name)+"_effres_"+region+"_uv.png", bbox_inches='tight')
     
        
     
@@ -1050,7 +1050,7 @@ def plot_stat_score_map_png(filename,region='glob',box_lonlat=None, change_lon=T
     cbar = fig.colorbar(p1, cax=cax, orientation='vertical')
     cax.set_ylabel('Error variance [m$^2$]', fontweight='bold')
     
-    plt.savefig("../figures/Maps_"+str(method_name)+"_errvar_"+region+".png", bbox_inches='tight')
+    plt.savefig("../figures/"+str(method_name)+"/Maps_"+str(method_name)+"_errvar_"+region+".png", bbox_inches='tight')
     
     
     fig, axs = plt.subplots(nrows=1,ncols=2,
@@ -1103,7 +1103,7 @@ def plot_stat_score_map_png(filename,region='glob',box_lonlat=None, change_lon=T
     fig.subplots_adjust(bottom=0.2, top=0.9, left=0.1, right=0.9,
                     wspace=0.02, hspace=0.01)
         
-    plt.savefig("../figures/Maps_"+str(method_name)+"_explvar_"+region+".png", bbox_inches='tight')
+    plt.savefig("../figures/"+str(method_name)+"/Maps_"+str(method_name)+"_explvar_"+region+".png", bbox_inches='tight')
     
     
     
@@ -1629,7 +1629,7 @@ def compare_stat_score_map_uv_png(study_filename, ref_filename,box_lonlat, metho
                     wspace=0.02, hspace=0.0001)
 
     method_name = methods[0]+'vs'+methods[1]
-    plt.savefig("../figures/Maps_"+str(method_name)+"_errexplvarcomp_"+region+"_uv.png", bbox_inches='tight')
+    plt.savefig("../figures/"+str(method_name)+"/Maps_"+str(method_name)+"_errexplvarcomp_"+region+"_uv.png", bbox_inches='tight')
 
 
 def compare_psd_score(study_filename, ref_filename):
