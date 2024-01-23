@@ -8,17 +8,7 @@
 <details>
 <summary>Variance error [m²/s²] ⤵️  </summary>
     
-<br> 
-
-<table>
-  <tr>
-    <td>One</td>
-    <td>Two</td>
-  </tr>
-  <tr>
-    <td colspan="2">Three</td>
-  </tr>
-</table>
+<br>  
 
 | Region| Method| Variance error u [m²/s²] | Variance error v [m²/s²]  | 
 |---|---|---|---| 

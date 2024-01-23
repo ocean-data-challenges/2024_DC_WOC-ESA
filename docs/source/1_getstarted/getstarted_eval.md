@@ -1,4 +1,4 @@
-# Evaluate your own maps
+# Input specification
 
 <br> 
  

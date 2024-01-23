@@ -30,60 +30,15 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 # 3. Get started
  
 
-## Installation
-:computer: _**How to get started ?**_
-
-Clone the data challenge repo:  
-```
-git clone git@github.com:ocean-data-challenges/2024_DC_WOC-ESA.git
-```
-
-create the data challenge conda environment, named ```env-dc-woc-esa```, by running the following command:
-```
-conda env create --file=dc_environment.yml 
-```
-and activate it with:
-
-```
-conda activate env-dc-woc-esa
-```
-then add it to the available kernels for jupyter to see: 
-```
-ipython kernel install --name "env-dc-woc-esa" --user
-```
-finally, select the "env-dc-woc-esa" kernel in your notebook with Kernel > Change Kernel.
-
-You're now good to go ! 
+## [Installation documentation](https://2024-dc-woc-esa.readthedocs.io/en/latest/1_getstarted/getstarted_install.html)
 
 
-## Download the data
 
-The data are hosted and can be accessed on the MEOM server opendap [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2024_DC_WOC-ESA/catalog.html). 
+## [Download the data documentation](https://2024-dc-woc-esa.readthedocs.io/en/latest/1_getstarted/getstarted_data.html)
+
+
+## [Input specification documentation](https://2024-dc-woc-esa.readthedocs.io/en/latest/1_getstarted/getstarted_eval.html)
+  
+  
  
-
-
-### DC - Mediterranean Sea
-
-#### Data structure
-
-#### Example notebook
-
-  
-### DC - Gulf Stream
- 
-#### Data structure
-
-#### Example notebook
-
-
-###  DC - North Sea
-
-#### Data structure
-
-#### Example notebook
-
-  
-  
-
-# Acknowledgement
 
