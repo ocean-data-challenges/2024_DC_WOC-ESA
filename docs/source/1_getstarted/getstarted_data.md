@@ -4,84 +4,66 @@
 
 <br>  
 
-The data are hosted and can be accessed on the MEOM server opendap [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/ocean-data-challenges/dc_Map_global_OSE/catalog.html). The disk space needed to locally download the full dataset (for the reconstruction experiment, the independant evaluation and the comparison) is approximately 33Go. The comparison data is by far the heaviest with approximately 26Go. 
+The data are hosted and can be accessed on the MEOM server opendap [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2024_DC_WOC-ESA/catalog.html). 
 
 ## Data information
 
-The dataset is presented with the following directory structure:
+The dataset is presented with the following directory structure. 
 
-### 1) Data for experiment
-
-**Nadir alongtrack data (L3 products) for SSH map reconstruction**
+There is a repository for each region: Agulhas, Gulfstream and Mediterranean plus one repository for auxiliary data. In each region repository you'll find the same structure of zipped files: 
 
 ```
 .
-|-- alongtrack
-``` 
-
-### 2) Data for evaluation
-
-**Independant nadir alongtrack data (L3 products) for SSH evaluation**
-
-```
+|-- DC_Agulhas 
+|   |--  eval_Agulhas.tar.gz  
+|   |--  obs_Agulhas.tar.gz 
+|   |--  products_Agulhas.tar.gz  
 .
-|-- independant_alongtrack
-|   |-- alg		% DT Altika Drifting Phase Global Ocean Along track SSALTO/DUACS Sea Surface Height L3 product
-|   |   |-- 2019
-|   |   |   |-- dt_global_alg_phy_l3_2019*.nc
-```
-
-**Independant drifters for currents evaluation**
-
-```
+|-- DC_Gulfstream 
+|   |--  eval_Gulfstream.tar.gz  
+|   |--  obs_Gulfstream.tar.gz 
+|   |--  products_Gulfstream.tar.gz  
 .
-|-- independent_drifters
-|   |-- uv_drifters_*.nc           % Drifter data
-|   |-- index_history.txt          % Preprocessing drifter data information
-|   |-- reformate_drifters.ipynb   % Preprocessing notebook (for informational purposes, not needed for experiments)
-```
-
-**Auxiliary data for diagnostics**
-
-```
+|-- DC_Mediterranean
+|   |--  eval_Mediterranean.tar.gz  
+|   |--  obs_Mediterranean.tar.gz 
+|   |--  products_Mediterranean.tar.gz  
 .
-|-- sad
-|   |-- distance_to_nearest_coastline_60.nc
-|   |-- land_water_mask_60.nc
-|   |-- variance_cmems_dt_allsat.nc
-
+|-- Aux_data  
+|   |-- sad.tar.gz  
 ```
 
-### 3) Data for comparison
 
-**Reconstruction maps for comparison**
 
-```
-.
-|-- maps
-|   |-- DUACS_global_allsat-alg			% DUACS reconstruction			
-|   |-- MIOST_geos_global_allsat-alg		% MIOST reconstruction
-|   |-- MIOST_geos_barotrop_eqwaves_global_allsat-alg	% MIOST reconstruction with barotropic and equatorial waves processing
-```
+### ``` obs_REGION.tar.gz```
+
+The ```obs_REGION/``` repository contains the available observations in this region needed to map currents. The data can be stored in ```ssh/```, ```sst``` or ```drifters``` sub-repo and consists of netcdf files.  
+
+### ``` eval_REGION.tar.gz```
+
+The ```eval_REGION/``` repository contains the independant (i.e. not available in ```obs_REGION/```) observations that are used in the evaluation of the mapping performance.  
+
+### ``` products_REGION.tar.gz```
+
+The ```products_REGION/``` repository contains WOC products and other products that have already been evaluated on the data challenges, you can then check the performance of these products yourself and compare them to your methods. 
+ 
 
 
 ## Download and read the data
 
 The data can be downloaded locally using the wget command. We recommand that the data be stored in the `data/` repository. 
-For example, to download and unzip the experiment alongtrack data:
+For example, to download and unzip the observations needed to map currents in the Agulhas region use:
 
 
 ```
 cd data/
-wget https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopendap/extract/ocean-data-challenges/dc_Map_global_OSE/alongtrack.tar.gz 
-tar -xvf alongtrack.tar.gz  
-rm -f alongtrack.tar.gz
+wget https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2024_DC_WOC-ESA/DC_Agulhas/obs_Agulhas.tar.gz 
+tar -xvf obs_Agulhas.tar.gz  
+rm -f obs_Agulhas.tar.gz
 ```
 
 **Example notebooks**
 
 
-- A notebook to illustrate how to download and read the global data is available: [download_and_acces_global_data.ipynb](../gallery/download_and_acces_global_data.ipynb)
-
-- If you are only interested in regional data, a notebook is available to read online the global data and download only regional data: [read_and_download_regional_data.ipynb](../gallery/read_and_download_regional_data.ipynb)
-
+- A notebook to illustrate how to download and read the data is available: [download_and_acces_global_data.ipynb](../gallery/download_and_acces_global_data.ipynb)
+ 

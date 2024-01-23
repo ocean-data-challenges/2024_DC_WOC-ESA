@@ -6,11 +6,7 @@
 
 ## _**How to get started ?**_
 
-Clone the data challenge repo: 
-```
-git clone https://github.com/ocean-data-challenges/2024_DC_WOC-ESA.git
-```
-or using SSH: 
+Clone the data challenge repo:  
 ```
 git clone git@github.com:ocean-data-challenges/2024_DC_WOC-ESA.git
 ```
@@ -28,7 +24,7 @@ then add it to the available kernels for jupyter to see:
 ```
 ipython kernel install --name "env-dc-woc-esa" --user
 ```
-finally, select the "env-dc-woc-esa" kernel in your notebook with Kernel > Change Kernel.
+finally, select the ```env-dc-woc-esa``` kernel in your notebook with Kernel > Change Kernel.
  
 
 
