@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Evaluate your own maps &mdash; WOC-ESA Data challenges  documentation</title>
+  <title>Input specification &mdash; WOC-ESA Data challenges  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
@@ -50,7 +50,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getstarted_install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getstarted_data.html">Download the data</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Evaluate your own maps</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Input specification</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#maps-format">Maps format</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#currents-maps-format">Currents maps format</a></li>
 </ul>
@@ -80,28 +80,25 @@
 <li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_sshsstproduct.html">WOC - Merged SSH/SST currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_dopplerproduct.html">WOC - Doppler currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_otherproducts.html">Other products</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS geostrophic currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_miost.html">MIOST geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_sshsstproduct.html">WOC - Merged SSH/SST currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_dopplerproduct.html">WOC - Doppler currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_otherproducts.html">Other products</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_duacs.html">DUACS geostrophic currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_miost.html">MIOST geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_dopplerproduct.html">WOC - Doppler currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_otherproducts.html">Other products</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
 <ul>
@@ -141,7 +138,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Evaluate your own maps</li>
+      <li class="breadcrumb-item active">Input specification</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/1_getstarted/getstarted_eval.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -151,8 +148,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section class="tex2jax_ignore mathjax_ignore" id="evaluate-your-own-maps">
-<h1>Evaluate your own maps<a class="headerlink" href="#evaluate-your-own-maps" title="Permalink to this headline"></a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="input-specification">
+<h1>Input specification<a class="headerlink" href="#input-specification" title="Permalink to this headline"></a></h1>
 <br> 
 <br> 
 <p>Once you have <a class="reference internal" href="getstarted_install.html"><span class="doc std std-doc">installed the data challenge</span></a> and <a class="reference internal" href="getstarted_data.html"><span class="doc std std-doc">downloaded the data</span></a>, you can now evaluate your maps. Although, you might want to check first that your sea level anomaly or sea surface currents maps respect a certain format. You can then scroll through the different metrics, checking the DUACS evaluation notebooks as example.</p>
