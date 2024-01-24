@@ -21,7 +21,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Overall evaluation" href="dc_medsea_overalleval.html" />
-    <link rel="prev" title="Evaluate your own maps" href="../1_getstarted/getstarted_eval.html" />
+    <link rel="prev" title="Input specification" href="../1_getstarted/getstarted_eval.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -50,7 +50,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_data.html">Download the data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_eval.html">Evaluate your own maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_eval.html">Input specification</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
 <ul class="current">
@@ -58,6 +58,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#period">Period</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#area">Area</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#dynamical-specificities">Dynamical specificities:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#observations-available-for-mapping-currents">Observations available for mapping currents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#independant-evaluation-data">Independant evaluation data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#woc-products">WOC products:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#other-products">Other products:</a></li>
 </ul>
@@ -66,29 +68,25 @@
 <li class="toctree-l1"><a class="reference internal" href="dc_medsea_sshsstproduct.html">WOC - Merged SSH/SST currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dc_medsea_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dc_medsea_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_medsea_dopplerproduct.html">WOC - Doppler currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_medsea_otherproducts.html">Other products</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS geostrophic currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_miost.html">MIOST geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_sshsstproduct.html">WOC - Merged SSH/SST currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_dopplerproduct.html">WOC - Doppler currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_otherproducts.html">Other products</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_duacs.html">DUACS geostrophic currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_miost.html">MIOST geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_dopplerproduct.html">WOC - Doppler currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_otherproducts.html">Other products</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
 <ul>
@@ -160,19 +158,42 @@
 <h2>Dynamical specificities:<a class="headerlink" href="#dynamical-specificities" title="Permalink to this headline"></a></h2>
 <p>A quasi-closed basin with strong ageostrophic dynamics and vertical shear.</p>
 </section>
+<section id="observations-available-for-mapping-currents">
+<h2>Observations available for mapping currents<a class="headerlink" href="#observations-available-for-mapping-currents" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>conventional nadir altimeters:</p>
+<ul>
+<li><p>Saral-Altika (alg)</p></li>
+<li><p>Cryosat-2 (c2)</p></li>
+<li><p>Haiyang-2a (h2ag)</p></li>
+<li><p>Haiyang-2b (h2b)</p></li>
+<li><p>Jason-3 (j3)</p></li>
+<li><p>Sentinel-3a (s3a)</p></li>
+<li><p>Sentinel-3b (s3b)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="independant-evaluation-data">
+<h2>Independant evaluation data<a class="headerlink" href="#independant-evaluation-data" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>CMEMS drifters currents and trajectories.</p></li>
+</ul>
+</section>
 <section id="woc-products">
 <h2>WOC products:<a class="headerlink" href="#woc-products" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><p>Drifter data-driven currents,</p></li>
 <li><p>BFN-QG geostrophic currents,</p></li>
-<li><p>Doppler currents,</p></li>
 <li><p>Merged SSH-SST currents</p></li>
 </ul>
 </section>
 <section id="other-products">
 <h2>Other products:<a class="headerlink" href="#other-products" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><p>DUACS</p></li>
+<li><p>DUACS,</p></li>
+<li><p>MIOST,</p></li>
+<li><p>Coming soon: 4DVarQG (Le Guillou et al., 2021)</p></li>
 </ul>
 <br>
 </section>
@@ -182,7 +203,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../1_getstarted/getstarted_eval.html" class="btn btn-neutral float-left" title="Evaluate your own maps" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../1_getstarted/getstarted_eval.html" class="btn btn-neutral float-left" title="Input specification" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="dc_medsea_overalleval.html" class="btn btn-neutral float-right" title="Overall evaluation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
