@@ -68,17 +68,23 @@ The WOC data challenges cover three geographical regions, with different dynamic
 * `Mediterranean Sea <https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_details.html>`_
     * Area: [5°W, 25°E, 35°N, 47°N]
     * Dynamical specificities: A quasi-closed basin with strong ageostrophic dynamics and vertical shear. 
+    * Observations available for mapping currents: conventional nadir altimeters
     * WOC products: Merged SSH/SST currents, Drifter data-driven currents, BFN-QG geostrophic currents 
+    * Independant evaluation data: CMEMS drifters currents and trajectories.
 
 * `Gulf Stream <https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html>`_ 
     * Area: [80°W, 10°W, 25°N, 50°N]
     * Dynamical specificities: High variability region with mixed geostrophic and ageostrophic dynamics. 
-    * WOC products: Merged SSH/SST currents, Drifter data-driven currents, BFN-QG geostrophic currents, Doppler currents
+    * Observations available for mapping currents: conventional nadir altimeters, satellite SST data
+    * WOC products: Merged SSH/SST currents, Drifter data-driven currents, BFN-QG geostrophic currents
+    * Independant evaluation data: CMEMS drifters currents and trajectories.
     
 * `Agulhas Current <https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_details.html>`_ 
     * Area: [14°E, 35°E, 45°S, 30°S]
     * Dynamical specificities: Strongly geostrophic region. 
-    * WOC products: Drifter data-driven currents, BFN-QG geostrophic currents, Doppler currents
+    * Observations available for mapping currents: conventional nadir altimeters
+    * WOC products: Drifter data-driven currents, BFN-QG geostrophic currents
+    * Independant evaluation data: CMEMS drifters currents and trajectories.
   
 :raw-html:`<br />` 
     
