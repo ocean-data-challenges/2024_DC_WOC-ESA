@@ -50,7 +50,7 @@ napoleon_google_docstring = False
 
 source_suffix = {
     '.rst': 'restructuredtext',
-    '.txt': 'markdown',
+    '.txt': 'markdown', 
     '.md': 'markdown',
 }
  
@@ -92,3 +92,10 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_css_files = [
+    'css/custom.css',   
+] 
+ 
+html_js_files = [
+    'js/custom.js', 
+]
