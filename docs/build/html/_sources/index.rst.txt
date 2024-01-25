@@ -17,23 +17,23 @@ DC-WOC-ESA
 .. role:: raw-html(raw)
     :format: html
 
-:raw-html:`<br />`
-
-.. image:: ../../figures/dc_2024a_WOC-ESA_banner.jpg
-    :width: 600 
-    :align: center 
-
-:raw-html:`<br />`
-
 :raw-html:`<br />`    
    
 .. raw:: html  
 
    <embed> 
     <center> 
-     <h1 style="color:blue;font-size:40px;">Opening 31st of March 2024 !</h1> 
+     <h1 style="color:rgb(28, 69, 135);font-size:40px;">Opening 31st of March 2024 !</h1> 
     </center> 
    </embed>
+
+:raw-html:`<br />`
+
+.. image:: ../../figures/dc_2024a_WOC-ESA_banner.jpg
+    :width: 1200 
+    :align: center 
+
+:raw-html:`<br />`
 
 :raw-html:`<br />`
  
