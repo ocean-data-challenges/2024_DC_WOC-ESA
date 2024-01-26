@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Overall evaluation &mdash; WOC-ESA Data challenges  documentation</title>
+  <title>WOC - Drifter data-driven currents &mdash; WOC-ESA Data challenges  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="WOC - Merged SSH/SST currents" href="dc_medsea_sshsstprod.html" />
-    <link rel="prev" title="Mediterranean Sea setup" href="dc_medsea_details.html" />
+    <link rel="next" title="WOC - BFN-QG geostrophic currents" href="dc_medsea_bfnqgproduct.html" />
+    <link rel="prev" title="WOC - Merged SSH/SST currents" href="dc_medsea_sshsstprod.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -76,17 +76,9 @@
 <p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="dc_medsea_details.html">Mediterranean Sea setup</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Overall evaluation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#current-magnitud-movie">Current magnitud movie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#variance-errors-in-specific-regimes">Variance errors in specific regimes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#current-errors">Current errors</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#current-explained-variances">Current explained variances</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#current-comparison">Current comparison</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#lagrangian-cumulative-distance-comparison">Lagrangian cumulative distance comparison</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="dc_medsea_overalleval.html">Overall evaluation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dc_medsea_sshsstprod.html">WOC - Merged SSH/SST currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_medsea_dddcurr.html">WOC - Drifter data-driven currents</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">WOC - Drifter data-driven currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dc_medsea_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dc_medsea_duacs.html">DUACS geostrophic currents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dc_medsea_miost.html">MIOST geostrophic currents</a></li>
@@ -129,9 +121,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Overall evaluation</li>
+      <li class="breadcrumb-item active">WOC - Drifter data-driven currents</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/2_dc_medsea/dc_medsea_overalleval.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/2_dc_medsea/dc_medsea_dddcurr.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -139,171 +131,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section class="tex2jax_ignore mathjax_ignore" id="overall-evaluation">
-<h1>Overall evaluation<a class="headerlink" href="#overall-evaluation" title="Permalink to this headline"></a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="woc-drifter-data-driven-currents">
+<h1>WOC - Drifter data-driven currents<a class="headerlink" href="#woc-drifter-data-driven-currents" title="Permalink to this headline"></a></h1>
 <br>
-<br>
-<section id="current-magnitud-movie">
-<h2>Current magnitud movie<a class="headerlink" href="#current-magnitud-movie" title="Permalink to this headline"></a></h2>
-<details>
-<summary>Current movies ⤵️  </summary>
+<p>This dataset provides Level 4 total current including geostrophy and a data-driven approach for Ekman and near-inertial current, based on a convolution between drifter observation and wind history, to fit empirically a complex and time-lag dependant transfert function between ERA5 wind stress and current</p>
+<p><strong>More information on the Drifter data-driven products <a class="reference external" href="https://www.worldoceancirculation.org/Products#/metadata/cfa65be8-b200-4243-aba0-843c363001d9">here</a> !</strong></p>
 <br>  
-</details>
- <br>
-</section>
-<section id="variance-errors-in-specific-regimes">
-<h2>Variance errors in specific regimes<a class="headerlink" href="#variance-errors-in-specific-regimes" title="Permalink to this headline"></a></h2>
-<details>
-<summary>Variance error [m²/s²] ⤵️  </summary>
-<br>  
-<table>
-  <thead>
-    <tr> 
-      <th></th>
-      <th colspan="3">Variance error u [m²/s²]</th>
-      <th colspan="3">Variance error v [m²/s²]</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr> 
-      <td> </td>
-      <td> coastal </td>
-      <td> offshore_highvar </td>
-      <td> offshore_lowvar </td>
-      <td> coastal </td>
-      <td> offshore_highvar </td>
-      <td> offshore_lowvar </td>
-    </tr>
-    <tr> 
-    <tr> 
-      <td><strong>DUACS</strong></td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-    </tr>
-    <tr> 
-      <td><strong>MIOST</strong></td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-    </tr>
-    <tr> 
-      <td><strong>BFN-QG</strong></td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-    </tr> 
-  </tbody>
-</table>
-</details>
-<br>
-<details>
-<summary>Variance error scores ⤵️  </summary>
-<br> 
-<table>
-  <thead>
-    <tr> 
-      <th></th>
-      <th colspan="3">Variance error score u</th>
-      <th colspan="3">Variance error score v</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr> 
-      <td> </td>
-      <td> coastal </td>
-      <td> offshore_highvar </td>
-      <td> offshore_lowvar </td>
-      <td> coastal </td>
-      <td> offshore_highvar </td>
-      <td> offshore_lowvar </td>
-    </tr>
-    <tr> 
-    <tr> 
-      <td><strong>DUACS</strong></td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-    </tr>
-    <tr> 
-      <td><strong>MIOST</strong></td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-    </tr>
-    <tr> 
-      <td><strong>BFN-QG</strong></td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-      <td> %</td>
-    </tr> 
-  </tbody>
-</table>
-</details>
-<br>
-</section>
-<section id="current-errors">
-<h2>Current errors<a class="headerlink" href="#current-errors" title="Permalink to this headline"></a></h2>
-<details>
-<summary>Zonal and Meridional current error variances ⤵️  </summary>
-<br> 
-</details>
-<br>
-</section>
-<section id="current-explained-variances">
-<h2>Current explained variances<a class="headerlink" href="#current-explained-variances" title="Permalink to this headline"></a></h2>
-<details>
-<summary>Zonal and Meridional current explained variances ⤵️  </summary>
-<br> 
-</details>
-<br>
-</section>
-<section id="current-comparison">
-<h2>Current comparison<a class="headerlink" href="#current-comparison" title="Permalink to this headline"></a></h2>
-<details>
-<summary>Zonal and Meridional current error and explained variance comparison ⤵️  </summary>
-<br> 
-<br> 
-</details>
-<br>
-</section>
-<section id="lagrangian-cumulative-distance-comparison">
-<h2>Lagrangian cumulative distance comparison<a class="headerlink" href="#lagrangian-cumulative-distance-comparison" title="Permalink to this headline"></a></h2>
-<details>
-<summary>LCD maps ⤵️  </summary>
-<br>  
-</details>
-<br> 
-<details>
-<summary>LCD temporal horizon series ⤵️  </summary>
-<br> 
-<br>  </section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="dc_medsea_details.html" class="btn btn-neutral float-left" title="Mediterranean Sea setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="dc_medsea_sshsstprod.html" class="btn btn-neutral float-right" title="WOC - Merged SSH/SST currents" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="dc_medsea_sshsstprod.html" class="btn btn-neutral float-left" title="WOC - Merged SSH/SST currents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dc_medsea_bfnqgproduct.html" class="btn btn-neutral float-right" title="WOC - BFN-QG geostrophic currents" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

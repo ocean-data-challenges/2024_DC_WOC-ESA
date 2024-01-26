@@ -345,9 +345,11 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 
    2_dc_medsea/dc_medsea_details.md
    2_dc_medsea/dc_medsea_overalleval.md
-   2_dc_medsea/dc_medsea_sshsstproduct.md 
-   2_dc_medsea/dc_medsea_drifterproduct.md 
+   2_dc_medsea/dc_medsea_sshsstprod.md 
+   2_dc_medsea/dc_medsea_dddcurr.md 
    2_dc_medsea/dc_medsea_bfnqgproduct.md  
+   2_dc_medsea/dc_medsea_duacs.md 
+   2_dc_medsea/dc_medsea_miost.md 
  
 
    
