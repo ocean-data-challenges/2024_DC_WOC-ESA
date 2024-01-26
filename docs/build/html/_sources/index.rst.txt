@@ -358,6 +358,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    :maxdepth: 1
    :caption: Metrics details
 
+   5_metrics_det/metrics_0-introduction.md
    5_metrics_det/metrics_1-standard-insitu.md
    5_metrics_det/metrics_2-effective-resolution.md
    5_metrics_det/metrics_3-position-structures.md
