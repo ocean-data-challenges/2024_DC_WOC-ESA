@@ -1,4 +1,4 @@
-# MIOST geostrophic currents  
+# MIOST 
 
 <br>
 
@@ -7,7 +7,7 @@ Multi-scale interpolation (MIOST) combines ocean altimetry data along the track 
 
 <br>
 
-## Current magnitud movie 
+## Current magnitude movie 
    
  
 <center>

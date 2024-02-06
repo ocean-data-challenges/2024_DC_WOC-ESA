@@ -1,4 +1,4 @@
-# WOC - BFN-QG geostrophic currents 
+# BFN-QG 
 
 <br>
 

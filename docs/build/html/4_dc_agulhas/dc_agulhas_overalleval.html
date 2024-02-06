@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -17,10 +18,11 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="../_static/js/custom.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="DUACS geostrophic currents" href="dc_agulhas_duacs.html" />
+    <link rel="next" title="DUACS" href="dc_agulhas_duacs.html" />
     <link rel="prev" title="Agulhas current setup" href="dc_agulhas_details.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
@@ -50,43 +52,47 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_data.html">Download the data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_eval.html">Evaluate your own maps</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_overalleval.html">Overall evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_sshsstproduct.html">WOC - Merged SSH/SST currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_miost.html">MIOST geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_sshsstproduct.html">WOC - Merged SSH/SST currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_eval.html">Input specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_products.html">Products description</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="dc_agulhas_details.html">Agulhas current setup</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Overall comparison</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#metric-boards">Metric boards</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#current-magnitud-movie">Current magnitud movie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#current-magnitude-movie">Current magnitude movie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variance-errors-in-specific-regimes">Variance errors in specific regimes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#current-error-comparison">Current error comparison</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lagrangian-cumulative-distance-comparison">Lagrangian cumulative distance comparison</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_duacs.html">DUACS geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_miost.html">MIOST geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_duacs.html">DUACS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_miost.html">MIOST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_drifterproduct.html">DDDcurr</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_bfnqgproduct.html">BFN-QG</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_miost.html">MIOST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_sshsstproduct.html">DADR-SR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_drifterproduct.html">DDDcurr</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_bfnqgproduct.html">BFN-QG</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_overalleval.html">Overall evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_sshsstprod.html">DADR-SR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_dddcurr.html">DDDcurr</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_bfnqgproduct.html">BFN-QG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_duacs.html">DUACS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_miost.html">MIOST</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_0-introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_1-standard-insitu.html">Standard insitu validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_2-effective-resolution.html">Effective resolution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_3-position-structures.html">Position of structures</a></li>
@@ -136,153 +142,9 @@
   <section class="tex2jax_ignore mathjax_ignore" id="overall-comparison">
 <h1>Overall comparison<a class="headerlink" href="#overall-comparison" title="Permalink to this headline"></a></h1>
 <br>
-<section id="metric-boards">
-<h2>Metric boards<a class="headerlink" href="#metric-boards" title="Permalink to this headline"></a></h2>
-<details>
-<summary>Variance error [m²/s²] ⤵️  </summary>
-<br>  
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Region</p></th>
-<th class="head"><p>Method</p></th>
-<th class="head"><p>Variance error u [m²/s²]</p></th>
-<th class="head"><p>Variance error v [m²/s²]</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>coastal</strong></p></td>
-<td><p><strong>DUACS</strong></p></td>
-<td><p>0.051408</p></td>
-<td><p>0.055813</p></td>
-</tr>
-<tr class="row-odd"><td><p></p></td>
-<td><p><strong>MIOST</strong></p></td>
-<td><p><span style="color:blue">0.049734</span></p></td>
-<td><p>0.058365</p></td>
-</tr>
-<tr class="row-even"><td><p></p></td>
-<td><p><strong>BFN-QG</strong></p></td>
-<td><p>0.051588</p></td>
-<td><p><span style="color:blue">0.051550</span></p></td>
-</tr>
-<tr class="row-odd"><td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><strong>offshore_highvar</strong></p></td>
-<td><p><strong>DUACS</strong></p></td>
-<td><p>0.048399</p></td>
-<td><p>0.051483</p></td>
-</tr>
-<tr class="row-odd"><td><p></p></td>
-<td><p><strong>MIOST</strong></p></td>
-<td><p>0.048318</p></td>
-<td><p>0.052196</p></td>
-</tr>
-<tr class="row-even"><td><p></p></td>
-<td><p><strong>BFN-QG</strong></p></td>
-<td><p><span style="color:blue">0.043017</span></p></td>
-<td><p><span style="color:blue">0.044031</span></p></td>
-</tr>
-<tr class="row-odd"><td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><strong>offshore_lowvar</strong></p></td>
-<td><p><strong>DUACS</strong></p></td>
-<td><p>0.023910</p></td>
-<td><p>0.021734</p></td>
-</tr>
-<tr class="row-odd"><td><p></p></td>
-<td><p><strong>MIOST</strong></p></td>
-<td><p><span style="color:blue">0.023864</span></p></td>
-<td><p>0.021658</p></td>
-</tr>
-<tr class="row-even"><td><p></p></td>
-<td><p><strong>BFN-QG</strong></p></td>
-<td><p>0.024237</p></td>
-<td><p><span style="color:blue">0.021606</span></p></td>
-</tr>
-</tbody>
-</table>
-</details>
 <br>
-<details>
-<summary>Error scores ⤵️  </summary>
-<br> 
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Region</p></th>
-<th class="head"><p>Method</p></th>
-<th class="head"><p>Error score u</p></th>
-<th class="head"><p>Error score v</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>coastal</strong></p></td>
-<td><p><strong>DUACS</strong></p></td>
-<td><p>72.3 %</p></td>
-<td><p>67.1 %</p></td>
-</tr>
-<tr class="row-odd"><td><p></p></td>
-<td><p><strong>MIOST</strong></p></td>
-<td><p><span style="color:blue">72.8 %</span></p></td>
-<td><p>64.3 %</p></td>
-</tr>
-<tr class="row-even"><td><p></p></td>
-<td><p><strong>BFN-QG</strong></p></td>
-<td><p>72.0 %</p></td>
-<td><p><span style="color:blue">68.5 %</span></p></td>
-</tr>
-<tr class="row-odd"><td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><strong>offshore_highvar</strong></p></td>
-<td><p><strong>DUACS</strong></p></td>
-<td><p>73.3 %</p></td>
-<td><p>68.4 %</p></td>
-</tr>
-<tr class="row-odd"><td><p></p></td>
-<td><p><strong>MIOST</strong></p></td>
-<td><p>73.3 %</p></td>
-<td><p>68.0 %</p></td>
-</tr>
-<tr class="row-even"><td><p></p></td>
-<td><p><strong>BFN-QG</strong></p></td>
-<td><p><span style="color:blue">76.3 %</span></p></td>
-<td><p><span style="color:blue">73.0 %</span></p></td>
-</tr>
-<tr class="row-odd"><td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><strong>offshore_lowvar</strong></p></td>
-<td><p><strong>DUACS</strong></p></td>
-<td><p>54.5 %</p></td>
-<td><p>53.7 %</p></td>
-</tr>
-<tr class="row-odd"><td><p></p></td>
-<td><p><strong>MIOST</strong></p></td>
-<td><p><span style="color:blue">54.6 %</span></p></td>
-<td><p>53.9 %</p></td>
-</tr>
-<tr class="row-even"><td><p></p></td>
-<td><p><strong>BFN-QG</strong></p></td>
-<td><p>53.9 %</p></td>
-<td><p><span style="color:blue">54.0 %</span></p></td>
-</tr>
-</tbody>
-</table>
-</details>
-<br>
-</section>
-<section id="current-magnitud-movie">
-<h2>Current magnitud movie<a class="headerlink" href="#current-magnitud-movie" title="Permalink to this headline"></a></h2>
+<section id="current-magnitude-movie">
+<h2>Current magnitude movie<a class="headerlink" href="#current-magnitude-movie" title="Permalink to this headline"></a></h2>
 <details>
 <summary>Current movies ⤵️  </summary>
 <br> 
@@ -293,6 +155,115 @@
 </center>
 </details>
 <br>
+</section>
+<section id="variance-errors-in-specific-regimes">
+<h2>Variance errors in specific regimes<a class="headerlink" href="#variance-errors-in-specific-regimes" title="Permalink to this headline"></a></h2>
+<details>
+<summary>Variance error [m²/s²] ⤵️  </summary>
+<br>  
+<table>
+  <thead>
+    <tr> 
+      <th></th>
+      <th colspan="3">Variance error u [m²/s²]</th>
+      <th colspan="3">Variance error v [m²/s²]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr> 
+      <td> </td>
+      <td> coastal </td>
+      <td> offshore_highvar </td>
+      <td> offshore_lowvar </td>
+      <td> coastal </td>
+      <td> offshore_highvar </td>
+      <td> offshore_lowvar </td>
+    </tr>
+    <tr> 
+    <tr> 
+      <td><strong>DUACS</strong></td>
+      <td>0.051408</td>
+      <td>0.048399</td>
+      <td>0.023910</td>
+      <td>0.055813</td>
+      <td>0.051483</td>
+      <td>0.021734</td>
+    </tr>
+    <tr> 
+      <td><strong>MIOST</strong></td>
+      <td><span style="color:blue">0.049734</span></td>
+      <td>0.048318</td>
+      <td><span style="color:blue">0.023864</span></td>
+      <td>0.058365</td>
+      <td>0.052196</td>
+      <td>0.021658</td>
+    </tr>
+    <tr> 
+      <td><strong>BFN-QG</strong></td>
+      <td>0.051588</td>
+      <td><span style="color:blue">0.043017</span></td>
+      <td>0.024237</td>
+      <td><span style="color:blue">0.051550</span></td>
+      <td><span style="color:blue">0.044031</span></td>
+      <td><span style="color:blue">0.021606</span></td>
+    </tr> 
+  </tbody>
+</table>
+</details>
+<br>
+<details>
+<summary>Variance error scores ⤵️  </summary>
+<br> 
+<table>
+  <thead>
+    <tr> 
+      <th></th>
+      <th colspan="3">Variance error score u</th>
+      <th colspan="3">Variance error score v</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr> 
+      <td> </td>
+      <td> coastal </td>
+      <td> offshore_highvar </td>
+      <td> offshore_lowvar </td>
+      <td> coastal </td>
+      <td> offshore_highvar </td>
+      <td> offshore_lowvar </td>
+    </tr>
+    <tr> 
+    <tr> 
+      <td><strong>DUACS</strong></td>
+      <td>72.3 %</td>
+      <td>73.3 %</td>
+      <td>54.5 %</td>
+      <td>67.1 %</td>
+      <td>68.4 %</td>
+      <td>53.7 %</td>
+    </tr>
+    <tr> 
+      <td><strong>MIOST</strong></td>
+      <td><span style="color:blue">72.8 %</span></td>
+      <td>73.3 %</td>
+      <td><span style="color:blue">54.6 %</span></td>
+      <td>64.3 %</td>
+      <td>68.0 %</td>
+      <td>53.9 %</td>
+    </tr>
+    <tr> 
+      <td><strong>BFN-QG</strong></td>
+      <td>72.0 %</td>
+      <td><span style="color:blue">76.3 %</span></td>
+      <td>53.9 %</td>
+      <td><span style="color:blue">68.5 %</span></td>
+      <td><span style="color:blue">73.0 %</span></td>
+      <td><span style="color:blue">54.0 %</span></td>
+    </tr> 
+  </tbody>
+</table>
+</details>
+<br> 
 </section>
 <section id="current-error-comparison">
 <h2>Current error comparison<a class="headerlink" href="#current-error-comparison" title="Permalink to this headline"></a></h2>
@@ -358,7 +329,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="dc_agulhas_details.html" class="btn btn-neutral float-left" title="Agulhas current setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="dc_agulhas_duacs.html" class="btn btn-neutral float-right" title="DUACS geostrophic currents" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="dc_agulhas_duacs.html" class="btn btn-neutral float-right" title="DUACS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -1,4 +1,4 @@
-# WOC - BFN-QG geostrophic currents  
+# BFN-QG 
 
 <br>
 
@@ -8,7 +8,7 @@ For over 25 years, satellite altimetry has provided invaluable information about
 
 <br>  
 
-## Current magnitud movie 
+## Current magnitude movie 
  
 <center>
 <video controls width="600">

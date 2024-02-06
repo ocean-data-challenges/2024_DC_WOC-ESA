@@ -22,19 +22,35 @@
 ## Dynamical specificities: 
 
 High variability region with mixed geostrophic and ageostrophic dynamics.
+     
+## Observations available for mapping currents 
+
+- conventional nadir altimeters 
+   - Saral-Altika (alg)
+   - Cryosat-2 (c2)
+   - Haiyang-2a (h2ag)
+   - Haiyang-2b (h2b)
+   - Jason-3 (j3)
+   - Sentinel-3a (s3a)
+   - Sentinel-3b (s3b)
+   
+- satellite SST data
     
+## Independant evaluation data  
+
+- CMEMS drifters currents and trajectories.
+
 ## WOC products: 
 
 - Drifter data-driven currents, 
-- BFN-QG geostrophic currents, 
-- Doppler currents,
+- BFN-QG geostrophic currents,  
 - Merged SSH-SST currents
 
 ## Other products: 
 
 - DUACS
 - MIOST
-- 4DVarQG (Le Guillou et al., 2021)
+- Coming soon: 4DVarQG (Le Guillou et al., 2021)
 
 <br>
  

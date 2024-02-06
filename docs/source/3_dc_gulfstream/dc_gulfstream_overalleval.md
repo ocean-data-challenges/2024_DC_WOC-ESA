@@ -1,67 +1,11 @@
 # Overall comparison
 
-<br>
- 
-    
-## Metric boards
-
-<details>
-<summary>Variance error [m²/s²] ⤵️  </summary>
-    
-<br> 
-
-
-| Region| Method| Variance error u [m²/s²] | Variance error v [m²/s²]  | 
-|---|---|---|---| 
-|**coastal**         |**DUACS**      | 0.026835     |  <span style="color:blue">0.027367</span>    |  
-|                    |**MIOST**      | 0.026970     | 0.028193     |  
-|                    |**DDDcurr**    | 0.025531     | 0.027564     | 
-|                    |**SSHSSTprod** | <span style="color:blue">0.017744</span>     | 0.028912     |  
-|||| 
-|**offshore_highvar**|**DUACS**      | 0.049405     | 0.048346     |  
-|                    |**MIOST**      | 0.048746     | 0.049801     | 
-|                    |**DDDcurr**    | 0.053595     | 0.051306     |  
-|                    |**SSHSSTprod** | <span style="color:blue">0.047787</span>     | <span style="color:blue">0.047780</span>     | 
-|||| 
-|**offshore_lowvar** |**DUACS**      | 0.018048     | 0.015990     |  
-|                    |**MIOST**      | 0.017930     | 0.015888     | 
-|                    |**DDDcurr**    | 0.016065     | 0.015166     | 
-|                    |**SSHSSTprod** | <span style="color:blue">0.013400</span>     | <span style="color:blue">0.013444</span>     | 
-
-</details>
- 
-<br>
-
-<details>
-<summary>Error scores ⤵️  </summary>
-    
-<br> 
-
-
-| Region| Method  | Error score u | Error score v |
-|---|---|---|---| 
-|**coastal**         |**DUACS**      | 54.2 %     | <span style="color:blue">66.2 %</span> |  
-|                    |**MIOST**      | 54.0 %     | 65.2     |  
-|                    |**DDDcurr**    | 56.9 %     | 64.9     | 
-|                    |**SSHSSTprod** | <span style="color:blue">60.4 %</span> | 43.4     |  
-|||| 
-|**offshore_highvar**|**DUACS**      | 72.7 %     | 67.7 %     |  
-|                    |**MIOST**      | 73.1 %     | 66.7 %     | 
-|                    |**DDDcurr**    | 70.4 %     | 65.7 %     |  
-|                    |**SSHSSTprod** | <span style="color:blue">73.6 %</span> | <span style="color:blue">68.1 %</span> | 
-|||| 
-|**offshore_lowvar** |**DUACS**      | 39.9 %     | 41.7 %     |  
-|                    |**MIOST**      | 40.4 %     | 42.1 %     | 
-|                    |**DDDcurr**    | 46.6 %     | 44.7 %     | 
-|                    |**SSHSSTprod** | <span style="color:blue">54.6 %</span> | <span style="color:blue">50.1 %</span> | 
-
-  
-</details>
- 
 
 <br>
 
-## Current magnitud movie 
+<br>
+
+## Current magnitude movie 
  
 <details>
 <summary>Current movies ⤵️  </summary>
@@ -75,6 +19,147 @@
 </center>
  
 </details>
+<br>
+ 
+    
+## Variance errors in specific regimes 
+
+<details>
+<summary>Variance error [m²/s²] ⤵️  </summary>
+    
+<br> 
+ 
+
+<table>
+  <thead>
+    <tr> 
+      <th></th>
+      <th colspan="3">Variance error u [m²/s²]</th>
+      <th colspan="3">Variance error v [m²/s²]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr> 
+      <td> </td>
+      <td> coastal </td>
+      <td> offshore_highvar </td>
+      <td> offshore_lowvar </td>
+      <td> coastal </td>
+      <td> offshore_highvar </td>
+      <td> offshore_lowvar </td>
+    </tr>
+    <tr> 
+    <tr> 
+      <td><strong>DUACS</strong></td>
+      <td>0.026835 </td>
+      <td>0.049405</td>
+      <td>0.018048</td>
+      <td><span style="color:blue">0.027367</span></td>
+      <td>0.048346</td>
+      <td>0.015990</td>
+    </tr>
+    <tr> 
+      <td><strong>MIOST</strong></td>
+      <td>0.026970</td>
+      <td>0.048746</td>
+      <td>0.017930</td>
+      <td>0.028193</td>
+      <td>0.049801</td>
+      <td>0.015888</td>
+    </tr>
+    <tr> 
+      <td><strong>DDDcurr</strong></td>
+      <td>0.025531</td>
+      <td>0.053595</td>
+      <td>0.016065</td>
+      <td>0.027564</td>
+      <td>0.051306</td>
+      <td>0.015166</td>
+    </tr>
+    <tr> 
+      <td><strong>SSHSSTprod</strong></td>
+      <td><span style="color:blue">0.017744</span></td>
+      <td><span style="color:blue">0.047787</span></td>
+      <td><span style="color:blue">0.013400</span></td>
+      <td>0.028912</td>
+      <td><span style="color:blue">0.047780</span></td>
+      <td><span style="color:blue">0.013444</span></td>
+    </tr> 
+  </tbody>
+</table>
+
+
+</details>
+ 
+<br>
+
+<details>
+<summary>Variance error scores ⤵️  </summary>
+    
+<br> 
+ 
+
+<table>
+  <thead>
+    <tr> 
+      <th></th>
+      <th colspan="3">Variance error score u</th>
+      <th colspan="3">Variance error score v</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr> 
+      <td> </td>
+      <td> coastal </td>
+      <td> offshore_highvar </td>
+      <td> offshore_lowvar </td>
+      <td> coastal </td>
+      <td> offshore_highvar </td>
+      <td> offshore_lowvar </td>
+    </tr>
+    <tr> 
+    <tr> 
+      <td><strong>DUACS</strong></td>
+      <td>54.2 %</td>
+      <td>72.7 %</td>
+      <td>39.9 %</td>
+      <td><span style="color:blue">66.2 %</span></td>
+      <td>67.7 %</td>
+      <td>41.7 %</td>
+    </tr>
+    <tr> 
+      <td><strong>MIOST</strong></td>
+      <td>54.0 %</td>
+      <td>73.1 %</td>
+      <td>40.4 %</td>
+      <td>65.2 %</td>
+      <td>66.7 %</td>
+      <td>42.1 %</td>
+    </tr>
+    <tr> 
+      <td><strong>DDDcurr</strong></td>
+      <td>56.9 %</td>
+      <td>70.4 %</td>
+      <td>46.6 %</td>
+      <td>64.9 %</td>
+      <td>65.7 %</td>
+      <td>44.7 %</td>
+    </tr>
+    <tr> 
+      <td><strong>SSHSSTprod</strong></td>
+      <td><span style="color:blue">60.4 %</span></td>
+      <td><span style="color:blue">73.6 %</span></td>
+      <td><span style="color:blue">54.6 %</span></td>
+      <td>43.4 %</td>
+      <td><span style="color:blue">68.1 %</span></td>
+      <td><span style="color:blue">50.1 %</span></td>
+    </tr> 
+  </tbody>
+</table>
+
+  
+</details>
+ 
  
 
 <br>
