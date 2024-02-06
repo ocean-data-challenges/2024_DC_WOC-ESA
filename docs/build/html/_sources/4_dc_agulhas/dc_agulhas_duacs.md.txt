@@ -1,4 +1,4 @@
-# DUACS geostrophic currents  
+# DUACS 
 
 <br>
 
@@ -6,7 +6,7 @@ Altimeter satellite gridded Sea Level Anomalies (SLA) computed with respect to a
 
 <br>
 
-## Current magnitud movie 
+## Current magnitude movie 
    
  
 <center>

@@ -5,7 +5,7 @@
 
 <br>
 
-## Current magnitud movie 
+## Current magnitude movie 
  
 <details>
 <summary>Current movies ⤵️  </summary>

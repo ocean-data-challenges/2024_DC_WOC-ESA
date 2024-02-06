@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WOC - BFN-QG geostrophic currents &mdash; WOC-ESA Data challenges  documentation</title>
+  <title>BFN-QG &mdash; WOC-ESA Data challenges  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Standard insitu validation" href="../5_metrics_det/metrics_1-standard-insitu.html" />
-    <link rel="prev" title="WOC - Drifter data-driven currents" href="dc_agulhas_drifterproduct.html" />
+    <link rel="next" title="Gulf Stream setup" href="../3_dc_gulfstream/dc_gulfstream_details.html" />
+    <link rel="prev" title="DDDcurr" href="dc_agulhas_drifterproduct.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -53,41 +53,45 @@
 <li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_data.html">Download the data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_eval.html">Input specification</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_overalleval.html">Overall evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_sshsstproduct.html">WOC - Merged SSH/SST currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_miost.html">MIOST geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_sshsstproduct.html">WOC - Merged SSH/SST currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_products.html">Products description</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="dc_agulhas_details.html">Agulhas current setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dc_agulhas_overalleval.html">Overall comparison</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_duacs.html">DUACS geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_miost.html">MIOST geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">WOC - BFN-QG geostrophic currents</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#current-magnitud-movie">Current magnitud movie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_duacs.html">DUACS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_miost.html">MIOST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_drifterproduct.html">DDDcurr</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">BFN-QG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#current-magnitude-movie">Current magnitude movie</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#zonal-and-meridional-current-error-variance">Zonal and Meridional current error variance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lagrangian-cumulative-distance">Lagrangian cumulative distance</a></li>
 </ul>
 </li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_miost.html">MIOST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_sshsstproduct.html">DADR-SR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_drifterproduct.html">DDDcurr</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_bfnqgproduct.html">BFN-QG</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_overalleval.html">Overall evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_sshsstprod.html">DADR-SR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_dddcurr.html">DDDcurr</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_bfnqgproduct.html">BFN-QG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_duacs.html">DUACS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_miost.html">MIOST</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_0-introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_1-standard-insitu.html">Standard insitu validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_2-effective-resolution.html">Effective resolution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_3-position-structures.html">Position of structures</a></li>
@@ -124,7 +128,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">WOC - BFN-QG geostrophic currents</li>
+      <li class="breadcrumb-item active">BFN-QG</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/4_dc_agulhas/dc_agulhas_bfnqgproduct.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -134,14 +138,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section class="tex2jax_ignore mathjax_ignore" id="woc-bfn-qg-geostrophic-currents">
-<h1>WOC - BFN-QG geostrophic currents<a class="headerlink" href="#woc-bfn-qg-geostrophic-currents" title="Permalink to this headline"></a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="bfn-qg">
+<h1>BFN-QG<a class="headerlink" href="#bfn-qg" title="Permalink to this headline"></a></h1>
 <br>
 <p>For over 25 years, satellite altimetry has provided invaluable information about the ocean dynamics at many scales. Gridded Sea Surface Height (SSH) maps allow to estimate the mesoscale geostrophic circulation in the ocean. However, conventional interpolation techniques rely on static optimal interpolation schemes, hence limiting the estimation of non-linear dynamics at scales not well sampled by altimetry (i.e., below 150-200km at mid latitudes). To overcome this limitation in the resolution of small-scale SSH structures (and thus small-scale geostrophic currents), a Back-and-Forth Nudging algorithm combined with a Quasi-Geostrophic model, a technique called BFN-QG, has been implemented within the theme 1 of the ESA World Ocean Circulation (WOC) project. The performances have been evaluated within Observing System Experiments (OSEs) that use independent data (such as independent SSH, Sea Surface Temperature and drifter data) as ground-truth. By comparing the mapping performances to the ones obtained by operational products, the BFN-QG improves the mapping of short, energetic mesoscale structures and associated geostrophic currents both in space and time. In particular, the BFN-QG improves (i) the spatial effective resolution of the SSH maps by a factor of 20%, (ii) the zonal and (especially) the meridional geostrophic currents and (iii) the prediction of Lagrangian transport for lead times up to 10 days.</p>
 <p><strong>More information on the BFN-QG products <a class="reference external" href="https://www.worldoceancirculation.org/Products#/metadata/7fe77c80-798a-42d4-a69c-2b5f0ba81a43">here</a> !</strong></p>
 <br>  
-<section id="current-magnitud-movie">
-<h2>Current magnitud movie<a class="headerlink" href="#current-magnitud-movie" title="Permalink to this headline"></a></h2>
+<section id="current-magnitude-movie">
+<h2>Current magnitude movie<a class="headerlink" href="#current-magnitude-movie" title="Permalink to this headline"></a></h2>
 <center>
 <video controls width="600">
   <source src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/1b609f81-bf4a-4641-a146-556cce3c332b" type="video/mp4" />   
@@ -181,8 +185,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="dc_agulhas_drifterproduct.html" class="btn btn-neutral float-left" title="WOC - Drifter data-driven currents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../5_metrics_det/metrics_1-standard-insitu.html" class="btn btn-neutral float-right" title="Standard insitu validation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="dc_agulhas_drifterproduct.html" class="btn btn-neutral float-left" title="DDDcurr" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../3_dc_gulfstream/dc_gulfstream_details.html" class="btn btn-neutral float-right" title="Gulf Stream setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

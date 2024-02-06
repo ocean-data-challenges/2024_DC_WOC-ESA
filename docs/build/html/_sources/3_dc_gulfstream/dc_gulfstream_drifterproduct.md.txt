@@ -1,4 +1,4 @@
-# WOC - Drifter data-driven currents
+# DDDcurr
 
 <br>
 
@@ -10,7 +10,7 @@ This dataset provides Level 4 total current including geostrophy and a data-driv
 
 <br>
  
-## Current magnitud movie 
+## Current magnitude movie 
    
  
 <center>

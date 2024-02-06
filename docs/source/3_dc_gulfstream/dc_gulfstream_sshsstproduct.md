@@ -1,4 +1,4 @@
-# WOC - Merged SSH/SST currents
+# DADR-SR 
 
 <br>
 
@@ -9,7 +9,7 @@ This dataset provides a level 4 (L4) gap free reconstruction of 2D ocean surface
 
 <br>
  
-## Current magnitud movie 
+## Current magnitude movie 
    
  
 <center>

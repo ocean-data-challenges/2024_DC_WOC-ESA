@@ -26,11 +26,10 @@ DC-WOC-ESA
      <h1 style="color:rgb(28, 69, 135);font-size:40px;">Opening 31st of March 2024 !</h1> 
     </center> 
    </embed>
-
-:raw-html:`<br />`
+ 
 
 .. image:: ../../figures/dc_2024a_WOC-ESA_banner.jpg
-    :width: 1200 
+    :width: 550 
     :align: center 
 
 :raw-html:`<br />`
@@ -51,9 +50,107 @@ The WOC data challenges are comparison platforms that allow a sound and fair ass
     </embed>
     
     
-:raw-html:`<br />`
+     
+     
+
+:raw-html:`<br />` 
+
+ 
+Objectives and caveats   
+==========================
+
+The goal of the data challenge is to evaluate the products ability to estimate the total surface current in different regions. 
+The input observations used to generate the products are not resticted apart for the drifters data during the evaluation period. A dataset of some input observations is provided (see `Download the data <https://2024-dc-woc-esa.readthedocs.io/en/latest/1_getstarted/getstarted_data.html>`_), however any other data apart from the drifters data during the evaluation period can be used. 
+
+Note that some products are intrinsically estimating only specific components of the total current (e.g., the geostrophic component) they are nonetheless evaluated like the other products, making their assumption on the currents a part of their total current approximation. 
+
+The caveats of the data challenge are: 
     
-The WOC data challenges cover three geographical regions, with different dynamical characteristics, and multiple WOC products that are available in these regions. 
+.. raw:: html
+
+    <embed> 
+        <ul>
+            <li> not all products are using the same input observations,   
+            </br>
+
+            <li> some products may use drifters which are also used for the evaluation <b> but never drifters data acquired during the evaluation period </b>,   
+            </br> 
+
+            <li> some products' goal is not to estimate the total currents,    
+            </br> 
+
+            <li> the summarized score in the scoreboards may not be representative of the methods' full performances, making it important to look at the detailed comparisons, 
+
+
+        </ul>
+    </embed>
+    
+    
+Evaluated products   
+==================
+
+.. raw:: html
+
+    <embed> 
+
+        <table>
+          <thead>
+            <tr> 
+              <th>Products</th>
+              <th>Provider</th>
+              <th>Reconstructed currents</th>
+              <th>Input observations used</th> 
+            </tr>
+          </thead>
+          <tbody>  
+            <tr> 
+              <td><strong>BFN-QG</strong></td>
+              <td> WOC-ESA </td>
+              <td> Geostrophic </td> 
+              <td> altimetry </td> 
+            </tr> 
+            <tr> 
+              <td><strong>DADR-SR</strong></td>
+              <td> WOC-ESA </td>
+              <td> Total currents </td> 
+              <td> altimetry, SST</td> 
+            </tr> 
+            <tr> 
+              <td><strong>DDDcurr</strong></td>
+              <td> WOC-ESA </td>
+              <td> Total currents </td> 
+              <td> Drifter currents, GlobCurrent geos.</td> 
+            </tr> 
+            <tr> 
+              <td><strong>GC-combined</strong></td>
+              <td> GlobCurrent </td>
+              <td> Geostrophic + Ekman </td> 
+              <td> altimetry, gravimetry, drifters </td> 
+            </tr>
+            <tr> 
+              <td><strong>DUACS</strong></td>
+              <td> CMEMS </td>
+              <td> Geostrophic </td> 
+              <td> altimetry </td> 
+            </tr>
+            <tr> 
+              <td><strong>MIOST</strong></td>
+              <td> CLS </td>
+              <td> Geostrophic </td> 
+              <td> altimetry </td> 
+            </tr>
+          </tbody>
+        </table> 
+        </br>
+    </embed>
+
+For more details on the products, check the `Products description <https://2024-dc-woc-esa.readthedocs.io/en/latest/1_getstarted/getstarted_products.html>`_ page.
+    
+Regions of interest      
+===================
+ 
+    
+The WOC data challenges cover three geographical regions, with different dynamical characteristics. 
 
 .. raw:: html   
  
@@ -91,21 +188,21 @@ The WOC data challenges cover three geographical regions, with different dynamic
           </thead>
           <tbody>  
             <tr> 
-              <td><strong>DUACS</strong></td>
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_duacs.html">DUACS</a></strong></td>
               <td>21.06 cm/s</td>
               <td>47.76 %</td> 
               <td>21.33 cm/s</td>
               <td>42.91 %</td> 
             </tr>
             <tr> 
-              <td><strong>MIOST</strong></td>
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_miost.html">MIOST</a></strong></td>
               <td>20.91 cm/s</td>
               <td>47.92 %</td> 
               <td>21.49 cm/s</td>
               <td>42.30 %</td> 
             </tr>
             <tr> 
-              <td><strong>BFN-QG</strong></td>
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_bfnqgproduct.html">BFN-QG</a></strong></td>
               <td><span style="color:blue">20.19 cm/s</span></td>
               <td><span style="color:blue">49.90 %</span></td> 
               <td><span style="color:blue">20.01 cm/s</span></td>
@@ -116,7 +213,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
 
         </br>
         
-        <h4> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_overalleval.html"><i> > Check the detailed comparison</i></a></h4> 
+        <h4>You can <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_overalleval.html"><i> check the detailed comparison</i></a> or click on a method to see its specific performances.</h4> 
         
     </div>
 
@@ -147,28 +244,28 @@ The WOC data challenges cover three geographical regions, with different dynamic
           </thead>
           <tbody>  
             <tr> 
-              <td><strong>DUACS</strong></td>
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS</a></strong></td>
               <td>15.57 cm/s</td>
               <td>34.82 %</td> 
               <td>14.89 cm/s</td>
               <td>33.73 %</td> 
             </tr>
             <tr> 
-              <td><strong>MIOST</strong></td>
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_miost.html">MIOST</a></strong></td>
               <td>15.43 cm/s</td>
               <td>35.44 %</td> 
               <td>14.83 cm/s</td>
               <td>33.96 %</td> 
             </tr>
             <tr> 
-              <td><strong>DDDcurr</strong></td>
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_drifterproduct.html">DDDcurr</a></strong></td>
               <td>15.06 cm/s</td>
               <td>37.05 %</td> 
               <td>14.71 cm/s</td>
               <td>34.33 %</td> 
             </tr> 
             <tr> 
-              <td><strong>SSHSSTprod</strong></td>
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_sshsstproduct.html">DADR-SR</a></strong></td>
               <td><span style="color:blue">13.79 cm/s</span></td>
               <td><span style="color:blue">41.53 %</span></td> 
               <td><span style="color:blue">14.10 cm/s</span></td>
@@ -180,7 +277,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
         
         </br>
         
-        <h4> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_overalleval.html"><i> > Check the detailed comparison</i></a></h4> 
+        <h4>You can <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_overalleval.html"><i> check the detailed comparison</i></a> or click on a method to see its specific performances.</h4>  
         
     </div>
 
@@ -214,14 +311,14 @@ The WOC data challenges cover three geographical regions, with different dynamic
           </thead>
           <tbody>  
             <tr> 
-              <td><strong>DUACS</strong></td>
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_duacs.html">DUACS</a></strong></td>
               <td>16.45 cm/s</td>
               <td>30.10 %</td> 
               <td>14.89 cm/s</td>
               <td>27.48 %</td> 
             </tr>
             <tr> 
-              <td><strong>MIOST</strong></td>
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_miost.html">MIOST</a></strong></td>
               <td> <span style="color:blue">11.99 cm/s</span></td>
               <td> <span style="color:blue">37.87 %</span></td> 
               <td> <span style="color:blue">11.88 cm/s</span></td>
@@ -232,7 +329,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
 
         </br>
         
-        <h4> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_overalleval.html"><i> > Check the detailed comparison</i></a></h4> 
+        <h4>You can <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_overalleval.html"><i> check the detailed comparison</i></a> or click on a method to see its specific performances.</h4>   
 
     </div>
     <script>
@@ -311,6 +408,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    1_getstarted/getstarted_install.md
    1_getstarted/getstarted_data.md 
    1_getstarted/getstarted_eval.md
+   1_getstarted/getstarted_products.md
 
 .. toctree::
    :hidden:
