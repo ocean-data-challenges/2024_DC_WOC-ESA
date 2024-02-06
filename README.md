@@ -26,7 +26,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 **For more info on the objectives, the experimental setup and the results of the WOC data challenges: [Check out the WOC data challenges website !](https://2024-dc-woc-esa.readthedocs.io)**
 
   
-
+ 
 # 3. Get started
  
 
