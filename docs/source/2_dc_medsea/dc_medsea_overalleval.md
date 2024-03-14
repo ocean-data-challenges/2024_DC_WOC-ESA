@@ -1,4 +1,4 @@
-# Overall evaluation
+# Overall comparison
 
 <br>
 
@@ -57,11 +57,11 @@
       <td> 0.008122</td>
     </tr>
     <tr> 
-      <td><strong>BFN-QG</strong></td>
-      <td> %</td>
-      <td> %</td> 
-      <td> %</td>
-      <td> %</td>
+      <td><strong>dADR-SR</strong></td>
+      <td> 0.030012</td>
+      <td> 0.013004</td> 
+      <td> 0.022478</td>
+      <td> 0.011580</td>
     </tr> 
   </tbody>
 </table> 
@@ -109,11 +109,11 @@
       <td> -10.75%</td>
     </tr>
     <tr> 
-      <td><strong>BFN-QG</strong></td>
-      <td> %</td>
-      <td> %</td> 
-      <td> %</td>
-      <td> %</td>
+      <td><strong>dADR-SR</strong></td>
+      <td> 44.45%</td>
+      <td> 13.34%</td> 
+      <td> 46.91%</td>
+      <td> -57.90%</td>
     </tr> 
   </tbody>
 </table>

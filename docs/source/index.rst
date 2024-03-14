@@ -37,7 +37,7 @@ DC-WOC-ESA
 :raw-html:`<br />`
  
 
-The WOC data challenges are comparison platforms that allow a sound and fair assessment of the WOC products between them and to other products. These platforms offer an input dataset (altimetric data, drifters, doppler data ...) for anyone to create a current products as well as a reference dataset (independant from the input dataset) in order to evaluate the products. These data challenges are contained in a `github repository <https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/tree/main>`_ and their documentation and results are presented on this readthedocs website. 
+The WOC data challenges are comparison platforms that allow a sound and fair assessment of the WOC products between them and to other products. These platforms offer an input dataset (altimetric data, drifters, SST data ...) for anyone to create a current products as well as a reference dataset (independant from the input dataset) in order to evaluate the products. These data challenges are contained in a `github repository <https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/tree/main>`_ and their documentation and results are presented on this readthedocs website. 
 
 :raw-html:`<br />` 
     
@@ -50,8 +50,10 @@ The WOC data challenges are comparison platforms that allow a sound and fair ass
     </embed>
     
     
+
+:raw-html:`<br />` 
      
-     
+:raw-html:`<hr />` 
 
 :raw-html:`<br />` 
 
@@ -59,10 +61,10 @@ The WOC data challenges are comparison platforms that allow a sound and fair ass
 Objectives and caveats   
 ==========================
 
-The goal of the data challenge is to evaluate the products ability to estimate the total surface current in different regions. 
+The goal of the data challenge is to evaluate the products ability to estimate the total surface current in three different regions during the year 2019 (evaluation period). 
 The input observations used to generate the products are not resticted apart for the drifters data during the evaluation period. A dataset of some input observations is provided (see `Download the data <https://2024-dc-woc-esa.readthedocs.io/en/latest/1_getstarted/getstarted_data.html>`_), however any other data apart from the drifters data during the evaluation period can be used. 
 
-Note that some products are intrinsically estimating only specific components of the total current (e.g., the geostrophic component) they are nonetheless evaluated like the other products, making their assumption on the currents a part of their total current approximation. 
+Note that some products are intrinsically estimating only specific components of the total current (e.g., the geostrophic component) they are nonetheless evaluated like the other products, making their assumption on the currents as a total current approximation. 
 
 The caveats of the data challenge are: 
     
@@ -85,6 +87,13 @@ The caveats of the data challenge are:
         </ul>
     </embed>
     
+    
+
+:raw-html:`<br />` 
+     
+:raw-html:`<hr />` 
+
+:raw-html:`<br />` 
     
 Evaluated products   
 ==================
@@ -110,7 +119,7 @@ Evaluated products
               <td> altimetry </td> 
             </tr> 
             <tr> 
-              <td><strong>DADR-SR</strong></td>
+              <td><strong>dADR-SR</strong></td>
               <td> WOC-ESA </td>
               <td> Total currents </td> 
               <td> altimetry, SST</td> 
@@ -146,6 +155,14 @@ Evaluated products
 
 For more details on the products, check the `Products description <https://2024-dc-woc-esa.readthedocs.io/en/latest/1_getstarted/getstarted_products.html>`_ page.
     
+    
+
+:raw-html:`<br />` 
+     
+:raw-html:`<hr />` 
+
+:raw-html:`<br />` 
+
 Regions of interest      
 ===================
  
@@ -265,7 +282,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
               <td>34.33 %</td> 
             </tr> 
             <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_sshsstproduct.html">DADR-SR</a></strong></td>
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_sshsstproduct.html">dADR-SR</a></strong></td>
               <td><span style="color:blue">13.79 cm/s</span></td>
               <td><span style="color:blue">41.53 %</span></td> 
               <td><span style="color:blue">14.10 cm/s</span></td>
@@ -324,8 +341,23 @@ The WOC data challenges cover three geographical regions, with different dynamic
               <td> <span style="color:blue">11.88 cm/s</span></td>
               <td> <span style="color:blue">30.17 %</span></td> 
             </tr> 
+            <tr> 
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_sshsstprod.html">dADR-SR</a></strong></td>
+              <td> 17.35 cm/s </td>
+              <td> 28.56 % </td> 
+              <td> 15.06 cm/s </td>
+              <td> 26.75 % </td> 
+            </tr> 
+            <tr> 
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_bfnqg.html">BFN-QG</a></strong></td>
+              <td> 16.00 cm/s </td>
+              <td> 31.35 % </td> 
+              <td> 14.81 cm/s </td>
+              <td> 28.68 % </td> 
+            </tr> 
           </tbody>
         </table> 
+ 
 
         </br>
         
@@ -355,6 +387,10 @@ The WOC data challenges cover three geographical regions, with different dynamic
    
      
      
+
+:raw-html:`<br />` 
+     
+:raw-html:`<hr />` 
 
 :raw-html:`<br />` 
      
@@ -416,12 +452,12 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    :caption: DC - Agulhas Current
  
    4_dc_agulhas/dc_agulhas_details.md
-   4_dc_agulhas/dc_agulhas_overalleval.md
+   4_dc_agulhas/dc_agulhas_overalleval.md 
    4_dc_agulhas/dc_agulhas_duacs.md
    4_dc_agulhas/dc_agulhas_miost.md
    4_dc_agulhas/dc_agulhas_drifterproduct.md
    4_dc_agulhas/dc_agulhas_bfnqgproduct.md  
-    
+     
 
 .. toctree::
    :hidden:
@@ -434,7 +470,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    3_dc_gulfstream/dc_gulfstream_miost.md 
    3_dc_gulfstream/dc_gulfstream_sshsstproduct.md 
    3_dc_gulfstream/dc_gulfstream_drifterproduct.md 
-   3_dc_gulfstream/dc_gulfstream_bfnqgproduct.md   
+   3_dc_gulfstream/dc_gulfstream_bfnqgproduct.md  
    
 .. toctree::
    :hidden:
@@ -443,11 +479,11 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 
    2_dc_medsea/dc_medsea_details.md
    2_dc_medsea/dc_medsea_overalleval.md
-   2_dc_medsea/dc_medsea_sshsstprod.md 
-   2_dc_medsea/dc_medsea_dddcurr.md 
-   2_dc_medsea/dc_medsea_bfnqgproduct.md  
+   2_dc_medsea/dc_medsea_sshsstprod.md  
+   2_dc_medsea/dc_medsea_bfnqg.md  
    2_dc_medsea/dc_medsea_duacs.md 
    2_dc_medsea/dc_medsea_miost.md 
+   2_dc_medsea/Mediterranean_intercomparison.md 
  
 
    

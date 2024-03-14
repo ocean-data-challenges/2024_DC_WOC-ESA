@@ -25,6 +25,13 @@ Altimeter satellite gridded Sea Level Anomalies (SLA) computed with respect to a
  
  
 
+<br> 
+
+
+|![Maps_DUACSallsat_errvar_Mediterranean_uv](../_static/Maps_DUACS_errvar_Mediterranean_uv.png)  | 
+|![Maps_DUACSallsat_explvar_Mediterranean_uv](../_static/Maps_DUACS_explvar_Mediterranean_uv.png)   |
+|----|
+
 <br>
  
 
@@ -33,5 +40,6 @@ Altimeter satellite gridded Sea Level Anomalies (SLA) computed with respect to a
 
 ## Lagrangian cumulative distance 
  
+
 <br>  
   

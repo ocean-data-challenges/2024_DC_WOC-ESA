@@ -184,6 +184,45 @@ def plot_stat_uv_by_regimes(stat_output_filename):
         my_dictionary[region]['var_score_v_allscale'] = 1. - my_dictionary[region]['mapping_err_v_var [m²/s²]']/my_dictionary[region]['NSCT_var [m²/s²]']
     
     return pd.DataFrame(my_dictionary.values(), index=my_dictionary.keys())
+
+
+
+def compare_plot_stat_uv_by_regimes(stat_output_filenames, methods):
+    """
+    Generate and display statistical summary of velocity components by geographical regions.
+
+    Parameters
+    ----------
+    stat_output_filename : str
+        Path to the input NetCDF file containing statistical data.
+
+    Returns
+    -------
+    pandas DataFrame
+        DataFrame containing the statistical summary by regions and velocity components.
+    """
+    my_dictionary = {}
+    imethod = 0
+    for stat_output_filename in stat_output_filenames:
+        method = methods[imethod]
+        my_dictionary[f'{method}'] = {}
+        for region in ['coastal', 'offshore_highvar', 'offshore_lowvar', 'equatorial_band', 'arctic', 'antarctic']:
+            
+            my_dictionary[f'{method}'][f'{region}'] = {}
+            for var_name in ['mapping_err_u', 'mapping_err_v', 'ugos_interpolated', 'EWCT', 'vgos_interpolated', 'NSCT']:
+
+                ds = xr.open_dataset(stat_output_filename, group=f'{region}_{var_name}')
+
+                my_dictionary[f'{method}'][f'{region}'][f'{var_name}_var [m²/s²]'] =  ds['variance'].values[0]
+                #my_dictionary[f'{region}'][f'{var_name}_rms'] =  ds['rmse'].values[0]
+
+        for region in ['coastal', 'offshore_highvar', 'offshore_lowvar', 'equatorial_band', 'arctic', 'antarctic']:
+            my_dictionary[f'{method}'][region]['var_score_u_allscale'] = 1. - my_dictionary[f'{method}'][region]['mapping_err_u_var [m²/s²]']/my_dictionary[f'{method}'][region]['EWCT_var [m²/s²]']
+            my_dictionary[f'{method}'][region]['var_score_v_allscale'] = 1. - my_dictionary[f'{method}'][region]['mapping_err_v_var [m²/s²]']/my_dictionary[f'{method}'][region]['NSCT_var [m²/s²]']
+    
+        imethod += 1
+        
+    return pd.DataFrame(my_dictionary.values(), index=my_dictionary.keys())
     
 
 
@@ -1629,7 +1668,7 @@ def compare_stat_score_map_uv_png(study_filename, ref_filename,box_lonlat, metho
                     wspace=0.02, hspace=0.0001)
 
     method_name = methods[0]+'vs'+methods[1]
-    plt.savefig("../figures/"+str(method_name)+"/Maps_"+str(method_name)+"_errexplvarcomp_"+region+"_uv.png", bbox_inches='tight')
+    plt.savefig("../figures/intercomp/Maps_"+str(method_name)+"_errexplvarcomp_"+region+"_uv.png", bbox_inches='tight')
 
 
 def compare_psd_score(study_filename, ref_filename):
@@ -1940,9 +1979,9 @@ def movie_intercomp(ds_maps_list, methods=['DUACS'], name_var='uv', dir_output='
 
                 ids = ds_maps_list[i_met].isel(time=tt) 
                 if i_met%2 == 0 and nmet!=1: 
-                    ids[name_var].plot(ax=ax0,cmap='YlGnBu_r',vmin=0,vmax=1.2,add_colorbar=False)
+                    ids[name_var].plot(ax=ax0,cmap='YlGnBu_r',vmin=0,vmax=0.6,add_colorbar=False)
                 else: 
-                    ids[name_var].plot(ax=ax0,cmap='YlGnBu_r',vmin=0,vmax=1.2,add_colorbar=True, extend='max')
+                    ids[name_var].plot(ax=ax0,cmap='YlGnBu_r',vmin=0,vmax=0.6,add_colorbar=True, extend='max')
                 ax0.set_title(methods[i_met])  
 
             if nmet%2 !=0 and nmet!=1:
