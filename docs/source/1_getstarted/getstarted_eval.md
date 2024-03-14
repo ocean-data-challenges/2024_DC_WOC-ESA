@@ -12,14 +12,21 @@ Once you have [installed the data challenge](getstarted_install.md) and [downloa
 
 ## Maps format
 
-The input netcdf files must contain: 
+The evaluated maps must be provided as netcdf files that contain: 
 - `latitude`, `longitude` and `time` dimensions.  .
 - for currents, a meridional and a zonal currents variable `u` and `v`.
 
 Note that the names of the variables will be specified in the dictionnary and can differ from the example names above. 
    
-## Example
+### Example
 
 ![Currents_Format](../figures/Maps_format_Currents.png)  
 
+
+## Json dictionnary
+
+
+### Example 
+
  
+![Dictionnary_example](../_static/evaldata_dictionnaryexample_bfnqg.jpg)  

@@ -24,7 +24,13 @@ Multi-scale interpolation (MIOST) combines ocean altimetry data along the track 
 
 ## Zonal and Meridional current error and explained variance
  
- 
+
+<br> 
+
+
+|![Maps_MIOST_errvar_Mediterranean_uv](../_static/Maps_MIOST_errvar_Mediterranean_uv.png)  | 
+|![Maps_MIOST_explvar_Mediterranean_uv](../_static/Maps_MIOST_explvar_Mediterranean_uv.png)   |
+|----|
 
 <br>
  
@@ -33,7 +39,5 @@ Multi-scale interpolation (MIOST) combines ocean altimetry data along the track 
 <br>
 
 ## Lagrangian cumulative distance 
-
-
+ 
 <br>  
-  
