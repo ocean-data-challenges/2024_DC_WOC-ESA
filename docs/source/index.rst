@@ -350,14 +350,13 @@ The WOC data challenges cover three geographical regions, with different dynamic
             </tr> 
             <tr> 
               <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_bfnqg.html">BFN-QG</a></strong></td>
-              <td> 16.00 cm/s </td>
-              <td> 31.35 % </td> 
-              <td> 14.81 cm/s </td>
-              <td> 28.68 % </td> 
+              <td> 15.94 cm/s </td>
+              <td> 31.04 % </td> 
+              <td> 14.82 cm/s </td>
+              <td> 27.92 % </td> 
             </tr> 
           </tbody>
-        </table> 
- 
+        </table>  
 
         </br>
         

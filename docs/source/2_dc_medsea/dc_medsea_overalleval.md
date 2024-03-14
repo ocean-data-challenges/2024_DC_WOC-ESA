@@ -63,8 +63,16 @@
       <td> 0.022478</td>
       <td> 0.011580</td>
     </tr> 
+    <tr> 
+      <td><strong>BFN-QG</strong></td>
+      <td> 0.025305</td>
+      <td> 0.013400</td> 
+      <td> 0.021981</td>
+      <td> 0.009097</td>
+    </tr> 
   </tbody>
 </table> 
+
 
 </details>
  
@@ -103,17 +111,24 @@
     </tr>
     <tr> 
       <td><strong>MIOST</strong></td>
-      <td> 60.01%</td>
+      <td> 60.01 %</td>
       <td> 22.69 %</td> 
       <td> 51.33 %</td>
-      <td> -10.75%</td>
+      <td> -10.75 %</td>
     </tr>
     <tr> 
       <td><strong>dADR-SR</strong></td>
-      <td> 44.45%</td>
-      <td> 13.34%</td> 
-      <td> 46.91%</td>
-      <td> -57.90%</td>
+      <td> 44.45 %</td>
+      <td> 13.34 %</td> 
+      <td> 46.91 %</td>
+      <td> -57.90 %</td>
+    </tr> 
+    <tr> 
+      <td><strong>BFN-QG</strong></td>
+      <td> 48.50 %</td>
+      <td> 10.71 %</td> 
+      <td> 47.91 %</td>
+      <td> -24.05 %</td>
     </tr> 
   </tbody>
 </table>
