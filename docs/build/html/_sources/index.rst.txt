@@ -451,11 +451,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    :caption: DC - Agulhas Current
  
    4_dc_agulhas/dc_agulhas_details.md
-   4_dc_agulhas/dc_agulhas_overalleval.md 
-   4_dc_agulhas/dc_agulhas_duacs.md
-   4_dc_agulhas/dc_agulhas_miost.md
-   4_dc_agulhas/dc_agulhas_drifterproduct.md
-   4_dc_agulhas/dc_agulhas_bfnqgproduct.md  
+   4_dc_agulhas/dc_agulhas_overalleval.md  
      
 
 .. toctree::
@@ -464,12 +460,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    :caption: DC - Gulf Stream
  
    3_dc_gulfstream/dc_gulfstream_details.md
-   3_dc_gulfstream/dc_gulfstream_overalleval.md 
-   3_dc_gulfstream/dc_gulfstream_duacs.md 
-   3_dc_gulfstream/dc_gulfstream_miost.md 
-   3_dc_gulfstream/dc_gulfstream_sshsstproduct.md 
-   3_dc_gulfstream/dc_gulfstream_drifterproduct.md 
-   3_dc_gulfstream/dc_gulfstream_bfnqgproduct.md  
+   3_dc_gulfstream/dc_gulfstream_overalleval.md   
    
 .. toctree::
    :hidden:
@@ -477,12 +468,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    :caption: DC - Mediterranean Sea
 
    2_dc_medsea/dc_medsea_details.md
-   2_dc_medsea/dc_medsea_overalleval.md
-   2_dc_medsea/dc_medsea_sshsstprod.md  
-   2_dc_medsea/dc_medsea_bfnqg.md  
-   2_dc_medsea/dc_medsea_duacs.md 
-   2_dc_medsea/dc_medsea_miost.md 
-   2_dc_medsea/Mediterranean_intercomparison.md 
+   2_dc_medsea/dc_medsea_overalleval.md  
  
 
    
@@ -492,12 +478,10 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    :caption: Metrics details
 
    5_metrics_det/metrics_0-introduction.md
-   5_metrics_det/metrics_1-standard-insitu.md
-   5_metrics_det/metrics_2-effective-resolution.md
-   5_metrics_det/metrics_3-position-structures.md
-   5_metrics_det/metrics_4-dynamic-characterization.md
-   5_metrics_det/metrics_5-lagrangian-diagnostics.md
-    
+   5_metrics_det/metrics_EulerianRMS.md
+   5_metrics_det/metrics_spectrum.md
+   5_metrics_det/metrics_LagrangianCumulativeDistance.md
+   5_metrics_det/metrics_structure_evaluation.md  
 
 .. toctree::
    :hidden:

@@ -12,7 +12,7 @@ import warnings
 def regional_zoom(ds_glob, boxlon, boxlat, namelon='lon', namelat='lat', change_lon = True):
 
     """
-    Select a geographical region in a xarray.dataset using longitude and latitude information.
+    Select a geographical region in a xarray.dataset using longitude and latitude information.  
 
     Parameters
     ----------
