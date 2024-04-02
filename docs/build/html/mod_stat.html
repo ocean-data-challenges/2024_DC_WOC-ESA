@@ -4,10 +4,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mod_stat module &mdash; ODC - global OSE mapping  documentation</title>
+  <title>mod_stat module &mdash; WOC-ESA Data challenges  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -17,11 +18,10 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="_static/js/custom.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="mod_switchvar module" href="mod_switchvar.html" />
-    <link rel="prev" title="mod_spectral module" href="mod_spectral.html" />
     <link href="_static/style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -35,8 +35,8 @@
           
           
           <a href="index.html" class="icon icon-home">
-            ODC - global OSE mapping
-              <img src="_static/dc_2023_ose_global_logo-rtd.png" class="logo" alt="Logo"/>
+            WOC-ESA Data challenges
+              <img src="_static/dc_2024_WOC-ESA_map2.jpg" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -48,46 +48,33 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Get started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="getstarted_install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getstarted_data.html">Download the data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getstarted_eval.html">Evaluate your own maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_getstarted/getstarted_install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_getstarted/getstarted_data.html">Download the data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_getstarted/getstarted_eval.html">Input specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_getstarted/getstarted_products.html">Products description</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Generic evaluation</span></p>
+<p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="eval_generic_global.html">Global scale evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="eval_generic_NA.html">North Atlantic evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="eval_generic_WM.html">Western Mediterranean evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="eval_generic_GS.html">Gulf Stream evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_dc_agulhas/dc_agulhas_overalleval.html">Overall comparison</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Specific focus</span></p>
+<p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="eval_nio_rotaryspec.html">Near inertial oscillation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Notebooks</span></p>
+<p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="notebooks_evaluation.html">Notebooks evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks_download_data.html">Notebooks download the data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_dc_medsea/dc_medsea_overalleval.html">Overall comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="metrics_alongtrack.html">SSH - Along track metrics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="metrics_alongdrifter.html">Currents - Along drifter metrics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="metrics_driftertraj.html">Currents - Lagrangian metrics</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Scripts</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="mod_compare.html">mod_compare module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mod_filter.html">mod_filter module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mod_interp.html">mod_interp module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mod_plot.html">mod_plot module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mod_powerspec.html">mod_powerspec module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mod_read.html">mod_read module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mod_spectral.html">mod_spectral module</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">mod_stat module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mod_switchvar.html">mod_switchvar module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mod_traj.html">mod_traj module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mod_utils.html">mod_utils module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mod_xscale.html">mod_xscale module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_metrics_det/metrics_0-introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_metrics_det/metrics_EulerianRMS.html">Eulerian scores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_metrics_det/metrics_spectrum.html">Spectral analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_metrics_det/metrics_LagrangianCumulativeDistance.html">Lagrangian Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_metrics_det/metrics_structure_evaluation.html">Structure evaluations</a></li>
 </ul>
 
         </div>
@@ -96,7 +83,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">ODC - global OSE mapping</a>
+          <a href="index.html">WOC-ESA Data challenges</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -104,7 +91,6 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="modules.html">&lt;no title&gt;</a></li>
       <li class="breadcrumb-item active">mod_stat module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/mod_stat.rst.txt" rel="nofollow"> View page source</a>
@@ -263,10 +249,7 @@ data and calculates statistics for each regime separately. The results are saved
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="mod_spectral.html" class="btn btn-neutral float-left" title="mod_spectral module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="mod_switchvar.html" class="btn btn-neutral float-right" title="mod_switchvar module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 

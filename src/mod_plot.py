@@ -774,7 +774,7 @@ def plot_stat_score_map_uv_png(filename,region='glob',box_lonlat=None):
         lon_max = box_lonlat['lon_max']
         lat_min = box_lonlat['lat_min']
         lat_max = box_lonlat['lat_max'] 
-        ds_binning_allscale = regional_zoom(ds_binning_allscale, [lon_min,lon_max], [lat_min,lat_max], namelon='lon', namelat='lat', change_lon=False)
+        ds_binning_allscale = regional_zoom(ds_binning_allscale, [lon_min,lon_max], [lat_min,lat_max], namelon='lon', namelat='lat', change_lon=True)
     
     
     
