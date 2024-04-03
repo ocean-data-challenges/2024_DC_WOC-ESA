@@ -6,7 +6,6 @@
 
 <br>
 
-[Mean errors](../_static/test.html)
     
 ## Current magnitude movie 
  
