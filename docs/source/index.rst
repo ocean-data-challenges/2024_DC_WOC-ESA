@@ -4,10 +4,9 @@
    contain the root `toctree` directive.
 
 .. image:: figures/dc_2024_WOC-ESA_logo-rtd2.png
-    :width: 1200
+    :width: 1000
     :alt: alternate text
-    :align: center
-    
+    :align: center 
     
     
 ========== 
@@ -16,24 +15,21 @@ DC-WOC-ESA
 
 .. role:: raw-html(raw)
     :format: html
-
-:raw-html:`<br />`    
+ 
    
 .. raw:: html  
 
    <embed> 
     <center> 
-     <h1 style="color:rgb(28, 69, 135);font-size:40px;">Opening 31st of March 2024 !</h1> 
+     <h1 style="color:rgb(28, 69, 135);font-size:40px;">Opening April 30th, 2024 !</h1> 
     </center> 
    </embed>
  
 
 .. image:: ../../figures/dc_2024a_WOC-ESA_banner.jpg
     :width: 550 
-    :align: center 
-
-:raw-html:`<br />`
-
+    :align: center  
+    
 :raw-html:`<br />`
  
 
@@ -246,8 +242,8 @@ The WOC data challenges cover three geographical regions, with different dynamic
       
       </ul>
       
-
-      <h3> Scoreboard</h3>  
+  
+        <h3> Scoreboard</h3>   
 
         <table>
           <thead>
@@ -289,8 +285,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
               <td><span style="color:blue">35.10 %</span></td> 
             </tr> 
           </tbody>
-        </table>
-        
+        </table>  
         
         </br>
         
@@ -440,10 +435,18 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    :maxdepth: 2
    :caption: Get started 
 
-   1_getstarted/getstarted_install.md
-   1_getstarted/getstarted_data.md 
-   1_getstarted/getstarted_eval.md 
-   1_getstarted/getstarted_products.md
+   0_getstarted/getstarted_install.md
+   0_getstarted/getstarted_data.md 
+   0_getstarted/getstarted_eval.md  
+    
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+   :caption: Products description 
+
+   1_products/products_woc.md
+   1_products/products_cmems.md 
+   1_products/other_methods.md  
 
 .. toctree::
    :hidden:

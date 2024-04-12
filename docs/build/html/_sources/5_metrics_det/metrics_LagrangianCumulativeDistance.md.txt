@@ -1,4 +1,4 @@
-# Lagrangian Diagnostics
+# Lagrangian diagnostics
 
 <br>
  
