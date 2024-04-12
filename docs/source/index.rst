@@ -105,6 +105,7 @@ Evaluated products
               <th>Provider</th>
               <th>Reconstructed currents</th>
               <th>Input observations used</th> 
+              <th>Available regions</th> 
             </tr>
           </thead>
           <tbody>  
@@ -113,36 +114,49 @@ Evaluated products
               <td> WOC-ESA </td>
               <td> Geostrophic </td> 
               <td> altimetry </td> 
+              <td> Agulhas </td> 
             </tr> 
             <tr> 
               <td><strong>dADR-SR</strong></td>
               <td> WOC-ESA </td>
               <td> Total currents </td> 
               <td> altimetry, SST</td> 
+              <td> Mediterranean </td> 
+            </tr> 
+            <tr> 
+              <td><strong>SSHSSTprod</strong></td>
+              <td> WOC-ESA </td>
+              <td> Total currents </td> 
+              <td> altimetry, SST</td> 
+              <td> Gulf Stream </td> 
             </tr> 
             <tr> 
               <td><strong>DDDcurr</strong></td>
               <td> WOC-ESA </td>
               <td> Total currents </td> 
               <td> Drifter currents, GlobCurrent geos.</td> 
+              <td> Agulhas, Gulf Stream, Mediterranean </td> 
             </tr> 
             <tr> 
               <td><strong>GC-combined</strong></td>
-              <td> GlobCurrent </td>
+              <td> CMEMS-GlobCurrent </td>
               <td> Geostrophic + Ekman </td> 
               <td> altimetry, gravimetry, drifters </td> 
+              <td> Agulhas, Gulf Stream, Mediterranean </td>
             </tr>
             <tr> 
               <td><strong>DUACS</strong></td>
               <td> CMEMS </td>
               <td> Geostrophic </td> 
               <td> altimetry </td> 
+              <td> Agulhas, Gulf Stream, Mediterranean </td>
             </tr>
             <tr> 
               <td><strong>MIOST</strong></td>
               <td> CLS </td>
               <td> Geostrophic </td> 
               <td> altimetry </td> 
+              <td> Agulhas, Gulf Stream, Mediterranean </td>
             </tr>
           </tbody>
         </table> 
@@ -174,8 +188,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
     </div>
     
     <div id="AgulhasCurrent" class="tabcontent">
-      <br />
-      <h3><a href='https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_details.html'>Agulhas Current</a></h3>
+      <br /> 
       <ul>
         <li>  Area: [14°E, 35°E, 45°S, 30°S]</li>
         <li>  Dynamical specificities: Strongly geostrophic region. </li>
@@ -184,55 +197,26 @@ The WOC data challenges cover three geographical regions, with different dynamic
         <li>  Independant evaluation data: CMEMS drifters currents and trajectories.</li>
       
       </ul>
-      
-      
-      <h3> Scoreboard</h3>  
- 
-      <h5> RMS error to drifter currents</h5> 
-        <table>
-          <thead>
-            <tr> 
-              <th></th>
-              <th>RMSE(u)</th>
-              <th>RMSE score(u)</th>
-              <th>RMSE(v)</th>
-              <th>RMSE score(v)</th>
-            </tr>
-          </thead>
-          <tbody>  
-            <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_duacs.html">DUACS</a></strong></td>
-              <td>21.06 cm/s</td>
-              <td>47.76 %</td> 
-              <td>21.33 cm/s</td>
-              <td>42.91 %</td> 
-            </tr>
-            <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_miost.html">MIOST</a></strong></td>
-              <td>20.91 cm/s</td>
-              <td>47.92 %</td> 
-              <td>21.49 cm/s</td>
-              <td>42.30 %</td> 
-            </tr>
-            <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_bfnqgproduct.html">BFN-QG</a></strong></td>
-              <td><span style="color:blue">20.19 cm/s</span></td>
-              <td><span style="color:blue">49.90 %</span></td> 
-              <td><span style="color:blue">20.01 cm/s</span></td>
-              <td><span style="color:blue">46.26 %</span></td> 
-            </tr> 
-          </tbody>
-        </table> 
+       
 
         </br>
         
-        <h4>You can <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_overalleval.html"><i> check the detailed comparison</i></a> or click on a method to see its specific performances.</h4> 
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_details.html"> >  Agulhas Current setup </a></h3> 
+       
+
+        </br>
+        
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_movies.html"> > Reconstruction movies </a></h3> 
+       
+
+        </br>
+        
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_overalleval.html"> > Overall comparison </a></h3> 
         
     </div>
 
     <div id="GulfStream" class="tabcontent">
-      <br />
-      <h3><a href='https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html'>Gulf Stream</a></h3>
+      <br /> 
       <ul>
         <li>  Area: [80°W, 10°W, 25°N, 50°N]</li>
         <li>  Dynamical specificities: High variability region with mixed geostrophic and ageostrophic dynamics. </li>
@@ -241,63 +225,26 @@ The WOC data challenges cover three geographical regions, with different dynamic
         <li>  Independant evaluation data: CMEMS drifters currents and trajectories.</li>
       
       </ul>
-      
-  
-        <h3> Scoreboard</h3>   
-
-        <table>
-          <thead>
-            <tr> 
-              <th></th>
-              <th>RMSE(u)</th>
-              <th>RMSE score(u)</th>
-              <th>RMSE(v)</th>
-              <th>RMSE score(v)</th>
-            </tr>
-          </thead>
-          <tbody>  
-            <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS</a></strong></td>
-              <td>15.57 cm/s</td>
-              <td>34.82 %</td> 
-              <td>14.89 cm/s</td>
-              <td>33.73 %</td> 
-            </tr>
-            <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_miost.html">MIOST</a></strong></td>
-              <td>15.43 cm/s</td>
-              <td>35.44 %</td> 
-              <td>14.83 cm/s</td>
-              <td>33.96 %</td> 
-            </tr>
-            <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_drifterproduct.html">DDDcurr</a></strong></td>
-              <td>15.06 cm/s</td>
-              <td>37.05 %</td> 
-              <td>14.71 cm/s</td>
-              <td>34.33 %</td> 
-            </tr> 
-            <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_sshsstproduct.html">dADR-SR</a></strong></td>
-              <td><span style="color:blue">13.79 cm/s</span></td>
-              <td><span style="color:blue">41.53 %</span></td> 
-              <td><span style="color:blue">14.10 cm/s</span></td>
-              <td><span style="color:blue">35.10 %</span></td> 
-            </tr> 
-          </tbody>
-        </table>  
+       
         
         </br>
         
-        <h4>You can <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_overalleval.html"><i> check the detailed comparison</i></a> or click on a method to see its specific performances.</h4>  
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html"> > Gulf Stream setup </a></h3>  
+        
+        </br>
+        
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_movies.html"> > Reconstruction movies </a></h3>  
+        
+        </br>
+        
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_overalleval.html"> > Overall comparison </a></h3>  
         
     </div>
 
 
 
     <div id="MediterraneanSea" class="tabcontent">
-      <br />
-      <h3><a href='https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_details.html'>Mediterranean Sea</a></h3>
+      <br /> 
       <ul>
         <li>  Area: [5°W, 25°E, 35°N, 47°N] </li>
         <li>  Dynamical specificities: A quasi-closed basin with strong ageostrophic dynamics and vertical shear. </li>
@@ -305,57 +252,19 @@ The WOC data challenges cover three geographical regions, with different dynamic
         <li>  WOC products: Merged SSH/SST currents, Drifter data-driven currents, BFN-QG geostrophic currents </li>
         <li>  Independant evaluation data: CMEMS drifters currents and trajectories.</li>
       
-      </ul>  
-
-      <h3> Scoreboard</h3> 
-      
-      <h5> Variance error score (best is 100%)</h5> 
-      
-        <table>
-          <thead>
-            <tr> 
-              <th></th>
-              <th>RMSE(u)</th>
-              <th>RMSE score(u)</th>
-              <th>RMSE(v)</th>
-              <th>RMSE score(v)</th>
-            </tr>
-          </thead>
-          <tbody>  
-            <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_duacs.html">DUACS</a></strong></td>
-              <td>16.45 cm/s</td>
-              <td>30.10 %</td> 
-              <td>14.89 cm/s</td>
-              <td>27.48 %</td> 
-            </tr>
-            <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_miost.html">MIOST</a></strong></td>
-              <td> <span style="color:blue">11.99 cm/s</span></td>
-              <td> <span style="color:blue">37.87 %</span></td> 
-              <td> <span style="color:blue">11.88 cm/s</span></td>
-              <td> <span style="color:blue">30.17 %</span></td> 
-            </tr> 
-            <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_sshsstprod.html">dADR-SR</a></strong></td>
-              <td> 17.35 cm/s </td>
-              <td> 28.56 % </td> 
-              <td> 15.06 cm/s </td>
-              <td> 26.75 % </td> 
-            </tr> 
-            <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_bfnqg.html">BFN-QG</a></strong></td>
-              <td> 15.94 cm/s </td>
-              <td> 31.04 % </td> 
-              <td> 14.82 cm/s </td>
-              <td> 27.92 % </td> 
-            </tr> 
-          </tbody>
-        </table>  
+      </ul>   
 
         </br>
         
-        <h4>You can <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_overalleval.html"><i> check the detailed comparison</i></a> or click on a method to see its specific performances.</h4>   
+        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_details.html"> > Mediterranean Sea setup </a></h3>   
+
+        </br>
+        
+        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_movies.html"> > Reconstruction movies </a></h3>   
+
+        </br>
+        
+        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_overalleval.html"> > Overall comparison </a></h3>   
 
     </div>
     <script>
@@ -437,7 +346,8 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 
    0_getstarted/getstarted_install.md
    0_getstarted/getstarted_data.md 
-   0_getstarted/getstarted_eval.md  
+   0_getstarted/getstarted_eval.md   
+   
     
 .. toctree::
    :hidden:
@@ -454,6 +364,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    :caption: DC - Agulhas Current
  
    4_dc_agulhas/dc_agulhas_details.md
+   4_dc_agulhas/dc_agulhas_movies.md
    4_dc_agulhas/dc_agulhas_overalleval.md  
      
 
@@ -463,6 +374,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    :caption: DC - Gulf Stream
  
    3_dc_gulfstream/dc_gulfstream_details.md
+   3_dc_gulfstream/dc_gulfstream_movies.md
    3_dc_gulfstream/dc_gulfstream_overalleval.md   
    
 .. toctree::
@@ -471,6 +383,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    :caption: DC - Mediterranean Sea
 
    2_dc_medsea/dc_medsea_details.md
+   2_dc_medsea/dc_medsea_movies.md
    2_dc_medsea/dc_medsea_overalleval.md  
  
 
@@ -478,13 +391,24 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 .. toctree::
    :hidden:
    :maxdepth: 1
-   :caption: Metrics details
+   :caption: Metrics details 
 
    5_metrics_det/metrics_0-introduction.md
    5_metrics_det/metrics_EulerianRMS.md
    5_metrics_det/metrics_spectrum.md
    5_metrics_det/metrics_LagrangianCumulativeDistance.md
-   5_metrics_det/metrics_structure_evaluation.md  
+   5_metrics_det/metrics_structure_evaluation.md 
+    
+
+.. nbgallery::  
+    :caption: Metric illustration notebooks
+    :hidden:
+    :maxdepth: 0
+    :name: rst-gallery 
+    
+    gallery/nb_illustration_run-spectum.ipynb 
+    gallery/nb_illustration_run-EulerianRMS.ipynb 
+    gallery/nb_illustration_run-LagrangianCD.ipynb
 
 .. toctree::
    :hidden:
@@ -492,3 +416,5 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    :caption: Scripts
 
    6_scripts/modules.rst
+   
+    
