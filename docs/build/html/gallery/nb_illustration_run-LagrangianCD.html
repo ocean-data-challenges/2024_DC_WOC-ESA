@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Run Lagrangian CD &mdash; WOC-ESA Data challenges  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/nbsphinx-code-cells.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../_static/js/custom.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Run Eulerian RMS" href="nb_illustration_run-EulerianRMS.html" />
+    <link rel="prev" title="Structure evaluations" href="../5_metrics_det/metrics_structure_evaluation.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            WOC-ESA Data challenges
+              <img src="../_static/dc_2024_WOC-ESA_map2.jpg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Get started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_data.html">Download the data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_eval.html">Input specification</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Products description</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../1_products/products_woc.html">WOC products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_products/products_cmems.html">CMEMS products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_products/other_methods.html">Other methods</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall comparison</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_overalleval.html">Overall comparison</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_0-introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_EulerianRMS.html">Eulerian scores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_spectrum.html">Spectral analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_LagrangianCumulativeDistance.html">Lagrangian diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_structure_evaluation.html">Structure evaluations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Metric illustration notebooks</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Run Lagrangian CD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Velocity-metrics-package-illustration">Velocity metrics package illustration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Agulhas,-BFN-QG">Agulhas, BFN-QG</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#Parameters">Parameters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Output-directory">Output directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Evaluated-maps-parameters">Evaluated maps parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Region-parameters">Region parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Advection-parameters">Advection parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#1.-Advect-drifters">1. Advect drifters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#2.-Compute-SDE">2. Compute SDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#3.-Plot-SDE">3. Plot SDE</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nb_illustration_run-EulerianRMS.html">Run Eulerian RMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nb_illustration_run-spectum.html">Run spectrum</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Scripts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../6_scripts/utils.html">utils module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">WOC-ESA Data challenges</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Run Lagrangian CD</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/gallery/nb_illustration_run-LagrangianCD.ipynb.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="Run-Lagrangian-CD">
+<h1>Run Lagrangian CD<a class="headerlink" href="#Run-Lagrangian-CD" title="Permalink to this headline"></a></h1>
+<img alt="header" src="../_images/logos_partenaires_DC_WOC-ESA.jpg" />
+<section id="Velocity-metrics-package-illustration">
+<h2>Velocity metrics package illustration<a class="headerlink" href="#Velocity-metrics-package-illustration" title="Permalink to this headline"></a></h2>
+<section id="Agulhas,-BFN-QG">
+<h3>Agulhas, BFN-QG<a class="headerlink" href="#Agulhas,-BFN-QG" title="Permalink to this headline"></a></h3>
+<hr class="docutils" />
+<p><strong>Authors:</strong> Datlas <strong>Copyright:</strong> 2023 Datlas <strong>License:</strong> MIT</p>
+<div class="alert alert-block alert-success"><h1><center><p>Run Lagrangian Cumulative Distance: Agulhas, BFNQG currents maps</p>
+</center></h1><h5><center><p>The notebook aims to illustrate how to run the velocity metrics. Here, the example uses surface current maps produced by the BFN-QG in the Agulhas region.</p>
+</center></h5><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">velocity_metrics.lagrangian.drifters</span> <span class="k">as</span> <span class="nn">drifters</span>
+<span class="kn">import</span> <span class="nn">velocity_metrics.lagrangian.cumulative_distance</span> <span class="k">as</span> <span class="nn">sde</span>
+<span class="kn">import</span> <span class="nn">velocity_metrics.utils.constant</span> <span class="k">as</span> <span class="nn">const</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="Parameters">
+<h2>Parameters<a class="headerlink" href="#Parameters" title="Permalink to this headline"></a></h2>
+<section id="Output-directory">
+<h3>Output directory<a class="headerlink" href="#Output-directory" title="Permalink to this headline"></a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">outputdir</span> <span class="o">=</span> <span class="s1">&#39;../results/metrics_illustration/&#39;</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="Evaluated-maps-parameters">
+<h3>Evaluated maps parameters<a class="headerlink" href="#Evaluated-maps-parameters" title="Permalink to this headline"></a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path_dict_product</span> <span class="o">=</span>  <span class="s1">&#39;../nb_run_metrics/data_type_metric_illustration_bfnqg.json&#39;</span>
+
+<span class="n">depth</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="Region-parameters">
+<h3>Region parameters<a class="headerlink" href="#Region-parameters" title="Permalink to this headline"></a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path_dict_region</span> <span class="o">=</span> <span class="s1">&#39;../nb_run_metrics/region_metric_illustration_Agulhas.json&#39;</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="Advection-parameters">
+<h3>Advection parameters<a class="headerlink" href="#Advection-parameters" title="Permalink to this headline"></a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path_drifter_param</span> <span class="o">=</span> <span class="s1">&#39;../nb_run_metrics/drifters_parameters.ini&#39;</span>
+
+<span class="n">path_drifter_position</span> <span class="o">=</span> <span class="s1">&#39;../dc_data/lagrangian_position_pickle/Fictive_pos_Drifters_AOML_region_T1_00m_20190101T000000Z_20200101T000000Z.json&#39;</span>
+
+<span class="n">first_date</span> <span class="o">=</span> <span class="s1">&#39;20190101T000000Z&#39;</span>
+<span class="n">last_date</span> <span class="o">=</span> <span class="s1">&#39;20190201T000000Z&#39;</span>
+
+<span class="n">advection_days</span> <span class="o">=</span> <span class="mi">10</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="1.-Advect-drifters">
+<h2>1. Advect drifters<a class="headerlink" href="#1.-Advect-drifters" title="Permalink to this headline"></a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%time</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">drifters</span><span class="o">.</span><span class="n">run_all_load_once</span><span class="p">(</span><span class="n">path_drifter_param</span><span class="p">,</span> <span class="n">path_dict_product</span><span class="p">,</span> <span class="n">path_drifter_position</span><span class="p">,</span>
+                 <span class="n">days_of_advection</span><span class="o">=</span><span class="n">advection_days</span><span class="p">,</span> <span class="n">output_dir</span><span class="o">=</span><span class="n">outputdir</span><span class="p">,</span> <span class="n">region</span><span class="o">=</span><span class="n">path_dict_region</span><span class="p">,</span>
+                 <span class="n">first_date</span><span class="o">=</span><span class="n">first_date</span><span class="p">,</span> <span class="n">last_date</span><span class="o">=</span><span class="n">last_date</span><span class="p">,</span> <span class="n">sdepth</span><span class="o">=</span><span class="n">depth</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Percent: [#############################-] 96.77%, ,
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+100%|██████████| 2340/2340 [02:16&lt;00:00, 17.11it/s]
+Saving pickle in ../results/metrics_illustration/data_type_metric_illustration_bfnqg_region_metric_illustration_Agulhas.pyo
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+CPU times: user 1min 58s, sys: 4.63 s, total: 2min 2s
+Wall time: 2min 18s
+</pre></div></div>
+</div>
+</section>
+<section id="2.-Compute-SDE">
+<h2>2. Compute SDE<a class="headerlink" href="#2.-Compute-SDE" title="Permalink to this headline"></a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drifter_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../dc_data/drifter_pickle/Drifters_AOML_region_T1_00m_20190101T000000Z_20200101T000000Z.pyo&#39;</span><span class="p">]</span>
+
+<span class="n">path_artificial_drifters</span> <span class="o">=</span> <span class="n">outputdir</span><span class="o">+</span><span class="s1">&#39;data_type_metric_illustration_bfnqg_region_metric_illustration_Agulhas.pyo&#39;</span>
+
+<span class="n">outputfilename</span> <span class="o">=</span> <span class="s1">&#39;SDE_region_T1_20190101-20190201&#39;</span>
+
+<span class="n">_</span> <span class="o">=</span> <span class="n">sde</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">path_artificial_drifters</span><span class="p">,</span> <span class="n">drifter_list</span><span class="p">,</span> <span class="n">output_dir</span><span class="o">=</span><span class="n">outputdir</span><span class="p">,</span> <span class="n">output_filename</span><span class="o">=</span><span class="n">outputfilename</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+100%|██████████| 193/193 [00:02&lt;00:00, 88.33it/s]
+</pre></div></div>
+</div>
+</section>
+<section id="3.-Plot-SDE">
+<h2>3. Plot SDE<a class="headerlink" href="#3.-Plot-SDE" title="Permalink to this headline"></a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_sde</span> <span class="o">=</span> <span class="p">[</span><span class="n">outputdir</span><span class="o">+</span><span class="s1">&#39;SDE_region_T1_20190101-20190201_BFNQG1.pyo&#39;</span><span class="p">]</span>
+
+<span class="n">outputfilename</span> <span class="o">=</span> <span class="s1">&#39;SDE_BFNQG_region_T1.png&#39;</span>
+
+<span class="n">_</span> <span class="o">=</span> <span class="n">sde</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">list_sde</span><span class="p">,</span> <span class="n">output_dir</span><span class="o">=</span><span class="n">outputdir</span><span class="p">,</span> <span class="n">output_filename</span><span class="o">=</span><span class="n">outputfilename</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;Figure size 432x288 with 0 Axes&gt;
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/gallery_nb_illustration_run-LagrangianCD_20_1.png" src="../_images/gallery_nb_illustration_run-LagrangianCD_20_1.png" />
+</div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../5_metrics_det/metrics_structure_evaluation.html" class="btn btn-neutral float-left" title="Structure evaluations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="nb_illustration_run-EulerianRMS.html" class="btn btn-neutral float-right" title="Run Eulerian RMS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Datlas.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
