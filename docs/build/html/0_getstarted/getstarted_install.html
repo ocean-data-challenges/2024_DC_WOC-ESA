@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>utils module &mdash; WOC-ESA Data challenges  documentation</title>
+  <title>Installation &mdash; WOC-ESA Data challenges  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
@@ -22,7 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="modules.html" />
+    <link rel="next" title="Download the data" href="getstarted_data.html" />
+    <link rel="prev" title="DC-WOC-ESA" href="../index.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -48,10 +49,14 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Get started</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_data.html">Download the data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_eval.html">Input specification</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-get-started"><em><strong>How to get started ?</strong></em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#you-re-now-good-to-go">You’re now good to go !</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getstarted_data.html">Download the data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getstarted_eval.html">Input specification</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Products description</span></p>
 <ul>
@@ -83,8 +88,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_structure_evaluation.html">Structure evaluations</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Scripts</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">utils module</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../6_scripts/utils.html">utils module</a></li>
 </ul>
 
         </div>
@@ -101,10 +106,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="modules.html">&lt;no title&gt;</a></li>
-      <li class="breadcrumb-item active">utils module</li>
+      <li class="breadcrumb-item active">Installation</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/6_scripts/utils.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/0_getstarted/getstarted_install.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -112,73 +116,41 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-utils">
-<span id="utils-module"></span><h1>utils module<a class="headerlink" href="#module-utils" title="Permalink to this headline"></a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="utils.DictTable">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">utils.</span></span><span class="sig-name descname"><span class="pre">DictTable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.DictTable" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Overridden dict class which takes a list of dictionaries and renders an HTML Table in IPython Notebook.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>list</strong> (<em>list</em>) – A list of dictionaries, where each dictionary contains ‘path’, ‘type_stat’, and ‘name’ keys.</p>
-</dd>
-</dl>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="utils.DictTable.html_table">
-<span class="sig-name descname"><span class="pre">html_table</span></span><a class="headerlink" href="#utils.DictTable.html_table" title="Permalink to this definition"></a></dt>
-<dd><p>HTML representation of the table.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p>str</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">_repr_html_():</span></span></dt>
-<dd><p>Returns the HTML representation of the table.</p>
-</dd></dl>
-
-<p class="rubric">Example</p>
-<p># Usage Example:
-table = DictTable(list_of_dicts)
-table_html = table._repr_html_()</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="utils.movie_intercomp">
-<span class="sig-prename descclassname"><span class="pre">utils.</span></span><span class="sig-name descname"><span class="pre">movie_intercomp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ds_maps_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">methods</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['DUACS']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_var</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'uv'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir_output</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'../results/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Agulhas'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">framerate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">24</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">14</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.movie_intercomp" title="Permalink to this definition"></a></dt>
-<dd><p>Create and save an intercomparison movie from a list of xarray datasets.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>ds_maps_list</strong> (<em>list</em>) – A list of xarray datasets, each containing map data.</p></li>
-<li><p><strong>methods</strong> (<em>list</em><em>, </em><em>optional</em>) – List of method names. Default is [‘DUACS’].</p></li>
-<li><p><strong>name_var</strong> (<em>str</em><em>, </em><em>optional</em>) – Name of the variable to plot. Default is ‘uv’.</p></li>
-<li><p><strong>dir_output</strong> (<em>str</em><em>, </em><em>optional</em>) – Output directory to save frames and movie. Default is ‘../results/’.</p></li>
-<li><p><strong>region</strong> (<em>str</em><em>, </em><em>optional</em>) – Region name for the movie title. Default is ‘Agulhas’.</p></li>
-<li><p><strong>framerate</strong> (<em>int</em><em>, </em><em>optional</em>) – Frame rate of the movie. Default is 24.</p></li>
-<li><p><strong>colsize</strong> (<em>int</em><em>, </em><em>optional</em>) – Width of the plot in inches. Default is 14.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>IPython displayable video object.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>Video</p>
-</dd>
-</dl>
-</dd></dl>
-
+  <section class="tex2jax_ignore mathjax_ignore" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h1>
+<br> 
+<br>  
+<section id="how-to-get-started">
+<h2><em><strong>How to get started ?</strong></em><a class="headerlink" href="#how-to-get-started" title="Permalink to this headline"></a></h2>
+<p>Clone the data challenge repo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">ocean</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">challenges</span><span class="o">/</span><span class="mi">2024</span><span class="n">_DC_WOC</span><span class="o">-</span><span class="n">ESA</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>create the data challenge conda environment, named env-dc-swot-filtering, by running the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">--</span><span class="n">file</span><span class="o">=</span><span class="n">dc_environment</span><span class="o">.</span><span class="n">yml</span> 
+</pre></div>
+</div>
+<p>and activate it with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">env</span><span class="o">-</span><span class="n">dc</span><span class="o">-</span><span class="n">woc</span><span class="o">-</span><span class="n">esa</span>
+</pre></div>
+</div>
+<p>then add it to the available kernels for jupyter to see:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipython</span> <span class="n">kernel</span> <span class="n">install</span> <span class="o">--</span><span class="n">name</span> <span class="s2">&quot;env-dc-woc-esa&quot;</span> <span class="o">--</span><span class="n">user</span>
+</pre></div>
+</div>
+<p>finally, select the <code class="docutils literal notranslate"><span class="pre">env-dc-woc-esa</span></code> kernel in your notebook with Kernel &gt; Change Kernel.</p>
+</section>
+<section id="you-re-now-good-to-go">
+<h2>You’re now good to go !<a class="headerlink" href="#you-re-now-good-to-go" title="Permalink to this headline"></a></h2>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="modules.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="DC-WOC-ESA" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="getstarted_data.html" class="btn btn-neutral float-right" title="Download the data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
