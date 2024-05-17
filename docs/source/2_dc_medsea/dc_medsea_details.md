@@ -35,17 +35,13 @@ A quasi-closed basin with strong ageostrophic dynamics and vertical shear.
 
 - CMEMS drifters currents and trajectories.
 
-## WOC products: 
-
-- Drifter data-driven currents, 
-- BFN-QG geostrophic currents,  
-- Merged SSH-SST currents
-
-## Other products: 
-
-- DUACS,
-- MIOST,
-- Coming soon: 4DVarQG (Le Guillou et al., 2021)
+##  Products: 
+<ul> 
+    <li> WOC dADR-SR </li> 
+    <li> WOC Global Inertial </li> 
+    <li> GlobCurrent Geostrophic </li>
+    <li> GlobCurrent Total </li>
+ </ul>
 
 <br>
  

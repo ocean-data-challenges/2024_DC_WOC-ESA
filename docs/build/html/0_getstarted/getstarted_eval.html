@@ -53,14 +53,8 @@
 <li class="toctree-l1"><a class="reference internal" href="getstarted_install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getstarted_data.html">Download the data</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Input specification</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#maps-format">Maps format</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#json-dictionnary">Json dictionnary</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Example</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#current-maps-json-dictionnary">Current maps json dictionnary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#region-json-dictionnary">Region json dictionnary</a></li>
 </ul>
 </li>
 </ul>
@@ -68,21 +62,24 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../1_products/products_woc.html">WOC products</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_products/products_cmems.html">CMEMS products</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../1_products/products_cls.html">CLS products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_products/other_methods.html">Other methods</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_movies.html">Reconstruction movies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_movies.html">Reconstruction movies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_movies.html">Reconstruction movies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_overalleval.html">Overall comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
@@ -92,6 +89,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_spectrum.html">Spectral analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_LagrangianCumulativeDistance.html">Lagrangian diagnostics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_structure_evaluation.html">Structure evaluations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Metric illustration notebooks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-spectum.html">Run spectrum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-EulerianRMS.html">Run Eulerian RMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-LagrangianCD.html">Run Lagrangian CD</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Scripts</span></p>
 <ul>
@@ -126,28 +129,39 @@
 <h1>Input specification<a class="headerlink" href="#input-specification" title="Permalink to this headline"></a></h1>
 <br> 
 <br> 
-<p>Once you have <a class="reference internal" href="getstarted_install.html"><span class="doc std std-doc">installed the data challenge</span></a> and <a class="reference internal" href="getstarted_data.html"><span class="doc std std-doc">downloaded the data</span></a>, you can now evaluate your maps. Although, you might want to check first that your sea surface currents maps respect a certain format. You can then scroll through the different metrics, checking the DUACS evaluation notebooks as example.</p>
+<p>Once you have <a class="reference internal" href="getstarted_install.html"><span class="doc std std-doc">installed the data challenge</span></a> and <a class="reference internal" href="getstarted_data.html"><span class="doc std std-doc">downloaded the data</span></a>, you can now evaluate your maps. Although, you might want to check first that your sea surface currents maps respect a certain format. You can then scroll through the different metrics, checking the “Metrics illustration notebooks” showcasing the BFN-QG in the Agulhas region as an example.</p>
 <br> 
-<section id="maps-format">
-<h2>Maps format<a class="headerlink" href="#maps-format" title="Permalink to this headline"></a></h2>
-<p>The evaluated maps must be provided as netcdf files that contain:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">latitude</span></code>, <code class="docutils literal notranslate"><span class="pre">longitude</span></code> and <code class="docutils literal notranslate"><span class="pre">time</span></code> dimensions.  .</p></li>
-<li><p>for currents, a meridional and a zonal currents variable <code class="docutils literal notranslate"><span class="pre">u</span></code> and <code class="docutils literal notranslate"><span class="pre">v</span></code>.</p></li>
-</ul>
-<p>Note that the names of the variables will be specified in the dictionnary and can differ from the example names above.</p>
-<section id="example">
-<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline"></a></h3>
-<p><img alt="Currents_Format" src="../_images/Maps_format_Currents.png" /></p>
+<p>To inform the metric velocity package you must provide two json dictionnaries: one for your current maps and one for the region of interest (provided for the data challenge region in ‘dc_data/region_dictionnaries/’):</p>
+<br>  
+<section id="current-maps-json-dictionnary">
+<h2>Current maps json dictionnary<a class="headerlink" href="#current-maps-json-dictionnary" title="Permalink to this headline"></a></h2>
+<pre> 
+    {
+    "name": "T1_AGULHAS",
+    "lllon": 11,
+     "urlon":  33,
+     "lllat": -44,
+     "urlat": -27,
+     "coords": [[12, -28], [32, -28], [32, -43], [12, -43],[12, -28]]
+    }   
+</pre>
+<br>  
 </section>
-</section>
-<section id="json-dictionnary">
-<h2>Json dictionnary<a class="headerlink" href="#json-dictionnary" title="Permalink to this headline"></a></h2>
-<section id="id1">
-<h3>Example<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h3>
-<p><img alt="Dictionnary_example" src="../_images/evaldata_dictionnaryexample_bfnqg.jpg" /></p>
-</section>
-</section>
+<section id="region-json-dictionnary">
+<h2>Region json dictionnary<a class="headerlink" href="#region-json-dictionnary" title="Permalink to this headline"></a></h2>
+<pre> 
+    {
+    "data_type": "BFNQG",
+    "label": "BFN QG daily",
+    "path": "../dc_data/DC_example_BFNQG_Agulhas/maps_BFNQG/",
+    "pattern": "BFNQG_WOC_Ugeo_daily_2019",
+    "match": "BFNQG_WOC_Ugeo_daily_(\\d{4})-(\\d{2})-(\\d{2}).nc",
+    "varu": "ug",
+    "varv": "vg",
+    "nlon":  "longitude",
+    "nlat":  "latitude"
+    }
+</pre></section>
 </section>
 
 

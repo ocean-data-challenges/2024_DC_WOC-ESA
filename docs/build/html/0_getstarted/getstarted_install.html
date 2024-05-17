@@ -51,7 +51,8 @@
               <p class="caption" role="heading"><span class="caption-text">Get started</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-get-started"><em><strong>How to get started ?</strong></em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cloning-the-data-challenge">Cloning the Data Challenge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-the-velocity-metrics-package">Install the velocity metrics package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#you-re-now-good-to-go">You’re now good to go !</a></li>
 </ul>
 </li>
@@ -62,21 +63,24 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../1_products/products_woc.html">WOC products</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_products/products_cmems.html">CMEMS products</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../1_products/products_cls.html">CLS products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_products/other_methods.html">Other methods</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_movies.html">Reconstruction movies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/nb_overall_results-Agulhas.html">Product comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_movies.html">Reconstruction movies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_movies.html">Reconstruction movies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_overalleval.html">Overall comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
@@ -86,6 +90,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_spectrum.html">Spectral analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_LagrangianCumulativeDistance.html">Lagrangian diagnostics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_structure_evaluation.html">Structure evaluations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Metric illustration notebooks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-spectum.html">Run spectrum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-EulerianRMS.html">Run Eulerian RMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-LagrangianCD.html">Run Lagrangian CD</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Scripts</span></p>
 <ul>
@@ -120,25 +130,19 @@
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h1>
 <br> 
 <br>  
-<section id="how-to-get-started">
-<h2><em><strong>How to get started ?</strong></em><a class="headerlink" href="#how-to-get-started" title="Permalink to this headline"></a></h2>
+<section id="cloning-the-data-challenge">
+<h2>Cloning the Data Challenge<a class="headerlink" href="#cloning-the-data-challenge" title="Permalink to this headline"></a></h2>
 <p>Clone the data challenge repo:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">ocean</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">challenges</span><span class="o">/</span><span class="mi">2024</span><span class="n">_DC_WOC</span><span class="o">-</span><span class="n">ESA</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
-<p>create the data challenge conda environment, named env-dc-swot-filtering, by running the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">--</span><span class="n">file</span><span class="o">=</span><span class="n">dc_environment</span><span class="o">.</span><span class="n">yml</span> 
+</section>
+<section id="install-the-velocity-metrics-package">
+<h2>Install the velocity metrics package<a class="headerlink" href="#install-the-velocity-metrics-package" title="Permalink to this headline"></a></h2>
+<p>Pip install the package from GitLab directly, in order to have the latest version:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">ssh</span><span class="p">:</span><span class="o">//</span><span class="n">git</span><span class="nd">@git</span><span class="o">.</span><span class="n">oceandatalab</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="mi">5546</span><span class="o">/</span><span class="n">woc</span><span class="o">/</span><span class="n">velocity_metrics</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
-<p>and activate it with:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">env</span><span class="o">-</span><span class="n">dc</span><span class="o">-</span><span class="n">woc</span><span class="o">-</span><span class="n">esa</span>
-</pre></div>
-</div>
-<p>then add it to the available kernels for jupyter to see:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipython</span> <span class="n">kernel</span> <span class="n">install</span> <span class="o">--</span><span class="n">name</span> <span class="s2">&quot;env-dc-woc-esa&quot;</span> <span class="o">--</span><span class="n">user</span>
-</pre></div>
-</div>
-<p>finally, select the <code class="docutils literal notranslate"><span class="pre">env-dc-woc-esa</span></code> kernel in your notebook with Kernel &gt; Change Kernel.</p>
 </section>
 <section id="you-re-now-good-to-go">
 <h2>You’re now good to go !<a class="headerlink" href="#you-re-now-good-to-go" title="Permalink to this headline"></a></h2>

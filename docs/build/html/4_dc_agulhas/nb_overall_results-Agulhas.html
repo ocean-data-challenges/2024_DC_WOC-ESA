@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product comparison &mdash; WOC-ESA Data challenges  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="../_static/js/custom.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Gulf Stream setup" href="../3_dc_gulfstream/dc_gulfstream_details.html" />
+    <link rel="prev" title="Reconstruction movies" href="dc_agulhas_movies.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            WOC-ESA Data challenges
+              <img src="../_static/dc_2024_WOC-ESA_map2.jpg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Get started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_data.html">Download the data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_eval.html">Input specification</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Products description</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../1_products/products_woc.html">WOC products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_products/products_cmems.html">CMEMS products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_products/other_methods.html">Other methods</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_details.html">Agulhas current setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_movies.html">Reconstruction movies</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Product comparison</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#u-compared-products-u"><u> Compared products </u></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#u-1-spectrum-u"><u> 1. Spectrum </u></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#u-2-eulerian-rms-u"><u> 2. Eulerian RMS </u></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#u-3-lagrangian-cumulative-distance-u"><u> 3. Lagrangian Cumulative Distance </u></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#u-4-fronts-and-currents-consistency-u"><u>4. Fronts and currents consistency</u></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_movies.html">Reconstruction movies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_movies.html">Reconstruction movies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_overalleval.html">Overall comparison</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_0-introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_EulerianRMS.html">Eulerian scores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_spectrum.html">Spectral analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_LagrangianCumulativeDistance.html">Lagrangian diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_structure_evaluation.html">Structure evaluations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Metric illustration notebooks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-spectum.html">Run spectrum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-EulerianRMS.html">Run Eulerian RMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-LagrangianCD.html">Run Lagrangian CD</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Scripts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../6_scripts/utils.html">utils module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">WOC-ESA Data challenges</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Product comparison</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/4_dc_agulhas/nb_overall_results-Agulhas.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="product-comparison">
+<h1>Product comparison<a class="headerlink" href="#product-comparison" title="Permalink to this headline"></a></h1>
+<br>
+<br>
+<div class="alert alert-block alert-success">
+<h1><center> <u> Agulhas results </u> </center></h1>  
+<section id="u-compared-products-u">
+<h2><u> Compared products </u><a class="headerlink" href="#u-compared-products-u" title="Permalink to this headline"></a></h2>
+<h3>
+    <ul>  
+        <li> GlobCurrent Geostrophic REP </li> 
+        <li> GlobCurrent Total REP </li>
+        <li> WOC BFN-QG </li>
+        <li> WOC inertial global </li>
+    </ul>  
+</h3>
+<br>
+<br>
+</section>
+<section id="u-1-spectrum-u">
+<h2><u> 1. Spectrum </u><a class="headerlink" href="#u-1-spectrum-u" title="Permalink to this headline"></a></h2>
+<p><img alt="png" src="../_images/nb_overall_results-Agulhas_8_0.png" /></p>
+<br>
+<br>
+<br>
+</section>
+<section id="u-2-eulerian-rms-u">
+<h2><u> 2. Eulerian RMS </u><a class="headerlink" href="#u-2-eulerian-rms-u" title="Permalink to this headline"></a></h2>
+<br>
+<h3>Mean error</h3>
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Eastward error</td>
+<td>Northward error</td>
+<td>Norm error</td>
+<td>Direction error</td>
+<td>Eastward speed</td>
+<td>Northward speed</td>
+<td>Field speed</td>
+<td>Drifter speed</td>
+<td>percentage</td>
+</tr>
+<tr>
+<td><b>GlobCurrents Geostrophic</b></td>
+<td>0.185</td>
+<td>0.175</td>
+<td>0.181</td>
+<td>84.718</td>
+<td>0.328</td>
+<td>0.318</td>
+<td>0.467</td>
+<td>0.543</td>
+<td>38.514</td>
+</tr>
+<tr>
+<td><b>GlobCurrents Total</b></td>
+<td>0.166</td>
+<td>0.169</td>
+<td>0.166</td>
+<td>77.047</td>
+<td>0.362</td>
+<td>0.325</td>
+<td>0.495</td>
+<td>0.554</td>
+<td>34.434</td>
+</tr>
+<tr>
+<td><b>BFN-QG</b></td>
+<td>0.179</td>
+<td>0.180</td>
+<td>0.183</td>
+<td>95.679</td>
+<td>0.335</td>
+<td>0.323</td>
+<td>0.467</td>
+<td>0.542</td>
+<td>40.735</td>
+</tr>
+</table>
+<br>
+<br>
+<h3>Standard deviation error</h3>
+<table width=100%>
+<tr>
+<td><b>std</b></td>
+<td>Eastward error</td>
+<td>Northward error</td>
+<td>Norm error</td>
+<td>Direction error</td>
+<td>Eastward speed</td>
+<td>Northward speed</td>
+<td>Field speed</td>
+<td>Drifter speed</td>
+<td>percentage</td>
+</tr>
+<tr>
+<td><b>GlobCurrents Geostrophic</b></td>
+<td>0.117</td>
+<td>0.112</td>
+<td>0.118</td>
+<td>64.674</td>
+<td>0.326</td>
+<td>0.317</td>
+<td>0.290</td>
+<td>0.298</td>
+<td>0.212</td>
+</tr>
+<tr>
+<td><b>GlobCurrents Total</b></td>
+<td>0.109</td>
+<td>0.110</td>
+<td>0.110</td>
+<td>60.797</td>
+<td>0.355</td>
+<td>0.325</td>
+<td>0.288</td>
+<td>0.299</td>
+<td>0.192</td>
+</tr>
+<tr>
+<td><b>BFN-QG</b></td>
+<td>0.113</td>
+<td>0.114</td>
+<td>0.116</td>
+<td>75.547</td>
+<td>0.334</td>
+<td>0.322</td>
+<td>0.287</td>
+<td>0.291</td>
+<td>0.226</td>
+</tr>
+</table>
+<br>
+<br>
+</section>
+<section id="u-3-lagrangian-cumulative-distance-u">
+<h2><u> 3. Lagrangian Cumulative Distance </u><a class="headerlink" href="#u-3-lagrangian-cumulative-distance-u" title="Permalink to this headline"></a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
+</pre></div>
+</div>
+<p><img alt="png" src="../_images/nb_overall_results-Agulhas_17_1.png" /></p>
+<br>
+<br>
+</section>
+<section id="u-4-fronts-and-currents-consistency-u">
+<h2><u>4. Fronts and currents consistency</u><a class="headerlink" href="#u-4-fronts-and-currents-consistency-u" title="Permalink to this headline"></a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>---------------------------------------------------------------------------
+
+KeyError                                  Traceback (most recent call last)
+
+&lt;ipython-input-9-01bed2301577&gt; in &lt;module&gt;()
+      3 outputfilename = &#39;SDE_region_T1.png&#39;
+      4 
+----&gt; 5 _ = sde.plot(list_sde, output_dir=outputdir, output_filename=outputfilename)
+
+
+~/Documents/DataChallenges/Metrics_package/velocity_metrics/velocity_metrics/lagrangian/cumulative_distance.py in plot(list_pickle, output_dir, output_filename)
+     48          output_filename: Optional[str] = &#39;Sde.png&#39;):
+     49     outfile = os.path.join(output_dir, output_filename)
+---&gt; 50     plot_all_sde(list_pickle, outfile)
+     51 
+     52 
+
+
+~/Documents/DataChallenges/Metrics_package/velocity_metrics/velocity_metrics/lagrangian/cumulative_distance.py in plot_all_sde(list_pickle_sde, fileout)
+     63         with open(ifile, &#39;rb&#39;) as f:
+     64             dic = pickle.load(f)
+---&gt; 65         dic_mean = average_sde(dic)
+     66         if &#39;color&#39; not in dic_mean.keys():
+     67             dic_mean[&#39;color&#39;] = col
+
+
+~/Documents/DataChallenges/Metrics_package/velocity_metrics/velocity_metrics/lagrangian/cumulative_distance.py in average_sde(dic, list_stat, list_attr)
+    116         i += 1
+    117     for key in list_stat:
+--&gt; 118         dic_arr[key] = dic_arr[key] / i
+    119     return dic_arr
+    120 
+
+
+KeyError: &#39;meansde&#39;
+
+
+332
+14
+332
+8.937580441379338e-05
+0.002086119946779534
+
+
+ERROR LENGTH 72165 4656
+ERROR LENGTH 72165 4656
+ERROR LENGTH 72165 4656
+
+
+6.192268438138431e-05
+
+
+
+An exception has occurred, use %tb to see the full traceback.
+
+
+SystemExit: 1
+</pre></div>
+</div>
+<p><img alt="png" src="../_images/nb_overall_results-Agulhas_19_5.png" /></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="dc_agulhas_movies.html" class="btn btn-neutral float-left" title="Reconstruction movies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../3_dc_gulfstream/dc_gulfstream_details.html" class="btn btn-neutral float-right" title="Gulf Stream setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Datlas.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

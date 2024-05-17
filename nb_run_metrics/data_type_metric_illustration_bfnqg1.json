@@ -1,0 +1,11 @@
+{
+"data_type": "BFNQG1",
+"label": "Metric illustration BFN QG",
+"path": "../data/maps/maps_Agulhas/BFNQG_Agulhas/",
+"pattern": "BFNQG_WOC_Ugeo",
+"match": "BFNQG_WOC_Ugeo_(\\d{4})-(\\d{2})-(\\d{2}).nc",
+"varu": "ug",
+"varv": "vg",
+"nlon":  "longitude",
+"nlat":  "latitude"
+}

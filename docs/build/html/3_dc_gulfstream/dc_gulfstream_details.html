@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Overall comparison" href="dc_gulfstream_overalleval.html" />
-    <link rel="prev" title="WOC - BFN-QG geostrophic currents" href="../2_dc_medsea/dc_medsea_bfnqgproduct.html" />
+    <link rel="next" title="Reconstruction movies" href="dc_gulfstream_movies.html" />
+    <link rel="prev" title="Product comparison" href="../4_dc_agulhas/nb_overall_results-Agulhas.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -50,17 +50,21 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Get started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_data.html">Download the data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_eval.html">Input specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_data.html">Download the data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_eval.html">Input specification</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
+<p class="caption" role="heading"><span class="caption-text">Products description</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_overalleval.html">Overall evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_sshsstproduct.html">WOC - Merged SSH/SST currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_products/products_woc.html">WOC products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_products/products_cmems.html">CMEMS products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_products/other_methods.html">Other methods</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_movies.html">Reconstruction movies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/nb_overall_results-Agulhas.html">Product comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
 <ul class="current">
@@ -70,48 +74,35 @@
 <li class="toctree-l2"><a class="reference internal" href="#dynamical-specificities">Dynamical specificities:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#observations-available-for-mapping-currents">Observations available for mapping currents</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#independant-evaluation-data">Independant evaluation data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#woc-products">WOC products:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#other-products">Other products:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#products">Products:</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_movies.html">Reconstruction movies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_overalleval.html">Overall comparison</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_duacs.html">DUACS geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_miost.html">MIOST geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_sshsstproduct.html">WOC - Merged SSH/SST currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dc_gulfstream_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
+<p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall comparison</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_duacs.html">DUACS geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_miost.html">MIOST geostrophic currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_drifterproduct.html">WOC - Drifter data-driven currents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_bfnqgproduct.html">WOC - BFN-QG geostrophic currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_movies.html">Reconstruction movies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_overalleval.html">Overall comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_1-standard-insitu.html">Standard insitu validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_2-effective-resolution.html">Effective resolution</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_3-position-structures.html">Position of structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_4-dynamic-characterization.html">Dynamic characterization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_5-lagrangian-diagnostics.html">Lagrangian diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_0-introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_EulerianRMS.html">Eulerian scores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_spectrum.html">Spectral analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_LagrangianCumulativeDistance.html">Lagrangian diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_structure_evaluation.html">Structure evaluations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Metric illustration notebooks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-spectum.html">Run spectrum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-EulerianRMS.html">Run Eulerian RMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-LagrangianCD.html">Run Lagrangian CD</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Scripts</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../6_scripts/mod_compare.html">mod_compare module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../6_scripts/mod_filter.html">mod_filter module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../6_scripts/mod_interp.html">mod_interp module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../6_scripts/mod_plot.html">mod_plot module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../6_scripts/mod_powerspec.html">mod_powerspec module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../6_scripts/mod_read.html">mod_read module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../6_scripts/mod_spectral.html">mod_spectral module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../6_scripts/mod_stat.html">mod_stat module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../6_scripts/mod_switchvar.html">mod_switchvar module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../6_scripts/mod_traj.html">mod_traj module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../6_scripts/mod_utils.html">mod_utils module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../6_scripts/mod_xscale.html">mod_xscale module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../6_scripts/utils.html">utils module</a></li>
 </ul>
 
         </div>
@@ -186,20 +177,13 @@
 <li><p>CMEMS drifters currents and trajectories.</p></li>
 </ul>
 </section>
-<section id="woc-products">
-<h2>WOC products:<a class="headerlink" href="#woc-products" title="Permalink to this headline"></a></h2>
-<ul class="simple">
-<li><p>Drifter data-driven currents,</p></li>
-<li><p>BFN-QG geostrophic currents,</p></li>
-<li><p>Merged SSH-SST currents</p></li>
-</ul>
-</section>
-<section id="other-products">
-<h2>Other products:<a class="headerlink" href="#other-products" title="Permalink to this headline"></a></h2>
-<ul class="simple">
-<li><p>DUACS</p></li>
-<li><p>MIOST</p></li>
-<li><p>Coming soon: 4DVarQG (Le Guillou et al., 2021)</p></li>
+<section id="products">
+<h2>Products:<a class="headerlink" href="#products" title="Permalink to this headline"></a></h2>
+<ul> 
+    <li> WOC Omega 3D </li> 
+    <li> WOC Global Inertial </li> 
+    <li> GlobCurrent Geostrophic </li>
+    <li> GlobCurrent Total </li>
 </ul>
 <br>
 </section>
@@ -209,8 +193,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../2_dc_medsea/dc_medsea_bfnqgproduct.html" class="btn btn-neutral float-left" title="WOC - BFN-QG geostrophic currents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="dc_gulfstream_overalleval.html" class="btn btn-neutral float-right" title="Overall comparison" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../4_dc_agulhas/nb_overall_results-Agulhas.html" class="btn btn-neutral float-left" title="Product comparison" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dc_gulfstream_movies.html" class="btn btn-neutral float-right" title="Reconstruction movies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

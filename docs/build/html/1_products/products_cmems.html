@@ -22,7 +22,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="CLS products" href="products_cls.html" />
+    <link rel="next" title="Other methods" href="other_methods.html" />
     <link rel="prev" title="WOC products" href="products_woc.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
@@ -53,26 +53,30 @@
 <li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_data.html">Download the data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_eval.html">Input specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_getstarted/getstarted_example.html">Run the metrics</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Products description</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="products_woc.html">WOC products</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">CMEMS products</a></li>
-<li class="toctree-l1"><a class="reference internal" href="products_cls.html">CLS products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other_methods.html">Other methods</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_movies.html">Reconstruction movies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/nb_overall_results-Agulhas.html">Product comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_movies.html">Reconstruction movies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_movies.html">Reconstruction movies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_overalleval.html">Overall comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
@@ -82,6 +86,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_spectrum.html">Spectral analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_LagrangianCumulativeDistance.html">Lagrangian diagnostics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_structure_evaluation.html">Structure evaluations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Metric illustration notebooks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-spectum.html">Run spectrum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-EulerianRMS.html">Run Eulerian RMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-LagrangianCD.html">Run Lagrangian CD</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Scripts</span></p>
 <ul>
@@ -117,7 +127,7 @@
 <br>
 <hr>
 <ul>
-<li><p><strong>GlobCurrent (GC-combined)</strong></p>
+<li><p><strong>GlobCurrent total</strong></p>
 <p>The GlobCurrent data repository now includes the surface geostrophic current, the Ekman current at the surface and at 15 m depth, and the combined geostrophic and Ekman currents. The data are interpolated and collocated to a common grid with a spatial resolution of 25 km and a temporal resolution of 1 day for the geostrophic current and three hours for the Ekman currents and the combined currents. It covers the 23-year period from January 1993 to May 2016. A regional product for the Mediterranean Sea interpolated to a spatial resolution of 1/8 degree and a temporal resolution of 3 hours is also available.</p>
 <p><strong>More information on the GlobCurrent products <a class="reference external" href="http://globcurrent.ifremer.fr/">here</a> !</strong></p>
 </li>
@@ -125,8 +135,9 @@
 <hr>
 <br>
 <ul>
-<li><p><strong>DUACS</strong></p>
+<li><p><strong>GlobCurrent Geostrophic</strong></p>
 <p>Altimeter satellite gridded Sea Level Anomalies (SLA) computed with respect to a twenty-year [1993, 2012] mean. The SLA is estimated by Optimal Interpolation, merging the L3 along-track measurement from the different altimeter missions available. Part of the processing is fitted to the Global Ocean. (see QUID document or http://duacs.cls.fr pages for processing details). The product gives additional variables (i.e. Absolute Dynamic Topography and geostrophic currents (absolute and anomalies)). It serves in near-real time applications. This product is processed by the DUACS multimission altimeter data processing system.</p>
+<p><strong>More information on the GlobCurrent products <a class="reference external" href="https://data.marine.copernicus.eu/product/SEALEVEL_GLO_PHY_L4_MY_008_047/description">here</a> !</strong></p>
 </li>
 </ul>
 <hr>
@@ -137,7 +148,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="products_woc.html" class="btn btn-neutral float-left" title="WOC products" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="products_cls.html" class="btn btn-neutral float-right" title="CLS products" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="other_methods.html" class="btn btn-neutral float-right" title="Other methods" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
