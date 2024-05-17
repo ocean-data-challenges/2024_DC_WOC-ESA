@@ -53,9 +53,12 @@
 <li class="toctree-l1"><a class="reference internal" href="getstarted_install.html">Installation</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Download the data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#data-information">Data information</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#obs-region-tar-gz"><code class="docutils literal notranslate"> <span class="pre">obs_REGION.tar.gz</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#eval-region-tar-gz"><code class="docutils literal notranslate"> <span class="pre">eval_REGION.tar.gz</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#products-region-tar-gz"><code class="docutils literal notranslate"> <span class="pre">products_REGION.tar.gz</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#obs-region-tar-gz"><code class="docutils literal notranslate"> <span class="pre">obs_'REGION'.tar.gz</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#results-woc-tar-gz"><code class="docutils literal notranslate"> <span class="pre">results-woc.tar.gz</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#drifter-pickle-tar-gz"><code class="docutils literal notranslate"> <span class="pre">drifter_pickle.tar.gz</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lagrangian-position-pickle-tar-gz"><code class="docutils literal notranslate"> <span class="pre">lagrangian_position_pickle.tar.gz</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#region-dictionnaries-tar-gz"><code class="docutils literal notranslate"> <span class="pre">region_dictionnaries.tar.gz</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dc-example-bfnqg-agulhas-tar-gz"><code class="docutils literal notranslate"> <span class="pre">DC_example_BFNQG_Agulhas.tar.gz</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#download-and-read-the-data">Download and read the data</a></li>
@@ -67,21 +70,24 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../1_products/products_woc.html">WOC products</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_products/products_cmems.html">CMEMS products</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../1_products/products_cls.html">CLS products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_products/other_methods.html">Other methods</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_overalleval.html">Overall comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/dc_agulhas_movies.html">Reconstruction movies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_dc_agulhas/nb_overall_results-Agulhas.html">Product comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_movies.html">Reconstruction movies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_movies.html">Reconstruction movies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2_dc_medsea/dc_medsea_overalleval.html">Overall comparison</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
@@ -91,6 +97,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_spectrum.html">Spectral analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_LagrangianCumulativeDistance.html">Lagrangian diagnostics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../5_metrics_det/metrics_structure_evaluation.html">Structure evaluations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Metric illustration notebooks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-spectum.html">Run spectrum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-EulerianRMS.html">Run Eulerian RMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/nb_illustration_run-LagrangianCD.html">Run Lagrangian CD</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Scripts</span></p>
 <ul>
@@ -128,55 +140,61 @@
 <p>The data are hosted and can be accessed on the MEOM server opendap <a class="reference external" href="https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2024_DC_WOC-ESA/catalog.html">here</a>.</p>
 <section id="data-information">
 <h2>Data information<a class="headerlink" href="#data-information" title="Permalink to this headline"></a></h2>
-<p>The dataset is presented with the following directory structure.</p>
-<p>There is a repository for each region: Agulhas, Gulfstream and Mediterranean plus one repository for auxiliary data. In each region repository you’ll find the same structure of zipped files:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
-<span class="o">|--</span> <span class="n">DC_Agulhas</span> 
-<span class="o">|</span>   <span class="o">|--</span>  <span class="n">eval_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>  
-<span class="o">|</span>   <span class="o">|--</span>  <span class="n">obs_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> 
-<span class="o">|</span>   <span class="o">|--</span>  <span class="n">products_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>  
-<span class="o">.</span>
-<span class="o">|--</span> <span class="n">DC_Gulfstream</span> 
-<span class="o">|</span>   <span class="o">|--</span>  <span class="n">eval_Gulfstream</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>  
-<span class="o">|</span>   <span class="o">|--</span>  <span class="n">obs_Gulfstream</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> 
-<span class="o">|</span>   <span class="o">|--</span>  <span class="n">products_Gulfstream</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>  
-<span class="o">.</span>
-<span class="o">|--</span> <span class="n">DC_Mediterranean</span>
-<span class="o">|</span>   <span class="o">|--</span>  <span class="n">eval_Mediterranean</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>  
-<span class="o">|</span>   <span class="o">|--</span>  <span class="n">obs_Mediterranean</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> 
-<span class="o">|</span>   <span class="o">|--</span>  <span class="n">products_Mediterranean</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>  
-<span class="o">.</span>
-<span class="o">|--</span> <span class="n">Aux_data</span>  
-<span class="o">|</span>   <span class="o">|--</span> <span class="n">sad</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>  
-</pre></div>
-</div>
+<p>The datasets are available for download with the following structure:</p>
+<hr class="docutils" />
 <section id="obs-region-tar-gz">
-<h3><code class="docutils literal notranslate"> <span class="pre">obs_REGION.tar.gz</span></code><a class="headerlink" href="#obs-region-tar-gz" title="Permalink to this headline"></a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">obs_REGION/</span></code> repository contains the available observations in this region needed to map currents. The data can be stored in <code class="docutils literal notranslate"><span class="pre">ssh/</span></code>, <code class="docutils literal notranslate"><span class="pre">sst</span></code> or <code class="docutils literal notranslate"><span class="pre">drifters</span></code> sub-repo and consists of netcdf files.</p>
+<h3><code class="docutils literal notranslate"> <span class="pre">obs_'REGION'.tar.gz</span></code><a class="headerlink" href="#obs-region-tar-gz" title="Permalink to this headline"></a></h3>
+<p>There is a repository for each region: Agulhas, Gulfstream and Mediterranean. In each region repository you’ll find an observation zipped file. The <code class="docutils literal notranslate"><span class="pre">obs_'Region'/</span></code> repository contains the available observations in this region needed to map currents. The observation data are stored in <code class="docutils literal notranslate"><span class="pre">ssh/</span></code>, <code class="docutils literal notranslate"><span class="pre">sst</span></code> or <code class="docutils literal notranslate"><span class="pre">drifters</span></code> sub-repo and consists of netcdf files.</p>
 </section>
-<section id="eval-region-tar-gz">
-<h3><code class="docutils literal notranslate"> <span class="pre">eval_REGION.tar.gz</span></code><a class="headerlink" href="#eval-region-tar-gz" title="Permalink to this headline"></a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">eval_REGION/</span></code> repository contains the independant (i.e. not available in <code class="docutils literal notranslate"><span class="pre">obs_REGION/</span></code>) observations that are used in the evaluation of the mapping performance.</p>
+<hr class="docutils" />
+<section id="results-woc-tar-gz">
+<h3><code class="docutils literal notranslate"> <span class="pre">results-woc.tar.gz</span></code><a class="headerlink" href="#results-woc-tar-gz" title="Permalink to this headline"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">results-woc/</span></code> repository contains the WOC product performances that have already been evaluated on the data challenges in the form of pyo, you can then check the performance of these products yourself and compare them to your methods following the <em>DC_example_BFNQG_Agulhas</em> example.</p>
 </section>
-<section id="products-region-tar-gz">
-<h3><code class="docutils literal notranslate"> <span class="pre">products_REGION.tar.gz</span></code><a class="headerlink" href="#products-region-tar-gz" title="Permalink to this headline"></a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">products_REGION/</span></code> repository contains WOC products and other products that have already been evaluated on the data challenges, you can then check the performance of these products yourself and compare them to your methods.</p>
+<hr class="docutils" />
+<section id="drifter-pickle-tar-gz">
+<h3><code class="docutils literal notranslate"> <span class="pre">drifter_pickle.tar.gz</span></code><a class="headerlink" href="#drifter-pickle-tar-gz" title="Permalink to this headline"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">drifter_pickle/</span></code> repository contains pyo files of the AOML drifter positions in the different regions of interest during the year 2019.</p>
+</section>
+<hr class="docutils" />
+<section id="lagrangian-position-pickle-tar-gz">
+<h3><code class="docutils literal notranslate"> <span class="pre">lagrangian_position_pickle.tar.gz</span></code><a class="headerlink" href="#lagrangian-position-pickle-tar-gz" title="Permalink to this headline"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">lagrangian_position_pickle/</span></code> repository contains the AOML corresponding fictive drifter positions using the WOC product currents for comparison.</p>
+</section>
+<hr class="docutils" />
+<section id="region-dictionnaries-tar-gz">
+<h3><code class="docutils literal notranslate"> <span class="pre">region_dictionnaries.tar.gz</span></code><a class="headerlink" href="#region-dictionnaries-tar-gz" title="Permalink to this headline"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">region_dictionnaries/</span></code> repository contains the json dictionnaries defining the region specificities.</p>
+</section>
+<hr class="docutils" />
+<section id="dc-example-bfnqg-agulhas-tar-gz">
+<h3><code class="docutils literal notranslate"> <span class="pre">DC_example_BFNQG_Agulhas.tar.gz</span></code><a class="headerlink" href="#dc-example-bfnqg-agulhas-tar-gz" title="Permalink to this headline"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">DC_example_BFNQG_Agulhas/</span></code> repository contains all the needed data to run the <em>DC_example_BFNQG_Agulhas</em> example.</p>
 </section>
 </section>
+<hr class="docutils" />
 <section id="download-and-read-the-data">
 <h2>Download and read the data<a class="headerlink" href="#download-and-read-the-data" title="Permalink to this headline"></a></h2>
-<p>The data can be downloaded locally using the wget command. We recommand that the data be stored in the <code class="docutils literal notranslate"><span class="pre">data/</span></code> repository.
+<p>The data can be downloaded locally using the wget command. We recommand that the data be stored in the <code class="docutils literal notranslate"><span class="pre">dc_data/</span></code> repository.
 For example, to download and unzip the observations needed to map currents in the Agulhas region use:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">data</span><span class="o">/</span>
-<span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">ige</span><span class="o">-</span><span class="n">meom</span><span class="o">-</span><span class="n">opendap</span><span class="o">.</span><span class="n">univ</span><span class="o">-</span><span class="n">grenoble</span><span class="o">-</span><span class="n">alpes</span><span class="o">.</span><span class="n">fr</span><span class="o">/</span><span class="n">thredds</span><span class="o">/</span><span class="n">fileServer</span><span class="o">/</span><span class="n">meomopendap</span><span class="o">/</span><span class="n">extract</span><span class="o">/</span><span class="n">MEOM</span><span class="o">/</span><span class="n">OCEAN_DATA_CHALLENGES</span><span class="o">/</span><span class="mi">2024</span><span class="n">_DC_WOC</span><span class="o">-</span><span class="n">ESA</span><span class="o">/</span><span class="n">DC_Agulhas</span><span class="o">/</span><span class="n">obs_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> 
-<span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">obs_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>  
-<span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="n">obs_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">dc_data</span><span class="o">/</span>
+<span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">ige</span><span class="o">-</span><span class="n">meom</span><span class="o">-</span><span class="n">opendap</span><span class="o">.</span><span class="n">univ</span><span class="o">-</span><span class="n">grenoble</span><span class="o">-</span><span class="n">alpes</span><span class="o">.</span><span class="n">fr</span><span class="o">/</span><span class="n">thredds</span><span class="o">/</span><span class="n">fileServer</span><span class="o">/</span><span class="n">meomopendap</span><span class="o">/</span><span class="n">extract</span><span class="o">/</span><span class="n">MEOM</span><span class="o">/</span><span class="n">OCEAN_DATA_CHALLENGES</span><span class="o">/</span><span class="mi">2024</span><span class="n">_DC_WOC</span><span class="o">-</span><span class="n">ESA</span><span class="o">/</span><span class="n">DC_example_BFNQG_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> 
+<span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">DC_example_BFNQG_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>  
+<span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="n">DC_example_BFNQG_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
 </pre></div>
 </div>
-<p><strong>Example notebooks</strong></p>
-<ul class="simple">
-<li><p>A notebook to illustrate how to download and read the data is available: <a class="reference internal" href="../gallery/download_and_acces_global_data.html"><span class="doc std std-doc">download_and_acces_global_data.ipynb</span></a></p></li>
-</ul>
+<hr class="docutils" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
+<span class="o">|--</span> <span class="n">DC_Agulhas</span>  
+<span class="o">|</span>   <span class="o">|--</span>  <span class="n">obs_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>  
+<span class="o">.</span>
+<span class="o">|--</span> <span class="n">DC_Gulfstream</span>  
+<span class="o">|</span>   <span class="o">|--</span>  <span class="n">obs_Gulfstream</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>   
+<span class="o">.</span>
+<span class="o">|--</span> <span class="n">DC_Mediterranean</span> 
+<span class="o">|</span>   <span class="o">|--</span>  <span class="n">obs_Mediterranean</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>    
+</pre></div>
+</div>
 </section>
 </section>
 

@@ -72,6 +72,14 @@ class DictTable():
             
         return self.html_table 
 
+    
+def print_json(path_json):
+    import json
+    f = open(path_json)
+    data = json.load(f)
+    for i in data: 
+        print(i, ':',data[i])
+        
   
     
 def movie_intercomp(ds_maps_list, methods=['DUACS'], name_var='uv', dir_output='../results/', region='Agulhas', framerate=24, colsize = 14):

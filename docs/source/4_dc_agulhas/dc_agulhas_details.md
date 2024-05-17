@@ -2,6 +2,13 @@
 
 <br>
 
+<br>
+
+<p align="center">
+  <img src="../_static/illustration_agulhas_region.jpg" alt="Alt Text" width="400"/>
+</p> 
+
+
  
 ## Period 
 
@@ -13,11 +20,6 @@
 - Longitude maximum: 35°E
 - Latitude minimum: 45°S
 - Latitude maximum: 30°S
-
-<p align="center">
-  <img src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/1346fa86-0dd5-4a2a-9993-1c73b59ac865" alt="Alt Text" width="300"/>
-</p> 
-
 
 ## Dynamical specificities: 
 
@@ -39,17 +41,13 @@ Strongly geostrophic region.
 
 - CMEMS drifters currents and trajectories.
 
-## WOC products: 
-
-- Drifter data-driven currents, 
-- BFN-QG geostrophic currents 
-
-
-
-## Other products: 
-
-- DUACS
-- MIOST
+## Products: 
+<ul>  
+    <li> WOC BFN-QG </li> 
+    <li> WOC Global Inertial </li> 
+    <li> GlobCurrent Geostrophic </li>
+    <li> GlobCurrent Total </li>
+</ul>
 
 <br>
  

@@ -58,7 +58,7 @@ Objectives and caveats
 ==========================
 
 The goal of the data challenge is to evaluate the products ability to estimate the total surface current in three different regions during the year 2019 (evaluation period). 
-The input observations used to generate the products are not resticted apart for the drifters data during the evaluation period. A dataset of some input observations is provided (see `Download the data <https://2024-dc-woc-esa.readthedocs.io/en/latest/1_getstarted/getstarted_data.html>`_), however any other data apart from the drifters data during the evaluation period can be used. 
+The input observations used to generate the products are not resticted apart for the drifters data during the evaluation period. A dataset of some input observations is provided (see `Download the data <https://2024-dc-woc-esa.readthedocs.io/en/latest/0_getstarted/getstarted_data.html>`_), however any other data apart from the drifters data during the evaluation period can be used. 
 
 Note that some products are intrinsically estimating only specific components of the total current (e.g., the geostrophic component) they are nonetheless evaluated like the other products, making their assumption on the currents as a total current approximation. 
 
@@ -96,7 +96,7 @@ Evaluated products
 
 .. raw:: html
 
-    <embed> 
+    <embed>  
 
         <table>
           <thead>
@@ -108,56 +108,49 @@ Evaluated products
               <th>Available regions</th> 
             </tr>
           </thead>
-          <tbody>  
+          <tbody>   
             <tr> 
-              <td><strong>BFN-QG</strong></td>
+              <td style="text-align:left;"> <strong>WOC BFN-QG</strong></td>
               <td> WOC-ESA </td>
               <td> Geostrophic </td> 
               <td> altimetry </td> 
               <td> Agulhas </td> 
             </tr> 
             <tr> 
-              <td><strong>dADR-SR</strong></td>
+              <td style="text-align:left;"><strong>WOC dADR-SR</strong></td>
               <td> WOC-ESA </td>
               <td> Total currents </td> 
               <td> altimetry, SST</td> 
               <td> Mediterranean </td> 
             </tr> 
             <tr> 
-              <td><strong>SSHSSTprod</strong></td>
+              <td style="text-align:left;"><strong>WOC Omega 3D</strong></td>
               <td> WOC-ESA </td>
               <td> Total currents </td> 
               <td> altimetry, SST</td> 
               <td> Gulf Stream </td> 
             </tr> 
             <tr> 
-              <td><strong>DDDcurr</strong></td>
+              <td style="text-align:left;"><strong>WOC Global Inertial</strong></td>
               <td> WOC-ESA </td>
               <td> Total currents </td> 
               <td> Drifter currents, GlobCurrent geos.</td> 
               <td> Agulhas, Gulf Stream, Mediterranean </td> 
             </tr> 
             <tr> 
-              <td><strong>GC-combined</strong></td>
-              <td> CMEMS-GlobCurrent </td>
+              <td style="text-align:left;"><strong>GlobCurrent total</strong></td>
+              <td> CMEMS </td>
               <td> Geostrophic + Ekman </td> 
               <td> altimetry, gravimetry, drifters </td> 
               <td> Agulhas, Gulf Stream, Mediterranean </td>
             </tr>
             <tr> 
-              <td><strong>DUACS</strong></td>
+              <td style="text-align:left;"><strong>GlobCurrent Geostrophic</strong></td>
               <td> CMEMS </td>
               <td> Geostrophic </td> 
               <td> altimetry </td> 
               <td> Agulhas, Gulf Stream, Mediterranean </td>
-            </tr>
-            <tr> 
-              <td><strong>MIOST</strong></td>
-              <td> CLS </td>
-              <td> Geostrophic </td> 
-              <td> altimetry </td> 
-              <td> Agulhas, Gulf Stream, Mediterranean </td>
-            </tr>
+            </tr> 
           </tbody>
         </table> 
         </br>
@@ -189,27 +182,39 @@ The WOC data challenges cover three geographical regions, with different dynamic
     
     <div id="AgulhasCurrent" class="tabcontent">
       <br /> 
+      
+      </br>
+      
+      <p align="center">
+          <img src="_static/illustration_agulhas_region.jpg" alt="Alt Text" width="400"/>
+      </p> 
+       
+        
       <ul>
         <li>  Area: [14°E, 35°E, 45°S, 30°S]</li>
-        <li>  Dynamical specificities: Strongly geostrophic region. </li>
-        <li>  Observations available for mapping currents: conventional nadir altimeters</li>
-        <li>  WOC products: Drifter data-driven currents, BFN-QG geostrophic currents</li>
+        <li>  Dynamical specificities: Strongly geostrophic region. </li> 
         <li>  Independant evaluation data: CMEMS drifters currents and trajectories.</li>
+        <li>  Products: 
+            <ul>  
+                <li> WOC BFN-QG </li> 
+                <li> WOC Global Inertial </li> 
+                <li> GlobCurrent Geostrophic </li>
+                <li> GlobCurrent Total </li>
+              </ul>
       
       </ul>
+      
        
 
         </br>
         
         <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_details.html"> >  Agulhas Current setup </a></h3> 
        
-
-        </br>
+ 
         
         <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_movies.html"> > Reconstruction movies </a></h3> 
        
-
-        </br>
+ 
         
         <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_overalleval.html"> > Overall comparison </a></h3> 
         
@@ -219,10 +224,15 @@ The WOC data challenges cover three geographical regions, with different dynamic
       <br /> 
       <ul>
         <li>  Area: [80°W, 10°W, 25°N, 50°N]</li>
-        <li>  Dynamical specificities: High variability region with mixed geostrophic and ageostrophic dynamics. </li>
-        <li>  Observations available for mapping currents: conventional nadir altimeters, satellite SST data</li>
-        <li>  WOC products: Merged SSH/SST currents, Drifter data-driven currents, BFN-QG geostrophic currents</li>
+        <li>  Dynamical specificities: High variability region with mixed geostrophic and ageostrophic dynamics. </li> 
         <li>  Independant evaluation data: CMEMS drifters currents and trajectories.</li>
+        <li>  Products: 
+            <ul> 
+                <li> WOC Omega 3D </li> 
+                <li> WOC Global Inertial </li> 
+                <li> GlobCurrent Geostrophic </li>
+                <li> GlobCurrent Total </li>
+              </ul>
       
       </ul>
        
@@ -247,10 +257,15 @@ The WOC data challenges cover three geographical regions, with different dynamic
       <br /> 
       <ul>
         <li>  Area: [5°W, 25°E, 35°N, 47°N] </li>
-        <li>  Dynamical specificities: A quasi-closed basin with strong ageostrophic dynamics and vertical shear. </li>
-        <li>  Observations available for mapping currents: conventional nadir altimeters</li>
-        <li>  WOC products: Merged SSH/SST currents, Drifter data-driven currents, BFN-QG geostrophic currents </li>
+        <li>  Dynamical specificities: A quasi-closed basin with strong ageostrophic dynamics and vertical shear. </li> 
         <li>  Independant evaluation data: CMEMS drifters currents and trajectories.</li>
+        <li>  Products: 
+            <ul> 
+                <li> WOC dADR-SR </li> 
+                <li> WOC Global Inertial </li> 
+                <li> GlobCurrent Geostrophic </li>
+                <li> GlobCurrent Total </li>
+              </ul>
       
       </ul>   
 
@@ -347,6 +362,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    0_getstarted/getstarted_install.md
    0_getstarted/getstarted_data.md 
    0_getstarted/getstarted_eval.md   
+   0_getstarted/getstarted_example.md  
    
     
 .. toctree::
@@ -364,8 +380,8 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    :caption: DC - Agulhas Current
  
    4_dc_agulhas/dc_agulhas_details.md
-   4_dc_agulhas/dc_agulhas_movies.md
-   4_dc_agulhas/dc_agulhas_overalleval.md  
+   4_dc_agulhas/dc_agulhas_movies.md 
+   4_dc_agulhas/nb_overall_results-Agulhas.md 
      
 
 .. toctree::
