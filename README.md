@@ -30,15 +30,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 # 3. Get started
  
 
-## [Installation documentation](https://2024-dc-woc-esa.readthedocs.io/en/latest/1_getstarted/getstarted_install.html)
+## [Documentation](https://2024-dc-woc-esa.readthedocs.io)
 
 
-
-## [Download the data documentation](https://2024-dc-woc-esa.readthedocs.io/en/latest/1_getstarted/getstarted_data.html)
-
-
-## [Input specification documentation](https://2024-dc-woc-esa.readthedocs.io/en/latest/1_getstarted/getstarted_eval.html)
-  
-  
- 
 
