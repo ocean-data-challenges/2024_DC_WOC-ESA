@@ -16,14 +16,7 @@ DC-WOC-ESA
 .. role:: raw-html(raw)
     :format: html
  
-   
-.. raw:: html  
-
-   <embed> 
-    <center> 
-     <h1 style="color:rgb(28, 69, 135);font-size:40px;">Opening April 30th, 2024 !</h1> 
-    </center> 
-   </embed>
+    
  
 
 .. image:: ../../figures/dc_2024a_WOC-ESA_banner.jpg
@@ -156,7 +149,7 @@ Evaluated products
         </br>
     </embed>
 
-For more details on the products, check the `Products description <https://2024-dc-woc-esa.readthedocs.io/en/latest/1_getstarted/getstarted_products.html>`_ page.
+For more details on the products, check the **Products description** section.
     
     
 
@@ -383,7 +376,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    4_dc_agulhas/dc_agulhas_movies.md 
    4_dc_agulhas/nb_overall_results-Agulhas.md 
      
-
+ 
 .. toctree::
    :hidden:
    :maxdepth: 1
@@ -425,6 +418,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
     gallery/nb_illustration_run-spectum.ipynb 
     gallery/nb_illustration_run-EulerianRMS.ipynb 
     gallery/nb_illustration_run-LagrangianCD.ipynb
+    gallery/nb_illustration_run-frontdiag.ipynb
 
 .. toctree::
    :hidden:

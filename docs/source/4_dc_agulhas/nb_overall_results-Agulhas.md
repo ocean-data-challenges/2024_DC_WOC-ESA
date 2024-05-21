@@ -28,17 +28,32 @@
 
 ## <u> 1. Spectrum </u> 
 
+<br>
 
-![png](nb_overall_results-Agulhas_files/nb_overall_results-Agulhas_8_0.png)
+<h2>At 0m</h2>
+
+
+![png](nb_overall_results-Agulhas_files/nb_overall_results-Agulhas_10_0.png)
 
 
 <br>
+
+
+<h2>At 15m</h2>
+
+
+![png](nb_overall_results-Agulhas_files/nb_overall_results-Agulhas_13_0.png)
+
 
 <br>
 
 <br>
 
 ## <u> 2. Eulerian RMS </u>
+
+<br>
+
+<h2>At 0m</h2>
 
 <br>
 
@@ -95,6 +110,18 @@
 <td>0.467</td>
 <td>0.542</td>
 <td>40.735</td>
+</tr>
+<tr>
+<td><b>Global Inertial</b></td>
+<td>0.182</td>
+<td>0.179</td>
+<td>0.181</td>
+<td>86.787</td>
+<td>0.338</td>
+<td>0.315</td>
+<td>0.470</td>
+<td>0.545</td>
+<td>38.014</td>
 </tr>
 </table>
 
@@ -158,6 +185,94 @@
 <td>0.291</td>
 <td>0.226</td>
 </tr>
+<tr>
+<td><b>Global Inertial</b></td>
+<td>0.117</td>
+<td>0.116</td>
+<td>0.119</td>
+<td>67.338</td>
+<td>0.334</td>
+<td>0.315</td>
+<td>0.278</td>
+<td>0.291</td>
+<td>0.208</td>
+</tr>
+</table>
+
+
+
+<br>
+
+<h2>At 15m</h2>
+
+<br>
+
+<h3>Mean error</h3>
+
+
+
+
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Eastward error</td>
+<td>Northward error</td>
+<td>Norm error</td>
+<td>Direction error</td>
+<td>Eastward speed</td>
+<td>Northward speed</td>
+<td>Field speed</td>
+<td>Drifter speed</td>
+<td>percentage</td>
+</tr>
+<tr>
+<td><b>GlobCurrents Geostrophic</b></td>
+<td>0.195</td>
+<td>0.193</td>
+<td>0.205</td>
+<td>81.975</td>
+<td>0.426</td>
+<td>0.382</td>
+<td>0.585</td>
+<td>0.674</td>
+<td>35.201</td>
+</tr>
+<tr>
+<td><b>GlobCurrents Total</b></td>
+<td>0.198</td>
+<td>0.195</td>
+<td>0.209</td>
+<td>80.823</td>
+<td>0.432</td>
+<td>0.389</td>
+<td>0.595</td>
+<td>0.679</td>
+<td>34.423</td>
+</tr>
+<tr>
+<td><b>BFN-QG</b></td>
+<td>0.194</td>
+<td>0.177</td>
+<td>0.202</td>
+<td>82.636</td>
+<td>0.434</td>
+<td>0.381</td>
+<td>0.578</td>
+<td>0.665</td>
+<td>35.332</td>
+</tr>
+<tr>
+<td><b>Global Inertial</b></td>
+<td>0.217</td>
+<td>0.220</td>
+<td>0.225</td>
+<td>86.463</td>
+<td>0.445</td>
+<td>0.396</td>
+<td>0.607</td>
+<td>0.684</td>
+<td>36.111</td>
+</tr>
 </table>
 
 
@@ -166,14 +281,84 @@
 
 <br>
 
-## <u> 3. Lagrangian Cumulative Distance </u>
-
-
-    <Figure size 432x288 with 0 Axes>
+<h3>Standard deviation error</h3>
 
 
 
-![png](nb_overall_results-Agulhas_files/nb_overall_results-Agulhas_17_1.png)
+
+<table width=100%>
+<tr>
+<td><b>std</b></td>
+<td>Eastward error</td>
+<td>Northward error</td>
+<td>Norm error</td>
+<td>Direction error</td>
+<td>Eastward speed</td>
+<td>Northward speed</td>
+<td>Field speed</td>
+<td>Drifter speed</td>
+<td>percentage</td>
+</tr>
+<tr>
+<td><b>GlobCurrents Geostrophic</b></td>
+<td>0.139</td>
+<td>0.135</td>
+<td>0.145</td>
+<td>65.958</td>
+<td>0.425</td>
+<td>0.373</td>
+<td>0.360</td>
+<td>0.423</td>
+<td>0.195</td>
+</tr>
+<tr>
+<td><b>GlobCurrents Total</b></td>
+<td>0.143</td>
+<td>0.138</td>
+<td>0.152</td>
+<td>65.558</td>
+<td>0.432</td>
+<td>0.385</td>
+<td>0.364</td>
+<td>0.428</td>
+<td>0.193</td>
+</tr>
+<tr>
+<td><b>BFN-QG</b></td>
+<td>0.140</td>
+<td>0.122</td>
+<td>0.144</td>
+<td>68.513</td>
+<td>0.433</td>
+<td>0.372</td>
+<td>0.355</td>
+<td>0.423</td>
+<td>0.199</td>
+</tr>
+<tr>
+<td><b>Global Inertial</b></td>
+<td>0.152</td>
+<td>0.150</td>
+<td>0.157</td>
+<td>69.502</td>
+<td>0.445</td>
+<td>0.392</td>
+<td>0.353</td>
+<td>0.428</td>
+<td>0.200</td>
+</tr>
+</table>
+
+
+
+<br>
+
+<br>
+
+## <u> 3. Lagrangian Cumulative Distance</u>  (at 15m)
+
+
+![png](nb_overall_results-Agulhas_files/nb_overall_results-Agulhas_31_0.png)
 
 
 <br>
@@ -183,66 +368,5 @@
 ## <u>4. Fronts and currents consistency</u>
 
 
-    ---------------------------------------------------------------------------
-
-    KeyError                                  Traceback (most recent call last)
-
-    <ipython-input-9-01bed2301577> in <module>()
-          3 outputfilename = 'SDE_region_T1.png'
-          4 
-    ----> 5 _ = sde.plot(list_sde, output_dir=outputdir, output_filename=outputfilename)
-    
-
-    ~/Documents/DataChallenges/Metrics_package/velocity_metrics/velocity_metrics/lagrangian/cumulative_distance.py in plot(list_pickle, output_dir, output_filename)
-         48          output_filename: Optional[str] = 'Sde.png'):
-         49     outfile = os.path.join(output_dir, output_filename)
-    ---> 50     plot_all_sde(list_pickle, outfile)
-         51 
-         52 
-
-
-    ~/Documents/DataChallenges/Metrics_package/velocity_metrics/velocity_metrics/lagrangian/cumulative_distance.py in plot_all_sde(list_pickle_sde, fileout)
-         63         with open(ifile, 'rb') as f:
-         64             dic = pickle.load(f)
-    ---> 65         dic_mean = average_sde(dic)
-         66         if 'color' not in dic_mean.keys():
-         67             dic_mean['color'] = col
-
-
-    ~/Documents/DataChallenges/Metrics_package/velocity_metrics/velocity_metrics/lagrangian/cumulative_distance.py in average_sde(dic, list_stat, list_attr)
-        116         i += 1
-        117     for key in list_stat:
-    --> 118         dic_arr[key] = dic_arr[key] / i
-        119     return dic_arr
-        120 
-
-
-    KeyError: 'meansde'
-
-
-    332
-    14
-    332
-    8.937580441379338e-05
-    0.002086119946779534
-
-
-    ERROR LENGTH 72165 4656
-    ERROR LENGTH 72165 4656
-    ERROR LENGTH 72165 4656
-
-
-    6.192268438138431e-05
-
-
-
-    An exception has occurred, use %tb to see the full traceback.
-
-
-    SystemExit: 1
-
-
-
-
-![png](nb_overall_results-Agulhas_files/nb_overall_results-Agulhas_19_5.png)
+![png](nb_overall_results-Agulhas_files/nb_overall_results-Agulhas_34_0.png)
 
