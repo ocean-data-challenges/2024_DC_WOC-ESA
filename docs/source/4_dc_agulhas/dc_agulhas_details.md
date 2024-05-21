@@ -25,17 +25,7 @@
 
 Strongly geostrophic region. 
 
-
-## Observations available for mapping currents 
-
-- conventional nadir altimeters 
-   - Saral-Altika (alg)
-   - Cryosat-2 (c2)
-   - Haiyang-2a (h2ag)
-   - Haiyang-2b (h2b)
-   - Jason-3 (j3)
-   - Sentinel-3a (s3a)
-   - Sentinel-3b (s3b)
+ 
     
 ## Independant evaluation data  
 

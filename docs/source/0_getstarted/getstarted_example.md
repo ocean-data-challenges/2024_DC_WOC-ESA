@@ -1,4 +1,4 @@
-# Run the metrics
+# How to run the metrics
 
 <br> 
  
@@ -17,24 +17,30 @@
 
 ## Run spectrum
 
+- [nb_illustration_run-spectum](https://2024-dc-woc-esa.readthedocs.io/en/latest/gallery/nb_illustration_run-spectum.html)
+
 <br>  
 
 ## Run Eulerian error
+
+- [nb_illustration_run-EulerianRMS](https://2024-dc-woc-esa.readthedocs.io/en/latest/gallery/nb_illustration_run-EulerianRMS.html)
 
 <br>  
 
 ## Run Lagrangian Cumulative Distance
 
+- [nb_illustration_run-LagrangianCD](https://2024-dc-woc-esa.readthedocs.io/en/latest/gallery/nb_illustration_run-LagrangianCD.html)
+
 <br>  
 
 ## Run front evaluation
+
+
+- [nb_illustration_run-LagrangianCD](https://2024-dc-woc-esa.readthedocs.io/en/latest/gallery/nb_illustration_run-frontdiag.html)
+
 
 <br>  
 
 <br>   
 
-
-
-<div class="alert alert-block alert-success">
-<h2><center> <u> Check the metric illustration notebooks </u> </center></h2>   
-</div>
+ 
