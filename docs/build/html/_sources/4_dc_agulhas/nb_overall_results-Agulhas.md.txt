@@ -358,7 +358,7 @@
 ## <u> 3. Lagrangian Cumulative Distance</u> (at 15m)
 
 
-![png](nb_overall_results-Agulhas_files/nb_overall_results-Agulhas_31_0.png)
+![png](nb_overall_results-Agulhas_files/nb_overall_results-Agulhas_32_0.png)
 
 
 <br>
@@ -368,5 +368,5 @@
 ## <u>4. Fronts and currents consistency</u>
 
 
-![png](nb_overall_results-Agulhas_files/nb_overall_results-Agulhas_34_0.png)
+![png](nb_overall_results-Agulhas_files/nb_overall_results-Agulhas_35_0.png)
 
