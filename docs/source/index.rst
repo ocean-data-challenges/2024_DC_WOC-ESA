@@ -124,6 +124,13 @@ Evaluated products
               <td> Gulf Stream </td> 
             </tr> 
             <tr> 
+              <td style="text-align:left;"><strong>WOC SST-SSH NAtl2D</strong></td>
+              <td> WOC-ESA </td>
+              <td> Total currents </td> 
+              <td> altimetry, SST</td> 
+              <td> Gulf Stream </td> 
+            </tr> 
+            <tr> 
               <td style="text-align:left;"><strong>WOC Global Inertial</strong></td>
               <td> WOC-ESA </td>
               <td> Total currents </td> 
