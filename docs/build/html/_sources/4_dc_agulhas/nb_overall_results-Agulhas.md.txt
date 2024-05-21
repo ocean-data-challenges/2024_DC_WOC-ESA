@@ -355,7 +355,7 @@
 
 <br>
 
-## <u> 3. Lagrangian Cumulative Distance</u>  (at 15m)
+## <u> 3. Lagrangian Cumulative Distance</u> (at 15m)
 
 
 ![png](nb_overall_results-Agulhas_files/nb_overall_results-Agulhas_31_0.png)
