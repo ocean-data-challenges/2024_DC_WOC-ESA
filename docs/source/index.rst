@@ -209,7 +209,7 @@ The WOC data challenges cover three geographical regions, with different dynamic
        
  
         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_overalleval.html"> > Overall comparison </a></h3> 
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_overalleval.html"> > Product comparison </a></h3> 
         
     </div>
 
