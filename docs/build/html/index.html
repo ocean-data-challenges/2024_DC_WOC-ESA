@@ -1,144 +1,393 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DC-WOC-ESA &mdash; WOC-ESA Data challenges  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="_static/sg_gallery.css" type="text/css" />
-      <link rel="stylesheet" href="_static/nbsphinx-gallery.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Objectives and caveats &#8212; WOC-ESA Data challenges  documentation</title>
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script src="_static/js/custom.js"></script>
-    <script src="_static/js/theme.js"></script>
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="_static/nbsphinx-gallery.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script src="_static/js/custom.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Installation" href="0_getstarted/getstarted_install.html" />
+    <link rel="next" title="Get started" href="0_getstarted/index.html" />
     <link href="_static/style.css" rel="stylesheet" type="text/css">
 
-</head>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
 
-          
-          
-          <a href="#" class="icon icon-home">
-            WOC-ESA Data challenges
-              <img src="_static/dc_2024_WOC-ESA_map2.jpg" class="logo" alt="Logo"/>
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Get started</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="0_getstarted/getstarted_install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0_getstarted/getstarted_data.html">Download the data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0_getstarted/getstarted_eval.html">Input specification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0_getstarted/getstarted_example.html">How to run the metrics</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Products description</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="1_products/products_woc.html">WOC products</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_products/products_cmems.html">CMEMS products</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_products/other_methods.html">Other methods</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">DC - Agulhas Current</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="4_dc_agulhas/dc_agulhas_details.html">Agulhas current setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_dc_agulhas/dc_agulhas_movies.html">Reconstruction movies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_dc_agulhas/nb_overall_results-Agulhas.html">Product comparison</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">DC - Gulf Stream</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="3_dc_gulfstream/dc_gulfstream_details.html">Gulf Stream setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_dc_gulfstream/dc_gulfstream_movies.html">Reconstruction movies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_dc_gulfstream/dc_gulfstream_overalleval.html">Overall comparison</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">DC - Mediterranean Sea</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="2_dc_medsea/dc_medsea_details.html">Mediterranean Sea setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_dc_medsea/dc_medsea_movies.html">Reconstruction movies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_dc_medsea/dc_medsea_overalleval.html">Overall comparison</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="5_metrics_det/metrics_0-introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="5_metrics_det/metrics_EulerianRMS.html">Eulerian scores</a></li>
-<li class="toctree-l1"><a class="reference internal" href="5_metrics_det/metrics_spectrum.html">Spectral analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="5_metrics_det/metrics_LagrangianCumulativeDistance.html">Lagrangian diagnostics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="5_metrics_det/metrics_structure_evaluation.html">Structure evaluations</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Metric illustration notebooks</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="gallery/nb_illustration_run-spectum.html">Run spectrum</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gallery/nb_illustration_run-EulerianRMS.html">Run Eulerian RMS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gallery/nb_illustration_run-LagrangianCD.html">Run Lagrangian CD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gallery/nb_illustration_run-frontdiag.html">Run front diagnostics</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Scripts</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="6_scripts/utils.html">utils module</a></li>
-</ul>
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/dc_2024_WOC-ESA_minilogo_DC.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/dc_2024_WOC-ESA_minilogo_DC.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="0_getstarted/index.html">
+                        Get started
+                      </a>
+                    </li>
+                
 
-        </div>
-      </div>
-    </nav>
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="1_products/index.html">
+                        Products description
+                      </a>
+                    </li>
+                
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">WOC-ESA Data challenges</a>
-      </nav>
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="2_regionaleval/index.html">
+                        Regional Evaluation
+                      </a>
+                    </li>
+                
 
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">DC-WOC-ESA</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
-      </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="5_metrics_det/index.html">
+                        Metrics details
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="gallery/index.html">
+                        Illustration notebooks
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="6_scripts/modules.html">
+                        <no title>
+                      </a>
+                    </li>
+                
   </ul>
-  <hr/>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.worldoceancirculation.org" title="WOC" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/dc_2024_WOC-ESA_minilogo.png" class="icon-link-image" alt="WOC"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
-  <a class="reference internal image-reference" href="_images/dc_2024_WOC-ESA_logo-rtd2.png"><img alt="alternate text" class="align-center" src="_images/dc_2024_WOC-ESA_logo-rtd2.png" style="width: 1000px;" /></a>
-<section id="dc-woc-esa">
-<h1>DC-WOC-ESA<a class="headerlink" href="#dc-woc-esa" title="Permalink to this headline"></a></h1>
-<a class="reference internal image-reference" href="_images/dc_2024a_WOC-ESA_banner.jpg"><img alt="_images/dc_2024a_WOC-ESA_banner.jpg" class="align-center" src="_images/dc_2024a_WOC-ESA_banner.jpg" style="width: 550px;" /></a>
-<p><span class="raw-html"><br /></span></p>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="0_getstarted/index.html">
+                        Get started
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="1_products/index.html">
+                        Products description
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="2_regionaleval/index.html">
+                        Regional Evaluation
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="5_metrics_det/index.html">
+                        Metrics details
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="gallery/index.html">
+                        Illustration notebooks
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="6_scripts/modules.html">
+                        <no title>
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.worldoceancirculation.org" title="WOC" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/dc_2024_WOC-ESA_minilogo.png" class="icon-link-image" alt="WOC"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article"></div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <a class="reference internal image-reference" href="_images/dc_2024_WOC-ESA_logo-rtd2.png"><img alt="alternate text" class="align-center" src="_images/dc_2024_WOC-ESA_logo-rtd2.png" style="width: 1500px;" /></a>
 <p>The WOC data challenges are comparison platforms that allow a sound and fair assessment of the WOC products between them and to other products. These platforms offer an input dataset (altimetric data, drifters, SST data …) for anyone to create a current products as well as a reference dataset (independant from the input dataset) in order to evaluate the products. These data challenges are contained in a <a class="reference external" href="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/tree/main">github repository</a> and their documentation and results are presented on this readthedocs website.</p>
-<p><span class="raw-html"><br /></span></p>
 <embed>
+
+    <br />
+
     <center>
     <div id="image_map"> <map name="map_example"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_details.html" target="_blank" alt="North Sea" shape=poly coords="335,295, 335,270, 370,270, 370,295"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html" target="_blank" alt="Gulf Stream" shape=poly coords="160,175, 160,110, 290,110, 290,175"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_details.html" target="_blank" alt="Mediterranean Sea" shape=poly coords="300,155, 300,115, 345,115, 345,155">  <img src="_static/dc_2024_WOC-ESA_map2_regions.png" title="Gulf Stream" alt="image map example" width=600 height=350 usemap="#map_example"></map> </div> </center>
 
-</embed><p><span class="raw-html"><br /></span></p>
-<p><span class="raw-html"><hr /></span></p>
-<p><span class="raw-html"><br /></span></p>
-<section id="objectives-and-caveats">
-<h2>Objectives and caveats<a class="headerlink" href="#objectives-and-caveats" title="Permalink to this headline"></a></h2>
+    <br />
+
+    <hr />
+
+    <br />
+
+</embed><section id="objectives-and-caveats">
+<h1>Objectives and caveats<a class="headerlink" href="#objectives-and-caveats" title="Permalink to this headline">#</a></h1>
 <p>The goal of the data challenge is to evaluate the products ability to estimate the total surface current in three different regions during the year 2019 (evaluation period).
 The input observations used to generate the products are not resticted apart for the drifters data during the evaluation period. A dataset of some input observations is provided (see <a class="reference external" href="https://2024-dc-woc-esa.readthedocs.io/en/latest/0_getstarted/getstarted_data.html">Download the data</a>), however any other data apart from the drifters data during the evaluation period can be used.</p>
 <p>Note that some products are intrinsically estimating only specific components of the total current (e.g., the geostrophic component) they are nonetheless evaluated like the other products, making their assumption on the currents as a total current approximation.</p>
@@ -151,19 +400,23 @@ The input observations used to generate the products are not resticted apart for
         <li> some products may use drifters which are also used for the evaluation <b> but never drifters data acquired during the evaluation period </b>,
         </br>
 
-        <li> some products' goal is not to estimate the total currents,
+        <li> some products' goal is not to estimate the total currents (i.e., geostrophic reconstruction).
         </br>
-
-        <li> the summarized score in the scoreboards may not be representative of the methods' full performances, making it important to look at the detailed comparisons,
 
 
     </ul>
-</embed><p><span class="raw-html"><br /></span></p>
-<p><span class="raw-html"><hr /></span></p>
-<p><span class="raw-html"><br /></span></p>
-</section>
+
+
+    <br />
+
+    <hr />
+
+    <br />
+
+
+</embed></section>
 <section id="evaluated-products">
-<h2>Evaluated products<a class="headerlink" href="#evaluated-products" title="Permalink to this headline"></a></h2>
+<h1>Evaluated products<a class="headerlink" href="#evaluated-products" title="Permalink to this headline">#</a></h1>
 <embed>
 
     <table>
@@ -178,49 +431,49 @@ The input observations used to generate the products are not resticted apart for
       </thead>
       <tbody>
         <tr>
-          <td style="text-align:left;"> <strong>WOC BFN-QG</strong></td>
+          <td style="text-align:left;"> <strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html">  BFN-QG </a></strong></td>
           <td> WOC-ESA </td>
           <td> Geostrophic </td>
           <td> altimetry </td>
           <td> Agulhas </td>
         </tr>
         <tr>
-          <td style="text-align:left;"><strong>WOC dADR-SR</strong></td>
+          <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html"> dADR-SR</a></strong></td>
           <td> WOC-ESA </td>
           <td> Total currents </td>
           <td> altimetry, SST</td>
           <td> Mediterranean </td>
         </tr>
         <tr>
-          <td style="text-align:left;"><strong>WOC Omega 3D</strong></td>
+          <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html"> Omega 3D</a></strong></td>
           <td> WOC-ESA </td>
           <td> Total currents </td>
           <td> altimetry, SST</td>
           <td> Gulf Stream </td>
         </tr>
         <tr>
-          <td style="text-align:left;"><strong>WOC SST-SSH NAtl2D</strong></td>
+          <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html"> SSTSSH-NAtl2D</a></strong></td>
           <td> WOC-ESA </td>
           <td> Total currents </td>
           <td> altimetry, SST</td>
           <td> Gulf Stream </td>
         </tr>
         <tr>
-          <td style="text-align:left;"><strong>WOC Global Inertial</strong></td>
+          <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html"> Global Inertial</a></strong></td>
           <td> WOC-ESA </td>
-          <td> Total currents </td>
+          <td> Geostrophic + Ekman + Induced Ekman (NIO) </td>
           <td> Drifter currents, GlobCurrent geos.</td>
           <td> Agulhas, Gulf Stream, Mediterranean </td>
         </tr>
         <tr>
-          <td style="text-align:left;"><strong>GlobCurrent total</strong></td>
+          <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_cmems.html">GlobCurrent</a></strong></td>
           <td> CMEMS </td>
           <td> Geostrophic + Ekman </td>
           <td> altimetry, gravimetry, drifters </td>
           <td> Agulhas, Gulf Stream, Mediterranean </td>
         </tr>
         <tr>
-          <td style="text-align:left;"><strong>GlobCurrent Geostrophic</strong></td>
+          <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_cmems.html">GlobCurrent Geostrophic</a></strong></td>
           <td> CMEMS </td>
           <td> Geostrophic </td>
           <td> altimetry </td>
@@ -229,146 +482,167 @@ The input observations used to generate the products are not resticted apart for
       </tbody>
     </table>
     </br>
-</embed><p>For more details on the products, check the <strong>Products description</strong> section.</p>
-<p><span class="raw-html"><br /></span></p>
-<p><span class="raw-html"><hr /></span></p>
-<p><span class="raw-html"><br /></span></p>
-</section>
+</embed><p>Click on the products for more details.</p>
+<embed>
+
+
+    <br />
+
+    <hr />
+
+    <br />
+
+
+</embed></section>
 <section id="regions-of-interest">
-<h2>Regions of interest<a class="headerlink" href="#regions-of-interest" title="Permalink to this headline"></a></h2>
+<h1>Regions of interest<a class="headerlink" href="#regions-of-interest" title="Permalink to this headline">#</a></h1>
 <p>The WOC data challenges cover three geographical regions, with different dynamical characteristics.</p>
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'AgulhasCurrent')" id="defaultOpen"><b>Agulhas Current region</b></button>
-  <button class="tablinks" onclick="openCity(event, 'GulfStream')"><b>Gulf Stream region</b></button>
-  <button class="tablinks" onclick="openCity(event, 'MediterraneanSea')"><b>Mediterranean Sea region</b></button>
-</div>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'AgulhasCurrent')" id="defaultOpen"><b>Agulhas Current region</b></button>
+    <button class="tablinks" onclick="openCity(event, 'GulfStream')"><b>Gulf Stream region</b></button>
+    <button class="tablinks" onclick="openCity(event, 'MediterraneanSea')"><b>Mediterranean Sea region</b></button>
+  </div>
 
-<div id="AgulhasCurrent" class="tabcontent">
-  <br />
-
-  </br>
-
-  <p align="center">
-      <img src="_static/illustration_agulhas_region.jpg" alt="Alt Text" width="400"/>
-  </p>
-
-
-  <ul>
-    <li>  Area: [14°E, 35°E, 45°S, 30°S]</li>
-    <li>  Dynamical specificities: Strongly geostrophic region. </li>
-    <li>  Independant evaluation data: CMEMS drifters currents and trajectories.</li>
-    <li>  Products:
-        <ul>
-            <li> WOC BFN-QG </li>
-            <li> WOC Global Inertial </li>
-            <li> GlobCurrent Geostrophic </li>
-            <li> GlobCurrent Total </li>
-          </ul>
-
-  </ul>
-
-
+  <div id="AgulhasCurrent" class="tabcontent">
+    <br />
 
     </br>
 
-    <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_details.html"> >  Agulhas Current setup </a></h3>
+    <p align="center">
+        <img src="_static/illustration_agulhas_region.jpg" alt="Alt Text" width="400"/>
+    </p>
+
+
+    <ul>
+      <li>  Area: [14°E, 35°E, 45°S, 30°S]</li>
+      <li>  Dynamical specificities: Strongly geostrophic region. </li>
+      <li>  Independant evaluation data: CMEMS drifters currents and trajectories.</li>
+      <li>  Products:
+          <ul>
+              <li> WOC BFN-QG </li>
+              <li> WOC Global Inertial </li>
+              <li> GlobCurrent Geostrophic </li>
+              <li> GlobCurrent Total </li>
+            </ul>
+
+    </ul>
 
 
 
-    <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_movies.html"> > Reconstruction movies </a></h3>
+      </br>
+
+      <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_details.html"> >  Agulhas Current setup </a></h3>
 
 
 
-    <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_overalleval.html"> > Product comparison </a></h3>
-
-</div>
-
-<div id="GulfStream" class="tabcontent">
-  <br />
-  <ul>
-    <li>  Area: [80°W, 10°W, 25°N, 50°N]</li>
-    <li>  Dynamical specificities: High variability region with mixed geostrophic and ageostrophic dynamics. </li>
-    <li>  Independant evaluation data: CMEMS drifters currents and trajectories.</li>
-    <li>  Products:
-        <ul>
-            <li> WOC Omega 3D </li>
-            <li> WOC Global Inertial </li>
-            <li> GlobCurrent Geostrophic </li>
-            <li> GlobCurrent Total </li>
-          </ul>
-
-  </ul>
-
-
-    </br>
-
-    <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html"> > Gulf Stream setup </a></h3>
-
-    </br>
-
-    <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_movies.html"> > Reconstruction movies </a></h3>
-
-    </br>
-
-    <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_overalleval.html"> > Overall comparison </a></h3>
-
-</div>
+      <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_movies.html"> > Reconstruction movies </a></h3>
 
 
 
-<div id="MediterraneanSea" class="tabcontent">
-  <br />
-  <ul>
-    <li>  Area: [5°W, 25°E, 35°N, 47°N] </li>
-    <li>  Dynamical specificities: A quasi-closed basin with strong ageostrophic dynamics and vertical shear. </li>
-    <li>  Independant evaluation data: CMEMS drifters currents and trajectories.</li>
-    <li>  Products:
-        <ul>
-            <li> WOC dADR-SR </li>
-            <li> WOC Global Inertial </li>
-            <li> GlobCurrent Geostrophic </li>
-            <li> GlobCurrent Total </li>
-          </ul>
+      <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_overalleval.html"> > Product comparison </a></h3>
 
-  </ul>
+  </div>
+
+  <div id="GulfStream" class="tabcontent">
+    <br />
 
     </br>
 
-    <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_details.html"> > Mediterranean Sea setup </a></h3>
+    <p align="center">
+<img src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/3647745e-b2a8-480b-befd-8e90dd0a8b82" alt="Alt Text" width="400"/>
+    </p>
+
+    <ul>
+      <li>  Area: [80°W, 10°W, 25°N, 50°N]</li>
+      <li>  Dynamical specificities: High variability region with mixed geostrophic and ageostrophic dynamics. </li>
+      <li>  Independant evaluation data: CMEMS drifters currents and trajectories.</li>
+      <li>  Products:
+          <ul>
+              <li> WOC Omega 3D </li>
+              <li> WOC Global Inertial </li>
+              <li> GlobCurrent Geostrophic </li>
+              <li> GlobCurrent Total </li>
+            </ul>
+
+    </ul>
+
+
+      </br>
+
+      <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html"> > Gulf Stream setup </a></h3>
+
+      <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_movies.html"> > Reconstruction movies </a></h3>
+
+      <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_overalleval.html"> > Overall comparison </a></h3>
+
+  </div>
+
+
+
+  <div id="MediterraneanSea" class="tabcontent">
+    <br />
 
     </br>
 
-    <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_movies.html"> > Reconstruction movies </a></h3>
+    <p align="center">
+        <img src="_static/illustration_agulhas_region.jpg" alt="Alt Text" width="400"/>
+    </p>
 
-    </br>
+    <ul>
+      <li>  Area: [5°W, 25°E, 35°N, 47°N] </li>
+      <li>  Dynamical specificities: A quasi-closed basin with strong ageostrophic dynamics and vertical shear. </li>
+      <li>  Independant evaluation data: CMEMS drifters currents and trajectories.</li>
+      <li>  Products:
+          <ul>
+              <li> WOC dADR-SR </li>
+              <li> WOC Global Inertial </li>
+              <li> GlobCurrent Geostrophic </li>
+              <li> GlobCurrent Total </li>
+            </ul>
 
-    <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_overalleval.html"> > Overall comparison </a></h3>
+    </ul>
 
-</div>
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+      </br>
+
+      <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_details.html"> > Mediterranean Sea setup </a></h3>
+
+      <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_movies.html"> > Reconstruction movies </a></h3>
+
+      <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_overalleval.html"> > Overall comparison </a></h3>
+
+  </div>
+  <script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
 
-<br /><p><span class="raw-html"><br /></span></p>
-<p><span class="raw-html"><hr /></span></p>
-<p><span class="raw-html"><br /></span></p>
+  <br /><embed>
+
+
+    <br />
+
+    <hr />
+
+    <br />
+
+
+</embed></section>
 <section id="a-word-on-the-woc-project">
-<h3>A word on the WOC project<a class="headerlink" href="#a-word-on-the-woc-project" title="Permalink to this headline"></a></h3>
+<h1>A word on the WOC project<a class="headerlink" href="#a-word-on-the-woc-project" title="Permalink to this headline">#</a></h1>
 <p>The World Ocean Circulation (WOC) consortium is composed partners from France, Norway, Italy, Spain, Netherlands. It gathers experts in the Earth Observation  and ocean processes and sea state interactions.</p>
 <p>The WOC project developed synergetic products optimizing the capacy offered by Earth Observations as well as in-situ and numerical models by focusing on four domains of applications:</p>
 <ul class="simple">
@@ -382,18 +656,25 @@ document.getElementById("defaultOpen").click();
     <a href="https://www.worldoceancirculation.org/Products#/search?from=1&to=30"> <b>Check out the WOC products</b> </a>  <br> <br> <a href="https://www.worldoceancirculation.org/Products#/search?from=1&to=30"><img src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/8434082f-ad1d-494a-9325-e6668fc85e1a" width="200"></a>
     </center>
 
-</embed><p><span class="raw-html"><br /></span></p>
-<p><span class="raw-html"><br /></span></p>
-<embed>
+</embed><embed>
+
+
+    <br />
+
+    <br />
+
+
+</embed><embed>
     So far, the github page visits amount to: <br> <br> <a href="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Focean-data-challenges%2F2024_DC_WOC-ESA&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=PAGE+VIEWS&edge_flat=false"/></a>
 
 </embed><hr class="docutils" />
-<p><span class="raw-html"><br /></span></p>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
+<embed>
+
+
+    <br />
+
+
+</embed><div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -402,60 +683,117 @@ document.getElementById("defaultOpen").click();
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound" id="rst-gallery">
-<p class="caption" role="heading"><span class="caption-text">Metric illustration notebooks</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Illustration notebooks</span></p>
 <div class="nbsphinx-gallery">
-<a class="reference internal" href="gallery/nb_illustration_run-spectum.html">
-  <div><img alt="" src="./_images/gallery_nb_illustration_run-spectum_15_0.png"></div>
-  <div>Run spectrum</div>
-</a>
-<a class="reference internal" href="gallery/nb_illustration_run-EulerianRMS.html">
+<a class="reference internal" href="gallery/index.html">
   <div><img alt="" src="./_static/nbsphinx-no-thumbnail.svg"></div>
-  <div>Run Eulerian RMS</div>
-</a>
-<a class="reference internal" href="gallery/nb_illustration_run-LagrangianCD.html">
-  <div><img alt="" src="./_images/gallery_nb_illustration_run-LagrangianCD_20_1.png"></div>
-  <div>Run Lagrangian CD</div>
-</a>
-<a class="reference internal" href="gallery/nb_illustration_run-frontdiag.html">
-  <div><img alt="" src="./_images/gallery_nb_illustration_run-frontdiag_13_1.png"></div>
-  <div>Run front diagnostics</div>
+  <div>Illustration notebooks</div>
 </a>
 </div>
 </div>
 <div class="toctree-wrapper compound">
 </div>
 </section>
-</section>
-</section>
 
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="0_getstarted/getstarted_install.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2023, Datlas.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
-        </div>
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="right-next"
+       href="0_getstarted/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Get started</p>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
 
-</body>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Objectives and caveats</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluated-products">Evaluated products</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#regions-of-interest">Regions of interest</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-word-on-the-woc-project">A word on the WOC project</a><ul class="visible nav section-nav flex-column">
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="_sources/index.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Datlas.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
 </html>

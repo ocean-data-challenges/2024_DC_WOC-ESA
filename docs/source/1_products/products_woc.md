@@ -13,20 +13,29 @@
 
 <br>  
 
-- **DDDcurr** 
+- **dADR-SR** 
+
+    This dataset provides a level 4 (L4) gap free reconstruction of 2D ocean surface currents obtained through the combination of altimeter-derived geostrophic currents and satellite sea surface temperature (SST) L4 data. This WOC product uses the standard Altimeter-derived geostrophic currents (Copernicus operational product, ¼°) as background information and extracts additional dynamical information from the spatial and temporal gradients of a higher-resolution (HR) satellite-derived SST field (Copernicus OSTIA product, remapped onto a 1/10° grid). In particular, the patterns found in the HR satellite SST enable to compute correction factors that are assigned to the background geostrophic currents provided by the Altimeter system.
+
+    **More information on the dADR-SR current products [here](https://www.worldoceancirculation.org/Products#/metadata/e84fe404-1ed3-4e6f-9b72-f75cd8eb7f7d) !**
+ 
+  
+<br>  
+
+- **Omega 3D** 
+ 
+  
+<br>  
+
+- **SST-SSH NAtl2D** 
+ 
+  
+<br>  
+
+- **Global Inertial** 
  
 
     This dataset provides Level 4 total current including geostrophy and a data-driven approach for Ekman and near-inertial current, based on a convolution between drifter observation and wind history, to fit empirically a complex and time-lag dependant transfert function between ERA5 wind stress and current
 
-    **More information on the Drifter data-driven products [here](https://www.worldoceancirculation.org/Products#/metadata/cfa65be8-b200-4243-aba0-843c363001d9) !**
+    **More information on the Global Inertial products [here](https://www.worldoceancirculation.org/Products#/metadata/cfa65be8-b200-4243-aba0-843c363001d9) !**
 
-
-<br>  
-
-- **DADR-SR** 
-
-    This dataset provides a level 4 (L4) gap free reconstruction of 2D ocean surface currents obtained through the combination of altimeter-derived geostrophic currents and satellite sea surface temperature (SST) L4 data. This WOC product uses the standard Altimeter-derived geostrophic currents (Copernicus operational product, ¼°) as background information and extracts additional dynamical information from the spatial and temporal gradients of a higher-resolution (HR) satellite-derived SST field (Copernicus OSTIA product, remapped onto a 1/10° grid). In particular, the patterns found in the HR satellite SST enable to compute correction factors that are assigned to the background geostrophic currents provided by the Altimeter system.
-
-    **More information on the DADR-SR current products [here](https://www.worldoceancirculation.org/Products#/metadata/e84fe404-1ed3-4e6f-9b72-f75cd8eb7f7d) !**
- 
-  

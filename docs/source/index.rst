@@ -4,47 +4,33 @@
    contain the root `toctree` directive.
 
 .. image:: figures/dc_2024_WOC-ESA_logo-rtd2.png
-    :width: 1000
+    :width: 1500
     :alt: alternate text
     :align: center 
-    
-    
-========== 
-DC-WOC-ESA   
-==========
-
-.. role:: raw-html(raw)
-    :format: html
- 
-    
- 
-
-.. image:: ../../figures/dc_2024a_WOC-ESA_banner.jpg
-    :width: 550 
-    :align: center  
-    
-:raw-html:`<br />`
- 
+     
 
 The WOC data challenges are comparison platforms that allow a sound and fair assessment of the WOC products between them and to other products. These platforms offer an input dataset (altimetric data, drifters, SST data ...) for anyone to create a current products as well as a reference dataset (independant from the input dataset) in order to evaluate the products. These data challenges are contained in a `github repository <https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/tree/main>`_ and their documentation and results are presented on this readthedocs website. 
-
-:raw-html:`<br />` 
+ 
     
 .. raw:: html
 
+
     <embed> 
+    
+        <br />
+        
         <center>
         <div id="image_map"> <map name="map_example"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_details.html" target="_blank" alt="North Sea" shape=poly coords="335,295, 335,270, 370,270, 370,295"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html" target="_blank" alt="Gulf Stream" shape=poly coords="160,175, 160,110, 290,110, 290,175"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_details.html" target="_blank" alt="Mediterranean Sea" shape=poly coords="300,155, 300,115, 345,115, 345,155">  <img src="_static/dc_2024_WOC-ESA_map2_regions.png" title="Gulf Stream" alt="image map example" width=600 height=350 usemap="#map_example"></map> </div> </center>
+        
+        <br />
+        
+        <hr />
+        
+        <br />
 
     </embed>
     
-    
-
-:raw-html:`<br />` 
      
-:raw-html:`<hr />` 
-
-:raw-html:`<br />` 
 
  
 Objectives and caveats   
@@ -67,22 +53,23 @@ The caveats of the data challenge are:
             <li> some products may use drifters which are also used for the evaluation <b> but never drifters data acquired during the evaluation period </b>,   
             </br> 
 
-            <li> some products' goal is not to estimate the total currents,    
-            </br> 
-
-            <li> the summarized score in the scoreboards may not be representative of the methods' full performances, making it important to look at the detailed comparisons, 
+            <li> some products' goal is not to estimate the total currents (i.e., geostrophic reconstruction).    
+            </br>  
 
 
         </ul>
+        
+        
+        <br />
+        
+        <hr />
+        
+        <br />
+        
+        
     </embed>
     
-    
-
-:raw-html:`<br />` 
      
-:raw-html:`<hr />` 
-
-:raw-html:`<br />` 
     
 Evaluated products   
 ==================
@@ -103,49 +90,49 @@ Evaluated products
           </thead>
           <tbody>   
             <tr> 
-              <td style="text-align:left;"> <strong>WOC BFN-QG</strong></td>
+              <td style="text-align:left;"> <strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html">  BFN-QG </a></strong></td>
               <td> WOC-ESA </td>
               <td> Geostrophic </td> 
               <td> altimetry </td> 
               <td> Agulhas </td> 
             </tr> 
             <tr> 
-              <td style="text-align:left;"><strong>WOC dADR-SR</strong></td>
+              <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html"> dADR-SR</a></strong></td>
               <td> WOC-ESA </td>
               <td> Total currents </td> 
               <td> altimetry, SST</td> 
               <td> Mediterranean </td> 
             </tr> 
-            <tr> 
-              <td style="text-align:left;"><strong>WOC Omega 3D</strong></td>
+            <tr>  
+              <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html"> Omega 3D</a></strong></td>
               <td> WOC-ESA </td>
               <td> Total currents </td> 
               <td> altimetry, SST</td> 
               <td> Gulf Stream </td> 
             </tr> 
             <tr> 
-              <td style="text-align:left;"><strong>WOC SST-SSH NAtl2D</strong></td>
+              <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html"> SSTSSH-NAtl2D</a></strong></td>
               <td> WOC-ESA </td>
               <td> Total currents </td> 
               <td> altimetry, SST</td> 
               <td> Gulf Stream </td> 
             </tr> 
             <tr> 
-              <td style="text-align:left;"><strong>WOC Global Inertial</strong></td>
+              <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html"> Global Inertial</a></strong></td>
               <td> WOC-ESA </td>
-              <td> Total currents </td> 
+              <td> Geostrophic + Ekman + Induced Ekman (NIO) </td> 
               <td> Drifter currents, GlobCurrent geos.</td> 
               <td> Agulhas, Gulf Stream, Mediterranean </td> 
             </tr> 
             <tr> 
-              <td style="text-align:left;"><strong>GlobCurrent total</strong></td>
+              <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_cmems.html">GlobCurrent</a></strong></td>
               <td> CMEMS </td>
               <td> Geostrophic + Ekman </td> 
               <td> altimetry, gravimetry, drifters </td> 
               <td> Agulhas, Gulf Stream, Mediterranean </td>
             </tr>
             <tr> 
-              <td style="text-align:left;"><strong>GlobCurrent Geostrophic</strong></td>
+              <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_cmems.html">GlobCurrent Geostrophic</a></strong></td>
               <td> CMEMS </td>
               <td> Geostrophic </td> 
               <td> altimetry </td> 
@@ -156,15 +143,26 @@ Evaluated products
         </br>
     </embed>
 
-For more details on the products, check the **Products description** section.
+Click on the products for more details.
     
     
+  
+    
+.. raw:: html
 
-:raw-html:`<br />` 
-     
-:raw-html:`<hr />` 
-
-:raw-html:`<br />` 
+    <embed>  
+        
+        
+        <br />
+        
+        <hr />
+        
+        <br />
+        
+        
+    </embed>
+  
+  
 
 Regions of interest      
 ===================
@@ -222,6 +220,13 @@ The WOC data challenges cover three geographical regions, with different dynamic
 
     <div id="GulfStream" class="tabcontent">
       <br /> 
+      
+      </br>
+      
+      <p align="center">
+  <img src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/3647745e-b2a8-480b-befd-8e90dd0a8b82" alt="Alt Text" width="400"/>
+      </p> 
+       
       <ul>
         <li>  Area: [80°W, 10°W, 25°N, 50°N]</li>
         <li>  Dynamical specificities: High variability region with mixed geostrophic and ageostrophic dynamics. </li> 
@@ -240,13 +245,9 @@ The WOC data challenges cover three geographical regions, with different dynamic
         </br>
         
         <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html"> > Gulf Stream setup </a></h3>  
-        
-        </br>
-        
+         
         <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_movies.html"> > Reconstruction movies </a></h3>  
-        
-        </br>
-        
+         
         <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_overalleval.html"> > Overall comparison </a></h3>  
         
     </div>
@@ -255,6 +256,13 @@ The WOC data challenges cover three geographical regions, with different dynamic
 
     <div id="MediterraneanSea" class="tabcontent">
       <br /> 
+      
+      </br>
+      
+      <p align="center">
+          <img src="_static/illustration_agulhas_region.jpg" alt="Alt Text" width="400"/>
+      </p> 
+       
       <ul>
         <li>  Area: [5°W, 25°E, 35°N, 47°N] </li>
         <li>  Dynamical specificities: A quasi-closed basin with strong ageostrophic dynamics and vertical shear. </li> 
@@ -272,13 +280,9 @@ The WOC data challenges cover three geographical regions, with different dynamic
         </br>
         
         <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_details.html"> > Mediterranean Sea setup </a></h3>   
-
-        </br>
-        
+ 
         <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_movies.html"> > Reconstruction movies </a></h3>   
-
-        </br>
-        
+ 
         <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_overalleval.html"> > Overall comparison </a></h3>   
 
     </div>
@@ -304,19 +308,27 @@ The WOC data challenges cover three geographical regions, with different dynamic
     <br />
    
      
+  
+    
+.. raw:: html
+
+    <embed>  
+        
+        
+        <br />
+        
+        <hr />
+        
+        <br />
+        
+        
+    </embed>
      
 
-:raw-html:`<br />` 
-     
-:raw-html:`<hr />` 
+A word on the WOC project      
+=========================
 
-:raw-html:`<br />` 
-     
-
-A word on the WOC project 
-------------------------- 
-
-The World Ocean Circulation (WOC) consortium is composed partners from France, Norway, Italy, Spain, Netherlands. It gathers experts in the Earth Observation  and ocean processes and sea state interactions.
+The World Ocean Circulation (WOC) consortium is composed partners from France, Norway, Italy, Spain, Netherlands. It gathers experts in the Earth Observation  and ocean processes and sea state interactions. 
 
 The WOC project developed synergetic products optimizing the capacy offered by Earth Observations as well as in-situ and numerical models by focusing on four domains of applications: 
 
@@ -337,10 +349,19 @@ The WOC project developed synergetic products optimizing the capacy offered by E
      
  
   
+  
+    
+.. raw:: html
 
-:raw-html:`<br />` 
-
-:raw-html:`<br />` 
+    <embed>  
+        
+        
+        <br /> 
+        
+        <br />
+        
+        
+    </embed>
 
 .. raw:: html
 
@@ -349,87 +370,63 @@ The WOC project developed synergetic products optimizing the capacy offered by E
         
     </embed>
     
------------------ 
+-----------------  
 
-:raw-html:`<br />`
+  
+    
+.. raw:: html
+
+    <embed>  
+        
+        
+        <br /> 
+        
+        
+    </embed>
  
     
 .. toctree::
    :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Get started 
 
-   0_getstarted/getstarted_install.md
-   0_getstarted/getstarted_data.md 
-   0_getstarted/getstarted_eval.md   
-   0_getstarted/getstarted_example.md  
+   0_getstarted/index.md
    
     
 .. toctree::
    :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Products description 
 
-   1_products/products_woc.md
-   1_products/products_cmems.md 
-   1_products/other_methods.md  
+   1_products/index.md 
 
 .. toctree::
    :hidden:
    :maxdepth: 1
-   :caption: DC - Agulhas Current
+   :caption: Regional Evaluation
  
-   4_dc_agulhas/dc_agulhas_details.md
-   4_dc_agulhas/dc_agulhas_movies.md 
-   4_dc_agulhas/nb_overall_results-Agulhas.md 
-     
- 
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :caption: DC - Gulf Stream
- 
-   3_dc_gulfstream/dc_gulfstream_details.md
-   3_dc_gulfstream/dc_gulfstream_movies.md
-   3_dc_gulfstream/dc_gulfstream_overalleval.md   
-   
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :caption: DC - Mediterranean Sea
-
-   2_dc_medsea/dc_medsea_details.md
-   2_dc_medsea/dc_medsea_movies.md
-   2_dc_medsea/dc_medsea_overalleval.md  
- 
-
+   2_regionaleval/index.md 
+      
    
 .. toctree::
    :hidden:
    :maxdepth: 1
    :caption: Metrics details 
-
-   5_metrics_det/metrics_0-introduction.md
-   5_metrics_det/metrics_EulerianRMS.md
-   5_metrics_det/metrics_spectrum.md
-   5_metrics_det/metrics_LagrangianCumulativeDistance.md
-   5_metrics_det/metrics_structure_evaluation.md 
+ 
+   5_metrics_det/index.md 
     
 
 .. nbgallery::  
-    :caption: Metric illustration notebooks
+    :caption: Illustration notebooks
     :hidden:
     :maxdepth: 0
     :name: rst-gallery 
     
-    gallery/nb_illustration_run-spectum.ipynb 
-    gallery/nb_illustration_run-EulerianRMS.ipynb 
-    gallery/nb_illustration_run-LagrangianCD.ipynb
-    gallery/nb_illustration_run-frontdiag.ipynb
+    gallery/index.md  
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Scripts
 
    6_scripts/modules.rst

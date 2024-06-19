@@ -1,7 +1,5 @@
 # Installation
 
-<br> 
-
 <br>  
 
 ## Cloning the Data Challenge
