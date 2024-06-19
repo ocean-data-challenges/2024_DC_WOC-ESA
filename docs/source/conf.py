@@ -50,7 +50,7 @@ napoleon_google_docstring = False
 
 source_suffix = {
     '.rst': 'restructuredtext',
-    '.txt': 'markdown', 
+    '.txt': 'markdown',  
     '.md': 'markdown',
 }
  
@@ -59,7 +59,7 @@ myst_enable_extensions = ["dollarmath", "amsmath"]
 myst_footnote_transition = False
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ['_templates'] 
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -73,12 +73,40 @@ exclude_patterns = ['gallery']
 # a list of builtin themes.
 #
 #html_theme = 'classic'
-html_theme = 'sphinx_rtd_theme'
+#html_theme = 'sphinx_rtd_theme'
 #html_theme = 'alabaster'
+#html_theme = 'sphinxdoc'
 #html_theme = 'nature'
 #html_theme = 'pyramid'
+html_theme = "pydata_sphinx_theme" 
 
-html_logo = "figures/dc_2024_WOC-ESA_map2.jpg"
+
+html_theme_options = { 
+    "icon_links": [ 
+        {
+            "name": "WOC",
+            "url": "https://www.worldoceancirculation.org",
+            "icon": "_static/dc_2024_WOC-ESA_minilogo.png",
+            "type": "local",
+        }, 
+    ],
+    "header_links_before_dropdown":6,  
+    
+    "logo": { 
+        "image_dark": "figures/dc_2024_WOC-ESA_minilogo_DC.png",
+    }, 
+    "show_nav_level": 2,
+    "show_toc_level": 2,
+    "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
+    # "show_nav_level": 2,  
+    "footer_start": ["copyright"],  
+    "secondary_sidebar_items": ["page-toc", "sourcelink"],
+    
+    "collapse_navigation": True,
+    # "back_to_top_button": False,
+}
+
+html_logo = "figures/dc_2024_WOC-ESA_minilogo_DC.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

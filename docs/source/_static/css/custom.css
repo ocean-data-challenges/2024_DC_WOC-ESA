@@ -55,3 +55,11 @@ th, td {
     padding: 8px;
     border: 1px solid black;
 }
+
+.bd-page-width {
+  max-width: 100%;  /* default is 88rem */
+}
+
+.bd-main .bd-content .bd-article-container {
+  max-width: 70%;  /* default is 60em */
+}
