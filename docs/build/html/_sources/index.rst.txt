@@ -216,15 +216,15 @@ The WOC data challenges cover three geographical regions, with different dynamic
 
         </br>
         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_details.html"> >  Agulhas Current setup </a></h3> 
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_agulhas_details.html"> >  Agulhas Current setup </a></h3> 
        
  
         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_movies.html"> > Reconstruction movies </a></h3> 
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_agulhas_movies.html"> > Reconstruction movies </a></h3> 
        
  
         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_overalleval.html"> > Product comparison </a></h3> 
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_agulhas_overalleval.html"> > Product comparison </a></h3> 
         
     </div>
 
@@ -254,11 +254,11 @@ The WOC data challenges cover three geographical regions, with different dynamic
         
         </br>
         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html"> > Gulf Stream setup </a></h3>  
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_gulfstream_details.html"> > Gulf Stream setup </a></h3>  
          
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_movies.html"> > Reconstruction movies </a></h3>  
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_gulfstream_movies.html"> > Reconstruction movies </a></h3>  
          
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_overalleval.html"> > Overall comparison </a></h3>  
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_gulfstream_overalleval.html"> > Overall comparison </a></h3>  
         
     </div>
 
@@ -289,11 +289,11 @@ The WOC data challenges cover three geographical regions, with different dynamic
 
         </br>
         
-        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_details.html"> > Mediterranean Sea setup </a></h3>   
+        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_medsea_details.html"> > Mediterranean Sea setup </a></h3>   
  
-        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_movies.html"> > Reconstruction movies </a></h3>   
+        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_medsea_movies.html"> > Reconstruction movies </a></h3>   
  
-        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_overalleval.html"> > Overall comparison </a></h3>   
+        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_medsea_overalleval.html"> > Overall comparison </a></h3>   
 
     </div>
     <script>
