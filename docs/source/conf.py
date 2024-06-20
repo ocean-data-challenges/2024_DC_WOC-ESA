@@ -84,7 +84,12 @@ html_theme = "pydata_sphinx_theme"
 html_theme_options = { 
     "icon_links": [ 
         {
-            "name": "WOC",
+            "name": "DC on GitHub",
+            "url": "https://github.com/ocean-data-challenges/2024_DC_WOC-ESA",
+            "icon": "fa-brands fa-github",
+        },
+        {
+            "name": "WOC website",
             "url": "https://www.worldoceancirculation.org",
             "icon": "_static/dc_2024_WOC-ESA_minilogo.png",
             "type": "local",
