@@ -19,7 +19,7 @@
 
     </embed>
 
-The WOC data challenges are comparison platforms that allow a sound and fair assessment of the WOC products between them and to other products. These platforms offer an input dataset (altimetric data, drifters, SST data ...) for anyone to create a current products as well as a reference dataset (independant from the input dataset) in order to evaluate the products. These data challenges are contained in a `github repository <https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/tree/main>`_ and their documentation and results are presented on this readthedocs website. 
+The WOC data challenges are comparison platforms that allow a sound and fair assessment of the WOC products between them and to other products. These platforms offer an input dataset (altimetric data, drifters, SST data ...) for anyone to create a surface current products as well as a reference dataset (independant from the input dataset) in order to evaluate the products. These data challenges are contained in a `github repository <https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/tree/main>`_ and their documentation and results are presented on this readthedocs website. 
  
     
 .. raw:: html
@@ -44,12 +44,12 @@ The WOC data challenges are comparison platforms that allow a sound and fair ass
 
  
 Objectives and caveats   
-==========================
+======================
 
 The goal of the data challenge is to evaluate the products ability to estimate the total surface current in three different regions during the year 2019 (evaluation period). 
-The input observations used to generate the products are not resticted apart for the drifters data during the evaluation period. A dataset of some input observations is provided (see `Download the data <https://2024-dc-woc-esa.readthedocs.io/en/latest/0_getstarted/getstarted_data.html>`_), however any other data apart from the drifters data during the evaluation period can be used. 
+The input observations used to generate the products are not resticted apart for the AOML drifter data during the evaluation period: 2019. A dataset of some input observations is also provided (see `Download the data <https://2024-dc-woc-esa.readthedocs.io/en/latest/0_getstarted/getstarted_data.html>`_), however any other data apart from the drifter data during the evaluation period can be used. 
 
-Note that some products are intrinsically estimating only specific components of the total current (e.g., the geostrophic component) they are nonetheless evaluated like the other products, making their assumption on the currents as a total current approximation. 
+Note that some products are intrinsically estimating only specific components of the total current (e.g., the geostrophic component) they are nonetheless evaluated like the other products, making their assumption on the surface currents an approximation of the total current. 
 
 The caveats of the data challenge are: 
     
@@ -60,11 +60,11 @@ The caveats of the data challenge are:
             <li> not all products are using the same input observations,   
             </br>
 
-            <li> some products may use drifters which are also used for the evaluation <b> but never drifters data acquired during the evaluation period </b>,   
-            </br> 
-
             <li> some products' goal is not to estimate the total currents (i.e., geostrophic reconstruction).    
             </br>  
+
+            <li> the one year evaluation period may not be enough for some diagnosis (Lagrangian cumulative distance) to be fully informative on the low frequency signals,   
+            </br> 
 
 
         </ul>
@@ -354,28 +354,52 @@ The WOC project developed synergetic products optimizing the capacy offered by E
         <center>
         <a href="https://www.worldoceancirculation.org/Products#/search?from=1&to=30"> <b>Check out the WOC products</b> </a>  <br> <br> <a href="https://www.worldoceancirculation.org/Products#/search?from=1&to=30"><img src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/8434082f-ad1d-494a-9325-e6668fc85e1a" width="200"></a> 
         </center>
+         
+        
+        
+        <br />
+        
+        <hr />
+        
+        <br />
+        
+         
         
     </embed>
      
- 
+     
+More data challenges   
+====================
+
+If you are interested in more data challenges relating to ocean data, you can visit the ocean-data-challenges website. 
   
   
     
 .. raw:: html
 
+
     <embed>  
         
+        <br />
+        
+        <center><a  href="https://ocean-data-challenges.github.io"/> <img src="_static/odc_webpage.jpg" alt="Alt Text" width="500"/></a></center>
+        
+        <center><a  href="https://ocean-data-challenges.github.io" alt="Alt Text"/> ocean-data-challenges.github.io </a></center>
         
         <br /> 
         
         <br />
         
+          
         
-    </embed>
-
-.. raw:: html
-
-    <embed>    
+        
+        <br />
+        
+        <hr />
+        
+        <br />
+        
+         
         So far, the github page visits amount to: <br> <br> <a href="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Focean-data-challenges%2F2024_DC_WOC-ESA&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=PAGE+VIEWS&edge_flat=false"/></a> 
         
     </embed>
