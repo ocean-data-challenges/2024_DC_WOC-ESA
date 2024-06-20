@@ -375,7 +375,7 @@ If you are interested in more data challenges relating to ocean data, you can vi
   
   
     
-.. raw:: html
+.. raw:: html 
 
 
     <embed>  
@@ -391,6 +391,14 @@ If you are interested in more data challenges relating to ocean data, you can vi
         <br />
         
           
+        <br />
+        
+        <hr />
+        
+        <br />
+        
+        <center> <img src="_static/logos_partenaires_DC_WOC-ESA.jpg" alt="Alt Text" width="1200"/></center>
+        
         
         
         <br />

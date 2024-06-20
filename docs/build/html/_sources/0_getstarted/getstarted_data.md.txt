@@ -13,39 +13,39 @@ The datasets are available for download with the following structure:
 
 --- 
 
-#### ``` obs_'REGION'.tar.gz```
+**``` obs_'REGION'.tar.gz```**
 
 There is a repository for each region: Agulhas, Gulfstream and Mediterranean. In each region repository you'll find an observation zipped file. The ```obs_'Region'/``` repository contains the available observations in this region needed to map currents. The observation data are stored in ```ssh/```, ```sst``` or ```drifters``` sub-repo and consists of netcdf files.  
 
 
 --- 
 
-#### ``` results-woc.tar.gz```
+**``` results-woc.tar.gz```**
 
 The ```results-woc/``` repository contains the WOC product performances that have already been evaluated on the data challenges in the form of pyo, you can then check the performance of these products yourself and compare them to your methods following the *DC_example_BFNQG_Agulhas* example. 
  
 
 --- 
 
-#### ``` drifter_pickle.tar.gz```
+**``` drifter_pickle.tar.gz```**
 
 The ```drifter_pickle/``` repository contains pyo files of the AOML drifter positions in the different regions of interest during the year 2019.  
 
 --- 
 
-#### ``` lagrangian_position_pickle.tar.gz```
+**``` lagrangian_position_pickle.tar.gz```**
 
 The ```lagrangian_position_pickle/``` repository contains the AOML corresponding fictive drifter positions using the WOC product currents for comparison.  
 
 --- 
 
-#### ``` region_dictionnaries.tar.gz```
+**``` region_dictionnaries.tar.gz```**
 
 The ```region_dictionnaries/``` repository contains the json dictionnaries defining the region specificities.  
 
 --- 
 
-#### ``` DC_example_BFNQG_Agulhas.tar.gz```
+**``` DC_example_BFNQG_Agulhas.tar.gz```**
 
 The ```DC_example_BFNQG_Agulhas/``` repository contains all the needed data to run the *DC_example_BFNQG_Agulhas* example.  
 
