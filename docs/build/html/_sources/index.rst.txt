@@ -371,7 +371,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 More data challenges   
 ====================
 
-If you are interested in more data challenges relating to ocean data, you can visit the ocean-data-challenges website. 
+If you are interested in more data challenges relating to oceanographic data (global altimetric mapping, SWOT preprocessing techniques ...), you can visit the ocean-data-challenges website. 
   
   
     
