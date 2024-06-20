@@ -1,4 +1,4 @@
-# Get started
+# Participate
 
 
 <span> </br> </span>
@@ -37,6 +37,15 @@ getstarted_eval
 :maxdepth: 1
 
 getstarted_example
+```
+
+--- 
+
+
+```{toctree}
+:maxdepth: 1
+
+getstarted_submit
 ```
 
 --- 

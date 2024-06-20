@@ -90,7 +90,7 @@ html_theme_options = {
             "type": "local",
         }, 
     ],
-    "header_links_before_dropdown":6,  
+    "header_links_before_dropdown":7,  
     
     "logo": { 
         "image_dark": "figures/dc_2024_WOC-ESA_minilogo_DC.png",
@@ -100,7 +100,7 @@ html_theme_options = {
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     # "show_nav_level": 2,  
     "footer_start": ["copyright"],  
-    "secondary_sidebar_items": ["page-toc", "sourcelink"],
+    "secondary_sidebar_items": [],
     
     "collapse_navigation": True,
     # "back_to_top_button": False,

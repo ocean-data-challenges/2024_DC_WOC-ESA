@@ -3,11 +3,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. image:: figures/dc_2024_WOC-ESA_logo-rtd2.png
+.. image:: figures/dc_2024_WOC-ESA_logo-rtd2.jpg
     :width: 1500
     :alt: alternate text
     :align: center 
      
+.. raw:: html
+
+
+    <embed> 
+    
+        <br /> 
+        
+        <br />
+
+    </embed>
 
 The WOC data challenges are comparison platforms that allow a sound and fair assessment of the WOC products between them and to other products. These platforms offer an input dataset (altimetric data, drifters, SST data ...) for anyone to create a current products as well as a reference dataset (independant from the input dataset) in order to evaluate the products. These data challenges are contained in a `github repository <https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/tree/main>`_ and their documentation and results are presented on this readthedocs website. 
  
@@ -20,7 +30,7 @@ The WOC data challenges are comparison platforms that allow a sound and fair ass
         <br />
         
         <center>
-        <div id="image_map"> <map name="map_example"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/4_dc_agulhas/dc_agulhas_details.html" target="_blank" alt="North Sea" shape=poly coords="335,295, 335,270, 370,270, 370,295"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_details.html" target="_blank" alt="Gulf Stream" shape=poly coords="160,175, 160,110, 290,110, 290,175"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_dc_medsea/dc_medsea_details.html" target="_blank" alt="Mediterranean Sea" shape=poly coords="300,155, 300,115, 345,115, 345,155">  <img src="_static/dc_2024_WOC-ESA_map2_regions.png" title="Gulf Stream" alt="image map example" width=600 height=350 usemap="#map_example"></map> </div> </center>
+        <div id="image_map"> <map name="map_example"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/index_Agulhas.html" target="_blank" alt="Agulhas Current" shape=poly coords="310,265, 310,220, 365,220, 365,265"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/index_GulfStream.html" target="_blank" alt="Gulf Stream" shape=poly coords="170,135, 170,70, 280,70, 280,135"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/index_MedSea.html" target="_blank" alt="Mediterranean Sea" shape=poly coords="290,110, 290,75, 335,75, 335,110">  <img src="_static/DC_2024_map_frontpage.jpg" title="Gulf Stream" alt="image map example" width=600 height=350 usemap="#map_example"></map> </div> </center>
         
         <br />
         
@@ -143,7 +153,7 @@ Evaluated products
         </br>
     </embed>
 
-Click on the products for more details.
+Click on the products for more details. 
     
     
   
@@ -377,10 +387,9 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 .. raw:: html
 
     <embed>  
-        
+    
         
         <br /> 
-        
         
     </embed>
  
@@ -388,7 +397,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 .. toctree::
    :hidden:
    :maxdepth: 1
-   :caption: Get started 
+   :caption: Participate 
 
    0_getstarted/index.md
    
@@ -403,7 +412,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 .. toctree::
    :hidden:
    :maxdepth: 1
-   :caption: Regional Evaluation
+   :caption: Regional Evaluations
  
    2_regionaleval/index.md 
       
@@ -416,13 +425,20 @@ The WOC project developed synergetic products optimizing the capacy offered by E
    5_metrics_det/index.md 
     
 
-.. nbgallery::  
+.. toctree::  
     :caption: Illustration notebooks
     :hidden:
-    :maxdepth: 0
-    :name: rst-gallery 
+    :maxdepth: 0 
     
-    gallery/index.md  
+    gallery/index.md
+    
+
+.. toctree::  
+    :caption: Contact us
+    :hidden:
+    :maxdepth: 0 
+    
+    contactus.md  
 
 .. toctree::
    :hidden:
