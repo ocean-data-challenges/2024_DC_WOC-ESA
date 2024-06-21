@@ -89,6 +89,12 @@ html_theme_options = {
             "icon": "fa-brands fa-github",
         },
         {
+            "name": "ODC website",
+            "url": "https://ocean-data-challenges.github.io",
+            "icon": "_static/logo_odc.jpg",
+            "type": "local",
+        },  
+        {
             "name": "WOC website",
             "url": "https://www.worldoceancirculation.org",
             "icon": "_static/dc_2024_WOC-ESA_minilogo.png",
