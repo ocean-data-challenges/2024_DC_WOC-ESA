@@ -359,7 +359,7 @@ The WOC project developed synergetic products optimizing the capacy offered by E
         
         <br />
         
-        <hr />
+        <hr /> 
         
         <br />
         
