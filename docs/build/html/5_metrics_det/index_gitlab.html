@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Agulhas Current &#8212; WOC-ESA Data challenges  documentation</title>
+    <title>Velocity metrics scripts &#8212; WOC-ESA Data challenges  documentation</title>
   
   
   
@@ -42,12 +42,12 @@
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '2_regionaleval/index_Agulhas';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '5_metrics_det/index_gitlab';</script>
     <script src="../_static/js/custom.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Agulhas current setup" href="dc_agulhas_details.html" />
-    <link rel="prev" title="Regional Evaluations" href="index.html" />
+    <link rel="next" title="Illustration notebooks" href="../gallery/index.html" />
+    <link rel="prev" title="6 Lagrangian diagnostics" href="metrics_LagrangianCumulativeDistance.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
   </head>
@@ -149,15 +149,15 @@
                     </li>
                 
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="index.html">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../2_regionaleval/index.html">
                         Regional Evaluations
                       </a>
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../5_metrics_det/index.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
                         Metrics details
                       </a>
                     </li>
@@ -308,15 +308,15 @@ document.write(`
                     </li>
                 
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="index.html">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../2_regionaleval/index.html">
                         Regional Evaluations
                       </a>
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../5_metrics_det/index.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
                         Metrics details
                       </a>
                     </li>
@@ -408,19 +408,14 @@ document.write(`
         <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Agulhas Current</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="dc_agulhas_details.html">Agulhas current setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dc_agulhas_movies.html">Reconstruction movies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nb_overall_results-Agulhas.html">Product comparison</a></li>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index_documentation.html">Documentation</a></li>
 </ul>
-</li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Velocity metrics scripts</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="index_GulfStream.html">Gulf Stream</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="index_MedSea.html">Mediterranean Sea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/index.html">Illustration notebooks</a></li>
 </ul>
 </div>
 </nav></div>
@@ -459,9 +454,9 @@ document.write(`
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Regional Evaluations</a></li>
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Metrics details</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Agulhas Current</li>
+    <li class="breadcrumb-item active" aria-current="page">Velocity metrics scripts</li>
   </ul>
 </nav>
 </div>
@@ -478,31 +473,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="agulhas-current">
-<h1>Agulhas Current<a class="headerlink" href="#agulhas-current" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="velocity-metrics-scripts">
+<h1>Velocity metrics scripts<a class="headerlink" href="#velocity-metrics-scripts" title="Permalink to this headline">#</a></h1>
 <p><span> </br> </span></p>
-<p align="center">
-  <img src="../_static/illustration_agulhas_region.jpg" alt="Alt Text" width="300"/>
-</p> 
-</br>
 <hr class="docutils" />
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_details.html">Agulhas current setup</a></li>
-</ul>
-</div>
-<hr class="docutils" />
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_movies.html">Reconstruction movies</a></li>
-</ul>
-</div>
-<hr class="docutils" />
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="nb_overall_results-Agulhas.html">Product comparison</a></li>
-</ul>
-</div>
+<p><a class="reference external" href="https://git.oceandatalab.com/woc/velocity_metrics">Visit the <em>velocity_metrics</em> GitLab</a></p>
 <hr class="docutils" />
 <p><span> </br> </span></p>
 </section>
@@ -519,20 +494,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="metrics_LagrangianCumulativeDistance.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Regional Evaluations</p>
+        <p class="prev-next-title">6 Lagrangian diagnostics</p>
       </div>
     </a>
     <a class="right-next"
-       href="dc_agulhas_details.html"
+       href="../gallery/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Agulhas current setup</p>
+        <p class="prev-next-title">Illustration notebooks</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

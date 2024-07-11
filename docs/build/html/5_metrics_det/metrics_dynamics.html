@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Agulhas Current &#8212; WOC-ESA Data challenges  documentation</title>
+    <title>5 Characterisation of the dynamics at stake &#8212; WOC-ESA Data challenges  documentation</title>
   
   
   
@@ -42,12 +42,14 @@
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '2_regionaleval/index_Agulhas';</script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '5_metrics_det/metrics_dynamics';</script>
     <script src="../_static/js/custom.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Agulhas current setup" href="dc_agulhas_details.html" />
-    <link rel="prev" title="Regional Evaluations" href="index.html" />
+    <link rel="next" title="6 Lagrangian diagnostics" href="metrics_LagrangianCumulativeDistance.html" />
+    <link rel="prev" title="4 Assessment of the position of the dynamical structures" href="metrics_structure_evaluation.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
   </head>
@@ -149,15 +151,15 @@
                     </li>
                 
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="index.html">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../2_regionaleval/index.html">
                         Regional Evaluations
                       </a>
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../5_metrics_det/index.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
                         Metrics details
                       </a>
                     </li>
@@ -308,15 +310,15 @@ document.write(`
                     </li>
                 
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="index.html">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../2_regionaleval/index.html">
                         Regional Evaluations
                       </a>
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../5_metrics_det/index.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
                         Metrics details
                       </a>
                     </li>
@@ -409,18 +411,19 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Agulhas Current</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="dc_agulhas_details.html">Agulhas current setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dc_agulhas_movies.html">Reconstruction movies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nb_overall_results-Agulhas.html">Product comparison</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index_documentation.html">Documentation</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="metrics_terms.html">Terms, Definitions and Abbreviated Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics_0-introduction.html">1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics_EulerianRMS.html">2 Standard validation using in-situ data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics_spectrum.html">3 Effective resolution computation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics_structure_evaluation.html">4 Assessment of the position of the dynamical structures</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">5 Characterisation of the dynamics at stake</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics_LagrangianCumulativeDistance.html">6 Lagrangian diagnostics</a></li>
 </ul>
 </li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="index_GulfStream.html">Gulf Stream</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="index_MedSea.html">Mediterranean Sea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/index.html">Illustration notebooks</a></li>
 </ul>
 </div>
 </nav></div>
@@ -459,9 +462,12 @@ document.write(`
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Regional Evaluations</a></li>
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Metrics details</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Agulhas Current</li>
+    
+    <li class="breadcrumb-item"><a href="index_documentation.html" class="nav-link">Documentation</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">5 Characterisation of the dynamics at stake</li>
   </ul>
 </nav>
 </div>
@@ -478,33 +484,44 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="agulhas-current">
-<h1>Agulhas Current<a class="headerlink" href="#agulhas-current" title="Permalink to this headline">#</a></h1>
-<p><span> </br> </span></p>
-<p align="center">
-  <img src="../_static/illustration_agulhas_region.jpg" alt="Alt Text" width="300"/>
-</p> 
-</br>
-<hr class="docutils" />
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_details.html">Agulhas current setup</a></li>
-</ul>
-</div>
-<hr class="docutils" />
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="dc_agulhas_movies.html">Reconstruction movies</a></li>
-</ul>
-</div>
-<hr class="docutils" />
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="nb_overall_results-Agulhas.html">Product comparison</a></li>
-</ul>
-</div>
-<hr class="docutils" />
-<p><span> </br> </span></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="characterisation-of-the-dynamics-at-stake">
+<h1>5 Characterisation of the dynamics at stake<a class="headerlink" href="#characterisation-of-the-dynamics-at-stake" title="Permalink to this headline">#</a></h1>
+<br>
+<br> 
+<p>It is of interest to better understand the geophysical at stakes in the different velocity products to characterise the dynamics that are represented in each field. Few analyses are proposed as diagnostics to help the characterisation of the current products</p>
+<br> 
+<section id="regional-mesoscale-surface-dynamics-characterisation-applied-to-sst-current">
+<h2>5.1 Regional mesoscale surface dynamics characterisation (applied to SST / current)<a class="headerlink" href="#regional-mesoscale-surface-dynamics-characterisation-applied-to-sst-current" title="Permalink to this headline">#</a></h2>
+<p>Surface dynamics characterisation have been applied to
+\subsubsection{Spatial Anisotropy}
+Spatial anistropy provides useful informaation on the scale and the pattern present in a given region. As the diagnostics can run on images, it enables to compare statistically the patterns from the velocity product with the one derived from SST observation that will be regarded as the truth.</p>
+<p>To do so, the directional variogram of the SST will be compared with the one from the velocity product.
+The directional variogram equation is given by:</p>
+<div class="math notranslate nohighlight">
+\[\gamma(h, \theta) = \frac{1}{2N(h, \theta)} \sum_{i=1}^{N(h, \theta)} \left[ z(\mathbf{x}_i) - z(\mathbf{x}_i + h\mathbf{e}_\theta) \right]^2 \]</div>
+<p>where:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{align*}
+\gamma(h, \theta)&amp;: \text{Variogram value at lag distance } h \text{ in direction } \theta \\
+N(h, \theta)&amp;: \text{Number of data pairs separated by distance } h \text{ in direction } \theta \\
+z(\mathbf{x}_i)&amp;: \text{Value of the variable at location } \mathbf{x}_i \\
+z(\mathbf{x}_i + h\mathbf{e}_\theta)&amp;: \text{Value of the variable at a location } h \text{ units away from } \mathbf{x}_i \text{ in direction } \theta \\
+\end{align*}
+\end{split}\]</div>
+<p>An ellipsoid is fit to the variogram and enables to quantitatively compute maps of scales of the most energetic processes in different directions.</p>
+<br> 
+</section>
+<section id="spatial-temporal-variance">
+<h2>5.2 Spatial / temporal variance<a class="headerlink" href="#spatial-temporal-variance" title="Permalink to this headline">#</a></h2>
+<p>A simple spatial or temporal variance analysis can also give insight of the variability of the velocity field in space or time.
+The temporal and spatial scale at stakes can be intercompared with results from other velocity products or SST observations.</p>
+<br> 
+</section>
+<section id="low-frequency-signal">
+<h2>5.3 Low frequency signal<a class="headerlink" href="#low-frequency-signal" title="Permalink to this headline">#</a></h2>
+<p>Performing long-term advection on a basin scale will reveal the low frequency signal. The most commonly used diagnostics is looking at the area of aggregation of particles that have been launched homogeneously on a whole basin. These areas of aggregation areas and the time it took for particles to aggregate can be compared with what have been observed in the Atlantic or Pacific ocean using plastic debris as tracers.</p>
+</section>
 </section>
 
 
@@ -519,20 +536,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="metrics_structure_evaluation.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Regional Evaluations</p>
+        <p class="prev-next-title">4 Assessment of the position of the dynamical structures</p>
       </div>
     </a>
     <a class="right-next"
-       href="dc_agulhas_details.html"
+       href="metrics_LagrangianCumulativeDistance.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Agulhas current setup</p>
+        <p class="prev-next-title">6 Lagrangian diagnostics</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

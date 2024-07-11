@@ -9,47 +9,24 @@
 ```{toctree}
 :maxdepth: 1
 
-metrics_0-introduction
+index_documentation
 ```
 
-
 --- 
+
+```{toctree}
+:maxdepth: 1
+
+index_gitlab
+```
+
+---
 
 
 ```{toctree}
 :maxdepth: 1
 
-metrics_EulerianRMS
-```
-
-
---- 
-
-
-```{toctree}
-:maxdepth: 1
-
-metrics_spectrum
-```
-
-
---- 
-
-
-```{toctree}
-:maxdepth: 1
-
-metrics_LagrangianCumulativeDistance
-```
-
-
---- 
-
-
-```{toctree}
-:maxdepth: 1
-
-metrics_structure_evaluation
+../gallery/index
 ```
 
 --- 
