@@ -3,6 +3,13 @@
 
 <span> </br> </span>
 
+
+<p align="center">
+  <img src="../_static/illustration_agulhas_region.jpg" alt="Alt Text" width="300"/>
+</p> 
+      
+</br>
+
 --- 
 
 

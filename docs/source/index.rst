@@ -213,18 +213,17 @@ The WOC data challenges cover three geographical regions, with different dynamic
       </ul>
       
        
-
-        </br>
+ 
         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_agulhas_details.html"> >  Agulhas Current setup </a></h3> 
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_agulhas_details.html"> ▶️    Agulhas Current setup </a></h3>
        
  
         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_agulhas_movies.html"> > Reconstruction movies </a></h3> 
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_agulhas_movies.html"> ▶️ Reconstruction movies </a></h3> 
        
  
         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/nb_overall_results-Agulhas.html"> > Product comparison </a></h3> 
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/nb_overall_results-Agulhas.html"> ▶️ Product comparison </a></h3> 
         
     </div>
 
@@ -250,15 +249,13 @@ The WOC data challenges cover three geographical regions, with different dynamic
               </ul>
       
       </ul>
-       
         
-        </br>
         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_gulfstream_details.html"> > Gulf Stream setup </a></h3>  
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_gulfstream_details.html"> ▶️ Gulf Stream setup </a></h3>  
          
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_gulfstream_movies.html"> > Reconstruction movies </a></h3>  
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_gulfstream_movies.html"> ▶️ Reconstruction movies </a></h3>  
          
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_gulfstream_overalleval.html"> > Overall comparison </a></h3>  
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_gulfstream_overalleval.html"> ▶️ Overall comparison </a></h3>  
         
     </div>
 
@@ -285,15 +282,13 @@ The WOC data challenges cover three geographical regions, with different dynamic
                 <li> GlobCurrent Total </li>
               </ul>
       
-      </ul>   
-
-        </br>
+      </ul>    
         
-        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_medsea_details.html"> > Mediterranean Sea setup </a></h3>   
+        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_medsea_details.html"> ▶️ Mediterranean Sea setup </a></h3>   
  
-        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_medsea_movies.html"> > Reconstruction movies </a></h3>   
+        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_medsea_movies.html"> ▶️ Reconstruction movies </a></h3>   
  
-        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_medsea_overalleval.html"> > Overall comparison </a></h3>   
+        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_medsea_overalleval.html"> ▶️ Overall comparison </a></h3>   
 
     </div>
     <script>
@@ -351,8 +346,11 @@ The WOC project developed synergetic products optimizing the capacy offered by E
 .. raw:: html
 
     <embed> 
+    
+        <br />
+        
         <center>
-        <a href="https://www.worldoceancirculation.org/Products#/search?from=1&to=30"> <b>Check out the WOC products</b> </a>  <br> <br> <a href="https://www.worldoceancirculation.org/Products#/search?from=1&to=30"><img src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/8434082f-ad1d-494a-9325-e6668fc85e1a" width="200"></a> 
+        <a href="https://www.worldoceancirculation.org"> <b> 👇🏻 Find out more 👇🏻 </b> </a>  <br> <br> <a href="https://www.worldoceancirculation.org"><img src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/8434082f-ad1d-494a-9325-e6668fc85e1a" width="200"></a> 
         </center>
          
         

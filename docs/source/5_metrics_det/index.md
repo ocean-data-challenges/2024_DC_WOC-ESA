@@ -12,15 +12,15 @@
 index_documentation
 ```
 
-
 --- 
 
+```{toctree}
+:maxdepth: 1
 
-[Velocity_metrics GitLab](https://git.oceandatalab.com/woc/velocity_metrics)
+index_gitlab
+```
 
- 
-
---- 
+---
 
 
 ```{toctree}

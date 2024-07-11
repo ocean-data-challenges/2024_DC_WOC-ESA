@@ -2,6 +2,19 @@
 
 
 <span> </br> </span>
+ 
+
+ 
+
+--- 
+
+
+```{toctree}
+:maxdepth: 1
+
+metrics_terms
+```
+
 
 --- 
 
@@ -33,15 +46,6 @@ metrics_spectrum
 ```
 
 
---- 
-
-
-```{toctree}
-:maxdepth: 1
-
-metrics_LagrangianCumulativeDistance
-```
-
 
 --- 
 
@@ -51,6 +55,25 @@ metrics_LagrangianCumulativeDistance
 
 metrics_structure_evaluation
 ```
+
+--- 
+
+
+```{toctree}
+:maxdepth: 1
+
+metrics_dynamics
+```
+
+--- 
+
+
+```{toctree}
+:maxdepth: 1
+
+metrics_LagrangianCumulativeDistance
+```
+
 
 --- 
 

@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Spectral analysis &#8212; WOC-ESA Data challenges  documentation</title>
+    <title>3 Effective resolution computation &#8212; WOC-ESA Data challenges  documentation</title>
   
   
   
@@ -48,8 +48,8 @@
     <script src="../_static/js/custom.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Lagrangian diagnostics" href="metrics_LagrangianCumulativeDistance.html" />
-    <link rel="prev" title="Eulerian scores" href="metrics_EulerianRMS.html" />
+    <link rel="next" title="4 Assessment of the position of the dynamical structures" href="metrics_structure_evaluation.html" />
+    <link rel="prev" title="2 Standard validation using in-situ data" href="metrics_EulerianRMS.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
   </head>
@@ -239,7 +239,7 @@ document.write(`
           
           
           
-          <a href="https://www.worldoceancirculation.org" title="WOC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/dc_2024_WOC-ESA_minilogo.png" class="icon-link-image" alt="WOC website"/></a>
+          <a href="https://ocean-data-challenges.github.io" title="ODC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/logo_odc.jpg" class="icon-link-image" alt="ODC website"/></a>
         </li>
         <li class="nav-item">
           
@@ -250,7 +250,7 @@ document.write(`
           
           
           
-          <a href="https://ocean-data-challenges.github.io" title="ODC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/logo_odc.jpg" class="icon-link-image" alt="ODC website"/></a>
+          <a href="https://www.worldoceancirculation.org" title="WOC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/dc_2024_WOC-ESA_minilogo.png" class="icon-link-image" alt="WOC website"/></a>
         </li>
 </ul></div>
       
@@ -387,7 +387,7 @@ document.write(`
           
           
           
-          <a href="https://www.worldoceancirculation.org" title="WOC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/dc_2024_WOC-ESA_minilogo.png" class="icon-link-image" alt="WOC website"/></a>
+          <a href="https://ocean-data-challenges.github.io" title="ODC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/logo_odc.jpg" class="icon-link-image" alt="ODC website"/></a>
         </li>
         <li class="nav-item">
           
@@ -398,7 +398,7 @@ document.write(`
           
           
           
-          <a href="https://ocean-data-challenges.github.io" title="ODC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/logo_odc.jpg" class="icon-link-image" alt="ODC website"/></a>
+          <a href="https://www.worldoceancirculation.org" title="WOC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/dc_2024_WOC-ESA_minilogo.png" class="icon-link-image" alt="WOC website"/></a>
         </li>
 </ul></div>
         
@@ -410,20 +410,20 @@ document.write(`
         <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="metrics_0-introduction.html">Introduction</a></li>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index_documentation.html">Documentation</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="metrics_terms.html">Terms, Definitions and Abbreviated Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics_0-introduction.html">1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics_EulerianRMS.html">2 Standard validation using in-situ data</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">3 Effective resolution computation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics_structure_evaluation.html">4 Assessment of the position of the dynamical structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics_dynamics.html">5 Characterisation of the dynamics at stake</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics_LagrangianCumulativeDistance.html">6 Lagrangian diagnostics</a></li>
+</ul>
+</li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="metrics_EulerianRMS.html">Eulerian scores</a></li>
-</ul>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Spectral analysis</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="metrics_LagrangianCumulativeDistance.html">Lagrangian diagnostics</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="metrics_structure_evaluation.html">Structure evaluations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery/index.html">Illustration notebooks</a></li>
 </ul>
 </div>
 </nav></div>
@@ -464,7 +464,10 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Metrics details</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Spectral analysis</li>
+    
+    <li class="breadcrumb-item"><a href="index_documentation.html" class="nav-link">Documentation</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">3 Effective resolution computation</li>
   </ul>
 </nav>
 </div>
@@ -481,16 +484,67 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="spectral-analysis">
-<h1>Spectral analysis<a class="headerlink" href="#spectral-analysis" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="effective-resolution-computation">
+<h1>3 Effective resolution computation<a class="headerlink" href="#effective-resolution-computation" title="Permalink to this headline">#</a></h1>
 <br>
+<br>
+<p>Two tools have been widely used in the oceanography community to assess the effective resolution of a velocity production. The computation of the Eddy Kinetic Energy as a function of the wavelength gives insight of the spatial resolution, while the rotary spectrum as a function of the frequency will provide the temporal scales that are resolved.
+Finally, when a reference velocity field is available, the coherence spectrum between the reference and the product to be validated can be analyze to better assess the accuracy as a function of the spatial scale.</p>
 <br>
 <section id="eke-spectrum">
-<h2>EKE spectrum<a class="headerlink" href="#eke-spectrum" title="Permalink to this headline">#</a></h2>
+<h2>3.1 EKE spectrum<a class="headerlink" href="#eke-spectrum" title="Permalink to this headline">#</a></h2>
 <p>The Power Spectrum is used to analyze the energy content of the oceanic current field. Specifically, the EKE (Eddy Kinetic Energy) power spectrum is computed, which describes the distribution of kinetic energy at different spatial scales (k).</p>
 <div class="math notranslate nohighlight">
 \[ E(k) = \sum _k {EKE(k) e^{i2\pi k}}\]</div>
 <p>Understanding the EKE power spectrum helps identify the currents energy repartition in space, thus, highlighting dominant features and scales of motion in the ocean.</p>
+<p>\subsection{Rotary spectrum}
+The rotary spectrum is used to analyse the peak of energy as a function of the frequency. It enables to look at signal with a known temporal repetitivity such as the tides or the inertial response to the wind. The different steps to compute a rotary spectrum are described below.</p>
+<br>
+</section>
+<section id="compute-fourier-transforms">
+<h2>3.2 Compute Fourier Transforms<a class="headerlink" href="#compute-fourier-transforms" title="Permalink to this headline">#</a></h2>
+<p>Complex Time Series: Combine the two orthogonal components into a complex time series:
+$<span class="math notranslate nohighlight">\(Z(t) = u(t) + i v(t)\)</span><span class="math notranslate nohighlight">\(
+where \)</span>u(t)<span class="math notranslate nohighlight">\( is the eastward velocity component, \)</span>v(t)$ is the northward velocity component, and i is the imaginary unit.</p>
+<p>Fourier Transform: Compute the discrete Fourier transform (DFT) of the complex time series using the Fast Fourier Transform (FFT) algorithm:</p>
+<div class="math notranslate nohighlight">
+\[\hat{Z} (f)=F{Z(t)}\]</div>
+<p>where F denotes the Fourier transform operator and <span class="math notranslate nohighlight">\(\hat{Z}(f)\)</span> is the Fourier transform of Z(t).</p>
+<br>
+<section id="split-into-clockwise-and-counterclockwise-components">
+<h3>3.2.1 Split into Clockwise and Counterclockwise Components<a class="headerlink" href="#split-into-clockwise-and-counterclockwise-components" title="Permalink to this headline">#</a></h3>
+<p>Rotary Components: Separate the spectrum into clockwise (CW) and counterclockwise (CCW) rotating components. This is done by defining:</p>
+<div class="math notranslate nohighlight">
+\[Z_{+}(f) = \hat{Z}(f)\]</div>
+<p>for clockwise components</p>
+<div class="math notranslate nohighlight">
+\[Z_{-}(f) = \hat{Z}^{*}(-f)\]</div>
+<p>for counterclockwise components</p>
+<br>
+</section>
+<section id="compute-power-spectral-density-psd">
+<h3>3.2.2 Compute Power Spectral Density (PSD)<a class="headerlink" href="#compute-power-spectral-density-psd" title="Permalink to this headline">#</a></h3>
+<p>Spectral Density: Calculate the power spectral density for each component:</p>
+<div class="math notranslate nohighlight">
+\[S_{+}(f) = \frac{2}{N} |Z_{+}(f)|^{2}\]</div>
+<div class="math notranslate nohighlight">
+\[S_{-}(f) = \frac{2}{N} |Z_{-}(f)|^{2}\]</div>
+<p>where N is the number of data points in the time series</p>
+<br>
+</section>
+<section id="interpret-the-rotary-spectrum">
+<h3>3.2.3 Interpret the Rotary Spectrum<a class="headerlink" href="#interpret-the-rotary-spectrum" title="Permalink to this headline">#</a></h3>
+<p>As described previously, the rotary spectrum
+<span class="math notranslate nohighlight">\(S(f)\)</span> consists of <span class="math notranslate nohighlight">\(S_{+}(f)\)</span> and <span class="math notranslate nohighlight">\(S_{-}(f)\)</span>, which provide information about the distribution of energy in the clockwise and counterclockwise rotating motions, respectively.
+The rotary spectrum is analyzed to understand the directional characteristics and energy distribution of the ocean currents. The peaks in the spectrum indicate dominant frequencies and their rotational direction.</p>
+<br>
+</section>
+</section>
+<section id="coherency-spectrum">
+<h2>Coherency spectrum<a class="headerlink" href="#coherency-spectrum" title="Permalink to this headline">#</a></h2>
+<p>The spatial coherency spectrum <span class="math notranslate nohighlight">\(C_{xy} \)</span> between two fields x and y is computed by normalizing the cross spectral density <span class="math notranslate nohighlight">\(S_{xy}\)</span> with the power spectral density of the two signals <span class="math notranslate nohighlight">\(S_{x}\)</span> and <span class="math notranslate nohighlight">\(S_{y}\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[ C_{xy}(k) = frac{|S_{xy}(k)|^2}{S_{x}(k)S_{y}(k)}\]</div>
 </section>
 </section>
 
@@ -511,15 +565,15 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Eulerian scores</p>
+        <p class="prev-next-title">2 Standard validation using in-situ data</p>
       </div>
     </a>
     <a class="right-next"
-       href="metrics_LagrangianCumulativeDistance.html"
+       href="metrics_structure_evaluation.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lagrangian diagnostics</p>
+        <p class="prev-next-title">4 Assessment of the position of the dynamical structures</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

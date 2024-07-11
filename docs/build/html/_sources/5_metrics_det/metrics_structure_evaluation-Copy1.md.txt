@@ -1,11 +1,11 @@
-# 4 Assessment of the position of the dynamical structures
+# Assessment of the position of the dynamical structures
 
 <br>
  
 
 <br> 
  
-## 4.1 Current direction using Fronts
+## Current direction using Fronts
 
 This section describes how the positions of front and eddies derived from high resolution SST are used to diagnose velocity fields. It relies on the hypothesis that fronts are aligned with the direction of currents at mesoscale and are in geostrophic balance, and assuming that the advection of frontal structure is small enough. This could be checked by looking at the displacement of a front through time.
 
