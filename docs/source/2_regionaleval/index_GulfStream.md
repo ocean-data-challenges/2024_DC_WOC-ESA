@@ -4,8 +4,9 @@
 
 <span> </br> </span>
 
+
 <p align="center">
-  <img src="https://github.com/ocean-data-challenges/2024_DC_WOC-ESA/assets/33433820/3647745e-b2a8-480b-befd-8e90dd0a8b82" alt="Alt Text" width="400"/>
+  <img src="../_static/illustration_gulfstream_region.jpg" alt="Alt Text" width="400"/>
 </p> 
  
 </br> 
