@@ -16,7 +16,7 @@ Pip install the package from GitLab directly, in order to have the latest versio
  
 
 ```
-pip install git+ssh://git@git.oceandatalab.com:5546/woc/velocity_metrics.git
+pip install git+https://git.oceandatalab.com/woc/velocity_metrics.git
 ```
 
  

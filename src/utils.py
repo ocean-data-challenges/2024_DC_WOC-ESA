@@ -13,7 +13,6 @@ import pickle
 import os
 import subprocess
 from IPython.display import Video
- 
 
     
 class DictTable():
@@ -42,9 +41,10 @@ class DictTable():
     table_html = table._repr_html_()
     """
     
-    def __init__(self,list):
+    def __init__(self, list, keys=['Norm RMSD', 'Norm Correlation', 'Norm Quadratic Error (%)', 'Norm Explained Variance (%)', 'Number of Points']):
         self.html_table = None
         self.list = list
+        self.keys = keys
         
     def _repr_html_(self):
         filehandler = open(self.list[0]['path'], 'rb') 
@@ -53,7 +53,8 @@ class DictTable():
         html.append("<tr>")
         html.append("<td><b>{0}</b></td>".format(self.list[0]['type_stat']))  
         for key, value in object.items():
-            html.append("<td>{0}</td>".format(key)) 
+            if key in self.keys:
+                html.append("<td>{0}</td>".format(key)) 
         html.append("</tr>") 
         
         for dict in self.list: 
@@ -63,7 +64,8 @@ class DictTable():
             html.append("<tr>") 
             html.append("<td><b>{0}</b></td>".format(dict['name']))  
             for key, value in object.items():
-                html.append("<td>{0}</td>".format("{:.3f}".format(value)))
+                if key in self.keys:
+                    html.append("<td>{0}</td>".format("{:.3f}".format(value)))
             html.append("</tr>")
             
         html.append("</table>")  
