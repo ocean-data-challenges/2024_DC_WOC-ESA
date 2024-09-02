@@ -276,15 +276,3 @@
 <br>
 
 ## <u>4. Fronts and currents consistency</u>
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_36_0.png)
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_36_1.png)
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_36_2.png)
-
