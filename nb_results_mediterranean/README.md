@@ -1,2 +1,0 @@
-# Notebooks results in Mediterranean
-

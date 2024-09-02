@@ -25,7 +25,7 @@ dc_medsea_movies
 ```{toctree}
 :maxdepth: 1
 
-dc_medsea_overalleval
+nb_wocproducts_Mediterranean
 ```
 
 
