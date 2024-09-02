@@ -264,35 +264,3 @@
 
 ![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_33_1.png)
 
-
-<br>
-
-<br>
-
-## <u>4. Fronts and currents consistency</u>
-
-    please provide statistics file ../dc_data/DC_product_evaluation/fronts_vel_comparison/config_fronts.json
-    please provide statistics file ../dc_data/DC_product_evaluation/fronts_vel_comparison/config_fronts.json
-    please provide statistics file ../dc_data/DC_product_evaluation/fronts_vel_comparison/config_fronts.json
-
-
-
-    An exception has occurred, use %tb to see the full traceback.
-
-
-    SystemExit: 1
-
-
-
-    please provide statistics file ../dc_data/DC_product_evaluation/fronts_vel_comparison/config_fronts.json
-    please provide statistics file ../dc_data/DC_product_evaluation/fronts_vel_comparison/config_fronts.json
-    please provide statistics file ../dc_data/DC_product_evaluation/fronts_vel_comparison/config_fronts.json
-
-
-
-    An exception has occurred, use %tb to see the full traceback.
-
-
-    SystemExit: 1
-
-
