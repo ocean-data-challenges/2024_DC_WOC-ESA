@@ -8,7 +8,7 @@
 
 <div class="alert alert-block alert-success">
 <h1><center> <u> Gulf Stream results </u> </center></h1>  
-    
+</div>
 
 ## <u> Compared products </u> 
 
