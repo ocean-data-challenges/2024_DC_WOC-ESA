@@ -345,9 +345,3 @@
 
 ![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_33_1.png)
 
-
-<br>
-
-<br>
-
-## <u>4. Fronts and currents consistency</u>
