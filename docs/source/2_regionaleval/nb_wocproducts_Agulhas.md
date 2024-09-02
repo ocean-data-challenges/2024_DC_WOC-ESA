@@ -276,3 +276,24 @@
 <br>
 
 ## <u>4. Fronts and currents consistency</u>
+
+
+
+
+    (<Figure size 600x600 with 18 Axes>,
+     <Figure size 600x600 with 12 Axes>,
+     <Figure size 300x200 with 2 Axes>)
+
+
+
+
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_36_1.png)
+
+
+
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_36_2.png)
+
+
+
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_36_3.png)
+
