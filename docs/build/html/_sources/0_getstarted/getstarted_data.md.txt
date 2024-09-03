@@ -20,16 +20,16 @@ There is a repository for each region: Agulhas, Gulfstream and Mediterranean. In
 
 --- 
 
-**``` results-woc.tar.gz```**
+**``` DC_product_evaluation.tar.gz```**
 
-The ```results-woc/``` repository contains the WOC product performances that have already been evaluated on the data challenges in the form of pyo, you can then check the performance of these products yourself and compare them to your methods following the *DC_example_BFNQG_Agulhas* example. 
+The ```DC_product_evaluation/``` repository contains the WOC product performances that have already been evaluated on the data challenges in the form of pyo, you can then check the performance of these products yourself and compare them to your methods following the *DC_example_BFNQG_Agulhas* example. 
  
 
 --- 
 
-**``` drifter_pickle.tar.gz```**
+**``` drifter.tar.gz```**
 
-The ```drifter_pickle/``` repository contains pyo files of the AOML drifter positions in the different regions of interest during the year 2019.  
+The ```drifter/``` repository contains pyo files of the AOML drifter positions in the different regions of interest during the year 2019.  
 
 --- 
 
@@ -37,13 +37,7 @@ The ```drifter_pickle/``` repository contains pyo files of the AOML drifter posi
 
 The ```lagrangian_position_pickle/``` repository contains the AOML corresponding fictive drifter positions using the WOC product currents for comparison.  
 
---- 
-
-**``` region_dictionnaries.tar.gz```**
-
-The ```region_dictionnaries/``` repository contains the json dictionnaries defining the region specificities.  
-
---- 
+---  
 
 **``` DC_example_BFNQG_Agulhas.tar.gz```**
 
@@ -55,7 +49,7 @@ The ```DC_example_BFNQG_Agulhas/``` repository contains all the needed data to r
 ## Download and read the data
 
 The data can be downloaded locally using the wget command. We recommand that the data be stored in the `dc_data/` repository. 
-For example, to download and unzip the observations needed to map currents in the Agulhas region use:
+For example, to download and unzip the data needed to run the illustration ```nb_howto_run_metrics/``` notebooks :
 
 
 ```
@@ -66,19 +60,5 @@ rm -f DC_example_BFNQG_Agulhas.tar.gz
 ``` 
 
 
-
---- 
-
-
-```
-.
-|-- DC_Agulhas  
-|   |--  obs_Agulhas.tar.gz  
-.
-|-- DC_Gulfstream  
-|   |--  obs_Gulfstream.tar.gz   
-.
-|-- DC_Mediterranean 
-|   |--  obs_Mediterranean.tar.gz    
-```
+ 
 
