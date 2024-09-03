@@ -237,7 +237,7 @@ document.write(`
           
           
           
-          <a href="https://www.worldoceancirculation.org" title="WOC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/dc_2024_WOC-ESA_minilogo.png" class="icon-link-image" alt="WOC website"/></a>
+          <a href="https://ocean-data-challenges.github.io" title="ODC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/logo_odc.jpg" class="icon-link-image" alt="ODC website"/></a>
         </li>
         <li class="nav-item">
           
@@ -248,7 +248,7 @@ document.write(`
           
           
           
-          <a href="https://ocean-data-challenges.github.io" title="ODC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/logo_odc.jpg" class="icon-link-image" alt="ODC website"/></a>
+          <a href="https://www.worldoceancirculation.org" title="WOC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/dc_2024_WOC-ESA_minilogo.png" class="icon-link-image" alt="WOC website"/></a>
         </li>
 </ul></div>
       
@@ -385,7 +385,7 @@ document.write(`
           
           
           
-          <a href="https://www.worldoceancirculation.org" title="WOC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/dc_2024_WOC-ESA_minilogo.png" class="icon-link-image" alt="WOC website"/></a>
+          <a href="https://ocean-data-challenges.github.io" title="ODC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/logo_odc.jpg" class="icon-link-image" alt="ODC website"/></a>
         </li>
         <li class="nav-item">
           
@@ -396,7 +396,7 @@ document.write(`
           
           
           
-          <a href="https://ocean-data-challenges.github.io" title="ODC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/logo_odc.jpg" class="icon-link-image" alt="ODC website"/></a>
+          <a href="https://www.worldoceancirculation.org" title="WOC website" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/dc_2024_WOC-ESA_minilogo.png" class="icon-link-image" alt="WOC website"/></a>
         </li>
 </ul></div>
         
@@ -491,17 +491,14 @@ document.write(`
 <p><strong><code class="docutils literal notranslate"> <span class="pre">obs_'REGION'.tar.gz</span></code></strong></p>
 <p>There is a repository for each region: Agulhas, Gulfstream and Mediterranean. In each region repository you’ll find an observation zipped file. The <code class="docutils literal notranslate"><span class="pre">obs_'Region'/</span></code> repository contains the available observations in this region needed to map currents. The observation data are stored in <code class="docutils literal notranslate"><span class="pre">ssh/</span></code>, <code class="docutils literal notranslate"><span class="pre">sst</span></code> or <code class="docutils literal notranslate"><span class="pre">drifters</span></code> sub-repo and consists of netcdf files.</p>
 <hr class="docutils" />
-<p><strong><code class="docutils literal notranslate"> <span class="pre">results-woc.tar.gz</span></code></strong></p>
-<p>The <code class="docutils literal notranslate"><span class="pre">results-woc/</span></code> repository contains the WOC product performances that have already been evaluated on the data challenges in the form of pyo, you can then check the performance of these products yourself and compare them to your methods following the <em>DC_example_BFNQG_Agulhas</em> example.</p>
+<p><strong><code class="docutils literal notranslate"> <span class="pre">DC_product_evaluation.tar.gz</span></code></strong></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">DC_product_evaluation/</span></code> repository contains the WOC product performances that have already been evaluated on the data challenges in the form of pyo, you can then check the performance of these products yourself and compare them to your methods following the <em>DC_example_BFNQG_Agulhas</em> example.</p>
 <hr class="docutils" />
-<p><strong><code class="docutils literal notranslate"> <span class="pre">drifter_pickle.tar.gz</span></code></strong></p>
-<p>The <code class="docutils literal notranslate"><span class="pre">drifter_pickle/</span></code> repository contains pyo files of the AOML drifter positions in the different regions of interest during the year 2019.</p>
+<p><strong><code class="docutils literal notranslate"> <span class="pre">drifter.tar.gz</span></code></strong></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">drifter/</span></code> repository contains pyo files of the AOML drifter positions in the different regions of interest during the year 2019.</p>
 <hr class="docutils" />
 <p><strong><code class="docutils literal notranslate"> <span class="pre">lagrangian_position_pickle.tar.gz</span></code></strong></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">lagrangian_position_pickle/</span></code> repository contains the AOML corresponding fictive drifter positions using the WOC product currents for comparison.</p>
-<hr class="docutils" />
-<p><strong><code class="docutils literal notranslate"> <span class="pre">region_dictionnaries.tar.gz</span></code></strong></p>
-<p>The <code class="docutils literal notranslate"><span class="pre">region_dictionnaries/</span></code> repository contains the json dictionnaries defining the region specificities.</p>
 <hr class="docutils" />
 <p><strong><code class="docutils literal notranslate"> <span class="pre">DC_example_BFNQG_Agulhas.tar.gz</span></code></strong></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">DC_example_BFNQG_Agulhas/</span></code> repository contains all the needed data to run the <em>DC_example_BFNQG_Agulhas</em> example.</p>
@@ -510,23 +507,11 @@ document.write(`
 <section id="download-and-read-the-data">
 <h2>Download and read the data<a class="headerlink" href="#download-and-read-the-data" title="Permalink to this headline">#</a></h2>
 <p>The data can be downloaded locally using the wget command. We recommand that the data be stored in the <code class="docutils literal notranslate"><span class="pre">dc_data/</span></code> repository.
-For example, to download and unzip the observations needed to map currents in the Agulhas region use:</p>
+For example, to download and unzip the data needed to run the illustration <code class="docutils literal notranslate"><span class="pre">nb_howto_run_metrics/</span></code> notebooks :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">dc_data</span><span class="o">/</span>
 <span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">ige</span><span class="o">-</span><span class="n">meom</span><span class="o">-</span><span class="n">opendap</span><span class="o">.</span><span class="n">univ</span><span class="o">-</span><span class="n">grenoble</span><span class="o">-</span><span class="n">alpes</span><span class="o">.</span><span class="n">fr</span><span class="o">/</span><span class="n">thredds</span><span class="o">/</span><span class="n">fileServer</span><span class="o">/</span><span class="n">meomopendap</span><span class="o">/</span><span class="n">extract</span><span class="o">/</span><span class="n">MEOM</span><span class="o">/</span><span class="n">OCEAN_DATA_CHALLENGES</span><span class="o">/</span><span class="mi">2024</span><span class="n">_DC_WOC</span><span class="o">-</span><span class="n">ESA</span><span class="o">/</span><span class="n">DC_example_BFNQG_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> 
 <span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">DC_example_BFNQG_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>  
 <span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="n">DC_example_BFNQG_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
-</pre></div>
-</div>
-<hr class="docutils" />
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
-<span class="o">|--</span> <span class="n">DC_Agulhas</span>  
-<span class="o">|</span>   <span class="o">|--</span>  <span class="n">obs_Agulhas</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>  
-<span class="o">.</span>
-<span class="o">|--</span> <span class="n">DC_Gulfstream</span>  
-<span class="o">|</span>   <span class="o">|--</span>  <span class="n">obs_Gulfstream</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>   
-<span class="o">.</span>
-<span class="o">|--</span> <span class="n">DC_Mediterranean</span> 
-<span class="o">|</span>   <span class="o">|--</span>  <span class="n">obs_Mediterranean</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>    
 </pre></div>
 </div>
 </section>
