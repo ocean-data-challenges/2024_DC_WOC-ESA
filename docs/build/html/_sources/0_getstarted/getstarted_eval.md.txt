@@ -9,30 +9,10 @@ Once you have [installed the data challenge](getstarted_install.md) and [downloa
 
 <br> 
 
-To inform the metric velocity package you must provide two json dictionnaries: one for your current maps and one for the region of interest (provided for the data challenge region in 'dc_data/region_dictionnaries/'):
+To inform the metric velocity package you must write a json dictionnary for your current maps:
 
 
 
-<br>  
-
-## Current maps json dictionnary
- 
-
-<pre> 
-    {
-    "name": "T1_AGULHAS",
-    "lllon": 11,
-     "urlon":  33,
-     "lllat": -44,
-     "urlat": -27,
-     "coords": [[12, -28], [32, -28], [32, -43], [12, -43],[12, -28]]
-    }   
-</pre>
-
-<br>  
-
-## Region json dictionnary 
- 
 
 <pre> 
     {
@@ -47,3 +27,7 @@ To inform the metric velocity package you must provide two json dictionnaries: o
     "nlat":  "latitude"
     }
 </pre>
+
+<br>   
+
+ 
