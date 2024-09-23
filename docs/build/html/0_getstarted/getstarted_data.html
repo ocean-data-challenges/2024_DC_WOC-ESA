@@ -492,7 +492,16 @@ document.write(`
 <p>There is a repository for each region: Agulhas, Gulfstream and Mediterranean. In each region repository you’ll find an observation zipped file. The <code class="docutils literal notranslate"><span class="pre">obs_'Region'/</span></code> repository contains the available observations in this region needed to map currents. The observation data are stored in <code class="docutils literal notranslate"><span class="pre">ssh/</span></code>, <code class="docutils literal notranslate"><span class="pre">sst</span></code> or <code class="docutils literal notranslate"><span class="pre">drifters</span></code> sub-repo and consists of netcdf files.</p>
 <hr class="docutils" />
 <p><strong><code class="docutils literal notranslate"> <span class="pre">DC_product_evaluation.tar.gz</span></code></strong></p>
-<p>The <code class="docutils literal notranslate"><span class="pre">DC_product_evaluation/</span></code> repository contains the WOC product performances that have already been evaluated on the data challenges in the form of pyo, you can then check the performance of these products yourself and compare them to your methods following the <em>DC_example_BFNQG_Agulhas</em> example.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">DC_product_evaluation/</span></code> repository contains the WOC product performances that have already been evaluated on the data challenges in the form of pyo. The structure of the repository is as follow:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
+<span class="o">|--</span> <span class="n">DC_product_evaluation</span>
+<span class="o">|</span>   <span class="o">|--</span> <span class="n">spectrum</span><span class="o">/</span>
+<span class="o">|</span>   <span class="o">|--</span> <span class="n">eulerian_rms</span><span class="o">/</span>
+<span class="o">|</span>   <span class="o">|--</span> <span class="n">cumulative_distance</span><span class="o">/</span>
+<span class="o">|</span>   <span class="o">|--</span> <span class="n">fronts_vel_comparison</span>  
+</pre></div>
+</div>
+<p>You can then check the performance of these products yourself and compare them to your methods following the <em>DC_example_BFNQG_Agulhas</em> example.</p>
 <hr class="docutils" />
 <p><strong><code class="docutils literal notranslate"> <span class="pre">drifter.tar.gz</span></code></strong></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">drifter/</span></code> repository contains pyo files of the AOML drifter positions in the different regions of interest during the year 2019.</p>

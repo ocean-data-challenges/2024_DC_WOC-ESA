@@ -22,7 +22,18 @@ There is a repository for each region: Agulhas, Gulfstream and Mediterranean. In
 
 **``` DC_product_evaluation.tar.gz```**
 
-The ```DC_product_evaluation/``` repository contains the WOC product performances that have already been evaluated on the data challenges in the form of pyo, you can then check the performance of these products yourself and compare them to your methods following the *DC_example_BFNQG_Agulhas* example. 
+The ```DC_product_evaluation/``` repository contains the WOC product performances that have already been evaluated on the data challenges in the form of pyo. The structure of the repository is as follow: 
+
+``` 
+.
+|-- DC_product_evaluation
+|   |-- spectrum/
+|   |-- eulerian_rms/
+|   |-- cumulative_distance/
+|   |-- fronts_vel_comparison  
+``` 
+
+You can then check the performance of these products yourself and compare them to your methods following the *DC_example_BFNQG_Agulhas* example. 
  
 
 --- 

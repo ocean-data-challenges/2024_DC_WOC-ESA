@@ -36,7 +36,7 @@
 ## Run front evaluation
 
 
-- [nb_illustration_run-LagrangianCD](https://2024-dc-woc-esa.readthedocs.io/en/latest/gallery/nb_illustration_run-frontdiag.html)
+- [nb_illustration_run-frontdiag](https://2024-dc-woc-esa.readthedocs.io/en/latest/gallery/nb_illustration_run-frontdiag.html)
 
 
 <br>  

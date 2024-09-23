@@ -7,7 +7,7 @@ If you have run at least one notebook for your method in one region of interest.
 <br>
 
 <p align="center">
-  <img src="../_static/dc_2024_WOC-ESA_submit_example.jpg" alt="Alt Text" width="300"/>
+  <img src="../_static/dc_2024_WOC-ESA_submit_example.jpg" alt="Alt Text" width="500"/>
 </p> 
       
 <br>
@@ -23,7 +23,7 @@ If you have run at least one notebook for your method in one region of interest.
 <br>
 
 
-NB: Please make sure the names are intelligible (i.e., nb_results_Agulhas_*yourmethod*.ipynb). 
+NB: Please make sure the names are intelligible (i.e., nb_wocproducts_Agulhas_*yourmethod*.ipynb). 
 
 <br>
 
