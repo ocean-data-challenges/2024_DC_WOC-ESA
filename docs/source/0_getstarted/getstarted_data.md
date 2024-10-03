@@ -36,7 +36,6 @@ The ```DC_product_evaluation/``` repository contains the WOC product performance
 You can then check the performance of these products yourself and compare them to your methods following the *DC_example_BFNQG_Agulhas* example. 
  
 
-
 --- 
 
 **``` dictionnaries.tar.gz```**
