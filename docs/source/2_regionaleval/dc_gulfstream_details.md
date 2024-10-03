@@ -44,6 +44,8 @@ High variability region with mixed geostrophic and ageostrophic dynamics.
 <ul> 
     <li> WOC Omega 3D </li> 
     <li> WOC Global Inertial </li> 
+    <li> WOC Gulf Stream Inertial </li> 
+    <li> WOC SSTSSH-NAtl2D </li>
     <li> GlobCurrent Geostrophic </li>
     <li> GlobCurrent Total </li>
 </ul>

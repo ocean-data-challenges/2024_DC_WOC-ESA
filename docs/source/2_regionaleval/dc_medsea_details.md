@@ -39,8 +39,7 @@ A quasi-closed basin with strong ageostrophic dynamics and vertical shear.
 <ul> 
     <li> WOC dADR-SR </li> 
     <li> WOC Global Inertial </li> 
-    <li> GlobCurrent Geostrophic </li>
-    <li> GlobCurrent Total </li>
+    <li> GlobCurrent Geostrophic </li> 
  </ul>
 
 <br>
