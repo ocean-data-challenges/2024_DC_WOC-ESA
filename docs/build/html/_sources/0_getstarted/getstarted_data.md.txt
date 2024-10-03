@@ -36,6 +36,13 @@ The ```DC_product_evaluation/``` repository contains the WOC product performance
 You can then check the performance of these products yourself and compare them to your methods following the *DC_example_BFNQG_Agulhas* example. 
  
 
+
+--- 
+
+**``` dictionnaries.tar.gz```**
+
+The ```dictionnaries/``` repository contains json dictionnaries for the three regions of interest: Agulhas (T1), Mediterranean and GulfStream. An example data file dictionnary is also provided to illustrate how to pass the input file format data. 
+
 --- 
 
 **``` drifter.tar.gz```**
