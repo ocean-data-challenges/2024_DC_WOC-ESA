@@ -526,7 +526,8 @@ document.write(`
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -537,7 +538,7 @@ document.write(`
 <section id="Input-directories">
 <h3>Input directories<a class="headerlink" href="#Input-directories" title="Permalink to this headline">#</a></h3>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">input_dict</span> <span class="o">=</span> <span class="s1">&#39;../dc_data/DC_example_BFNQG_Agulhas/dictionnaries/&#39;</span>
@@ -550,7 +551,7 @@ document.write(`
 <section id="Output-directory">
 <h3>Output directory<a class="headerlink" href="#Output-directory" title="Permalink to this headline">#</a></h3>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">outputdir</span> <span class="o">=</span> <span class="s1">&#39;../results/metrics_illustration/&#39;</span>
@@ -561,7 +562,7 @@ document.write(`
 <section id="Evaluated-maps-parameters">
 <h3>Evaluated maps parameters<a class="headerlink" href="#Evaluated-maps-parameters" title="Permalink to this headline">#</a></h3>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path_dict_product</span> <span class="o">=</span>  <span class="n">input_dict</span> <span class="o">+</span> <span class="s1">&#39;data_type_metric_illustration_bfnqg.json&#39;</span>
@@ -574,7 +575,7 @@ document.write(`
 <section id="Region-parameters">
 <h3>Region parameters<a class="headerlink" href="#Region-parameters" title="Permalink to this headline">#</a></h3>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path_dict_region</span> <span class="o">=</span> <span class="n">input_dict</span> <span class="o">+</span> <span class="s1">&#39;region_metric_illustration_Agulhas.json&#39;</span>
@@ -585,7 +586,7 @@ document.write(`
 <section id="Advection-parameters">
 <h3>Advection parameters<a class="headerlink" href="#Advection-parameters" title="Permalink to this headline">#</a></h3>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path_drifter_param</span> <span class="o">=</span> <span class="n">input_dict</span> <span class="o">+</span> <span class="s1">&#39;drifters_parameters.ini&#39;</span>
@@ -604,7 +605,7 @@ document.write(`
 <section id="1.-Advect-drifters">
 <h2>1. Advect drifters<a class="headerlink" href="#1.-Advect-drifters" title="Permalink to this headline">#</a></h2>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%time</span>
@@ -627,7 +628,7 @@ Percent: [#############################-] 96.77%, ,
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2340/2340 [00:57&lt;00:00, 40.37it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1571/1571 [00:26&lt;00:00, 60.38it/s]
 Saving pickle in ../results/metrics_illustration/data_type_metric_illustration_bfnqg_region_metric_illustration_Agulhas_dep0.pyo
 </pre></div></div>
 </div>
@@ -636,20 +637,20 @@ Saving pickle in ../results/metrics_illustration/data_type_metric_illustration_b
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-CPU times: user 57.4 s, sys: 1.42 s, total: 58.8 s
-Wall time: 1min
+CPU times: user 26 s, sys: 812 ms, total: 26.8 s
+Wall time: 28.1 s
 </pre></div></div>
 </div>
 </section>
 <section id="2.-Compute-SDE">
 <h2>2. Compute SDE<a class="headerlink" href="#2.-Compute-SDE" title="Permalink to this headline">#</a></h2>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drifter_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">input_drifter</span> <span class="o">+</span> <span class="s1">&#39;Drifters_AOML_region_T1_00m_20190101T000000Z_20200101T000000Z.pyo.gz&#39;</span><span class="p">]</span>
 
-<span class="n">path_artificial_drifters</span> <span class="o">=</span> <span class="n">outputdir</span><span class="o">+</span><span class="s1">&#39;data_type_metric_illustration_bfnqg_region_metric_illustration_Agulhas.pyo&#39;</span>
+<span class="n">path_artificial_drifters</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">outputdir</span><span class="p">,</span> <span class="s1">&#39;data_type_metric_illustration_bfnqg_region_metric_illustration_Agulhas_dep0.pyo.gz&#39;</span><span class="p">)</span>
 
 <span class="n">outputfilename</span> <span class="o">=</span> <span class="s1">&#39;SDE_region_T1_20190101-20190201&#39;</span>
 
@@ -662,14 +663,14 @@ Wall time: 1min
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 193/193 [00:02&lt;00:00, 78.56it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 84/84 [00:08&lt;00:00,  9.35it/s]
 </pre></div></div>
 </div>
 </section>
 <section id="3.-Plot-SDE">
 <h2>3. Plot SDE<a class="headerlink" href="#3.-Plot-SDE" title="Permalink to this headline">#</a></h2>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_sde</span> <span class="o">=</span> <span class="p">[</span><span class="n">outputdir</span><span class="o">+</span><span class="s1">&#39;SDE_region_T1_20190101-20190201_BFNQG1_15m.pyo.gz&#39;</span><span class="p">]</span>
