@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Product comparison &#8212; WOC-ESA Data challenges  documentation</title>
   
@@ -29,21 +28,20 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=61a4c737" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ff50aca1" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
+    <script src="../_static/documentation_options.js?v=8a448e45"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '2_regionaleval/nb_wocproducts_Agulhas';</script>
-    <script src="../_static/js/custom.js"></script>
+    <script src="../_static/js/custom.js?v=713f7fb5"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Gulf Stream" href="index_GulfStream.html" />
@@ -482,38 +480,48 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="product-comparison">
-<h1>Product comparison<a class="headerlink" href="#product-comparison" title="Permalink to this headline">#</a></h1>
+<h1>Product comparison<a class="headerlink" href="#product-comparison" title="Link to this heading">#</a></h1>
 <br>
 <br>
 <div class="alert alert-block alert-success">
 <h1><center> <u> Agulhas results </u> </center></h1>  
 </div>
 <section id="u-compared-products-u">
-<h2><u> Compared products </u><a class="headerlink" href="#u-compared-products-u" title="Permalink to this headline">#</a></h2>
+<h2><u> Compared products </u><a class="headerlink" href="#u-compared-products-u" title="Link to this heading">#</a></h2>
 <h3>
+    At 00m 
+    <br>
+    <ul>   
+        <li> GlobCurrent Total </li> 
+        <li> WOC inertial global 0m </li>
+    </ul>  
+    <br>
+    At 15m 
+    <br>
     <ul>  
         <li> GlobCurrent Geostrophic </li> 
         <li> GlobCurrent Total </li>
         <li> WOC BFN-QG </li>
-        <li> WOC inertial global </li>
+        <li> WOC inertial global 15m </li>
+        <li> NeurOST </li>
     </ul>  
 </h3>
 <br>
 <br>
 </section>
 <section id="u-1-spectrum-u">
-<h2><u> 1. Spectrum </u><a class="headerlink" href="#u-1-spectrum-u" title="Permalink to this headline">#</a></h2>
+<h2><u> 1. Spectrum </u><a class="headerlink" href="#u-1-spectrum-u" title="Link to this heading">#</a></h2>
 <br>
 <h2>At 0m</h2>
 <p><img alt="png" src="../_images/nb_wocproducts_Agulhas_9_0.png" /></p>
 <br>
 <h2>At 15m</h2>
-<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_12_0.png" /></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_13_0.png" /></p>
 <br>
 <br>
 </section>
 <section id="u-2-eulerian-rms-u">
-<h2><u> 2. Eulerian RMS </u><a class="headerlink" href="#u-2-eulerian-rms-u" title="Permalink to this headline">#</a></h2>
+<h2><u> 2. Eulerian RMS </u><a class="headerlink" href="#u-2-eulerian-rms-u" title="Link to this heading">#</a></h2>
 <br>
 <h2>At 0m</h2>
 <br>
@@ -522,42 +530,26 @@ document.write(`
 <tr>
 <td><b>Mean</b></td>
 <td>Norm Quadratic Error (%)</td>
-<td>Norm Explained Variance (%)</td>
 <td>Norm Correlation</td>
+<td>Norm Explained Variance (%)</td>
 <td>Norm RMSD</td>
 <td>Number of Points</td>
 </tr>
 <tr>
-<td><b>GlobCurrent Geostrophic</b></td>
-<td>42.323</td>
-<td>84.776</td>
-<td>0.746</td>
-<td>0.280</td>
-<td>37269.000</td>
-</tr>
-<tr>
 <td><b>GlobCurrent Total</b></td>
 <td>36.938</td>
-<td>86.030</td>
 <td>0.799</td>
+<td>68.680</td>
 <td>0.244</td>
 <td>37440.000</td>
 </tr>
 <tr>
-<td><b>WOC inertial global 1h</b></td>
-<td>39.696</td>
-<td>82.378</td>
-<td>0.771</td>
-<td>0.262</td>
+<td><b>WOC inertial global 00m 1h</b></td>
+<td>34.724</td>
+<td>0.812</td>
+<td>71.705</td>
+<td>0.230</td>
 <td>37440.000</td>
-</tr>
-<tr>
-<td><b>WOC BFN-QG 3h</b></td>
-<td>41.997</td>
-<td>84.175</td>
-<td>0.756</td>
-<td>0.278</td>
-<td>37447.000</td>
 </tr>
 </table>
 <br>
@@ -568,11 +560,6 @@ document.write(`
 <td><b>STD</b></td>
 <td>Direction difference</td>
 <td>Number of Points</td>
-</tr>
-<tr>
-<td><b>GlobCurrents Geostrophic</b></td>
-<td>43.893</td>
-<td>37269.000</td>
 </tr>
 <tr>
 <td><b>GlobCurrents Total</b></td>
@@ -580,16 +567,57 @@ document.write(`
 <td>37440.000</td>
 </tr>
 <tr>
-<td><b>WOC inertial global 1h</b></td>
-<td>43.982</td>
+<td><b>WOC inertial global 00m 1h</b></td>
+<td>43.501</td>
 <td>37440.000</td>
 </tr>
-<tr>
-<td><b>WOC BFN-QG 3h</b></td>
-<td>44.368</td>
-<td>37447.000</td>
-</tr>
 </table>
+<br>
+<h3>Binned plots</h3>
+<p><br><center><b>Results for diagnostic RMSD</b></center></p>
+<p><b>GlobCurrents Geostrophic<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_3.png" /></p>
+<p><b>GlobCurrents Total<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_5.png" /></p>
+<p><b>WOC inertial global 15m 1h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_7.png" /></p>
+<p><b>WOC BFN-QG 3h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_9.png" /></p>
+<p><b>NeurOST<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_11.png" /></p>
+<p><br><center><b>Results for diagnostic Correlation</b></center></p>
+<p><b>GlobCurrents Geostrophic<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_15.png" /></p>
+<p><b>GlobCurrents Total<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_17.png" /></p>
+<p><b>WOC inertial global 15m 1h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_19.png" /></p>
+<p><b>WOC BFN-QG 3h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_21.png" /></p>
+<p><b>NeurOST<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_23.png" /></p>
+<p><br><center><b>Results for diagnostic Explained Variance (%)</b></center></p>
+<p><b>GlobCurrents Geostrophic<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_27.png" /></p>
+<p><b>GlobCurrents Total<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_29.png" /></p>
+<p><b>WOC inertial global 15m 1h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_31.png" /></p>
+<p><b>WOC BFN-QG 3h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_33.png" /></p>
+<p><b>NeurOST<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_35.png" /></p>
+<p><br><center><b>Results for diagnostic Quadratic Error (%)</b></center></p>
+<p><b>GlobCurrents Geostrophic<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_39.png" /></p>
+<p><b>GlobCurrents Total<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_41.png" /></p>
+<p><b>WOC inertial global 15m 1h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_43.png" /></p>
+<p><b>WOC BFN-QG 3h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_45.png" /></p>
+<p><b>NeurOST<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_24_47.png" /></p>
 <br>
 <h2>At 15m</h2>
 <br>
@@ -598,42 +626,50 @@ document.write(`
 <tr>
 <td><b>Mean</b></td>
 <td>Norm Quadratic Error (%)</td>
-<td>Norm Explained Variance (%)</td>
 <td>Norm Correlation</td>
+<td>Norm Explained Variance (%)</td>
 <td>Norm RMSD</td>
 <td>Number of Points</td>
 </tr>
 <tr>
 <td><b>GlobCurrent Geostrophic</b></td>
-<td>37.278</td>
-<td>83.287</td>
-<td>0.830</td>
-<td>0.242</td>
-<td>42955.000</td>
+<td>37.299</td>
+<td>0.829</td>
+<td>69.561</td>
+<td>0.243</td>
+<td>44751.000</td>
 </tr>
 <tr>
 <td><b>GlobCurrent Total</b></td>
 <td>36.555</td>
-<td>82.787</td>
 <td>0.835</td>
+<td>69.632</td>
 <td>0.238</td>
 <td>43190.000</td>
 </tr>
 <tr>
-<td><b>WOC inertial global 1h</b></td>
-<td>38.210</td>
-<td>80.382</td>
-<td>0.805</td>
-<td>0.248</td>
+<td><b>WOC inertial global 15m 1h</b></td>
+<td>35.879</td>
+<td>0.835</td>
+<td>69.976</td>
+<td>0.233</td>
 <td>43190.000</td>
 </tr>
 <tr>
 <td><b>WOC BFN-QG 3h</b></td>
 <td>36.708</td>
-<td>81.870</td>
 <td>0.837</td>
+<td>69.562</td>
 <td>0.239</td>
 <td>43200.000</td>
+</tr>
+<tr>
+<td><b>NeurOST</b></td>
+<td>36.237</td>
+<td>0.848</td>
+<td>82.632</td>
+<td>0.236</td>
+<td>44738.000</td>
 </tr>
 </table>
 <br>
@@ -647,8 +683,8 @@ document.write(`
 </tr>
 <tr>
 <td><b>GlobCurrent Geostrophic</b></td>
-<td>42.687</td>
-<td>42955.000</td>
+<td>42.670</td>
+<td>44751.000</td>
 </tr>
 <tr>
 <td><b>GlobCurrent Total</b></td>
@@ -656,8 +692,8 @@ document.write(`
 <td>43190.000</td>
 </tr>
 <tr>
-<td><b>WOC inertial global 1h</b></td>
-<td>42.573</td>
+<td><b>WOC inertial global 15m 1h</b></td>
+<td>42.313</td>
 <td>43190.000</td>
 </tr>
 <tr>
@@ -665,37 +701,88 @@ document.write(`
 <td>43.488</td>
 <td>43200.000</td>
 </tr>
+<tr>
+<td><b>NeurOST</b></td>
+<td>43.268</td>
+<td>44738.000</td>
+</tr>
 </table>
+<br>
+<h3>Binned plots</h3>
+<p><br><center><b>Results for diagnostic RMSD</b></center></p>
+<p><b>GlobCurrents Geostrophic<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_3.png" /></p>
+<p><b>GlobCurrents Total<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_5.png" /></p>
+<p><b>WOC inertial global 15m 1h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_7.png" /></p>
+<p><b>WOC BFN-QG 3h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_9.png" /></p>
+<p><b>NeurOST<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_11.png" /></p>
+<p><br><center><b>Results for diagnostic Correlation</b></center></p>
+<p><b>GlobCurrents Geostrophic<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_15.png" /></p>
+<p><b>GlobCurrents Total<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_17.png" /></p>
+<p><b>WOC inertial global 15m 1h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_19.png" /></p>
+<p><b>WOC BFN-QG 3h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_21.png" /></p>
+<p><b>NeurOST<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_23.png" /></p>
+<p><br><center><b>Results for diagnostic Explained Variance (%)</b></center></p>
+<p><b>GlobCurrents Geostrophic<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_27.png" /></p>
+<p><b>GlobCurrents Total<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_29.png" /></p>
+<p><b>WOC inertial global 15m 1h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_31.png" /></p>
+<p><b>WOC BFN-QG 3h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_33.png" /></p>
+<p><b>NeurOST<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_35.png" /></p>
+<p><br><center><b>Results for diagnostic Quadratic Error (%)</b></center></p>
+<p><b>GlobCurrents Geostrophic<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_39.png" /></p>
+<p><b>GlobCurrents Total<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_41.png" /></p>
+<p><b>WOC inertial global 15m 1h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_43.png" /></p>
+<p><b>WOC BFN-QG 3h<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_45.png" /></p>
+<p><b>NeurOST<b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_33_47.png" /></p>
 <br>
 <br>
 </section>
 <section id="u-3-lagrangian-cumulative-distance-u">
-<h2><u> 3. Lagrangian Cumulative Distance</u><a class="headerlink" href="#u-3-lagrangian-cumulative-distance-u" title="Permalink to this headline">#</a></h2>
+<h2><u> 3. Lagrangian Cumulative Distance</u><a class="headerlink" href="#u-3-lagrangian-cumulative-distance-u" title="Link to this heading">#</a></h2>
 <br>
 <h2>At 0m</h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 640x480 with 0 Axes&gt;
 </pre></div>
 </div>
-<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_30_1.png" /></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_37_1.png" /></p>
 <br>
 <h2>At 15m</h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 640x480 with 0 Axes&gt;
 </pre></div>
 </div>
-<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_32_1.png" /></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_39_1.png" /></p>
 <br>
 <br>
 </section>
 <section id="u-4-fronts-and-currents-consistency-u">
-<h2><u>4. Fronts and currents consistency</u><a class="headerlink" href="#u-4-fronts-and-currents-consistency-u" title="Permalink to this headline">#</a></h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(&lt;Figure size 600x600 with 18 Axes&gt;,
- &lt;Figure size 600x600 with 12 Axes&gt;,
- &lt;Figure size 300x200 with 2 Axes&gt;)
+<h2><u>4. Fronts and currents consistency</u><a class="headerlink" href="#u-4-fronts-and-currents-consistency-u" title="Link to this heading">#</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(&lt;Figure size 2500x1500 with 30 Axes&gt;,
+ &lt;Figure size 2500x2500 with 40 Axes&gt;,
+ &lt;Figure size 600x500 with 2 Axes&gt;)
 </pre></div>
 </div>
-<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_36_1.png" /></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_36_2.png" /></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_36_3.png" /></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_44_1.png" /></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_44_2.png" /></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Agulhas_44_3.png" /></p>
 </section>
 </section>
 
