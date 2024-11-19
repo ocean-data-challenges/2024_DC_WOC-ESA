@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>2 Standard validation using in-situ data &#8212; WOC-ESA Data challenges  documentation</title>
   
@@ -29,23 +28,22 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=61a4c737" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ff50aca1" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
+    <script src="../_static/documentation_options.js?v=8a448e45"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '5_metrics_det/metrics_EulerianRMS';</script>
-    <script src="../_static/js/custom.js"></script>
+    <script src="../_static/js/custom.js?v=713f7fb5"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3 Effective resolution computation" href="metrics_spectrum.html" />
@@ -423,6 +421,9 @@ document.write(`
 </li>
 </ul>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index_gitlab.html">Velocity metrics scripts</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../gallery/index.html">Illustration notebooks</a></li>
 </ul>
 </div>
@@ -485,14 +486,14 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="standard-validation-using-in-situ-data">
-<h1>2 Standard validation using in-situ data<a class="headerlink" href="#standard-validation-using-in-situ-data" title="Permalink to this headline">#</a></h1>
+<h1>2 Standard validation using in-situ data<a class="headerlink" href="#standard-validation-using-in-situ-data" title="Link to this heading">#</a></h1>
 <br>
 <br>
 <p>This section describes metrics that can be computed using in-situ drifters.
 Several database exists at several depth and with different temporal resolution (from hourly to 6-hourly). Most available drifters are SVP (Surface Velocity Profiler) which are measuring the total currents at 15m depth when droggued and at the surface when the drogue is lost.</p>
 <br>
 <section id="eulerian-rms">
-<h2>2.1 Eulerian RMS<a class="headerlink" href="#eulerian-rms" title="Permalink to this headline">#</a></h2>
+<h2>2.1 Eulerian RMS<a class="headerlink" href="#eulerian-rms" title="Link to this heading">#</a></h2>
 <p>The Eulerian RMS (Root Mean Square) is a metric used to assess the difference between observed and reconstructed currents. It calculates the root of the sum of squared differences between the eastward and northward velocities of the drifter trajectory and the interpolated current at the same position.</p>
 <p>Let’s call <span class="math notranslate nohighlight">\((u_d(p), v_d(p))\)</span> the eastward and northward velocity derived from the drifter trajectory at the position p. The current to be compared is interpolated in time and space at position p and is called <span class="math notranslate nohighlight">\((u(p), v(p))\)</span>.</p>
 <div class="math notranslate nohighlight">
@@ -509,7 +510,7 @@ The RMS in norm and direction can also be computed using:</p>
 <br>
 </section>
 <section id="lagrangian-cumulative-distance">
-<h2>2.2 Lagrangian Cumulative Distance<a class="headerlink" href="#lagrangian-cumulative-distance" title="Permalink to this headline">#</a></h2>
+<h2>2.2 Lagrangian Cumulative Distance<a class="headerlink" href="#lagrangian-cumulative-distance" title="Link to this heading">#</a></h2>
 <p>The Lagrangian Cumulative Distance measures the cumulative separation between real drifters and synthetic drifters over time. For each drifter and each day, an ensemble of particles around the drifter position is released and advected with the velocity field to be validated.</p>
 <p>For each drifter, for each day, an ensemble of particles around the drifter position are seeded (1 particle every km in a radius corresponding to the resolution of the velocity field product). These particles are then advected with the velocity field to be validated and compared with the real drifter trajectory.</p>
 <p>For each particle <span class="math notranslate nohighlight">\(p\)</span>, we compute the normalized cumulative separation distance between the real drifter and the synthetic drifter from each product <span class="math notranslate nohighlight">\(s_p\)</span> as defined in Liu and Weisberg (2011):</p>

@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>6 Lagrangian diagnostics &#8212; WOC-ESA Data challenges  documentation</title>
   
@@ -29,26 +28,25 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=61a4c737" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ff50aca1" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
+    <script src="../_static/documentation_options.js?v=8a448e45"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '5_metrics_det/metrics_LagrangianCumulativeDistance';</script>
-    <script src="../_static/js/custom.js"></script>
+    <script src="../_static/js/custom.js?v=713f7fb5"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Illustration notebooks" href="../gallery/index.html" />
+    <link rel="next" title="Velocity metrics scripts" href="index_gitlab.html" />
     <link rel="prev" title="5 Characterisation of the dynamics at stake" href="metrics_dynamics.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
@@ -423,6 +421,9 @@ document.write(`
 </li>
 </ul>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index_gitlab.html">Velocity metrics scripts</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../gallery/index.html">Illustration notebooks</a></li>
 </ul>
 </div>
@@ -485,26 +486,26 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lagrangian-diagnostics">
-<h1>6 Lagrangian diagnostics<a class="headerlink" href="#lagrangian-diagnostics" title="Permalink to this headline">#</a></h1>
+<h1>6 Lagrangian diagnostics<a class="headerlink" href="#lagrangian-diagnostics" title="Link to this heading">#</a></h1>
 <br>
 <br>
 <p>Two lagrangian diagnostics used in turbulence to analyze divergence and mixing have been successfully applied in oceanography to better understand the dynamics at stake : the Maximum Extent trajectory and the Lyapunov Exponent.</p>
 <br>
 <section id="lon-lat-maximum-extent-trajectories">
-<h2>6.1 Lon / Lat Maximum Extent Trajectories<a class="headerlink" href="#lon-lat-maximum-extent-trajectories" title="Permalink to this headline">#</a></h2>
+<h2>6.1 Lon / Lat Maximum Extent Trajectories<a class="headerlink" href="#lon-lat-maximum-extent-trajectories" title="Link to this heading">#</a></h2>
 <p>In the context of turbulence flow analysis, the Maximum Extent Trajectories (MET) maps can be used to study the spatial and temporal dynamics of velocity fields. These maps help identify the most extensive paths or trajectories that particles or fluid elements follow within a turbulent flow field. Such trajectories can provide insights into the mixing, dispersion, and structure of turbulence.</p>
 <p>To compute the MET maps, a lagrangian advection is performed in each grid points during a fixed period (typically 10-20 days depending on the targetted resolution of the studied phenomenon). The distance travelled in each direction (eastward and northward) and the total distance are computed. The Final Maps give insight of the divergence, mixing as well as anisotropic behavior of the flow field.</p>
 <br>
 </section>
 <section id="statistics-and-maps-using-lyapunov-exponents-fsle-ftle">
-<h2>6.2 Statistics and maps using Lyapunov Exponents (FSLE /FTLE)<a class="headerlink" href="#statistics-and-maps-using-lyapunov-exponents-fsle-ftle" title="Permalink to this headline">#</a></h2>
+<h2>6.2 Statistics and maps using Lyapunov Exponents (FSLE /FTLE)<a class="headerlink" href="#statistics-and-maps-using-lyapunov-exponents-fsle-ftle" title="Link to this heading">#</a></h2>
 <p>Finite-Size Lyapunov Exponents (FSLE) and Finite Time Lypaunov Exponents (FTLE) are powerful tools used in the study of dynamical systems, particularly in the analysis of fluid flows and turbulence. FSLE and FTLE gives a measure of the rate of separation of particles initially close to each other in a flow. High values of FTLE and FSLE
 corresponds to barriers of transport and can thus be compared with tracer gradients.</p>
 <p>FTLE measures the separation of particles over a finite interval while FSLE measures the time it takes for particles to be separated of a chosen distance.</p>
 <br>
 </section>
 <section id="ftle-computation">
-<h2>6.3 FTLE computation<a class="headerlink" href="#ftle-computation" title="Permalink to this headline">#</a></h2>
+<h2>6.3 FTLE computation<a class="headerlink" href="#ftle-computation" title="Link to this heading">#</a></h2>
 <p>FTLE are computed over a fixed finite time called <span class="math notranslate nohighlight">\(T\)</span>.
 A particle at a given position <span class="math notranslate nohighlight">\(x(t_{0})\)</span> at time <span class="math notranslate nohighlight">\(t_0\)</span> is advected during the period T to compute the postion at <span class="math notranslate nohighlight">\(t_0 + T\)</span> <span class="math notranslate nohighlight">\(x(t_0 + T)\)</span>
 The computation is performed on evry grid points and enables the deformation gradient tensor computation F from the flow maps <span class="math notranslate nohighlight">\(F\)</span>.
@@ -516,7 +517,7 @@ The Eigen values and eigen vectors are derived from the Cauchy Green deformation
 <br>
 </section>
 <section id="fsle-computation">
-<h2>6.4 FSLE computation<a class="headerlink" href="#fsle-computation" title="Permalink to this headline">#</a></h2>
+<h2>6.4 FSLE computation<a class="headerlink" href="#fsle-computation" title="Link to this heading">#</a></h2>
 <p>To compute FSLE, the initial separation (<span class="math notranslate nohighlight">\(\delta_0\)</span>) and the final separation (<span class="math notranslate nohighlight">\(\delta_f\)</span>) of particles are fixed. For a given particle x, a lagrangian advection is performed on a set of particules separated by a distance <span class="math notranslate nohighlight">\(\delta_0\)</span> until the distance between two particles has reached <span class="math notranslate nohighlight">\(\delta_f\)</span>. This time is called <span class="math notranslate nohighlight">\(T\)</span> andthe FTLE value is the following:</p>
 <div class="math notranslate nohighlight">
 \[fsle(x) = \frac{1}{T} ln(\frac{\delta_f}{\delta_0})\]</div>
@@ -547,11 +548,11 @@ with <span class="math notranslate nohighlight">\(\lambda_{max}\)</span>The maxi
       </div>
     </a>
     <a class="right-next"
-       href="../gallery/index.html"
+       href="index_gitlab.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Illustration notebooks</p>
+        <p class="prev-next-title">Velocity metrics scripts</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

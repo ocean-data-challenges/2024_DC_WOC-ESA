@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>5 Characterisation of the dynamics at stake &#8212; WOC-ESA Data challenges  documentation</title>
   
@@ -29,23 +28,22 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=61a4c737" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ff50aca1" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
+    <script src="../_static/documentation_options.js?v=8a448e45"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '5_metrics_det/metrics_dynamics';</script>
-    <script src="../_static/js/custom.js"></script>
+    <script src="../_static/js/custom.js?v=713f7fb5"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="6 Lagrangian diagnostics" href="metrics_LagrangianCumulativeDistance.html" />
@@ -423,6 +421,9 @@ document.write(`
 </li>
 </ul>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index_gitlab.html">Velocity metrics scripts</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../gallery/index.html">Illustration notebooks</a></li>
 </ul>
 </div>
@@ -485,13 +486,13 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="characterisation-of-the-dynamics-at-stake">
-<h1>5 Characterisation of the dynamics at stake<a class="headerlink" href="#characterisation-of-the-dynamics-at-stake" title="Permalink to this headline">#</a></h1>
+<h1>5 Characterisation of the dynamics at stake<a class="headerlink" href="#characterisation-of-the-dynamics-at-stake" title="Link to this heading">#</a></h1>
 <br>
 <br> 
 <p>It is of interest to better understand the geophysical at stakes in the different velocity products to characterise the dynamics that are represented in each field. Few analyses are proposed as diagnostics to help the characterisation of the current products</p>
 <br> 
 <section id="regional-mesoscale-surface-dynamics-characterisation-applied-to-sst-current">
-<h2>5.1 Regional mesoscale surface dynamics characterisation (applied to SST / current)<a class="headerlink" href="#regional-mesoscale-surface-dynamics-characterisation-applied-to-sst-current" title="Permalink to this headline">#</a></h2>
+<h2>5.1 Regional mesoscale surface dynamics characterisation (applied to SST / current)<a class="headerlink" href="#regional-mesoscale-surface-dynamics-characterisation-applied-to-sst-current" title="Link to this heading">#</a></h2>
 <p>Surface dynamics characterisation have been applied to
 \subsubsection{Spatial Anisotropy}
 Spatial anistropy provides useful informaation on the scale and the pattern present in a given region. As the diagnostics can run on images, it enables to compare statistically the patterns from the velocity product with the one derived from SST observation that will be regarded as the truth.</p>
@@ -513,13 +514,13 @@ z(\mathbf{x}_i + h\mathbf{e}_\theta)&amp;: \text{Value of the variable at a loca
 <br> 
 </section>
 <section id="spatial-temporal-variance">
-<h2>5.2 Spatial / temporal variance<a class="headerlink" href="#spatial-temporal-variance" title="Permalink to this headline">#</a></h2>
+<h2>5.2 Spatial / temporal variance<a class="headerlink" href="#spatial-temporal-variance" title="Link to this heading">#</a></h2>
 <p>A simple spatial or temporal variance analysis can also give insight of the variability of the velocity field in space or time.
 The temporal and spatial scale at stakes can be intercompared with results from other velocity products or SST observations.</p>
 <br> 
 </section>
 <section id="low-frequency-signal">
-<h2>5.3 Low frequency signal<a class="headerlink" href="#low-frequency-signal" title="Permalink to this headline">#</a></h2>
+<h2>5.3 Low frequency signal<a class="headerlink" href="#low-frequency-signal" title="Link to this heading">#</a></h2>
 <p>Performing long-term advection on a basin scale will reveal the low frequency signal. The most commonly used diagnostics is looking at the area of aggregation of particles that have been launched homogeneously on a whole basin. These areas of aggregation areas and the time it took for particles to aggregate can be compared with what have been observed in the Atlantic or Pacific ocean using plastic debris as tracers.</p>
 </section>
 </section>

@@ -50,6 +50,13 @@ The ```drifter/``` repository contains pyo files of the AOML drifter positions i
 
 --- 
 
+**``` fronts_seviri.tar.gz```**
+
+The ```fronts_seviri/``` repository contains json files of the fronts contours detected from the SEVIRI Sea Surface Temperature data.  
+
+
+--- 
+
 **``` lagrangian_position_pickle.tar.gz```**
 
 The ```lagrangian_position_pickle/``` repository contains the AOML corresponding fictive drifter positions using the WOC product currents for comparison.  

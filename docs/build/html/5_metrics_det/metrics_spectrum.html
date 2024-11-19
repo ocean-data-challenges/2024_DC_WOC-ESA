@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>3 Effective resolution computation &#8212; WOC-ESA Data challenges  documentation</title>
   
@@ -29,23 +28,22 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=61a4c737" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ff50aca1" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
+    <script src="../_static/documentation_options.js?v=8a448e45"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '5_metrics_det/metrics_spectrum';</script>
-    <script src="../_static/js/custom.js"></script>
+    <script src="../_static/js/custom.js?v=713f7fb5"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="4 Assessment of the position of the dynamical structures" href="metrics_structure_evaluation.html" />
@@ -423,6 +421,9 @@ document.write(`
 </li>
 </ul>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index_gitlab.html">Velocity metrics scripts</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../gallery/index.html">Illustration notebooks</a></li>
 </ul>
 </div>
@@ -485,14 +486,14 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="effective-resolution-computation">
-<h1>3 Effective resolution computation<a class="headerlink" href="#effective-resolution-computation" title="Permalink to this headline">#</a></h1>
+<h1>3 Effective resolution computation<a class="headerlink" href="#effective-resolution-computation" title="Link to this heading">#</a></h1>
 <br>
 <br>
 <p>Two tools have been widely used in the oceanography community to assess the effective resolution of a velocity production. The computation of the Eddy Kinetic Energy as a function of the wavelength gives insight of the spatial resolution, while the rotary spectrum as a function of the frequency will provide the temporal scales that are resolved.
 Finally, when a reference velocity field is available, the coherence spectrum between the reference and the product to be validated can be analyze to better assess the accuracy as a function of the spatial scale.</p>
 <br>
 <section id="eke-spectrum">
-<h2>3.1 EKE spectrum<a class="headerlink" href="#eke-spectrum" title="Permalink to this headline">#</a></h2>
+<h2>3.1 EKE spectrum<a class="headerlink" href="#eke-spectrum" title="Link to this heading">#</a></h2>
 <p>The Power Spectrum is used to analyze the energy content of the oceanic current field. Specifically, the EKE (Eddy Kinetic Energy) power spectrum is computed, which describes the distribution of kinetic energy at different spatial scales (k).</p>
 <div class="math notranslate nohighlight">
 \[ E(k) = \sum _k {EKE(k) e^{i2\pi k}}\]</div>
@@ -502,7 +503,7 @@ The rotary spectrum is used to analyse the peak of energy as a function of the f
 <br>
 </section>
 <section id="compute-fourier-transforms">
-<h2>3.2 Compute Fourier Transforms<a class="headerlink" href="#compute-fourier-transforms" title="Permalink to this headline">#</a></h2>
+<h2>3.2 Compute Fourier Transforms<a class="headerlink" href="#compute-fourier-transforms" title="Link to this heading">#</a></h2>
 <p>Complex Time Series: Combine the two orthogonal components into a complex time series:
 $<span class="math notranslate nohighlight">\(Z(t) = u(t) + i v(t)\)</span><span class="math notranslate nohighlight">\(
 where \)</span>u(t)<span class="math notranslate nohighlight">\( is the eastward velocity component, \)</span>v(t)$ is the northward velocity component, and i is the imaginary unit.</p>
@@ -512,7 +513,7 @@ where \)</span>u(t)<span class="math notranslate nohighlight">\( is the eastward
 <p>where F denotes the Fourier transform operator and <span class="math notranslate nohighlight">\(\hat{Z}(f)\)</span> is the Fourier transform of Z(t).</p>
 <br>
 <section id="split-into-clockwise-and-counterclockwise-components">
-<h3>3.2.1 Split into Clockwise and Counterclockwise Components<a class="headerlink" href="#split-into-clockwise-and-counterclockwise-components" title="Permalink to this headline">#</a></h3>
+<h3>3.2.1 Split into Clockwise and Counterclockwise Components<a class="headerlink" href="#split-into-clockwise-and-counterclockwise-components" title="Link to this heading">#</a></h3>
 <p>Rotary Components: Separate the spectrum into clockwise (CW) and counterclockwise (CCW) rotating components. This is done by defining:</p>
 <div class="math notranslate nohighlight">
 \[Z_{+}(f) = \hat{Z}(f)\]</div>
@@ -523,7 +524,7 @@ where \)</span>u(t)<span class="math notranslate nohighlight">\( is the eastward
 <br>
 </section>
 <section id="compute-power-spectral-density-psd">
-<h3>3.2.2 Compute Power Spectral Density (PSD)<a class="headerlink" href="#compute-power-spectral-density-psd" title="Permalink to this headline">#</a></h3>
+<h3>3.2.2 Compute Power Spectral Density (PSD)<a class="headerlink" href="#compute-power-spectral-density-psd" title="Link to this heading">#</a></h3>
 <p>Spectral Density: Calculate the power spectral density for each component:</p>
 <div class="math notranslate nohighlight">
 \[S_{+}(f) = \frac{2}{N} |Z_{+}(f)|^{2}\]</div>
@@ -533,7 +534,7 @@ where \)</span>u(t)<span class="math notranslate nohighlight">\( is the eastward
 <br>
 </section>
 <section id="interpret-the-rotary-spectrum">
-<h3>3.2.3 Interpret the Rotary Spectrum<a class="headerlink" href="#interpret-the-rotary-spectrum" title="Permalink to this headline">#</a></h3>
+<h3>3.2.3 Interpret the Rotary Spectrum<a class="headerlink" href="#interpret-the-rotary-spectrum" title="Link to this heading">#</a></h3>
 <p>As described previously, the rotary spectrum
 <span class="math notranslate nohighlight">\(S(f)\)</span> consists of <span class="math notranslate nohighlight">\(S_{+}(f)\)</span> and <span class="math notranslate nohighlight">\(S_{-}(f)\)</span>, which provide information about the distribution of energy in the clockwise and counterclockwise rotating motions, respectively.
 The rotary spectrum is analyzed to understand the directional characteristics and energy distribution of the ocean currents. The peaks in the spectrum indicate dominant frequencies and their rotational direction.</p>
@@ -541,7 +542,7 @@ The rotary spectrum is analyzed to understand the directional characteristics an
 </section>
 </section>
 <section id="coherency-spectrum">
-<h2>Coherency spectrum<a class="headerlink" href="#coherency-spectrum" title="Permalink to this headline">#</a></h2>
+<h2>Coherency spectrum<a class="headerlink" href="#coherency-spectrum" title="Link to this heading">#</a></h2>
 <p>The spatial coherency spectrum <span class="math notranslate nohighlight">\(C_{xy} \)</span> between two fields x and y is computed by normalizing the cross spectral density <span class="math notranslate nohighlight">\(S_{xy}\)</span> with the power spectral density of the two signals <span class="math notranslate nohighlight">\(S_{x}\)</span> and <span class="math notranslate nohighlight">\(S_{y}\)</span> :</p>
 <div class="math notranslate nohighlight">
 \[ C_{xy}(k) = frac{|S_{xy}(k)|^2}{S_{x}(k)S_{y}(k)}\]</div>

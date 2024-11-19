@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Download the data &#8212; WOC-ESA Data challenges  documentation</title>
   
@@ -29,21 +28,20 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=61a4c737" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ff50aca1" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
+    <script src="../_static/documentation_options.js?v=8a448e45"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '0_getstarted/getstarted_data';</script>
-    <script src="../_static/js/custom.js"></script>
+    <script src="../_static/js/custom.js?v=713f7fb5"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Input specification" href="getstarted_eval.html" />
@@ -480,12 +478,12 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="download-the-data">
-<h1>Download the data<a class="headerlink" href="#download-the-data" title="Permalink to this headline">#</a></h1>
+<h1>Download the data<a class="headerlink" href="#download-the-data" title="Link to this heading">#</a></h1>
 <br> 
 <br>  
 <p>The data are hosted and can be accessed on the MEOM server opendap <a class="reference external" href="https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2024_DC_WOC-ESA/catalog.html">here</a>.</p>
 <section id="data-information">
-<h2>Data information<a class="headerlink" href="#data-information" title="Permalink to this headline">#</a></h2>
+<h2>Data information<a class="headerlink" href="#data-information" title="Link to this heading">#</a></h2>
 <p>The datasets are available for download with the following structure:</p>
 <hr class="docutils" />
 <p><strong><code class="docutils literal notranslate"> <span class="pre">obs_'REGION'.tar.gz</span></code></strong></p>
@@ -509,6 +507,9 @@ document.write(`
 <p><strong><code class="docutils literal notranslate"> <span class="pre">drifter.tar.gz</span></code></strong></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">drifter/</span></code> repository contains pyo files of the AOML drifter positions in the different regions of interest during the year 2019.</p>
 <hr class="docutils" />
+<p><strong><code class="docutils literal notranslate"> <span class="pre">fronts_seviri.tar.gz</span></code></strong></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">fronts_seviri/</span></code> repository contains json files of the fronts contours detected from the SEVIRI Sea Surface Temperature data.</p>
+<hr class="docutils" />
 <p><strong><code class="docutils literal notranslate"> <span class="pre">lagrangian_position_pickle.tar.gz</span></code></strong></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">lagrangian_position_pickle/</span></code> repository contains the AOML corresponding fictive drifter positions using the WOC product currents for comparison.</p>
 <hr class="docutils" />
@@ -517,7 +518,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="download-and-read-the-data">
-<h2>Download and read the data<a class="headerlink" href="#download-and-read-the-data" title="Permalink to this headline">#</a></h2>
+<h2>Download and read the data<a class="headerlink" href="#download-and-read-the-data" title="Link to this heading">#</a></h2>
 <p>The data can be downloaded locally using the wget command. We recommand that the data be stored in the <code class="docutils literal notranslate"><span class="pre">dc_data/</span></code> repository.
 For example, to download and unzip the data needed to run the illustration <code class="docutils literal notranslate"><span class="pre">nb_howto_run_metrics/</span></code> notebooks :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">dc_data</span><span class="o">/</span>
