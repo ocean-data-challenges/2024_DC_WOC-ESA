@@ -130,7 +130,7 @@ Evaluated products
             <tr> 
               <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html"> Global Inertial</a></strong></td>
               <td> WOC-ESA </td>
-              <td> Geostrophic + Ekman + Induced Ekman (NIO) </td> 
+              <td> Geostrophic + Ekman + Unsteady Ekman (NIO) </td> 
               <td> Drifters, winds, GlobCurrent geos.</td> 
               <td> Agulhas, Gulf Stream, Mediterranean </td> 
             </tr> 
