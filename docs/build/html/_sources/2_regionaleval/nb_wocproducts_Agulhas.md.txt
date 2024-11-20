@@ -14,14 +14,14 @@
 
 <h3>
     At 00m 
-    <br>
+</h3> 
     <ul>   
         <li> GlobCurrent Total </li> 
         <li> WOC inertial global 0m </li>
-    </ul>  
-    <br>
-    At 15m 
-    <br>
+    </ul>    
+<h3>
+At 15m 
+</h3> 
     <ul>  
         <li> GlobCurrent Geostrophic </li> 
         <li> GlobCurrent Total </li>
@@ -30,8 +30,7 @@
         <li> NeurOST </li>
         <li> OSCAR </li>
     </ul>  
-
-</h3>
+ 
 
 
 <style>
