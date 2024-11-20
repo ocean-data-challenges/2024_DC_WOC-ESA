@@ -17,7 +17,17 @@
 ```{toctree}
 :maxdepth: 1
 
-index_Agulhas
+dc_details.md
+
+```
+        
+--- 
+
+ 
+```{toctree}
+:maxdepth: 1
+
+nb_wocproducts_Agulhas
 
 ```
 
@@ -27,7 +37,7 @@ index_Agulhas
 ```{toctree}
 :maxdepth: 1
 
-index_GulfStream
+nb_wocproducts_Gulfstream
 ```
 
 --- 
@@ -35,7 +45,7 @@ index_GulfStream
 ```{toctree}
 :maxdepth: 1
 
-index_MedSea
+nb_wocproducts_Mediterranean
 ```
 
 --- 

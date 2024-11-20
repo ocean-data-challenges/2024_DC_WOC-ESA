@@ -1,5 +1,5 @@
 
-# Product comparison
+# Gulf Stream region
 
 <br>
 
@@ -31,47 +31,67 @@
         <li> WOC Omega-3D  </li>
         <li> WOC inertial global 15m </li>
         <li> NeurOST </li>
+        <li> OSCAR </li>
     </ul>  
 
 </h3>
   
 
-<br>
+
+<style>
+     details > summary {
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+</style>
 
 <br>
 
-## <u> 1. Spectrum </u> 
-
-<br>
-
-<h2>At 0m</h2>
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_9_0.png)
-
-
 <br>
 
 
-<h2>At 15m</h2>
+<h2><u> 1. Spectrum </u></h2>
+
+
+
+<details>
+    <summary><h2> ▶️ At 0m</h2></summary>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_10_0.png)
+
+
+</details> 
+
+<details>
+    <summary><h2> ▶️ At 15m</h2> </summary>
+ 
 
 
 ![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_12_0.png)
 
 
-<br>
+
+</details>
+ 
 
 <br>
 
-## <u> 2. Eulerian RMS </u>
+<br>
+
+<h1><u> 2. Eulerian RMS </u></h1>
+
+
+
+<details> 
+    <summary><h2> ▶️ At 0m</h2></summary>
 
 <br>
 
-<h2>At 0m</h2>
-
-<br>
-
-<h3>Mean error</h3>
+<h3>Norm errors</h3>
 
 
 
@@ -113,11 +133,108 @@
 
 
 
+
+
 <br>
+
+<h3>Eastward errors</h3>
+
+
+
+
+
+
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Eastward Quadratic Error (%)</td>
+<td>Eastward Correlation</td>
+<td>Eastward Explained Variance (%)</td>
+<td>Eastward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Total</b></td>
+<td>46.839</td>
+<td>0.870</td>
+<td>73.374</td>
+<td>0.246</td>
+<td>103022.000</td>
+</tr>
+<tr>
+<td><b>WOC-Omega3D</b></td>
+<td>50.965</td>
+<td>0.843</td>
+<td>65.576</td>
+<td>0.273</td>
+<td>93656.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 00m</b></td>
+<td>45.721</td>
+<td>0.875</td>
+<td>76.379</td>
+<td>0.240</td>
+<td>103008.000</td>
+</tr>
+</table>
+
+
+
+
+
+<br>
+
+<h3>Northward errors</h3>
+
+
+
+
+
+
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Northward Quadratic Error (%)</td>
+<td>Northward Correlation</td>
+<td>Northward Explained Variance (%)</td>
+<td>Northward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Total</b></td>
+<td>52.415</td>
+<td>0.849</td>
+<td>71.322</td>
+<td>0.254</td>
+<td>103022.000</td>
+</tr>
+<tr>
+<td><b>WOC-Omega3D</b></td>
+<td>61.449</td>
+<td>0.788</td>
+<td>61.165</td>
+<td>0.294</td>
+<td>93656.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 00m</b></td>
+<td>51.101</td>
+<td>0.858</td>
+<td>74.310</td>
+<td>0.248</td>
+<td>103008.000</td>
+</tr>
+</table>
+
+
+
 
 <br>
 
 <h3>Standard deviation error</h3>
+
+
 
 
 
@@ -157,64 +274,31 @@
 
 
 
-<center><b>Results for diagnostic RMSD</b></center>
+<br><center></b>Results for diagnostic RMSD</b></center>
 
 
 
-<b>GlobCurrents Total<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_23_3.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_26_3.png)
 
 
 
-<b>WOC-Omega3D<b>
+<b>WOC-Omega3D</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_23_5.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_26_5.png)
 
 
 
-<b>WOC inertial global 00m<b>
+<b>WOC inertial global 00m</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_23_7.png)
-
-
-    
-    
-
-
-
-
-<center><b>Results for diagnostic Correlation</b></center>
-
-
-
-<b>GlobCurrents Total<b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_23_11.png)
-
-
-
-<b>WOC-Omega3D<b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_23_13.png)
-
-
-
-<b>WOC inertial global 00m<b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_23_15.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_26_7.png)
 
 
     
@@ -223,31 +307,31 @@
 
 
 
-<center><b>Results for diagnostic Explained Variance (%)</b></center>
+<br><center></b>Results for diagnostic Correlation</b></center>
 
 
 
-<b>GlobCurrents Total<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_23_19.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_26_11.png)
 
 
 
-<b>WOC-Omega3D<b>
+<b>WOC-Omega3D</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_23_21.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_26_13.png)
 
 
 
-<b>WOC inertial global 00m<b>
+<b>WOC inertial global 00m</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_23_23.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_26_15.png)
 
 
     
@@ -256,40 +340,77 @@
 
 
 
-<center><b>Results for diagnostic Quadratic Error (%)</b></center>
+<br><center></b>Results for diagnostic Explained Variance (%)</b></center>
 
 
 
-<b>GlobCurrents Total<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_23_27.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_26_19.png)
 
 
 
-<b>WOC-Omega3D<b>
+<b>WOC-Omega3D</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_23_29.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_26_21.png)
 
 
 
-<b>WOC inertial global 00m<b>
+<b>WOC inertial global 00m</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_23_31.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_26_23.png)
+
+
+    
+    
+
+
+
+
+<br><center></b>Results for diagnostic Quadratic Error (%)</b></center>
+
+
+
+<b>GlobCurrents Total</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_26_27.png)
+
+
+
+<b>WOC-Omega3D</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_26_29.png)
+
+
+
+<b>WOC inertial global 00m</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_26_31.png)
+
+
+</details> 
+
+<details>
+    <summary><h2> ▶️ At 15m</h2></summary>
 
 
 <br>
 
-<h2>At 15m</h2>
+<h3>Norm errors</h3>
 
-<br>
 
-<h3>Mean error</h3>
 
 
 
@@ -355,7 +476,147 @@
 
 
 
+
 <br>
+
+<h3>Eastward errors</h3>
+
+
+
+
+
+
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Eastward Quadratic Error (%)</td>
+<td>Eastward Correlation</td>
+<td>Eastward Explained Variance (%)</td>
+<td>Eastward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Geostrophic</b></td>
+<td>67.125</td>
+<td>0.740</td>
+<td>61.314</td>
+<td>0.238</td>
+<td>51943.000</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Total</b></td>
+<td>66.044</td>
+<td>0.749</td>
+<td>62.690</td>
+<td>0.235</td>
+<td>50016.000</td>
+</tr>
+<tr>
+<td><b>WOC SST-SSH</b></td>
+<td>69.405</td>
+<td>0.718</td>
+<td>58.050</td>
+<td>0.246</td>
+<td>43880.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 15m</b></td>
+<td>65.414</td>
+<td>0.759</td>
+<td>64.594</td>
+<td>0.232</td>
+<td>50016.000</td>
+</tr>
+<tr>
+<td><b>WOC Omega-3D</b></td>
+<td>68.148</td>
+<td>0.729</td>
+<td>53.346</td>
+<td>0.241</td>
+<td>43880.000</td>
+</tr>
+<tr>
+<td><b>NeurOST</b></td>
+<td>62.921</td>
+<td>0.778</td>
+<td>67.795</td>
+<td>0.223</td>
+<td>51908.000</td>
+</tr>
+</table>
+
+
+
+
+<br>
+
+<h3>Northward errors</h3>
+
+
+
+
+
+
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Northward Quadratic Error (%)</td>
+<td>Northward Correlation</td>
+<td>Northward Explained Variance (%)</td>
+<td>Northward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Geostrophic</b></td>
+<td>70.638</td>
+<td>0.715</td>
+<td>57.794</td>
+<td>0.253</td>
+<td>51943.000</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Total</b></td>
+<td>69.609</td>
+<td>0.724</td>
+<td>59.215</td>
+<td>0.249</td>
+<td>50016.000</td>
+</tr>
+<tr>
+<td><b>WOC SST-SSH</b></td>
+<td>73.304</td>
+<td>0.685</td>
+<td>51.841</td>
+<td>0.257</td>
+<td>43880.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 15m</b></td>
+<td>68.940</td>
+<td>0.735</td>
+<td>61.287</td>
+<td>0.247</td>
+<td>50016.000</td>
+</tr>
+<tr>
+<td><b>WOC Omega-3D</b></td>
+<td>76.700</td>
+<td>0.654</td>
+<td>48.572</td>
+<td>0.269</td>
+<td>43880.000</td>
+</tr>
+<tr>
+<td><b>NeurOST</b></td>
+<td>65.033</td>
+<td>0.763</td>
+<td>61.323</td>
+<td>0.233</td>
+<td>51908.000</td>
+</tr>
+</table>
+
+
 
 <br>
 
@@ -414,55 +675,55 @@
 
 
 
-<center><b>Results for diagnostic RMSD</b></center>
+<br><center><b>Results for diagnostic RMSD</b></center>
 
 
 
-<b>GlobCurrents Total<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_3.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_3.png)
 
 
 
-<b>GlobCurrents<b>
+<b>GlobCurrents</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_5.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_5.png)
 
 
 
-<b>WOC SST-SSH<b>
+<b>WOC SST-SSH</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_7.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_7.png)
 
 
 
-<b>WOC inertial global 1h<b>
+<b>WOC inertial global 1h</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_9.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_9.png)
 
 
 
-<b>WOC Omega-3D<b>
+<b>WOC Omega-3D</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_11.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_11.png)
 
 
 
-<b>NeurOST<b>
+<b>NeurOST</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_13.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_13.png)
 
 
     
@@ -471,55 +732,55 @@
 
 
 
-<center><b>Results for diagnostic Correlation</b></center>
+<br><center><b>Results for diagnostic Correlation</b></center>
 
 
 
-<b>GlobCurrents Total<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_17.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_17.png)
 
 
 
-<b>GlobCurrents<b>
+<b>GlobCurrents</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_19.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_19.png)
 
 
 
-<b>WOC SST-SSH<b>
+<b>WOC SST-SSH</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_21.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_21.png)
 
 
 
-<b>WOC inertial global 1h<b>
+<b>WOC inertial global 1h</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_23.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_23.png)
 
 
 
-<b>WOC Omega-3D<b>
+<b>WOC Omega-3D</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_25.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_25.png)
 
 
 
-<b>NeurOST<b>
+<b>NeurOST</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_27.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_27.png)
 
 
     
@@ -528,140 +789,79 @@
 
 
 
-<center><b>Results for diagnostic Explained Variance (%)</b></center>
+<br><center><b>Results for diagnostic Explained Variance (%)</b></center>
 
 
 
-<b>GlobCurrents Total<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_31.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_31.png)
 
 
 
-<b>GlobCurrents<b>
+<b>GlobCurrents</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_33.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_33.png)
 
 
 
-<b>WOC SST-SSH<b>
+<b>WOC SST-SSH</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_35.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_35.png)
 
 
 
-<b>WOC inertial global 1h<b>
+<b>WOC inertial global 1h</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_37.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_37.png)
 
 
 
-<b>WOC Omega-3D<b>
+<b>WOC Omega-3D</b>
 
 
 
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_39.png)
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_39.png)
 
 
 
-<b>NeurOST<b>
+<b>NeurOST</b>
 
 
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_41.png)
-
-
-    
-    
-
-
-
-
-<center><b>Results for diagnostic Quadratic Error (%)</b></center>
-
-
-
-<b>GlobCurrents Total<b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_45.png)
-
-
-
-<b>GlobCurrents<b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_47.png)
-
-
-
-<b>WOC SST-SSH<b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_49.png)
-
-
-
-<b>WOC inertial global 1h<b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_51.png)
-
-
-
-<b>WOC Omega-3D<b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_53.png)
-
-
-
-<b>NeurOST<b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_32_55.png)
+</details>
 
 
 <br>
 
 <br>
 
-## <u> 3. Lagrangian Cumulative Distance</u> 
+<h1><u> 3. Lagrangian Cumulative Distance</u></h1>
+
+
+
+<details>
+    <summary><h2> ▶️ At 0m</h2></summary>
+ 
+
+</details>
+
+
+<details>
+    <summary><h2> ▶️ At 15m</h2></summary>
+
+
+
+</details> 
 
 <br>
 
-<h2>At 0m</h2>
-
-
-    <Figure size 640x480 with 0 Axes>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_36_1.png)
-
-
 <br>
-
-<h2>At 15m</h2>
-
-
-    <Figure size 640x480 with 0 Axes>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_1.png)
-
+ 
