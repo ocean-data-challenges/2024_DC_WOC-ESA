@@ -30,7 +30,7 @@ The WOC data challenges are comparison platforms that allow a sound and fair ass
         <br />
         
         <center>
-        <div id="image_map"> <map name="map_example"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/index_Agulhas.html" target="_blank" alt="Agulhas Current" shape=poly coords="310,265, 310,220, 365,220, 365,265"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/index_GulfStream.html" target="_blank" alt="Gulf Stream" shape=poly coords="170,135, 170,70, 280,70, 280,135"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/index_MedSea.html" target="_blank" alt="Mediterranean Sea" shape=poly coords="290,110, 290,75, 335,75, 335,110">  <img src="_static/DC_2024_map_frontpage.jpg" title="Gulf Stream" alt="image map example" width=600 height=350 usemap="#map_example"></map> </div> </center>
+        <div id="image_map"> <map name="map_example"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/nb_wocproducts_Agulhas.html" target="_blank" alt="Agulhas Current" shape=poly coords="310,265, 310,220, 365,220, 365,265"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/nb_wocproducts_Gulfstream.html" target="_blank" alt="Gulf Stream" shape=poly coords="170,135, 170,70, 280,70, 280,135"> <area href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/nb_wocproducts_Mediterranean.html" target="_blank" alt="Mediterranean Sea" shape=poly coords="290,110, 290,75, 335,75, 335,110">  <img src="_static/DC_2024_map_frontpage.jpg" title="Gulf Stream" alt="image map example" width=600 height=350 usemap="#map_example"></map> </div> </center>
         
         <br />
         
@@ -109,7 +109,7 @@ Evaluated products
             <tr> 
               <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html"> dADR-SR</a></strong></td>
               <td> WOC-ESA </td>
-              <td> Total currents </td> 
+              <td> Geostrophic </td> 
               <td> altimetry, SST</td> 
               <td> Mediterranean </td> 
             </tr> 
@@ -123,22 +123,22 @@ Evaluated products
             <tr> 
               <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html"> SSTSSH-NAtl2D</a></strong></td>
               <td> WOC-ESA </td>
-              <td> Total currents </td> 
+              <td> Geostrophic </td> 
               <td> altimetry, SST</td> 
               <td> Gulf Stream </td> 
             </tr> 
             <tr> 
               <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_woc.html"> Global Inertial</a></strong></td>
               <td> WOC-ESA </td>
-              <td> Geostrophic + Ekman + Induced Ekman (NIO) </td> 
-              <td> Drifter currents, GlobCurrent geos.</td> 
+              <td> Geostrophic + Ekman + Unsteady Ekman (NIO) </td> 
+              <td> Drifters, winds, GlobCurrent geos.</td> 
               <td> Agulhas, Gulf Stream, Mediterranean </td> 
             </tr> 
             <tr> 
               <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/products_cmems.html">GlobCurrent</a></strong></td>
               <td> CMEMS </td>
               <td> Geostrophic + Ekman </td> 
-              <td> altimetry, gravimetry, drifters </td> 
+              <td> altimetry, gravimetry, drifters, winds </td> 
               <td> Agulhas, Gulf Stream, Mediterranean </td>
             </tr>
             <tr> 
@@ -146,6 +146,20 @@ Evaluated products
               <td> CMEMS </td>
               <td> Geostrophic </td> 
               <td> altimetry </td> 
+              <td> Agulhas, Gulf Stream, Mediterranean </td>
+            </tr> 
+            <tr> 
+              <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/other_methods.html">OSCAR</a></strong></td>
+              <td> PODAAC-NASA </td>
+              <td> Geostrophic + Ekman + Thermal wind dynamics </td> 
+              <td> altimetry, winds, SST </td> 
+              <td> Agulhas, Gulf Stream, Mediterranean </td>
+            </tr> 
+            <tr> 
+              <td style="text-align:left;"><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/1_products/other_methods.html">NeurOST</a></strong></td>
+              <td> PODAAC-NASA </td>
+              <td> Geostrophic </td> 
+              <td> altimetry, SST </td> 
               <td> Agulhas, Gulf Stream, Mediterranean </td>
             </tr> 
           </tbody>
@@ -215,15 +229,11 @@ The WOC data challenges cover three geographical regions, with different dynamic
        
  
         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_agulhas_details.html"> ▶️    Agulhas Current setup </a></h3>
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_details.html"> ▶️    Agulhas Current setup </a></h3>
        
- 
+  
         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_agulhas_movies.html"> ▶️ Reconstruction movies </a></h3> 
-       
- 
-        
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/nb_overall_results-Agulhas.html"> ▶️ Product comparison </a></h3> 
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/nb_wocproducts_Agulhas.html"> ▶️ Product comparison </a></h3> 
         
     </div>
 
@@ -251,11 +261,9 @@ The WOC data challenges cover three geographical regions, with different dynamic
       </ul>
         
         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_gulfstream_details.html"> ▶️ Gulf Stream setup </a></h3>  
-         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_gulfstream_movies.html"> ▶️ Reconstruction movies </a></h3>  
-         
-        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_gulfstream_overalleval.html"> ▶️ Overall comparison </a></h3>  
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_details.html"> ▶️ Gulf Stream setup </a></h3>  
+          
+        <h3><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/nb_wocproducts_Gulfstream.html"> ▶️ Overall comparison </a></h3>  
         
     </div>
 
@@ -284,11 +292,9 @@ The WOC data challenges cover three geographical regions, with different dynamic
       
       </ul>    
         
-        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_medsea_details.html"> ▶️ Mediterranean Sea setup </a></h3>   
+        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_details.html"> ▶️ Mediterranean Sea setup </a></h3>    
  
-        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_medsea_movies.html"> ▶️ Reconstruction movies </a></h3>   
- 
-        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/dc_medsea_overalleval.html"> ▶️ Overall comparison </a></h3>   
+        <h3> <a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/2_regionaleval/nb_wocproducts_Mediterranean.html"> ▶️ Overall comparison </a></h3>   
 
     </div>
     <script>
