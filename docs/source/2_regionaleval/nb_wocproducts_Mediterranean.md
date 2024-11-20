@@ -357,6 +357,92 @@ At 15m
 <b>NeurOST</b>
 
 
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_19.png)
+
+
+    
+    
+
+
+
+
+<br><center><b>Results for diagnostic Explained Variance (%)</b></center>
+
+
+
+<b>GlobCurrents Total</b>
+
+
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_23.png)
+
+
+
+<b>WOC inertial global 15m</b>
+
+
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_25.png)
+
+
+
+<b>WOC dADR-SR</b>
+
+
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_27.png)
+
+
+
+<b>NeurOST</b>
+
+
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_29.png)
+
+
+    
+    
+
+
+
+
+<br><center><b>Results for diagnostic Quadratic Error (%)</b></center>
+
+
+
+<b>GlobCurrents Total</b>
+
+
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_33.png)
+
+
+
+<b>WOC inertial global 15m</b>
+
+
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_35.png)
+
+
+
+<b>WOC dADR-SR</b>
+
+
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_37.png)
+
+
+
+<b>NeurOST</b>
+
+
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_39.png)
+
+
 </details>
 
 
@@ -372,6 +458,14 @@ At 15m
     <summary><h2> ▶️ At 15m</h2></summary>
 
  
+
+
+    <Figure size 640x480 with 0 Axes>
+
+
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_28_1.png)
+
 
 </details> 
 

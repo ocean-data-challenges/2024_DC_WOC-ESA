@@ -833,6 +833,27 @@ At 15m
 <details>
     <summary><h2> ▶️ Maps</h2></summary>
 
+
+
+
+    (<Figure size 3000x1500 with 36 Axes>,
+     <Figure size 3000x3000 with 60 Axes>,
+     <Figure size 600x500 with 2 Axes>)
+
+
+
+
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_48_1.png)
+
+
+
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_48_2.png)
+
+
+
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_48_3.png)
+
+
 </details>
 
 </br>
