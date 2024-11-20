@@ -15,14 +15,14 @@
 ## <u> Compared products </u> 
 
 <h3>
-    At 00m 
-    <br> 
+At 0m 
+</h3> 
     <ul>  
         <li> <i>None</i></li> 
     </ul>  
-    <br>
-    At 15m 
-    <br>
+<h3>
+At 15m 
+</h3> 
     <ul>  
         <li> GlobCurrent Geostrophic REP </li>   
         <li> WOC dADR-SR (dADR Med) </li>
@@ -30,8 +30,7 @@
         <li> NeurOST </li> 
         <li> OSCAR </li>
     </ul>  
-
-</h3>
+ 
   
 
 
@@ -311,6 +310,47 @@
 
 
 ![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_7.png)
+
+
+
+<b>NeurOST</b>
+
+
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_9.png)
+
+
+    
+    
+
+
+
+
+<br><center><b>Results for diagnostic Correlation</b></center>
+
+
+
+<b>GlobCurrents Total</b>
+
+
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_13.png)
+
+
+
+<b>WOC inertial global 15m</b>
+
+
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_15.png)
+
+
+
+<b>WOC dADR-SR</b>
+
+
+
+![png](nb_wocproducts_Mediterranean_files/nb_wocproducts_Mediterranean_24_17.png)
 
 
 

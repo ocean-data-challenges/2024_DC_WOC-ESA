@@ -13,17 +13,19 @@
 
 ## <u> Compared products </u> 
 
+
 <h3>
-    At 00m 
-    <br>
+At 0m 
+</h3> 
     <ul>   
         <li> GlobCurrent Total </li> 
         <li> WOC inertial global 0m </li>
         <li> WOC Omega-3D  </li>
     </ul>  
-    <br>
-    At 15m 
-    <br>
+
+<h3>
+At 15m 
+</h3> 
     <ul>  
         <li> GlobCurrent Geostrophic </li> 
         <li> GlobCurrent Total </li>
@@ -33,8 +35,6 @@
         <li> NeurOST </li>
         <li> OSCAR </li>
     </ul>  
-
-</h3>
   
 
 
@@ -773,63 +773,6 @@
 
 
 ![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_25.png)
-
-
-
-<b>NeurOST</b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_27.png)
-
-
-    
-    
-
-
-
-
-<br><center><b>Results for diagnostic Explained Variance (%)</b></center>
-
-
-
-<b>GlobCurrents Total</b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_31.png)
-
-
-
-<b>GlobCurrents</b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_33.png)
-
-
-
-<b>WOC SST-SSH</b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_35.png)
-
-
-
-<b>WOC inertial global 1h</b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_37.png)
-
-
-
-<b>WOC Omega-3D</b>
-
-
-
-![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_39.png)
 
 
 
