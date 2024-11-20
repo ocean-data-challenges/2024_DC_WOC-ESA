@@ -779,6 +779,124 @@ At 15m
 <b>NeurOST</b>
 
 
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_27.png)
+
+
+    
+    
+
+
+
+
+<br><center><b>Results for diagnostic Explained Variance (%)</b></center>
+
+
+
+<b>GlobCurrents Total</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_31.png)
+
+
+
+<b>GlobCurrents</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_33.png)
+
+
+
+<b>WOC SST-SSH</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_35.png)
+
+
+
+<b>WOC inertial global 1h</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_37.png)
+
+
+
+<b>WOC Omega-3D</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_39.png)
+
+
+
+<b>NeurOST</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_41.png)
+
+
+    
+    
+
+
+
+
+<br><center><b>Results for diagnostic Quadratic Error (%)</b></center>
+
+
+
+<b>GlobCurrents Total</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_45.png)
+
+
+
+<b>GlobCurrents</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_47.png)
+
+
+
+<b>WOC SST-SSH</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_49.png)
+
+
+
+<b>WOC inertial global 1h</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_51.png)
+
+
+
+<b>WOC Omega-3D</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_53.png)
+
+
+
+<b>NeurOST</b>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_38_55.png)
+
+
 </details>
 
 
@@ -794,12 +912,28 @@ At 15m
     <summary><h2> ▶️ At 0m</h2></summary>
  
 
+
+    <Figure size 640x480 with 0 Axes>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_42_1.png)
+
+
 </details>
 
 
 <details>
     <summary><h2> ▶️ At 15m</h2></summary>
 
+
+
+
+    <Figure size 640x480 with 0 Axes>
+
+
+
+![png](nb_wocproducts_Gulfstream_files/nb_wocproducts_Gulfstream_44_1.png)
 
 
 </details> 
