@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Product comparison &#8212; WOC-ESA Data challenges  documentation</title>
+    <title>Gulf Stream region &#8212; WOC-ESA Data challenges  documentation</title>
   
   
   
@@ -44,8 +44,8 @@
     <script src="../_static/js/custom.js?v=713f7fb5"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Mediterranean Sea" href="index_MedSea.html" />
-    <link rel="prev" title="Reconstruction movies" href="dc_gulfstream_movies.html" />
+    <link rel="next" title="Mediterranean Sea" href="nb_wocproducts_Mediterranean.html" />
+    <link rel="prev" title="Agulhas Current" href="nb_wocproducts_Agulhas.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
   </head>
@@ -407,18 +407,16 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="index_Agulhas.html">Agulhas Current</a></li>
-</ul>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index_GulfStream.html">Gulf Stream</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="dc_gulfstream_details.html">Gulf Stream setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dc_gulfstream_movies.html">Reconstruction movies</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Product comparison</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="dc_details.html">Data challenge setup</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="index_MedSea.html">Mediterranean Sea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nb_wocproducts_Agulhas.html">Agulhas Current</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Gulf Stream region</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="nb_wocproducts_Mediterranean.html">Mediterranean Sea</a></li>
 </ul>
 </div>
 </nav></div>
@@ -459,10 +457,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Regional Evaluations</a></li>
     
-    
-    <li class="breadcrumb-item"><a href="index_GulfStream.html" class="nav-link">Gulf Stream</a></li>
-    
-    <li class="breadcrumb-item active" aria-current="page">Product comparison</li>
+    <li class="breadcrumb-item active" aria-current="page">Gulf Stream region</li>
   </ul>
 </nav>
 </div>
@@ -479,8 +474,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="product-comparison">
-<h1>Product comparison<a class="headerlink" href="#product-comparison" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="gulf-stream-region">
+<h1>Gulf Stream region<a class="headerlink" href="#gulf-stream-region" title="Link to this heading">#</a></h1>
 <br>
 <br>
 <div class="alert alert-block alert-success">
@@ -506,28 +501,35 @@ document.write(`
         <li> WOC Omega-3D  </li>
         <li> WOC inertial global 15m </li>
         <li> NeurOST </li>
+        <li> OSCAR </li>
     </ul>  
 </h3>
+<style>
+     details > summary {
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+</style>
 <br>
 <br>
-</section>
-<section id="u-1-spectrum-u">
-<h2><u> 1. Spectrum </u><a class="headerlink" href="#u-1-spectrum-u" title="Link to this heading">#</a></h2>
-<br>
-<h2>At 0m</h2>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_9_0.png" /></p>
-<br>
-<h2>At 15m</h2>
+<h2><u> 1. Spectrum </u></h2>
+<details>
+    <summary><h2> ▶️ At 0m</h2></summary>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_10_0.png" /></p>
+</details> 
+<details>
+    <summary><h2> ▶️ At 15m</h2> </summary>
 <p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_12_0.png" /></p>
+</details>
 <br>
 <br>
-</section>
-<section id="u-2-eulerian-rms-u">
-<h2><u> 2. Eulerian RMS </u><a class="headerlink" href="#u-2-eulerian-rms-u" title="Link to this heading">#</a></h2>
+<h1><u> 2. Eulerian RMS </u></h1>
+<details> 
+    <summary><h2> ▶️ At 0m</h2></summary>
 <br>
-<h2>At 0m</h2>
-<br>
-<h3>Mean error</h3>
+<h3>Norm errors</h3>
 <table width=100%>
 <tr>
 <td><b>Mean</b></td>
@@ -563,6 +565,77 @@ document.write(`
 </tr>
 </table>
 <br>
+<h3>Eastward errors</h3>
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Eastward Quadratic Error (%)</td>
+<td>Eastward Correlation</td>
+<td>Eastward Explained Variance (%)</td>
+<td>Eastward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Total</b></td>
+<td>46.839</td>
+<td>0.870</td>
+<td>73.374</td>
+<td>0.246</td>
+<td>103022.000</td>
+</tr>
+<tr>
+<td><b>WOC-Omega3D</b></td>
+<td>50.965</td>
+<td>0.843</td>
+<td>65.576</td>
+<td>0.273</td>
+<td>93656.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 00m</b></td>
+<td>45.721</td>
+<td>0.875</td>
+<td>76.379</td>
+<td>0.240</td>
+<td>103008.000</td>
+</tr>
+</table>
+<br>
+<h3>Northward errors</h3>
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Northward Quadratic Error (%)</td>
+<td>Northward Correlation</td>
+<td>Northward Explained Variance (%)</td>
+<td>Northward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Total</b></td>
+<td>52.415</td>
+<td>0.849</td>
+<td>71.322</td>
+<td>0.254</td>
+<td>103022.000</td>
+</tr>
+<tr>
+<td><b>WOC-Omega3D</b></td>
+<td>61.449</td>
+<td>0.788</td>
+<td>61.165</td>
+<td>0.294</td>
+<td>93656.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 00m</b></td>
+<td>51.101</td>
+<td>0.858</td>
+<td>74.310</td>
+<td>0.248</td>
+<td>103008.000</td>
+</tr>
+</table>
 <br>
 <h3>Standard deviation error</h3>
 <table width=100%>
@@ -589,38 +662,39 @@ document.write(`
 </table>
 <br>
 <h3>Binned plots</h3>
-<center><b>Results for diagnostic RMSD</b></center>
-<p><b>GlobCurrents Total<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_23_3.png" /></p>
-<p><b>WOC-Omega3D<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_23_5.png" /></p>
-<p><b>WOC inertial global 00m<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_23_7.png" /></p>
-<center><b>Results for diagnostic Correlation</b></center>
-<p><b>GlobCurrents Total<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_23_11.png" /></p>
-<p><b>WOC-Omega3D<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_23_13.png" /></p>
-<p><b>WOC inertial global 00m<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_23_15.png" /></p>
-<center><b>Results for diagnostic Explained Variance (%)</b></center>
-<p><b>GlobCurrents Total<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_23_19.png" /></p>
-<p><b>WOC-Omega3D<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_23_21.png" /></p>
-<p><b>WOC inertial global 00m<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_23_23.png" /></p>
-<center><b>Results for diagnostic Quadratic Error (%)</b></center>
-<p><b>GlobCurrents Total<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_23_27.png" /></p>
-<p><b>WOC-Omega3D<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_23_29.png" /></p>
-<p><b>WOC inertial global 00m<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_23_31.png" /></p>
+<p><br><center></b>Results for diagnostic RMSD</b></center></p>
+<p><b>GlobCurrents Total</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_26_3.png" /></p>
+<p><b>WOC-Omega3D</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_26_5.png" /></p>
+<p><b>WOC inertial global 00m</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_26_7.png" /></p>
+<p><br><center></b>Results for diagnostic Correlation</b></center></p>
+<p><b>GlobCurrents Total</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_26_11.png" /></p>
+<p><b>WOC-Omega3D</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_26_13.png" /></p>
+<p><b>WOC inertial global 00m</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_26_15.png" /></p>
+<p><br><center></b>Results for diagnostic Explained Variance (%)</b></center></p>
+<p><b>GlobCurrents Total</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_26_19.png" /></p>
+<p><b>WOC-Omega3D</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_26_21.png" /></p>
+<p><b>WOC inertial global 00m</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_26_23.png" /></p>
+<p><br><center></b>Results for diagnostic Quadratic Error (%)</b></center></p>
+<p><b>GlobCurrents Total</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_26_27.png" /></p>
+<p><b>WOC-Omega3D</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_26_29.png" /></p>
+<p><b>WOC inertial global 00m</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_26_31.png" /></p>
+</details> 
+<details>
+    <summary><h2> ▶️ At 15m</h2></summary>
 <br>
-<h2>At 15m</h2>
-<br>
-<h3>Mean error</h3>
+<h3>Norm errors</h3>
 <table width=100%>
 <tr>
 <td><b>Mean</b></td>
@@ -680,6 +754,125 @@ document.write(`
 </tr>
 </table>
 <br>
+<h3>Eastward errors</h3>
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Eastward Quadratic Error (%)</td>
+<td>Eastward Correlation</td>
+<td>Eastward Explained Variance (%)</td>
+<td>Eastward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Geostrophic</b></td>
+<td>67.125</td>
+<td>0.740</td>
+<td>61.314</td>
+<td>0.238</td>
+<td>51943.000</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Total</b></td>
+<td>66.044</td>
+<td>0.749</td>
+<td>62.690</td>
+<td>0.235</td>
+<td>50016.000</td>
+</tr>
+<tr>
+<td><b>WOC SST-SSH</b></td>
+<td>69.405</td>
+<td>0.718</td>
+<td>58.050</td>
+<td>0.246</td>
+<td>43880.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 15m</b></td>
+<td>65.414</td>
+<td>0.759</td>
+<td>64.594</td>
+<td>0.232</td>
+<td>50016.000</td>
+</tr>
+<tr>
+<td><b>WOC Omega-3D</b></td>
+<td>68.148</td>
+<td>0.729</td>
+<td>53.346</td>
+<td>0.241</td>
+<td>43880.000</td>
+</tr>
+<tr>
+<td><b>NeurOST</b></td>
+<td>62.921</td>
+<td>0.778</td>
+<td>67.795</td>
+<td>0.223</td>
+<td>51908.000</td>
+</tr>
+</table>
+<br>
+<h3>Northward errors</h3>
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Northward Quadratic Error (%)</td>
+<td>Northward Correlation</td>
+<td>Northward Explained Variance (%)</td>
+<td>Northward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Geostrophic</b></td>
+<td>70.638</td>
+<td>0.715</td>
+<td>57.794</td>
+<td>0.253</td>
+<td>51943.000</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Total</b></td>
+<td>69.609</td>
+<td>0.724</td>
+<td>59.215</td>
+<td>0.249</td>
+<td>50016.000</td>
+</tr>
+<tr>
+<td><b>WOC SST-SSH</b></td>
+<td>73.304</td>
+<td>0.685</td>
+<td>51.841</td>
+<td>0.257</td>
+<td>43880.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 15m</b></td>
+<td>68.940</td>
+<td>0.735</td>
+<td>61.287</td>
+<td>0.247</td>
+<td>50016.000</td>
+</tr>
+<tr>
+<td><b>WOC Omega-3D</b></td>
+<td>76.700</td>
+<td>0.654</td>
+<td>48.572</td>
+<td>0.269</td>
+<td>43880.000</td>
+</tr>
+<tr>
+<td><b>NeurOST</b></td>
+<td>65.033</td>
+<td>0.763</td>
+<td>61.323</td>
+<td>0.233</td>
+<td>51908.000</td>
+</tr>
+</table>
 <br>
 <h3>Standard deviation error</h3>
 <table width=100%>
@@ -721,75 +914,56 @@ document.write(`
 </table>
 <br>
 <h3>Binned plots</h3>
-<center><b>Results for diagnostic RMSD</b></center>
-<p><b>GlobCurrents Total<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_3.png" /></p>
-<p><b>GlobCurrents<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_5.png" /></p>
-<p><b>WOC SST-SSH<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_7.png" /></p>
-<p><b>WOC inertial global 1h<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_9.png" /></p>
-<p><b>WOC Omega-3D<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_11.png" /></p>
-<p><b>NeurOST<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_13.png" /></p>
-<center><b>Results for diagnostic Correlation</b></center>
-<p><b>GlobCurrents Total<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_17.png" /></p>
-<p><b>GlobCurrents<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_19.png" /></p>
-<p><b>WOC SST-SSH<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_21.png" /></p>
-<p><b>WOC inertial global 1h<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_23.png" /></p>
-<p><b>WOC Omega-3D<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_25.png" /></p>
-<p><b>NeurOST<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_27.png" /></p>
-<center><b>Results for diagnostic Explained Variance (%)</b></center>
-<p><b>GlobCurrents Total<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_31.png" /></p>
-<p><b>GlobCurrents<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_33.png" /></p>
-<p><b>WOC SST-SSH<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_35.png" /></p>
-<p><b>WOC inertial global 1h<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_37.png" /></p>
-<p><b>WOC Omega-3D<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_39.png" /></p>
-<p><b>NeurOST<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_41.png" /></p>
-<center><b>Results for diagnostic Quadratic Error (%)</b></center>
-<p><b>GlobCurrents Total<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_45.png" /></p>
-<p><b>GlobCurrents<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_47.png" /></p>
-<p><b>WOC SST-SSH<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_49.png" /></p>
-<p><b>WOC inertial global 1h<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_51.png" /></p>
-<p><b>WOC Omega-3D<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_53.png" /></p>
-<p><b>NeurOST<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_32_55.png" /></p>
+<p><br><center><b>Results for diagnostic RMSD</b></center></p>
+<p><b>GlobCurrents Total</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_3.png" /></p>
+<p><b>GlobCurrents</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_5.png" /></p>
+<p><b>WOC SST-SSH</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_7.png" /></p>
+<p><b>WOC inertial global 1h</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_9.png" /></p>
+<p><b>WOC Omega-3D</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_11.png" /></p>
+<p><b>NeurOST</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_13.png" /></p>
+<p><br><center><b>Results for diagnostic Correlation</b></center></p>
+<p><b>GlobCurrents Total</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_17.png" /></p>
+<p><b>GlobCurrents</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_19.png" /></p>
+<p><b>WOC SST-SSH</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_21.png" /></p>
+<p><b>WOC inertial global 1h</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_23.png" /></p>
+<p><b>WOC Omega-3D</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_25.png" /></p>
+<p><b>NeurOST</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_27.png" /></p>
+<p><br><center><b>Results for diagnostic Explained Variance (%)</b></center></p>
+<p><b>GlobCurrents Total</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_31.png" /></p>
+<p><b>GlobCurrents</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_33.png" /></p>
+<p><b>WOC SST-SSH</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_35.png" /></p>
+<p><b>WOC inertial global 1h</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_37.png" /></p>
+<p><b>WOC Omega-3D</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_39.png" /></p>
+<p><b>NeurOST</b></p>
+</details>
 <br>
 <br>
-</section>
-<section id="u-3-lagrangian-cumulative-distance-u">
-<h2><u> 3. Lagrangian Cumulative Distance</u><a class="headerlink" href="#u-3-lagrangian-cumulative-distance-u" title="Link to this heading">#</a></h2>
+<h1><u> 3. Lagrangian Cumulative Distance</u></h1>
+<details>
+    <summary><h2> ▶️ At 0m</h2></summary>
+</details>
+<details>
+    <summary><h2> ▶️ At 15m</h2></summary>
+</details> 
 <br>
-<h2>At 0m</h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 640x480 with 0 Axes&gt;
-</pre></div>
-</div>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_36_1.png" /></p>
 <br>
-<h2>At 15m</h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 640x480 with 0 Axes&gt;
-</pre></div>
-</div>
-<p><img alt="png" src="../_images/nb_wocproducts_Gulfstream_38_1.png" /></p>
 </section>
 </section>
 
@@ -805,16 +979,16 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="dc_gulfstream_movies.html"
+       href="nb_wocproducts_Agulhas.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Reconstruction movies</p>
+        <p class="prev-next-title">Agulhas Current</p>
       </div>
     </a>
     <a class="right-next"
-       href="index_MedSea.html"
+       href="nb_wocproducts_Mediterranean.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>

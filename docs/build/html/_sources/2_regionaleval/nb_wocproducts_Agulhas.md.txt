@@ -1,5 +1,5 @@
 
-# Product comparison
+# Agulhas Current
 
 <br>
 
@@ -28,46 +28,68 @@
         <li> WOC BFN-QG </li>
         <li> WOC inertial global 15m </li>
         <li> NeurOST </li>
+        <li> OSCAR </li>
     </ul>  
 
 </h3>
 
-<br>
 
-<br>
-
-## <u> 1. Spectrum </u> 
-
-<br>
-
-<h2>At 0m</h2>
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_9_0.png)
-
-
-<br>
-
-
-<h2>At 15m</h2>
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_13_0.png)
-
+<style>
+     details > summary {
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+</style>
 
 <br>
 
 <br>
 
-## <u> 2. Eulerian RMS </u>
+
+<h2><u> 1. Spectrum </u></h2>
+
+
+
+<details>
+    <summary><h2> ▶️ At 0m</h2></summary>
+
+
+
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_10_0.png)
+
+
+</details> 
+
+<details>
+    <summary><h2> ▶️ At 15m</h2> </summary>
+ 
+
+
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_12_0.png)
+
+
+
+</details>
+ 
 
 <br>
 
-<h2>At 0m</h2>
+<br>
+
+<h1><u> 2. Eulerian RMS </u></h1>
+
+
+
+<details> 
+    <summary><h2> ▶️ At 0m</h2></summary>
 
 <br>
 
-<h3>Mean error</h3>
+<h3>Norm errors</h3>
+ 
+ 
 
 
 
@@ -101,11 +123,92 @@
 
 
 
+
+
 <br>
+
+<h3>Eastward errors</h3>
+
+
+
+
+
+
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Eastward Quadratic Error (%)</td>
+<td>Eastward Correlation</td>
+<td>Eastward Explained Variance (%)</td>
+<td>Eastward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Total</b></td>
+<td>49.368</td>
+<td>0.867</td>
+<td>73.832</td>
+<td>0.239</td>
+<td>37440.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 00m 1h</b></td>
+<td>46.755</td>
+<td>0.881</td>
+<td>79.632</td>
+<td>0.227</td>
+<td>37440.000</td>
+</tr>
+</table>
+
+
+
+
+
+<br>
+
+<h3>Northward errors</h3>
+
+
+
+
+
+
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Northward Quadratic Error (%)</td>
+<td>Northward Correlation</td>
+<td>Northward Explained Variance (%)</td>
+<td>Northward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Total</b></td>
+<td>52.518</td>
+<td>0.851</td>
+<td>71.616</td>
+<td>0.236</td>
+<td>37440.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 00m 1h</b></td>
+<td>50.555</td>
+<td>0.863</td>
+<td>75.159</td>
+<td>0.227</td>
+<td>37440.000</td>
+</tr>
+</table>
+
+
+
 
 <br>
 
 <h3>Standard deviation error</h3>
+
+
 
 
 
@@ -130,9 +233,12 @@
 
 
 
+
 <br>
 
 <h3>Binned plots</h3>
+
+
 
     
     
@@ -144,43 +250,19 @@
 
 
 
-<b>GlobCurrents Geostrophic<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_3.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_26_3.png)
 
 
 
-<b>GlobCurrents Total<b>
+<b>WOC inertial global 00m 1h</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_5.png)
-
-
-
-<b>WOC inertial global 15m 1h<b>
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_7.png)
-
-
-
-<b>WOC BFN-QG 3h<b>
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_9.png)
-
-
-
-<b>NeurOST<b>
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_11.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_26_5.png)
 
 
     
@@ -193,43 +275,19 @@
 
 
 
-<b>GlobCurrents Geostrophic<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_15.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_26_9.png)
 
 
 
-<b>GlobCurrents Total<b>
+<b>WOC inertial global 00m 1h</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_17.png)
-
-
-
-<b>WOC inertial global 15m 1h<b>
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_19.png)
-
-
-
-<b>WOC BFN-QG 3h<b>
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_21.png)
-
-
-
-<b>NeurOST<b>
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_23.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_26_11.png)
 
 
     
@@ -242,43 +300,19 @@
 
 
 
-<b>GlobCurrents Geostrophic<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_27.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_26_15.png)
 
 
 
-<b>GlobCurrents Total<b>
+<b>WOC inertial global 00m 1h</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_29.png)
-
-
-
-<b>WOC inertial global 15m 1h<b>
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_31.png)
-
-
-
-<b>WOC BFN-QG 3h<b>
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_33.png)
-
-
-
-<b>NeurOST<b>
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_35.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_26_17.png)
 
 
     
@@ -291,52 +325,32 @@
 
 
 
-<b>GlobCurrents Geostrophic<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_39.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_26_21.png)
 
 
 
-<b>GlobCurrents Total<b>
+<b>WOC inertial global 00m 1h</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_41.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_26_23.png)
 
 
+</details> 
 
-<b>WOC inertial global 15m 1h<b>
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_43.png)
-
-
-
-<b>WOC BFN-QG 3h<b>
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_45.png)
-
-
-
-<b>NeurOST<b>
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_24_47.png)
+<details>
+    <summary><h2> ▶️ At 15m</h2></summary>
 
 
 <br>
 
-<h2>At 15m</h2>
+<h3>Norm errors</h3>
 
-<br>
 
-<h3>Mean error</h3>
 
 
 
@@ -394,11 +408,138 @@
 
 
 
+
 <br>
+
+<h3>Eastward errors</h3>
+
+
+
+
+
+
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Eastward Quadratic Error (%)</td>
+<td>Eastward Correlation</td>
+<td>Eastward Explained Variance (%)</td>
+<td>Eastward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Geostrophic</b></td>
+<td>47.463</td>
+<td>0.882</td>
+<td>75.469</td>
+<td>0.231</td>
+<td>44751.000</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Total</b></td>
+<td>46.562</td>
+<td>0.886</td>
+<td>76.783</td>
+<td>0.226</td>
+<td>43190.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 15m 1h</b></td>
+<td>45.115</td>
+<td>0.895</td>
+<td>78.858</td>
+<td>0.219</td>
+<td>43190.000</td>
+</tr>
+<tr>
+<td><b>WOC BFN-QG 3h</b></td>
+<td>46.636</td>
+<td>0.887</td>
+<td>76.638</td>
+<td>0.227</td>
+<td>43200.000</td>
+</tr>
+<tr>
+<td><b>NeurOST</b></td>
+<td>46.866</td>
+<td>0.888</td>
+<td>84.905</td>
+<td>0.228</td>
+<td>44738.000</td>
+</tr>
+</table>
+
+
+
+
+<br>
+
+<h3>Northward errors</h3>
+
+
+
+
+
+
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Northward Quadratic Error (%)</td>
+<td>Northward Correlation</td>
+<td>Northward Explained Variance (%)</td>
+<td>Northward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Geostrophic</b></td>
+<td>55.176</td>
+<td>0.836</td>
+<td>73.912</td>
+<td>0.238</td>
+<td>44751.000</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Total</b></td>
+<td>54.040</td>
+<td>0.842</td>
+<td>75.330</td>
+<td>0.233</td>
+<td>43190.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 15m 1h</b></td>
+<td>53.252</td>
+<td>0.848</td>
+<td>77.290</td>
+<td>0.230</td>
+<td>43190.000</td>
+</tr>
+<tr>
+<td><b>WOC BFN-QG 3h</b></td>
+<td>51.652</td>
+<td>0.858</td>
+<td>74.578</td>
+<td>0.223</td>
+<td>43200.000</td>
+</tr>
+<tr>
+<td><b>NeurOST</b></td>
+<td>51.782</td>
+<td>0.862</td>
+<td>81.058</td>
+<td>0.224</td>
+<td>44738.000</td>
+</tr>
+</table>
+
+
+
 
 <br>
 
 <h3>Standard deviation error</h3>
+
+
 
 
 
@@ -438,9 +579,12 @@
 
 
 
+
 <br>
 
 <h3>Binned plots</h3>
+
+
 
     
     
@@ -452,43 +596,43 @@
 
 
 
-<b>GlobCurrents Geostrophic<b>
+<b>GlobCurrents Geostrophic</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_3.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_3.png)
 
 
 
-<b>GlobCurrents Total<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_5.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_5.png)
 
 
 
-<b>WOC inertial global 15m 1h<b>
+<b>WOC inertial global 15m 1h</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_7.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_7.png)
 
 
 
-<b>WOC BFN-QG 3h<b>
+<b>WOC BFN-QG 3h</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_9.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_9.png)
 
 
 
-<b>NeurOST<b>
+<b>NeurOST</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_11.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_11.png)
 
 
     
@@ -501,43 +645,43 @@
 
 
 
-<b>GlobCurrents Geostrophic<b>
+<b>GlobCurrents Geostrophic</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_15.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_15.png)
 
 
 
-<b>GlobCurrents Total<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_17.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_17.png)
 
 
 
-<b>WOC inertial global 15m 1h<b>
+<b>WOC inertial global 15m 1h</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_19.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_19.png)
 
 
 
-<b>WOC BFN-QG 3h<b>
+<b>WOC BFN-QG 3h</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_21.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_21.png)
 
 
 
-<b>NeurOST<b>
+<b>NeurOST</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_23.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_23.png)
 
 
     
@@ -550,43 +694,43 @@
 
 
 
-<b>GlobCurrents Geostrophic<b>
+<b>GlobCurrents Geostrophic</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_27.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_27.png)
 
 
 
-<b>GlobCurrents Total<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_29.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_29.png)
 
 
 
-<b>WOC inertial global 15m 1h<b>
+<b>WOC inertial global 15m 1h</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_31.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_31.png)
 
 
 
-<b>WOC BFN-QG 3h<b>
+<b>WOC BFN-QG 3h</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_33.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_33.png)
 
 
 
-<b>NeurOST<b>
+<b>NeurOST</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_35.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_35.png)
 
 
     
@@ -599,98 +743,99 @@
 
 
 
-<b>GlobCurrents Geostrophic<b>
+<b>GlobCurrents Geostrophic</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_39.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_39.png)
 
 
 
-<b>GlobCurrents Total<b>
+<b>GlobCurrents Total</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_41.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_41.png)
 
 
 
-<b>WOC inertial global 15m 1h<b>
+<b>WOC inertial global 15m 1h</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_43.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_43.png)
 
 
 
-<b>WOC BFN-QG 3h<b>
+<b>WOC BFN-QG 3h</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_45.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_45.png)
 
 
 
-<b>NeurOST<b>
+<b>NeurOST</b>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_33_47.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_38_47.png)
+
+
+</details>
 
 
 <br>
 
 <br>
 
-## <u> 3. Lagrangian Cumulative Distance</u>
+<h1><u> 3. Lagrangian Cumulative Distance</u></h1>
 
-<br>
 
-<h2>At 0m</h2>
+
+<details>
+    <summary><h2> ▶️ At 0m</h2></summary>
+
+
 
 
     <Figure size 640x480 with 0 Axes>
 
 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_37_1.png)
+![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_42_1.png)
 
 
-<br>
+</details>
 
-<h2>At 15m</h2>
+
+
+<details>
+    <summary><h2> ▶️ At 15m</h2></summary>
+
+
 
 
     <Figure size 640x480 with 0 Axes>
-
-
-
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_39_1.png)
-
-
-<br>
-
-<br>
-
-## <u>4. Fronts and currents consistency</u>
-
-
-
-
-    (<Figure size 2500x1500 with 30 Axes>,
-     <Figure size 2500x2500 with 40 Axes>,
-     <Figure size 600x500 with 2 Axes>)
-
 
 
 
 ![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_44_1.png)
 
 
+</details> 
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_44_2.png)
+<br>
 
+<br>
 
+<h1><u>4. Fronts and currents consistency</u></h1>
+ 
+<details>
+    <summary><h2> ▶️ Maps</h2></summary>
 
-![png](nb_wocproducts_Agulhas_files/nb_wocproducts_Agulhas_44_3.png)
+</details>
 
+</br>
+
+</br>

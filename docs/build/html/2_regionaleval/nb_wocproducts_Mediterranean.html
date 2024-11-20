@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Product comparison &#8212; WOC-ESA Data challenges  documentation</title>
+    <title>Mediterranean Sea &#8212; WOC-ESA Data challenges  documentation</title>
   
   
   
@@ -45,7 +45,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Metrics details" href="../5_metrics_det/index.html" />
-    <link rel="prev" title="Reconstruction movies" href="dc_medsea_movies.html" />
+    <link rel="prev" title="Gulf Stream region" href="nb_wocproducts_Gulfstream.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
   </head>
@@ -407,18 +407,16 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="index_Agulhas.html">Agulhas Current</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dc_details.html">Data challenge setup</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="index_GulfStream.html">Gulf Stream</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nb_wocproducts_Agulhas.html">Agulhas Current</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="nb_wocproducts_Gulfstream.html">Gulf Stream region</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index_MedSea.html">Mediterranean Sea</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="dc_medsea_details.html">Mediterranean Sea setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dc_medsea_movies.html">Reconstruction movies</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Product comparison</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Mediterranean Sea</a></li>
 </ul>
 </div>
 </nav></div>
@@ -459,10 +457,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Regional Evaluations</a></li>
     
-    
-    <li class="breadcrumb-item"><a href="index_MedSea.html" class="nav-link">Mediterranean Sea</a></li>
-    
-    <li class="breadcrumb-item active" aria-current="page">Product comparison</li>
+    <li class="breadcrumb-item active" aria-current="page">Mediterranean Sea</li>
   </ul>
 </nav>
 </div>
@@ -479,8 +474,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="product-comparison">
-<h1>Product comparison<a class="headerlink" href="#product-comparison" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="mediterranean-sea">
+<h1>Mediterranean Sea<a class="headerlink" href="#mediterranean-sea" title="Link to this heading">#</a></h1>
 <br>
 <br>
 <div class="alert alert-block alert-success">
@@ -502,25 +497,31 @@ document.write(`
         <li> WOC dADR-SR (dADR Med) </li>
         <li> WOC inertial global 15m </li>
         <li> NeurOST </li> 
+        <li> OSCAR </li>
     </ul>  
 </h3>
+<style>
+     details > summary {
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+</style>
 <br>
 <br>
-</section>
-<section id="u-1-spectrum-u">
-<h2><u> 1. Spectrum </u><a class="headerlink" href="#u-1-spectrum-u" title="Link to this heading">#</a></h2>
+<h2><u> 1. Spectrum </u></h2>
+<details>
+    <summary><h2> ▶️ At 15m</h2> </summary>
+<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_10_0.png" /></p>
+</details>
 <br>
-<h2>At 15m</h2>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_9_0.png" /></p>
 <br>
+<h1><u> 2. Eulerian RMS </u></h1>
+<details> 
+    <summary><h2> ▶️ At 15m</h2></summary>
 <br>
-</section>
-<section id="u-2-eulerian-rms-u">
-<h2><u> 2. Eulerian RMS </u><a class="headerlink" href="#u-2-eulerian-rms-u" title="Link to this heading">#</a></h2>
-<br>
-<h2>At 15m</h2>
-<br>
-<h3>Mean error</h3>
+<h3>Norm errors</h3>
 <table width=100%>
 <tr>
 <td><b>Mean</b></td>
@@ -564,6 +565,93 @@ document.write(`
 </tr>
 </table>
 <br>
+<h3>Eastward errors</h3>
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Eastward Quadratic Error (%)</td>
+<td>Eastward Correlation</td>
+<td>Eastward Explained Variance (%)</td>
+<td>Eastward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Geostrophic</b></td>
+<td>74.536</td>
+<td>0.632</td>
+<td>33.899</td>
+<td>0.191</td>
+<td>51875.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 15m</b></td>
+<td>69.579</td>
+<td>0.625</td>
+<td>33.552</td>
+<td>0.179</td>
+<td>50604.000</td>
+</tr>
+<tr>
+<td><b>WOC dADR-SR</b></td>
+<td>76.981</td>
+<td>0.613</td>
+<td>44.332</td>
+<td>0.198</td>
+<td>50959.000</td>
+</tr>
+<tr>
+<td><b>NeurOST</b></td>
+<td>76.845</td>
+<td>0.595</td>
+<td>42.369</td>
+<td>0.197</td>
+<td>51823.000</td>
+</tr>
+</table>
+<br>
+<h3>Northward errors</h3>
+<table width=100%>
+<tr>
+<td><b>Mean</b></td>
+<td>Northward Quadratic Error (%)</td>
+<td>Northward Correlation</td>
+<td>Northward Explained Variance (%)</td>
+<td>Northward RMSD</td>
+<td>Number of Points</td>
+</tr>
+<tr>
+<td><b>GlobCurrent Geostrophic</b></td>
+<td>80.777</td>
+<td>0.633</td>
+<td>39.746</td>
+<td>0.179</td>
+<td>51875.000</td>
+</tr>
+<tr>
+<td><b>WOC inertial global 15m</b></td>
+<td>76.659</td>
+<td>0.655</td>
+<td>37.399</td>
+<td>0.171</td>
+<td>50604.000</td>
+</tr>
+<tr>
+<td><b>WOC dADR-SR</b></td>
+<td>81.238</td>
+<td>0.604</td>
+<td>37.955</td>
+<td>0.181</td>
+<td>50959.000</td>
+</tr>
+<tr>
+<td><b>NeurOST</b></td>
+<td>80.824</td>
+<td>0.625</td>
+<td>36.793</td>
+<td>0.179</td>
+<td>51823.000</td>
+</tr>
+</table>
 <br>
 <h3>Standard deviation error</h3>
 <table width=100%>
@@ -595,53 +683,23 @@ document.write(`
 </table>
 <br>
 <h3>Binned plots</h3>
-<center><b>Results for diagnostic RMSD</b></center>
-<p><b>GlobCurrents Total<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_3.png" /></p>
-<p><b>WOC inertial global 15m<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_5.png" /></p>
-<p><b>WOC dADR-SR<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_7.png" /></p>
-<p><b>NeurOST<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_9.png" /></p>
-<center><b>Results for diagnostic Correlation</b></center>
-<p><b>GlobCurrents Total<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_13.png" /></p>
-<p><b>WOC inertial global 15m<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_15.png" /></p>
-<p><b>WOC dADR-SR<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_17.png" /></p>
-<p><b>NeurOST<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_19.png" /></p>
-<center><b>Results for diagnostic Explained Variance (%)</b></center>
-<p><b>GlobCurrents Total<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_23.png" /></p>
-<p><b>WOC inertial global 15m<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_25.png" /></p>
-<p><b>WOC dADR-SR<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_27.png" /></p>
-<p><b>NeurOST<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_29.png" /></p>
-<center><b>Results for diagnostic Quadratic Error (%)</b></center>
-<p><b>GlobCurrents Total<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_33.png" /></p>
-<p><b>WOC inertial global 15m<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_35.png" /></p>
-<p><b>WOC dADR-SR<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_37.png" /></p>
-<p><b>NeurOST<b></p>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_19_39.png" /></p>
+<p><br><center><b>Results for diagnostic RMSD</b></center></p>
+<p><b>GlobCurrents Total</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_24_3.png" /></p>
+<p><b>WOC inertial global 15m</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_24_5.png" /></p>
+<p><b>WOC dADR-SR</b></p>
+<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_24_7.png" /></p>
+<p><b>NeurOST</b></p>
+</details>
 <br>
 <br>
-</section>
-<section id="u-3-lagrangian-cumulative-distance-u">
-<h2><u> 3. Lagrangian Cumulative Distance</u><a class="headerlink" href="#u-3-lagrangian-cumulative-distance-u" title="Link to this heading">#</a></h2>
+<h1><u> 3. Lagrangian Cumulative Distance</u></h1>
+<details>
+    <summary><h2> ▶️ At 15m</h2></summary>
+</details> 
 <br>
-<h2>At 15m</h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 640x480 with 0 Axes&gt;
-</pre></div>
-</div>
-<p><img alt="png" src="../_images/nb_wocproducts_Mediterranean_23_1.png" /></p>
+<br>
 </section>
 </section>
 
@@ -657,12 +715,12 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="dc_medsea_movies.html"
+       href="nb_wocproducts_Gulfstream.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Reconstruction movies</p>
+        <p class="prev-next-title">Gulf Stream region</p>
       </div>
     </a>
     <a class="right-next"
