@@ -57,7 +57,7 @@ At 15m
 
 
 <details>
-    <summary><h2> ▶️ At 0m</h2></summary>
+    <summary><h3> ▶️ At 0m</h3></summary>
 
 
 
@@ -67,7 +67,7 @@ At 15m
 </details> 
 
 <details>
-    <summary><h2> ▶️ At 15m</h2> </summary>
+    <summary><h3> ▶️ At 15m</h3> </summary>
  
 
 
@@ -82,16 +82,16 @@ At 15m
 
 <br>
 
-<h1><u> 2. Eulerian RMS </u></h1>
+<h2><u> 2. Eulerian RMS </u></h2>
 
 
 
 <details> 
-    <summary><h2> ▶️ At 0m</h2></summary>
+    <summary><h3> ▶️ At 0m</h3></summary>
 
 <br>
 
-<h3>Norm errors</h3>
+<h4>Norm errors</h4>
 
 
 
@@ -137,7 +137,7 @@ At 15m
 
 <br>
 
-<h3>Eastward errors</h3>
+<h4>Eastward errors</h4>
 
 
 
@@ -185,7 +185,7 @@ At 15m
 
 <br>
 
-<h3>Northward errors</h3>
+<h4>Northward errors</h4>
 
 
 
@@ -232,7 +232,7 @@ At 15m
 
 <br>
 
-<h3>Standard deviation error</h3>
+<h4>Standard deviation error</h4>
 
 
 
@@ -266,7 +266,7 @@ At 15m
 
 <br>
 
-<h3>Binned plots</h3>
+<h4>Binned plots</h4>
 
     
     
@@ -403,12 +403,12 @@ At 15m
 </details> 
 
 <details>
-    <summary><h2> ▶️ At 15m</h2></summary>
+    <summary><h3> ▶️ At 15m</h3></summary>
 
 
 <br>
 
-<h3>Norm errors</h3>
+<h4>Norm errors</h4>
 
 
 
@@ -479,7 +479,7 @@ At 15m
 
 <br>
 
-<h3>Eastward errors</h3>
+<h4>Eastward errors</h4>
 
 
 
@@ -550,7 +550,7 @@ At 15m
 
 <br>
 
-<h3>Northward errors</h3>
+<h4>Northward errors</h4>
 
 
 
@@ -620,7 +620,7 @@ At 15m
 
 <br>
 
-<h3>Standard deviation error</h3>
+<h4>Standard deviation error</h4>
 
 
 
@@ -667,7 +667,7 @@ At 15m
 
 <br>
 
-<h3>Binned plots</h3>
+<h4>Binned plots</h4>
 
     
     
@@ -904,12 +904,12 @@ At 15m
 
 <br>
 
-<h1><u> 3. Lagrangian Cumulative Distance</u></h1>
+<h2><u> 3. Lagrangian Cumulative Distance</u></h2>
 
 
 
 <details>
-    <summary><h2> ▶️ At 0m</h2></summary>
+    <summary><h3> ▶️ At 0m</h3></summary>
  
 
 
@@ -924,7 +924,7 @@ At 15m
 
 
 <details>
-    <summary><h2> ▶️ At 15m</h2></summary>
+    <summary><h3> ▶️ At 15m</h3></summary>
 
 
 
